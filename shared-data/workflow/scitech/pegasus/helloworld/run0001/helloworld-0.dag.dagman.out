@@ -1,0 +1,372 @@
+07/09/20 21:06:01 ******************************************************
+07/09/20 21:06:01 ** condor_scheduniv_exec.10.0 (CONDOR_DAGMAN) STARTING UP
+07/09/20 21:06:01 ** /usr/bin/condor_dagman
+07/09/20 21:06:01 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+07/09/20 21:06:01 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+07/09/20 21:06:01 ** $CondorVersion: 8.8.9 May 06 2020 BuildID: 503068 PackageID: 8.8.9-1 $
+07/09/20 21:06:01 ** $CondorPlatform: x86_64_CentOS7 $
+07/09/20 21:06:01 ** PID = 2252
+07/09/20 21:06:01 ** Log last touched time unavailable (No such file or directory)
+07/09/20 21:06:01 ******************************************************
+07/09/20 21:06:01 Using config source: /etc/condor/condor_config
+07/09/20 21:06:01 Using local config sources: 
+07/09/20 21:06:01    /etc/condor/config.d/00-minicondor
+07/09/20 21:06:01    /etc/condor/condor_config.local
+07/09/20 21:06:01 config Macros = 81, Sorted = 81, StringBytes = 2238, TablesBytes = 2964
+07/09/20 21:06:01 CLASSAD_CACHING is ENABLED
+07/09/20 21:06:01 Daemon Log is logging: D_ALWAYS D_ERROR
+07/09/20 21:06:01 DaemonCore: No command port requested.
+07/09/20 21:06:01 DAGMAN_USE_STRICT setting: 1
+07/09/20 21:06:01 DAGMAN_VERBOSITY setting: 3
+07/09/20 21:06:01 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+07/09/20 21:06:01 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+07/09/20 21:06:01 DAGMAN_SUBMIT_DELAY setting: 0
+07/09/20 21:06:01 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+07/09/20 21:06:01 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+07/09/20 21:06:01 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 100
+07/09/20 21:06:01 DAGMAN_AGGRESSIVE_SUBMIT setting: False
+07/09/20 21:06:01 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+07/09/20 21:06:01 DAGMAN_QUEUE_UPDATE_INTERVAL setting: 300
+07/09/20 21:06:01 DAGMAN_DEFAULT_PRIORITY setting: 0
+07/09/20 21:06:01 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+07/09/20 21:06:01 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+07/09/20 21:06:01 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+07/09/20 21:06:01 DAGMAN_RETRY_NODE_FIRST setting: False
+07/09/20 21:06:01 DAGMAN_MAX_JOBS_IDLE setting: 1000
+07/09/20 21:06:01 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+07/09/20 21:06:01 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+07/09/20 21:06:01 DAGMAN_MAX_POST_SCRIPTS setting: 20
+07/09/20 21:06:01 DAGMAN_MUNGE_NODE_NAMES setting: True
+07/09/20 21:06:01 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+07/09/20 21:06:01 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+07/09/20 21:06:01 DAGMAN_ALWAYS_RUN_POST setting: False
+07/09/20 21:06:01 DAGMAN_CONDOR_SUBMIT_EXE setting: /usr/bin/condor_submit
+07/09/20 21:06:01 DAGMAN_USE_CONDOR_SUBMIT setting: True
+07/09/20 21:06:01 DAGMAN_ABORT_DUPLICATES setting: True
+07/09/20 21:06:01 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+07/09/20 21:06:01 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+07/09/20 21:06:01 DAGMAN_AUTO_RESCUE setting: True
+07/09/20 21:06:01 DAGMAN_MAX_RESCUE_NUM setting: 100
+07/09/20 21:06:01 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+07/09/20 21:06:01 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+07/09/20 21:06:01 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+07/09/20 21:06:01 DAGMAN_MAX_JOB_HOLDS setting: 100
+07/09/20 21:06:01 DAGMAN_HOLD_CLAIM_TIME setting: 20
+07/09/20 21:06:01 ALL_DEBUG setting: 
+07/09/20 21:06:01 DAGMAN_DEBUG setting: 
+07/09/20 21:06:01 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+07/09/20 21:06:01 DAGMAN_REMOVE_NODE_JOBS setting: True
+07/09/20 21:06:01 argv[0] == "condor_scheduniv_exec.10.0"
+07/09/20 21:06:01 argv[1] == "-Lockfile"
+07/09/20 21:06:01 argv[2] == "helloworld-0.dag.lock"
+07/09/20 21:06:01 argv[3] == "-AutoRescue"
+07/09/20 21:06:01 argv[4] == "1"
+07/09/20 21:06:01 argv[5] == "-DoRescueFrom"
+07/09/20 21:06:01 argv[6] == "0"
+07/09/20 21:06:01 argv[7] == "-Dag"
+07/09/20 21:06:01 argv[8] == "helloworld-0.dag"
+07/09/20 21:06:01 argv[9] == "-MaxPost"
+07/09/20 21:06:01 argv[10] == "20"
+07/09/20 21:06:01 argv[11] == "-Suppress_notification"
+07/09/20 21:06:01 argv[12] == "-CsdVersion"
+07/09/20 21:06:01 argv[13] == "$CondorVersion: 8.8.9 May 06 2020 BuildID: 503068 PackageID: 8.8.9-1 $"
+07/09/20 21:06:01 argv[14] == "-Dagman"
+07/09/20 21:06:01 argv[15] == "/bin/condor_dagman"
+07/09/20 21:06:01 Workflow batch-name: <helloworld-0.dag+10>
+07/09/20 21:06:01 Workflow accounting_group: <>
+07/09/20 21:06:01 Workflow accounting_group_user: <>
+07/09/20 21:06:01 Warning: failed to get attribute DAGNodeName
+07/09/20 21:06:01 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+07/09/20 21:06:01 Default node log file is: </home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log>
+07/09/20 21:06:01 DAG Lockfile will be written to helloworld-0.dag.lock
+07/09/20 21:06:01 DAG Input file is helloworld-0.dag
+07/09/20 21:06:01 Parsing 1 dagfiles
+07/09/20 21:06:01 Parsing helloworld-0.dag ...
+07/09/20 21:06:01 Warning:  could not open Pegasus braindump file braindump.txt
+07/09/20 21:06:01 Warning: category stagein has no assigned nodes, so the throttle setting (10) will have no effect
+07/09/20 21:06:01 Dag contains 6 total jobs
+07/09/20 21:06:01 Sleeping for 3 seconds to ensure ProcessId uniqueness
+07/09/20 21:06:04 Bootstrapping...
+07/09/20 21:06:04 Number of pre-completed nodes: 0
+07/09/20 21:06:04 MultiLogFiles: truncating log file /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log
+07/09/20 21:06:04 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:04 Of 6 nodes total:
+07/09/20 21:06:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:04   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:04     0       0        0       0       1          5        0
+07/09/20 21:06:04 0 job proc(s) currently held
+07/09/20 21:06:04 DAGMan Runtime Statistics: [ EventCycleTimeSum = 0.0; EventCycleTimeCount = 0.0; SleepCycleTimeCount = 0.0; SubmitCycleTimeSum = 0.0; SubmitCycleTimeCount = 0.0; LogProcessCycleTimeSum = 0.0; SleepCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; ]
+07/09/20 21:06:04 Registering condor_event_timer...
+07/09/20 21:06:05 Submitting HTCondor Node create_dir_helloworld_0_local job(s)...
+07/09/20 21:06:05 Adding a DAGMan workflow log /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log
+07/09/20 21:06:05 Masking the events recorded in the DAGMAN workflow log
+07/09/20 21:06:05 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+07/09/20 21:06:05 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'create_dir_helloworld_0_local -a +DAGManJobId' '=' '10 -a DAGManJobId' '=' '10 -batch-name helloworld-0.dag+10 -a submit_event_notes' '=' 'DAG' 'Node:' 'create_dir_helloworld_0_local -a dagman_log' '=' '/home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a priority=800 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" 00/00/create_dir_helloworld_0_local.sub
+07/09/20 21:06:05 From submit: Submitting job(s).
+07/09/20 21:06:05 From submit: 1 job(s) submitted to cluster 11.
+07/09/20 21:06:05 	assigned HTCondor ID (11.0.0)
+07/09/20 21:06:05 Just submitted 1 job this cycle...
+07/09/20 21:06:05 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:05 Of 6 nodes total:
+07/09/20 21:06:05  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:05   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:05     0       0        1       0       0          5        0
+07/09/20 21:06:05 0 job proc(s) currently held
+07/09/20 21:06:05 DAGMan Runtime Statistics: [ EventCycleTimeCount = 0.0; EventCycleTimeSum = 0.0; LogProcessCycleTimeCount = 0.0; SleepCycleTimeSum = 0.0; LogProcessCycleTimeSum = 0.0; SubmitCycleTimeCount = 1.0; SubmitCycleTimeMax = 0.04463291168212891; SubmitCycleTimeMin = 0.04463291168212891; SubmitCycleTimeAvg = 0.04463291168212891; SubmitCycleTimeStd = 0.04463291168212891; SubmitCycleTimeSum = 0.04463291168212891; SleepCycleTimeCount = 0.0; ]
+07/09/20 21:06:10 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:06:10 Reassigning the id of job create_dir_helloworld_0_local from (11.0.0) to (11.0.0)
+07/09/20 21:06:10 Event: ULOG_SUBMIT for HTCondor Node create_dir_helloworld_0_local (11.0.0) {07/09/20 21:06:05}
+07/09/20 21:06:10 Number of idle job procs: 1
+07/09/20 21:06:10 Event: ULOG_EXECUTE for HTCondor Node create_dir_helloworld_0_local (11.0.0) {07/09/20 21:06:06}
+07/09/20 21:06:10 Number of idle job procs: 0
+07/09/20 21:06:10 Event: ULOG_JOB_TERMINATED for HTCondor Node create_dir_helloworld_0_local (11.0.0) {07/09/20 21:06:08}
+07/09/20 21:06:10 Number of idle job procs: 0
+07/09/20 21:06:10 Node create_dir_helloworld_0_local job proc (11.0.0) completed successfully.
+07/09/20 21:06:10 Node create_dir_helloworld_0_local job completed
+07/09/20 21:06:10 Running POST script of Node create_dir_helloworld_0_local...
+07/09/20 21:06:10 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+07/09/20 21:06:10 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:10 Of 6 nodes total:
+07/09/20 21:06:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:10   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:10     0       0        0       1       0          5        0
+07/09/20 21:06:10 0 job proc(s) currently held
+07/09/20 21:06:10 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.0512700080871582; EventCycleTimeMax = 0.0512700080871582; SubmitCycleTimeMin = 0.0007348060607910156; SubmitCycleTimeAvg = 0.02268385887145996; SleepCycleTimeCount = 1.0; SubmitCycleTimeCount = 2.0; SubmitCycleTimeMax = 0.04463291168212891; SleepCycleTimeMin = 5.005665063858032; SubmitCycleTimeSum = 0.04536771774291992; LogProcessCycleTimeStd = 0.01751017570495605; SubmitCycleTimeStd = 0.03104064816609133; LogProcessCycleTimeAvg = 0.01751017570495605; EventCycleTimeMin = 0.0512700080871582; LogProcessCycleTimeMax = 0.01751017570495605; LogProcessCycleTimeMin = 0.01751017570495605; LogProcessCycleTimeSum = 0.01751017570495605; LogProcessCycleTimeCount = 1.0; EventCycleTimeSum = 0.0512700080871582; SleepCycleTimeSum = 5.005665063858032; SleepCycleTimeAvg = 5.005665063858032; SleepCycleTimeStd = 5.005665063858032; SleepCycleTimeMax = 5.005665063858032; EventCycleTimeCount = 1.0; EventCycleTimeAvg = 0.0512700080871582; ]
+07/09/20 21:06:10 Initializing user log writer for /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log, (11.0.0)
+07/09/20 21:06:15 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:06:15 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node create_dir_helloworld_0_local (11.0.0) {07/09/20 21:06:10}
+07/09/20 21:06:15 POST Script of node create_dir_helloworld_0_local completed successfully.
+07/09/20 21:06:15 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:15 Of 6 nodes total:
+07/09/20 21:06:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:15   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:15     1       0        0       0       1          4        0
+07/09/20 21:06:15 0 job proc(s) currently held
+07/09/20 21:06:15 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.01889611806137423; EventCycleTimeMax = 0.0512700080871582; SubmitCycleTimeMin = 0.0007348060607910156; SubmitCycleTimeAvg = 0.01537386576334635; SleepCycleTimeCount = 2.0; SubmitCycleTimeCount = 3.0; SubmitCycleTimeMax = 0.04463291168212891; SleepCycleTimeMin = 5.005665063858032; SubmitCycleTimeSum = 0.04612159729003906; LogProcessCycleTimeStd = 0.007987670729784638; SubmitCycleTimeStd = 0.02533907885080947; LogProcessCycleTimeAvg = 0.01186203956604004; EventCycleTimeMin = 0.02454686164855957; LogProcessCycleTimeMax = 0.01751017570495605; LogProcessCycleTimeMin = 0.006213903427124023; LogProcessCycleTimeSum = 0.02372407913208008; LogProcessCycleTimeCount = 2.0; EventCycleTimeSum = 0.07581686973571777; SleepCycleTimeSum = 10.25586724281311; SleepCycleTimeAvg = 5.127933621406555; SleepCycleTimeStd = 0.1729138523369164; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 2.0; EventCycleTimeAvg = 0.03790843486785889; ]
+07/09/20 21:06:20 Submitting HTCondor Node echo_ID0000001 job(s)...
+07/09/20 21:06:20 Adding a DAGMan workflow log /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log
+07/09/20 21:06:20 Masking the events recorded in the DAGMAN workflow log
+07/09/20 21:06:20 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+07/09/20 21:06:20 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'echo_ID0000001 -a +DAGManJobId' '=' '10 -a DAGManJobId' '=' '10 -batch-name helloworld-0.dag+10 -a submit_event_notes' '=' 'DAG' 'Node:' 'echo_ID0000001 -a dagman_log' '=' '/home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a priority=10 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"create_dir_helloworld_0_local" 00/00/echo_ID0000001.sub
+07/09/20 21:06:20 From submit: Submitting job(s).
+07/09/20 21:06:20 From submit: 1 job(s) submitted to cluster 12.
+07/09/20 21:06:20 	assigned HTCondor ID (12.0.0)
+07/09/20 21:06:20 Just submitted 1 job this cycle...
+07/09/20 21:06:20 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:20 Of 6 nodes total:
+07/09/20 21:06:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:20   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:20     1       0        1       0       0          4        0
+07/09/20 21:06:20 0 job proc(s) currently held
+07/09/20 21:06:20 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.01986312109896495; EventCycleTimeMax = 0.0512700080871582; SubmitCycleTimeMin = 0.0007348060607910156; SubmitCycleTimeAvg = 0.02295863628387451; SleepCycleTimeCount = 3.0; SubmitCycleTimeCount = 4.0; SubmitCycleTimeMax = 0.04571294784545898; SleepCycleTimeMin = 5.005665063858032; SubmitCycleTimeSum = 0.09183454513549805; LogProcessCycleTimeStd = 0.007987670729784638; SubmitCycleTimeStd = 0.02565464714370449; LogProcessCycleTimeAvg = 0.01186203956604004; EventCycleTimeMin = 0.0124518871307373; LogProcessCycleTimeMax = 0.01751017570495605; LogProcessCycleTimeMin = 0.006213903427124023; LogProcessCycleTimeSum = 0.02372407913208008; LogProcessCycleTimeCount = 2.0; EventCycleTimeSum = 0.08826875686645508; SleepCycleTimeSum = 15.26567220687866; SleepCycleTimeAvg = 5.088557402292888; SleepCycleTimeStd = 0.1400037858775771; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 3.0; EventCycleTimeAvg = 0.02942291895548503; ]
+07/09/20 21:06:25 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:06:25 Reassigning the id of job echo_ID0000001 from (12.0.0) to (12.0.0)
+07/09/20 21:06:25 Event: ULOG_SUBMIT for HTCondor Node echo_ID0000001 (12.0.0) {07/09/20 21:06:20}
+07/09/20 21:06:25 Number of idle job procs: 1
+07/09/20 21:06:25 Event: ULOG_EXECUTE for HTCondor Node echo_ID0000001 (12.0.0) {07/09/20 21:06:24}
+07/09/20 21:06:25 Number of idle job procs: 0
+07/09/20 21:06:25 Event: ULOG_JOB_TERMINATED for HTCondor Node echo_ID0000001 (12.0.0) {07/09/20 21:06:25}
+07/09/20 21:06:25 Number of idle job procs: 0
+07/09/20 21:06:25 Node echo_ID0000001 job proc (12.0.0) completed successfully.
+07/09/20 21:06:25 Node echo_ID0000001 job completed
+07/09/20 21:06:25 Running POST script of Node echo_ID0000001...
+07/09/20 21:06:25 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+07/09/20 21:06:25 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:25 Of 6 nodes total:
+07/09/20 21:06:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:25   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:25     1       0        0       1       0          4        0
+07/09/20 21:06:25 0 job proc(s) currently held
+07/09/20 21:06:25 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.01960426697123656; EventCycleTimeMax = 0.05145001411437988; SubmitCycleTimeMin = 0.0007348060607910156; SubmitCycleTimeAvg = 0.01863851547241211; SleepCycleTimeCount = 4.0; SubmitCycleTimeCount = 5.0; SubmitCycleTimeMax = 0.04571294784545898; SleepCycleTimeMin = 5.005665063858032; SubmitCycleTimeSum = 0.09319257736206055; LogProcessCycleTimeStd = 0.01507566773486413; SubmitCycleTimeStd = 0.02422680146406334; LogProcessCycleTimeAvg = 0.01993203163146973; EventCycleTimeMin = 0.0124518871307373; LogProcessCycleTimeMax = 0.0360720157623291; LogProcessCycleTimeMin = 0.006213903427124023; LogProcessCycleTimeSum = 0.05979609489440918; LogProcessCycleTimeCount = 3.0; EventCycleTimeSum = 0.139718770980835; SleepCycleTimeSum = 20.27262425422668; SleepCycleTimeAvg = 5.068156063556671; SleepCycleTimeStd = 0.1213764057067606; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 4.0; EventCycleTimeAvg = 0.03492969274520874; ]
+07/09/20 21:06:26 Initializing user log writer for /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log, (12.0.0)
+07/09/20 21:06:30 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:06:30 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node echo_ID0000001 (12.0.0) {07/09/20 21:06:26}
+07/09/20 21:06:30 POST Script of node echo_ID0000001 completed successfully.
+07/09/20 21:06:30 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:30 Of 6 nodes total:
+07/09/20 21:06:30  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:30   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:30     2       0        0       0       1          3        0
+07/09/20 21:06:30 0 job proc(s) currently held
+07/09/20 21:06:30 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.01751784129250971; EventCycleTimeMax = 0.05145001411437988; SubmitCycleTimeMin = 0.0007348060607910156; SubmitCycleTimeAvg = 0.0157310962677002; SleepCycleTimeCount = 5.0; SubmitCycleTimeCount = 6.0; SubmitCycleTimeMax = 0.04571294784545898; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.09438657760620117; LogProcessCycleTimeStd = 0.01416782461792846; SubmitCycleTimeStd = 0.02280940257733374; LogProcessCycleTimeAvg = 0.01642453670501709; EventCycleTimeMin = 0.0124518871307373; LogProcessCycleTimeMax = 0.0360720157623291; LogProcessCycleTimeMin = 0.00590205192565918; LogProcessCycleTimeSum = 0.06569814682006836; LogProcessCycleTimeCount = 4.0; EventCycleTimeSum = 0.1842997074127197; SleepCycleTimeSum = 24.47440028190613; SleepCycleTimeAvg = 4.894880056381226; SleepCycleTimeStd = 0.4014623857972804; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 5.0; EventCycleTimeAvg = 0.03685994148254394; ]
+07/09/20 21:06:35 Submitting HTCondor Node stage_out_local_local_0_0 job(s)...
+07/09/20 21:06:35 Adding a DAGMan workflow log /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log
+07/09/20 21:06:35 Masking the events recorded in the DAGMAN workflow log
+07/09/20 21:06:35 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+07/09/20 21:06:35 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'stage_out_local_local_0_0 -a +DAGManJobId' '=' '10 -a DAGManJobId' '=' '10 -batch-name helloworld-0.dag+10 -a submit_event_notes' '=' 'DAG' 'Node:' 'stage_out_local_local_0_0 -a dagman_log' '=' '/home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a priority=900 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"echo_ID0000001" 00/00/stage_out_local_local_0_0.sub
+07/09/20 21:06:35 From submit: Submitting job(s).
+07/09/20 21:06:35 From submit: 1 job(s) submitted to cluster 13.
+07/09/20 21:06:35 	assigned HTCondor ID (13.0.0)
+07/09/20 21:06:35 Just submitted 1 job this cycle...
+07/09/20 21:06:35 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:35 Of 6 nodes total:
+07/09/20 21:06:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:35   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:35     2       0        1       0       0          3        0
+07/09/20 21:06:35 0 job proc(s) currently held
+07/09/20 21:06:35 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.01818311394204137; EventCycleTimeMax = 0.05145001411437988; SubmitCycleTimeMin = 0.0007348060607910156; SubmitCycleTimeAvg = 0.01967682157244001; SleepCycleTimeCount = 6.0; SubmitCycleTimeCount = 7.0; SubmitCycleTimeMax = 0.04571294784545898; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.1377377510070801; LogProcessCycleTimeStd = 0.01416782461792846; SubmitCycleTimeStd = 0.02329245819735753; LogProcessCycleTimeAvg = 0.01642453670501709; EventCycleTimeMin = 0.0124518871307373; LogProcessCycleTimeMax = 0.0360720157623291; LogProcessCycleTimeMin = 0.00590205192565918; LogProcessCycleTimeSum = 0.06569814682006836; LogProcessCycleTimeCount = 4.0; EventCycleTimeSum = 0.1985597610473633; SleepCycleTimeSum = 29.48013615608215; SleepCycleTimeAvg = 4.913356026013692; SleepCycleTimeStd = 0.3619196132999652; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 6.0; EventCycleTimeAvg = 0.03309329350789388; ]
+07/09/20 21:06:40 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:06:40 Reassigning the id of job stage_out_local_local_0_0 from (13.0.0) to (13.0.0)
+07/09/20 21:06:40 Event: ULOG_SUBMIT for HTCondor Node stage_out_local_local_0_0 (13.0.0) {07/09/20 21:06:35}
+07/09/20 21:06:40 Number of idle job procs: 1
+07/09/20 21:06:40 Event: ULOG_EXECUTE for HTCondor Node stage_out_local_local_0_0 (13.0.0) {07/09/20 21:06:38}
+07/09/20 21:06:40 Number of idle job procs: 0
+07/09/20 21:06:45 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:06:45 Event: ULOG_JOB_TERMINATED for HTCondor Node stage_out_local_local_0_0 (13.0.0) {07/09/20 21:06:40}
+07/09/20 21:06:45 Number of idle job procs: 0
+07/09/20 21:06:45 Node stage_out_local_local_0_0 job proc (13.0.0) completed successfully.
+07/09/20 21:06:45 Node stage_out_local_local_0_0 job completed
+07/09/20 21:06:45 Running POST script of Node stage_out_local_local_0_0...
+07/09/20 21:06:45 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+07/09/20 21:06:45 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:45 Of 6 nodes total:
+07/09/20 21:06:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:45   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:45     2       0        0       1       0          3        0
+07/09/20 21:06:45 0 job proc(s) currently held
+07/09/20 21:06:45 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.01774711000273099; EventCycleTimeMax = 0.05145001411437988; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01545598771837023; SleepCycleTimeCount = 8.0; SubmitCycleTimeCount = 9.0; SubmitCycleTimeMax = 0.04571294784545898; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.139103889465332; LogProcessCycleTimeStd = 0.01158741087531792; SubmitCycleTimeStd = 0.02184192797802054; LogProcessCycleTimeAvg = 0.01440699895222982; EventCycleTimeMin = 0.0124518871307373; LogProcessCycleTimeMax = 0.0360720157623291; LogProcessCycleTimeMin = 0.00590205192565918; LogProcessCycleTimeSum = 0.08644199371337891; LogProcessCycleTimeCount = 6.0; EventCycleTimeSum = 0.2630620002746582; SleepCycleTimeSum = 39.49418497085571; SleepCycleTimeAvg = 4.936773121356964; SleepCycleTimeStd = 0.3089379929711362; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 8.0; EventCycleTimeAvg = 0.03288275003433228; ]
+07/09/20 21:06:45 Initializing user log writer for /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log, (13.0.0)
+07/09/20 21:06:50 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:06:50 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node stage_out_local_local_0_0 (13.0.0) {07/09/20 21:06:45}
+07/09/20 21:06:50 POST Script of node stage_out_local_local_0_0 completed successfully.
+07/09/20 21:06:50 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:50 Of 6 nodes total:
+07/09/20 21:06:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:50   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:50     3       0        0       0       2          1        0
+07/09/20 21:06:50 0 job proc(s) currently held
+07/09/20 21:06:50 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.01804902322966305; EventCycleTimeMax = 0.05145001411437988; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01398947238922119; SleepCycleTimeCount = 9.0; SubmitCycleTimeCount = 10.0; SubmitCycleTimeMax = 0.04571294784545898; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.1398947238922119; LogProcessCycleTimeStd = 0.01107107746381719; SubmitCycleTimeStd = 0.02110849905536449; LogProcessCycleTimeAvg = 0.01317187717982701; EventCycleTimeMin = 0.01163196563720703; LogProcessCycleTimeMax = 0.0360720157623291; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.09220314025878906; LogProcessCycleTimeCount = 7.0; EventCycleTimeSum = 0.2746939659118652; SleepCycleTimeSum = 44.70695900917053; SleepCycleTimeAvg = 4.967439889907837; SleepCycleTimeStd = 0.3032761189140678; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 9.0; EventCycleTimeAvg = 0.03052155176798503; ]
+07/09/20 21:06:55 Submitting HTCondor Node clean_up_local_level_3_0 job(s)...
+07/09/20 21:06:55 Adding a DAGMan workflow log /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log
+07/09/20 21:06:55 Masking the events recorded in the DAGMAN workflow log
+07/09/20 21:06:55 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+07/09/20 21:06:55 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'clean_up_local_level_3_0 -a +DAGManJobId' '=' '10 -a DAGManJobId' '=' '10 -batch-name helloworld-0.dag+10 -a submit_event_notes' '=' 'DAG' 'Node:' 'clean_up_local_level_3_0 -a dagman_log' '=' '/home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a priority=1000 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"stage_out_local_local_0_0" 00/00/clean_up_local_level_3_0.sub
+07/09/20 21:06:55 From submit: Submitting job(s).
+07/09/20 21:06:55 From submit: 1 job(s) submitted to cluster 14.
+07/09/20 21:06:55 	assigned HTCondor ID (14.0.0)
+07/09/20 21:06:55 Submitting HTCondor Node register_local_0_0 job(s)...
+07/09/20 21:06:55 Adding a DAGMan workflow log /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log
+07/09/20 21:06:55 Masking the events recorded in the DAGMAN workflow log
+07/09/20 21:06:55 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+07/09/20 21:06:55 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'register_local_0_0 -a +DAGManJobId' '=' '10 -a DAGManJobId' '=' '10 -batch-name helloworld-0.dag+10 -a submit_event_notes' '=' 'DAG' 'Node:' 'register_local_0_0 -a dagman_log' '=' '/home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a priority=30 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"stage_out_local_local_0_0" 00/00/register_local_0_0.sub
+07/09/20 21:06:55 From submit: Submitting job(s).
+07/09/20 21:06:55 From submit: 1 job(s) submitted to cluster 15.
+07/09/20 21:06:55 	assigned HTCondor ID (15.0.0)
+07/09/20 21:06:55 Just submitted 2 jobs this cycle...
+07/09/20 21:06:55 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:06:55 Of 6 nodes total:
+07/09/20 21:06:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:06:55   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:06:55     3       0        2       0       0          1        0
+07/09/20 21:06:55 0 job proc(s) currently held
+07/09/20 21:06:55 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.0179903873930496; EventCycleTimeMax = 0.05145001411437988; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01957579092545943; SleepCycleTimeCount = 10.0; SubmitCycleTimeCount = 11.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.2153337001800537; LogProcessCycleTimeStd = 0.01107107746381719; SubmitCycleTimeStd = 0.02728164881023138; LogProcessCycleTimeAvg = 0.01317187717982701; EventCycleTimeMin = 0.01163196563720703; LogProcessCycleTimeMax = 0.0360720157623291; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.09220314025878906; LogProcessCycleTimeCount = 7.0; EventCycleTimeSum = 0.2867538928985596; SleepCycleTimeSum = 49.71409511566162; SleepCycleTimeAvg = 4.971409511566162; SleepCycleTimeStd = 0.2862068880836135; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 10.0; EventCycleTimeAvg = 0.02867538928985596; ]
+07/09/20 21:07:00 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:07:00 Reassigning the id of job clean_up_local_level_3_0 from (14.0.0) to (14.0.0)
+07/09/20 21:07:00 Event: ULOG_SUBMIT for HTCondor Node clean_up_local_level_3_0 (14.0.0) {07/09/20 21:06:55}
+07/09/20 21:07:00 Number of idle job procs: 1
+07/09/20 21:07:00 Reassigning the id of job register_local_0_0 from (15.0.0) to (15.0.0)
+07/09/20 21:07:00 Event: ULOG_SUBMIT for HTCondor Node register_local_0_0 (15.0.0) {07/09/20 21:06:55}
+07/09/20 21:07:00 Number of idle job procs: 2
+07/09/20 21:07:05 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:07:05 Event: ULOG_EXECUTE for HTCondor Node register_local_0_0 (15.0.0) {07/09/20 21:07:00}
+07/09/20 21:07:05 Number of idle job procs: 1
+07/09/20 21:07:05 Event: ULOG_EXECUTE for HTCondor Node clean_up_local_level_3_0 (14.0.0) {07/09/20 21:07:00}
+07/09/20 21:07:05 Number of idle job procs: 0
+07/09/20 21:07:05 Event: ULOG_JOB_TERMINATED for HTCondor Node register_local_0_0 (15.0.0) {07/09/20 21:07:02}
+07/09/20 21:07:05 Number of idle job procs: 0
+07/09/20 21:07:05 Node register_local_0_0 job proc (15.0.0) completed successfully.
+07/09/20 21:07:05 Node register_local_0_0 job completed
+07/09/20 21:07:05 Running POST script of Node register_local_0_0...
+07/09/20 21:07:05 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+07/09/20 21:07:05 Event: ULOG_JOB_TERMINATED for HTCondor Node clean_up_local_level_3_0 (14.0.0) {07/09/20 21:07:02}
+07/09/20 21:07:05 Number of idle job procs: 0
+07/09/20 21:07:05 Node clean_up_local_level_3_0 job proc (14.0.0) completed successfully.
+07/09/20 21:07:05 Node clean_up_local_level_3_0 job completed
+07/09/20 21:07:05 Running POST script of Node clean_up_local_level_3_0...
+07/09/20 21:07:05 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+07/09/20 21:07:05 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:07:05 Of 6 nodes total:
+07/09/20 21:07:05  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:07:05   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:07:05     3       0        0       2       0          1        0
+07/09/20 21:07:05 0 job proc(s) currently held
+07/09/20 21:07:05 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.0229657311331303; EventCycleTimeMax = 0.08049201965332031; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01672183550321139; SleepCycleTimeCount = 12.0; SubmitCycleTimeCount = 13.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.217383861541748; LogProcessCycleTimeStd = 0.01314482827163346; SubmitCycleTimeStd = 0.02586064245303895; LogProcessCycleTimeAvg = 0.0156090259552002; EventCycleTimeMin = 0.01128101348876953; LogProcessCycleTimeMax = 0.03930115699768066; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.1404812335968018; LogProcessCycleTimeCount = 9.0; EventCycleTimeSum = 0.3785269260406494; SleepCycleTimeSum = 59.7386109828949; SleepCycleTimeAvg = 4.978217581907908; SleepCycleTimeStd = 0.2593811171024022; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 12.0; EventCycleTimeAvg = 0.03154391050338745; ]
+07/09/20 21:07:05 Initializing user log writer for /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log, (15.0.0)
+07/09/20 21:07:05 Initializing user log writer for /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log, (14.0.0)
+07/09/20 21:07:10 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:07:10 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node register_local_0_0 (15.0.0) {07/09/20 21:07:05}
+07/09/20 21:07:10 POST Script of node register_local_0_0 completed successfully.
+07/09/20 21:07:10 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node clean_up_local_level_3_0 (14.0.0) {07/09/20 21:07:05}
+07/09/20 21:07:10 POST Script of node clean_up_local_level_3_0 completed successfully.
+07/09/20 21:07:10 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:07:10 Of 6 nodes total:
+07/09/20 21:07:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:07:10   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:07:10     5       0        0       0       1          0        0
+07/09/20 21:07:10 0 job proc(s) currently held
+07/09/20 21:07:10 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.02240417355117593; EventCycleTimeMax = 0.08049201965332031; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.0156102010181972; SleepCycleTimeCount = 13.0; SubmitCycleTimeCount = 14.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.2185428142547607; LogProcessCycleTimeStd = 0.01239408006045987; SubmitCycleTimeStd = 0.02519184394959956; LogProcessCycleTimeAvg = 0.01555881500244141; EventCycleTimeMin = 0.01128101348876953; LogProcessCycleTimeMax = 0.03930115699768066; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.1555881500244141; LogProcessCycleTimeCount = 10.0; EventCycleTimeSum = 0.4255681037902832; SleepCycleTimeSum = 64.94101595878601; SleepCycleTimeAvg = 4.995462766060462; SleepCycleTimeStd = 0.2560042378765909; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 13.0; EventCycleTimeAvg = 0.03273600798386794; ]
+07/09/20 21:07:15 Submitting HTCondor Node cleanup_helloworld_0_local job(s)...
+07/09/20 21:07:15 Adding a DAGMan workflow log /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log
+07/09/20 21:07:15 Masking the events recorded in the DAGMAN workflow log
+07/09/20 21:07:15 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36
+07/09/20 21:07:15 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'cleanup_helloworld_0_local -a +DAGManJobId' '=' '10 -a DAGManJobId' '=' '10 -batch-name helloworld-0.dag+10 -a submit_event_notes' '=' 'DAG' 'Node:' 'cleanup_helloworld_0_local -a dagman_log' '=' '/home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27,35,36" -a priority=1000 -a +DAGNodeRetry' '=' '0 -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"clean_up_local_level_3_0" 00/00/cleanup_helloworld_0_local.sub
+07/09/20 21:07:15 From submit: Submitting job(s).
+07/09/20 21:07:15 From submit: 1 job(s) submitted to cluster 16.
+07/09/20 21:07:15 	assigned HTCondor ID (16.0.0)
+07/09/20 21:07:15 Just submitted 1 job this cycle...
+07/09/20 21:07:15 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:07:15 Of 6 nodes total:
+07/09/20 21:07:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:07:15   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:07:15     5       0        1       0       0          0        0
+07/09/20 21:07:15 0 job proc(s) currently held
+07/09/20 21:07:15 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.02153858477887641; EventCycleTimeMax = 0.08049201965332031; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.0171534538269043; SleepCycleTimeCount = 14.0; SubmitCycleTimeCount = 15.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.2573018074035645; LogProcessCycleTimeStd = 0.01239408006045987; SubmitCycleTimeStd = 0.02500045593753525; LogProcessCycleTimeAvg = 0.01555881500244141; EventCycleTimeMin = 0.01128101348876953; LogProcessCycleTimeMax = 0.03930115699768066; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.1555881500244141; LogProcessCycleTimeCount = 10.0; EventCycleTimeSum = 0.4554669857025146; SleepCycleTimeSum = 69.94654703140259; SleepCycleTimeAvg = 4.996181930814471; SleepCycleTimeStd = 0.2459756347775598; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 14.0; EventCycleTimeAvg = 0.03253335612160819; ]
+07/09/20 21:07:20 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:07:20 Reassigning the id of job cleanup_helloworld_0_local from (16.0.0) to (16.0.0)
+07/09/20 21:07:20 Event: ULOG_SUBMIT for HTCondor Node cleanup_helloworld_0_local (16.0.0) {07/09/20 21:07:15}
+07/09/20 21:07:20 Number of idle job procs: 1
+07/09/20 21:07:20 Event: ULOG_EXECUTE for HTCondor Node cleanup_helloworld_0_local (16.0.0) {07/09/20 21:07:17}
+07/09/20 21:07:20 Number of idle job procs: 0
+07/09/20 21:07:20 Event: ULOG_JOB_TERMINATED for HTCondor Node cleanup_helloworld_0_local (16.0.0) {07/09/20 21:07:19}
+07/09/20 21:07:20 Number of idle job procs: 0
+07/09/20 21:07:20 Node cleanup_helloworld_0_local job proc (16.0.0) completed successfully.
+07/09/20 21:07:20 Node cleanup_helloworld_0_local job completed
+07/09/20 21:07:20 Running POST script of Node cleanup_helloworld_0_local...
+07/09/20 21:07:20 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+07/09/20 21:07:20 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:07:20 Of 6 nodes total:
+07/09/20 21:07:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:07:20   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:07:20     5       0        0       1       0          0        0
+07/09/20 21:07:20 0 job proc(s) currently held
+07/09/20 21:07:20 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.02097211427433543; EventCycleTimeMax = 0.08049201965332031; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01612392067909241; SleepCycleTimeCount = 15.0; SubmitCycleTimeCount = 16.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.2579827308654785; LogProcessCycleTimeStd = 0.01176104456781993; SubmitCycleTimeStd = 0.02450129846868176; LogProcessCycleTimeAvg = 0.01563874157992276; EventCycleTimeMin = 0.01128101348876953; LogProcessCycleTimeMax = 0.03930115699768066; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.1720261573791504; LogProcessCycleTimeCount = 11.0; EventCycleTimeSum = 0.49965500831604; SleepCycleTimeSum = 74.95193696022034; SleepCycleTimeAvg = 4.996795797348023; SleepCycleTimeStd = 0.237039975908273; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 15.0; EventCycleTimeAvg = 0.033310333887736; ]
+07/09/20 21:07:21 Initializing user log writer for /home/scitech/shared-data/workflow/scitech/pegasus/helloworld/run0001/./helloworld-0.dag.nodes.log, (16.0.0)
+07/09/20 21:07:25 Currently monitoring 1 HTCondor log file(s)
+07/09/20 21:07:25 Event: ULOG_POST_SCRIPT_TERMINATED for HTCondor Node cleanup_helloworld_0_local (16.0.0) {07/09/20 21:07:21}
+07/09/20 21:07:25 POST Script of node cleanup_helloworld_0_local completed successfully.
+07/09/20 21:07:25 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:07:25 Of 6 nodes total:
+07/09/20 21:07:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:07:25   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:07:25     6       0        0       0       0          0        0
+07/09/20 21:07:25 0 job proc(s) currently held
+07/09/20 21:07:25 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.02036891590095798; EventCycleTimeMax = 0.08049201965332031; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01523510147543515; SleepCycleTimeCount = 16.0; SubmitCycleTimeCount = 17.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.2589967250823975; LogProcessCycleTimeStd = 0.01140581164227425; SubmitCycleTimeStd = 0.0240046665836279; LogProcessCycleTimeAvg = 0.01503700017929077; EventCycleTimeMin = 0.01128101348876953; LogProcessCycleTimeMax = 0.03930115699768066; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.1804440021514893; LogProcessCycleTimeCount = 12.0; EventCycleTimeSum = 0.5245890617370605; SleepCycleTimeSum = 79.15802597999573; SleepCycleTimeAvg = 4.947376623749733; SleepCycleTimeStd = 0.3025196891766939; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 16.0; EventCycleTimeAvg = 0.03278681635856628; ]
+07/09/20 21:07:25 All jobs Completed!
+07/09/20 21:07:25 Note: 0 total job deferrals because of -MaxJobs limit (0)
+07/09/20 21:07:25 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+07/09/20 21:07:25 Note: 0 total job deferrals because of node category throttles
+07/09/20 21:07:25 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+07/09/20 21:07:25 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+07/09/20 21:07:25 DAG status: 0 (DAG_STATUS_OK)
+07/09/20 21:07:25 Of 6 nodes total:
+07/09/20 21:07:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+07/09/20 21:07:25   ===     ===      ===     ===     ===        ===      ===
+07/09/20 21:07:25     6       0        0       0       0          0        0
+07/09/20 21:07:25 0 job proc(s) currently held
+07/09/20 21:07:25 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.02036891590095798; EventCycleTimeMax = 0.08049201965332031; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01523510147543515; SleepCycleTimeCount = 16.0; SubmitCycleTimeCount = 17.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.2589967250823975; LogProcessCycleTimeStd = 0.01140581164227425; SubmitCycleTimeStd = 0.0240046665836279; LogProcessCycleTimeAvg = 0.01503700017929077; EventCycleTimeMin = 0.01128101348876953; LogProcessCycleTimeMax = 0.03930115699768066; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.1804440021514893; LogProcessCycleTimeCount = 12.0; EventCycleTimeSum = 0.5245890617370605; SleepCycleTimeSum = 79.15802597999573; SleepCycleTimeAvg = 4.947376623749733; SleepCycleTimeStd = 0.3025196891766939; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 16.0; EventCycleTimeAvg = 0.03278681635856628; ]
+07/09/20 21:07:25 Wrote metrics file helloworld-0.dag.metrics.
+07/09/20 21:07:25 Reporting metrics to Pegasus metrics server(s); output is in helloworld-0.dag.metrics.out.
+07/09/20 21:07:25 Running command </usr/libexec/condor/condor_dagman_metrics_reporter -f helloworld-0.dag.metrics -t 100>
+07/09/20 21:07:25 Warning: mysin has length 0 (ignore if produced by DAGMan; see gittrac #4987, #5031)
+07/09/20 21:07:25 DAGMan Runtime Statistics: [ EventCycleTimeStd = 0.02036891590095798; EventCycleTimeMax = 0.08049201965332031; SubmitCycleTimeMin = 0.0004179477691650391; SubmitCycleTimeAvg = 0.01523510147543515; SleepCycleTimeCount = 16.0; SubmitCycleTimeCount = 17.0; SubmitCycleTimeMax = 0.0754389762878418; SleepCycleTimeMin = 4.201776027679443; SubmitCycleTimeSum = 0.2589967250823975; LogProcessCycleTimeStd = 0.01140581164227425; SubmitCycleTimeStd = 0.0240046665836279; LogProcessCycleTimeAvg = 0.01503700017929077; EventCycleTimeMin = 0.01128101348876953; LogProcessCycleTimeMax = 0.03930115699768066; LogProcessCycleTimeMin = 0.005761146545410156; LogProcessCycleTimeSum = 0.1804440021514893; LogProcessCycleTimeCount = 12.0; EventCycleTimeSum = 0.5245890617370605; SleepCycleTimeSum = 79.15802597999573; SleepCycleTimeAvg = 4.947376623749733; SleepCycleTimeStd = 0.3025196891766939; SleepCycleTimeMax = 5.250202178955078; EventCycleTimeCount = 16.0; EventCycleTimeAvg = 0.03278681635856628; ]
+07/09/20 21:07:25 **** condor_scheduniv_exec.10.0 (condor_DAGMAN) pid 2252 EXITING WITH STATUS 0
