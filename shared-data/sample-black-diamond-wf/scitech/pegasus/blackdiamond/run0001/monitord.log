@@ -1,0 +1,55 @@
+2020-07-10 14:45:07,393:INFO:pegasus-monitord(58): pegasus-monitord starting - pid 613 
+2020-07-10 14:45:07,411:INFO:pegasus-monitord(455): Final Command line options are: ['-N', 'blackdiamond-0.dag.dagman.out']
+2020-07-10 14:45:07,427:INFO:Pegasus.monitoring.event_output.MultiplexEventSink(508): Multiplexed Event Sink Connection Properties  {'amqp.url': 'amqp://friend:donatedata@msgs.pegasus.isi.edu:5672/prod/workflows', 'default.url': 'sqlite:////home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.stampede.db'}
+2020-07-10 14:45:07,428:INFO:Pegasus.monitoring.event_output(629): Connecting workflow event sink to amqp://friend:donatedata@msgs.pegasus.isi.edu:5672/prod/workflows
+2020-07-10 14:45:07,429:INFO:Pegasus.monitoring.event_output.AMQPEventSink(325): Encoder used <function json_encode at 0x7fe4a29c6488> Properties received {'url': 'amqp://friend:donatedata@msgs.pegasus.isi.edu:5672/prod/workflows'}
+2020-07-10 14:45:07,431:INFO:Pegasus.monitoring.event_output.AMQPEventSink(376): Connecting to host: msgs.pegasus.isi.edu:5672 virtual host: prod exchange: workflows with user: friend ssl: False
+2020-07-10 14:45:07,431:INFO:Pegasus.monitoring.event_output(703): output type=AMQP namespace=stampede. name=msgs.pegasus.isi.edu:5672//prod/workflows
+2020-07-10 14:45:07,434:INFO:Pegasus.monitoring.event_output(629): Connecting workflow event sink to sqlite:////home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.stampede.db
+Created Pegasus database in: sqlite:////home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.stampede.db
+2020-07-10 14:45:07,610:INFO:pika.adapters.utils.connection_workflow(179): Pika version 1.1.0 connecting to ('128.9.35.235', 5672)
+2020-07-10 14:45:07,685:INFO:pika.adapters.utils.io_services_utils(345): Socket connected: <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('172.17.0.2', 34012), raddr=('128.9.35.235', 5672)>
+2020-07-10 14:45:07,687:INFO:pika.adapters.utils.connection_workflow(428): Streaming transport linked up: (<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fe4a0f0fdd8>, _StreamingProtocolShim: <SelectConnection PROTOCOL transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fe4a0f0fdd8> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>).
+2020-07-10 14:45:07,913:INFO:pika.adapters.utils.connection_workflow(293): AMQPConnector - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fe4a0f0fdd8> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>
+2020-07-10 14:45:07,915:INFO:pika.adapters.utils.connection_workflow(725): AMQPConnectionWorkflow - reporting success: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fe4a0f0fdd8> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>
+2020-07-10 14:45:07,915:INFO:pika.adapters.blocking_connection(453): Connection workflow succeeded: <SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fe4a0f0fdd8> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>
+2020-07-10 14:45:07,916:INFO:pika.adapters.blocking_connection(1247): Created channel=1
+Your database is compatible with Pegasus version: 5.0.0dev
+2020-07-10 14:45:08,131:INFO:Pegasus.monitoring.event_output(703): output type=DB namespace=stampede. name=sqlite:////home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.stampede.db
+2020-07-10 14:45:08,132:INFO:Pegasus.monitoring.event_output(629): Connecting workflow event sink to sqlite:////home/scitech/.pegasus/workflow.db
+Your database is compatible with Pegasus version: 5.0.0dev
+2020-07-10 14:45:08,472:INFO:Pegasus.monitoring.event_output(703): output type=DB namespace=dashboard. name=sqlite:////home/scitech/.pegasus/workflow.db
+2020-07-10 14:45:08,473:INFO:pegasus-monitord(1247): monitord started in fast start mode
+2020-07-10 14:45:08,503:INFO:Pegasus.monitoring.workflow(461): cannot open state file /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/monitord.info, continuing without state...
+2020-07-10 14:45:08,503:INFO:Pegasus.monitoring.workflow(1148): creating new file /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/jobstate.log
+2020-07-10 14:45:08,504:INFO:Pegasus.monitoring.workflow(1158): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
+2020-07-10 14:45:08,506:INFO:Pegasus.monitoring.notifications(474): loading notifications from /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.notify
+2020-07-10 14:45:08,811:INFO:Pegasus.monitoring.workflow(205): Parsing DAG file /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.dag
+2020-07-10 14:45:08,818:INFO:pegasus-monitord(974): Using DAGMan version 8.8.9 80809
+2020-07-10 14:45:08,819:INFO:pegasus-monitord(949): DAGMan runs at pid 612
+2020-07-10 14:45:08,823:INFO:pegasus-monitord(955): using dag blackdiamond-0.dag
+2020-07-10 14:45:08,824:INFO:Pegasus.monitoring.workflow(811): DAGMan starting with condor id 1.0
+2020-07-10 14:46:36,973:INFO:Pegasus.monitoring.workflow(2467): Populating locations corresponding to succeeded registration job  /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/00/00/register_local_0_0.in 
+2020-07-10 14:47:07,721:INFO:Pegasus.monitoring.workflow(2467): Populating locations corresponding to succeeded registration job  /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/00/00/register_local_1_0.in 
+2020-07-10 14:47:23,090:INFO:Pegasus.monitoring.workflow(2467): Populating locations corresponding to succeeded registration job  /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/00/00/register_local_2_0.in 
+2020-07-10 14:47:38,336:INFO:pegasus-monitord(927): DAGMan blackdiamond-0.dag finished with exit code 0
+2020-07-10 14:47:39,354:INFO:pegasus-monitord(1427): workflow /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.dag.dagman.out ended
+2020-07-10 14:47:39,358:INFO:Pegasus.monitoring.workflow(1377): recovery file deleted: /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/monitord.recover
+2020-07-10 14:47:39,361:INFO:pegasus-monitord(1665): finishing workflow: /home/scitech/shared-data/sample-black-diamond-wf/scitech/pegasus/blackdiamond/run0001/blackdiamond-0.dag.dagman.out
+2020-07-10 14:47:39,361:INFO:pegasus-monitord(1719): finishing notifications...
+2020-07-10 14:47:39,362:INFO:pegasus-monitord(1727): monitord process 613 exiting with 0
+2020-07-10 14:47:39,363:INFO:pegasus-monitord(197): DB flushing beginning
+2020-07-10 14:47:43,340:INFO:pika.adapters.blocking_connection(788): Closing connection (200): Normal shutdown
+2020-07-10 14:47:43,342:INFO:pika.channel(534): Closing channel (200): 'Normal shutdown' on <Channel number=1 OPEN conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fe4a0f0fdd8> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>>
+2020-07-10 14:47:43,436:INFO:pika.channel(1119): Received <Channel.CloseOk> on <Channel number=1 CLOSING conn=<SelectConnection OPEN transport=<pika.adapters.utils.io_services_utils._AsyncPlaintextTransport object at 0x7fe4a0f0fdd8> params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>>
+2020-07-10 14:47:43,437:INFO:pika.connection(1295): Closing connection (200): 'Normal shutdown'
+2020-07-10 14:47:43,513:INFO:pika.adapters.utils.io_services_utils(732): Aborting transport connection: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('172.17.0.2', 34012), raddr=('128.9.35.235', 5672)>
+2020-07-10 14:47:43,514:INFO:pika.adapters.utils.io_services_utils(907): _AsyncTransportBase._initate_abort(): Initiating abrupt asynchronous transport shutdown: state=1; error=None; <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('172.17.0.2', 34012), raddr=('128.9.35.235', 5672)>
+2020-07-10 14:47:43,515:INFO:pika.adapters.utils.io_services_utils(870): Deactivating transport: state=1; <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('172.17.0.2', 34012), raddr=('128.9.35.235', 5672)>
+2020-07-10 14:47:43,516:INFO:pika.connection(1999): AMQP stack terminated, failed to connect, or aborted: opened=True, error-arg=None; pending-error=ConnectionClosedByClient: (200) 'Normal shutdown'
+2020-07-10 14:47:43,517:INFO:pika.connection(2065): Stack terminated due to ConnectionClosedByClient: (200) 'Normal shutdown'
+2020-07-10 14:47:43,518:INFO:pika.adapters.utils.io_services_utils(883): Closing transport socket and unlinking: state=3; <socket.socket fd=9, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('172.17.0.2', 34012), raddr=('128.9.35.235', 5672)>
+2020-07-10 14:47:43,519:INFO:pika.adapters.blocking_connection(525): User-initiated close: result=BlockingConnection__OnClosedArgs(connection=<SelectConnection CLOSED transport=None params=<ConnectionParameters host=msgs.pegasus.isi.edu port=5672 virtual_host=prod ssl=False>>, error=ConnectionClosedByClient: (200) 'Normal shutdown')
+2020-07-10 14:47:43,520:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1244): Executing final flush
+2020-07-10 14:47:43,627:INFO:Pegasus.db.dashboard_loader.DashboardLoader(397): Executing final flush
+2020-07-10 14:47:43,628:INFO:pegasus-monitord(213): DB flushing ended
