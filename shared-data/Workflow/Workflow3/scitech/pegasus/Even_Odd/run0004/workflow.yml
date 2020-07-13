@@ -1,0 +1,45 @@
+x-pegasus: {apiLang: python, createdBy: scitech, createdOn: '07-13-20T12:59:21Z'}
+pegasus: '5.0'
+name: Even_Odd
+jobs:
+- type: job
+  name: separate.py
+  id: ID0000001
+  arguments: []
+  uses:
+  - {lfn: nums2.txt, type: input}
+  - {lfn: nums1.txt, type: input}
+  - {lfn: even.txt, type: output, stageOut: true, registerReplica: true}
+  - {lfn: nums5.txt, type: input}
+  - {lfn: odd.txt, type: output, stageOut: true, registerReplica: true}
+  - {lfn: nums4.txt, type: input}
+  - {lfn: nums3.txt, type: input}
+- type: job
+  name: count.py
+  id: ID0000002
+  arguments: [even.txt, even_count.txt]
+  uses:
+  - {lfn: even.txt, type: input}
+  - {lfn: even_count.txt, type: output, stageOut: true, registerReplica: true}
+- type: job
+  name: count.py
+  id: ID0000003
+  arguments: [odd.txt, odd_count.txt]
+  uses:
+  - {lfn: odd.txt, type: input}
+  - {lfn: odd_count.txt, type: output, stageOut: true, registerReplica: true}
+- type: job
+  name: tar
+  id: ID0000004
+  arguments: [-cvzf, results.tar.gz, even_count.txt, odd_count.txt]
+  uses:
+  - {lfn: results.tar.gz, type: output, stageOut: true, registerReplica: true}
+  - {lfn: odd_count.txt, type: input}
+  - {lfn: even_count.txt, type: input}
+jobDependencies:
+- id: ID0000001
+  children: [ID0000003, ID0000002]
+- id: ID0000002
+  children: [ID0000004]
+- id: ID0000003
+  children: [ID0000004]
