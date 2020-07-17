@@ -1,0 +1,265 @@
+- invocation: True
+  version: 3.0
+  start: 2020-07-13T12:51:58.132-07:00
+  duration: 444.965
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "Even_Odd"
+  wf-stamp: "2020-07-13T19:51:21+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 3b03a42c9e2c
+  pid: 32476
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-07-13T12:51:58.147-07:00
+    duration: 444.950
+    pid: 32488
+    usage:
+      utime: 0.173
+      stime: 0.076
+      maxrss: 17800
+      minflt: 10117
+      majflt: 0
+      nswap: 0
+      inblock: 8
+      outblock: 24
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 174
+      nivcsw: 402
+    status:
+      raw: 256
+      regular_exitcode: 1
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2111
+      inode: 933633
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-11T21:33:11-07:00
+      atime: 2020-07-11T21:33:11-07:00
+      ctime: 2020-07-11T21:33:18-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 28.0
+  cwd: /home/scitech/shared-data/Workflow/Workflow3/scitech/pegasus/Even_Odd/run0003
+  usage:
+    utime: 0.007
+    stime: 0.012
+    maxrss: 5384
+    minflt: 428
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 20
+    nivcsw: 7
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 3b03a42c9e2c
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 2038544
+    ram_free: 172604
+    ram_shared: 384
+    ram_buffer: 155216
+    swap_total: 1048572
+    swap_free: 1030640
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 0.92
+    load_min5: 0.37
+    load_min15: 0.24
+    procs_total: 46
+    procs_running: 3
+    procs_sleeping: 37
+    procs_zombie: 4
+    procs_vmsize: 11643988
+    procs_rss: 1135308
+    task_total: 174
+    task_running: 3
+    task_sleeping: 167
+    task_zombie: 4
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 486
+      inode: 7483527
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-13T12:51:24-07:00
+      atime: 2020-07-13T12:51:24-07:00
+      ctime: 2020-07-13T12:51:24-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_32464/ks.out.2qzpgU
+      descriptor: 3
+      mode: 0o100600
+      size: 1753
+      inode: 800054
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-13T12:59:23-07:00
+      atime: 2020-07-13T12:51:58-07:00
+      ctime: 2020-07-13T12:59:23-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2020-07-13 12:51:58,353    INFO:  Reading URL pairs from stdin
+        2020-07-13 12:51:58,356    INFO:  1 transfers loaded
+        2020-07-13 12:51:58,356    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-07-13 12:51:58,356    INFO:  LD_LIBRARY_PATH=
+        2020-07-13 12:51:58,432    INFO:  --------------------------------------------------------------------------------
+        2020-07-13 12:51:58,432    INFO:  Starting transfers - attempt 1
+        2020-07-13 12:52:00,404   ERROR:  Expected local file does not exist: /Users/ssrujanaa/Documents/GitHub/Scientific-Workflows/shared-data/Workflow/Workflow3/separate.py
+        2020-07-13 12:54:19,372    INFO:  --------------------------------------------------------------------------------
+        2020-07-13 12:54:19,372    INFO:  Starting transfers - attempt 2
+        2020-07-13 12:54:21,381   ERROR:  Expected local file does not exist: /Users/ssrujanaa/Documents/GitHub/Scientific-Workflows/shared-data/Workflow/Workflow3/separate.py
+        2020-07-13 12:59:21,077    INFO:  --------------------------------------------------------------------------------
+        2020-07-13 12:59:21,077    INFO:  Starting transfers - attempt 3
+        2020-07-13 12:59:23,083   ERROR:  Expected local file does not exist: /Users/ssrujanaa/Documents/GitHub/Scientific-Workflows/shared-data/Workflow/Workflow3/separate.py
+        2020-07-13 12:59:23,083    INFO:  --------------------------------------------------------------------------------
+        2020-07-13 12:59:23,083    INFO:  Stats: Total 3 transfers, 0.0 B transferred in 445 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2020-07-13 12:59:23,083    INFO:         Between sites local->local : 3 transfers, 0.0 B transferred in 445 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2020-07-13 12:59:23,084 CRITICAL:  Some transfers failed! See above, and possibly stderr.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_32464/ks.err.uRBb2s
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 800055
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-07-13T12:51:58-07:00
+      atime: 2020-07-13T12:51:58-07:00
+      ctime: 2020-07-13T12:51:58-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_32464/ks.meta.wY42N1
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 800056
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-07-13T12:51:58-07:00
+      atime: 2020-07-13T12:51:58-07:00
+      ctime: 2020-07-13T12:51:58-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    kickstart:
+      error: 2
+      note: ignore error - it is just a warning
+      file_name: condor_exec.exe
+    logfile:
+      descriptor_number: 1
+      mode: 0o100644
+      size: 4096
+      inode: 7483710
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-13T12:59:23-07:00
+      atime: 2020-07-13T12:51:58-07:00
+      ctime: 2020-07-13T12:59:23-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+  environment:
+    "BATCH_SYSTEM": "HTCondor"
+    "CONDOR_JOBID": "28.0"
+    "KICKSTART_INTEGRITY_DATA": "/var/lib/condor/spool/local_univ_execute/dir_32464/ks.integrity.qhnVzA"
+    "KICKSTART_METADATA": "/var/lib/condor/spool/local_univ_execute/dir_32464/ks.meta.wY42N1"
+    "LANG": "en_US.UTF-8"
+    "PEGASUS_DAG_JOB_ID": "stage_in_remote_local_0_0"
+    "PEGASUS_HOME": "/home/scitech/pegasus/dist/pegasus-5.0.0dev"
+    "PEGASUS_SITE": "local"
+    "PEGASUS_WF_LABEL": "Even_Odd"
+    "PEGASUS_WF_UUID": "cbaa5df9-8b0e-4464-af02-dbf7e0088544"
+    "TEMP": "/var/lib/condor/spool/local_univ_execute/dir_32464"
+    "TMP": "/var/lib/condor/spool/local_univ_execute/dir_32464"
+    "TMPDIR": "/var/lib/condor/spool/local_univ_execute/dir_32464"
+    "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
+    "_CONDOR_ANCESTOR_269": "60279:1594655040:1439387427"
+    "_CONDOR_ANCESTOR_32464": "32476:1594669918:4121898037"
+    "_CONDOR_ANCESTOR_60279": "32464:1594669918:1600220885"
+    "_CONDOR_BIN": "/usr/bin"
+    "_CONDOR_JOB_AD": "/var/lib/condor/spool/local_univ_execute/dir_32464/.job.ad"
+    "_CONDOR_JOB_IWD": "/home/scitech/shared-data/Workflow/Workflow3/scitech/pegasus/Even_Odd/run0003"
+    "_CONDOR_JOB_PIDS": ""
+    "_CONDOR_MACHINE_AD": "/var/lib/condor/spool/local_univ_execute/dir_32464/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/var/lib/condor/spool/local_univ_execute/dir_32464"
+    "_CONDOR_SLOT": ""
+  limits:
+    RLIMIT_CPU_soft: unlimited
+    RLIMIT_CPU_hard: unlimited
+    RLIMIT_FSIZE_soft: unlimited
+    RLIMIT_FSIZE_hard: unlimited
+    RLIMIT_DATA_soft: unlimited
+    RLIMIT_DATA_hard: unlimited
+    RLIMIT_STACK_soft: unlimited
+    RLIMIT_STACK_hard: unlimited
+    RLIMIT_CORE_soft: 0
+    RLIMIT_CORE_hard: 0
+    RESOURCE_5_soft: unlimited
+    RESOURCE_5_hard: unlimited
+    RLIMIT_NPROC_soft: 4096
+    RLIMIT_NPROC_hard: unlimited
+    RLIMIT_NOFILE_soft: 4096
+    RLIMIT_NOFILE_hard: 4096
+    RLIMIT_MEMLOCK_soft: 83968000
+    RLIMIT_MEMLOCK_hard: 83968000
+    RLIMIT_AS_soft: unlimited
+    RLIMIT_AS_hard: unlimited
+    RLIMIT_LOCKS_soft: unlimited
+    RLIMIT_LOCKS_hard: unlimited
+    RLIMIT_SIGPENDING_soft: 7829
+    RLIMIT_SIGPENDING_hard: 7829
+    RLIMIT_MSGQUEUE_soft: 819200
+    RLIMIT_MSGQUEUE_hard: 819200
+    RLIMIT_NICE_soft: 0
+    RLIMIT_NICE_hard: 0
+    RLIMIT_RTPRIO_soft: 0
+    RLIMIT_RTPRIO_hard: 0
+    RESOURCE_15_soft: unlimited
+    RESOURCE_15_hard: unlimited
