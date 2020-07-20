@@ -1,30 +1,30 @@
 - invocation: True
   version: 3.0
-  start: 2020-07-20T10:17:35.441-07:00
-  duration: 89.903
-  transformation: "checkpoint_program.py"
+  start: 2020-07-20T14:22:58.767-07:00
+  duration: 89.909
+  transformation: "print_nums1.py"
   derivation: "ID0000001"
   resource: "condorpool"
   wf-label: "checkpoint-wf"
-  wf-stamp: "2020-07-20T17:16:45+00:00"
+  wf-stamp: "2020-07-20T21:22:10+00:00"
   interface: eth0
   hostaddr: 172.17.0.2
   hostname: 473c998606ff
-  pid: 1275
+  pid: 31976
   uid: 550
   user: scitech
   gid: 808
   group: scitech-group
   umask: 0o0022
   mainjob:
-    start: 2020-07-20T10:17:35.444-07:00
-    duration: 89.900
-    pid: 1276
+    start: 2020-07-20T14:22:58.773-07:00
+    duration: 89.904
+    pid: 31977
     usage:
-      utime: 0.041
-      stime: 0.011
-      maxrss: 10792
-      minflt: 1636
+      utime: 0.048
+      stime: 0.009
+      maxrss: 10664
+      minflt: 1631
       majflt: 0
       nswap: 0
       inblock: 0
@@ -33,38 +33,37 @@
       msgrcv: 0
       nsignals: 0
       nvcsw: 92
-      nivcsw: 2
+      nivcsw: 8
     status:
       raw: 9
       signalled_signal: 9
       singalled_name: "Killed"
       corefile: false
     executable:
-      file_name: /var/lib/condor/execute/dir_1121/checkpoint_program_py
+      file_name: /var/lib/condor/execute/dir_31821/print_nums1_py
       mode: 0o100755
-      size: 3290
-      inode: 1329237
+      size: 1493
+      inode: 1329246
       nlink: 1
       blksize: 4096
       blocks: 8
-      mtime: 2020-07-20T10:17:34-07:00
-      atime: 2020-07-20T10:17:35-07:00
-      ctime: 2020-07-20T10:17:34-07:00
+      mtime: 2020-07-20T14:22:57-07:00
+      atime: 2020-07-20T14:22:58-07:00
+      ctime: 2020-07-20T14:22:58-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     argument_vector:
-      - "180"
     procs:
   jobids:
-    condor: 5.0
-  cwd: /var/lib/condor/execute/dir_1121
+    condor: 96.0
+  cwd: /var/lib/condor/execute/dir_31821
   usage:
     utime: 0.001
-    stime: 0.003
-    maxrss: 2352
-    minflt: 215
+    stime: 0.006
+    maxrss: 2268
+    minflt: 286
     majflt: 0
     nswap: 0
     inblock: 0
@@ -73,7 +72,7 @@
     msgrcv: 0
     nsignals: 0
     nvcsw: 3
-    nivcsw: 4
+    nivcsw: 1
   machine:
     page-size: 4096
     uname_system: linux
@@ -81,64 +80,66 @@
     uname_release: 4.19.76-linuxkit
     uname_machine: x86_64
     ram_total: 2038544
-    ram_free: 435224
+    ram_free: 267232
     ram_shared: 476
-    ram_buffer: 149744
+    ram_buffer: 182484
     swap_total: 1048572
     swap_free: 1030128
     cpu_count: 6
     cpu_speed: 2600
     cpu_vendor: GenuineIntel
     cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
-    load_min1: 0.11
+    load_min1: 0.19
     load_min5: 0.07
-    load_min15: 0.03
-    procs_total: 23
+    load_min15: 0.07
+    procs_total: 40
     procs_running: 2
-    procs_sleeping: 21
-    procs_vmsize: 3803532
-    procs_rss: 452192
-    task_total: 59
+    procs_sleeping: 27
+    procs_zombie: 11
+    procs_vmsize: 6699892
+    procs_rss: 667012
+    task_total: 114
     task_running: 2
-    task_sleeping: 57
+    task_sleeping: 101
+    task_zombie: 11
   files:
+    saved_stated.txt:
+      lfn: "saved_stated.txt"
+      file_name: /var/lib/condor/execute/dir_31821/saved_stated.txt
+      mode: 0o100644
+      size: 2
+      inode: 1329247
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-20T14:23:58-07:00
+      atime: 2020-07-20T14:22:58-07:00
+      ctime: 2020-07-20T14:23:58-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: d029fa3a95e174a19934857f535eb9427d967218a36ea014b70ad704bc6c8d1c
+      checksum_timing: 0.00
     output.txt:
       lfn: "output.txt"
-      file_name: /var/lib/condor/execute/dir_1121/output.txt
+      file_name: /var/lib/condor/execute/dir_31821/output.txt
       mode: 0o100644
       size: 0
-      inode: 1329782
+      inode: 1329770
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-07-20T10:17:35-07:00
-      atime: 2020-07-20T10:17:35-07:00
-      ctime: 2020-07-20T10:17:35-07:00
+      mtime: 2020-07-20T14:22:58-07:00
+      atime: 2020-07-20T14:22:58-07:00
+      ctime: 2020-07-20T14:22:58-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
       output: True
       sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-      checksum_timing: 0.00
-    saved_state.txt:
-      lfn: "saved_state.txt"
-      file_name: /var/lib/condor/execute/dir_1121/saved_state.txt
-      mode: 0o100644
-      size: 2
-      inode: 1329239
-      nlink: 1
-      blksize: 4096
-      blocks: 8
-      mtime: 2020-07-20T10:18:35-07:00
-      atime: 2020-07-20T10:17:35-07:00
-      ctime: 2020-07-20T10:18:35-07:00
-      uid: 550
-      user: scitech
-      gid: 808
-      group: scitech-group
-      output: True
-      sha256: 39fa9ec190eee7b6f4dff1100d6343e10918d044c75eac8f9e9a2596173f80c9
       checksum_timing: 0.00
     stdin:
       file_name: /dev/null
@@ -156,48 +157,48 @@
       gid: 0
       group: root
     stdout:
-      file_name: /var/lib/condor/execute/dir_1121/output.txt
+      file_name: /var/lib/condor/execute/dir_31821/output.txt
       mode: 0o100644
       size: 0
-      inode: 1329782
+      inode: 1329770
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-07-20T10:17:35-07:00
-      atime: 2020-07-20T10:19:05-07:00
-      ctime: 2020-07-20T10:17:35-07:00
+      mtime: 2020-07-20T14:22:58-07:00
+      atime: 2020-07-20T14:24:28-07:00
+      ctime: 2020-07-20T14:22:58-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     stderr:
-      temporary_name: /var/lib/condor/execute/dir_1121/ks.err.Hsf0E1
+      temporary_name: /var/lib/condor/execute/dir_31821/ks.err.ABNLd9
       descriptor: 4
       mode: 0o100600
       size: 0
-      inode: 1329784
+      inode: 1329774
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-07-20T10:17:35-07:00
-      atime: 2020-07-20T10:17:35-07:00
-      ctime: 2020-07-20T10:17:35-07:00
+      mtime: 2020-07-20T14:22:58-07:00
+      atime: 2020-07-20T14:22:58-07:00
+      ctime: 2020-07-20T14:22:58-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     metadata:
-      temporary_name: /var/lib/condor/execute/dir_1121/ks.meta.AsIpWc
+      temporary_name: /var/lib/condor/execute/dir_31821/ks.meta.eS3TAc
       descriptor: 5
       mode: 0o100600
       size: 0
-      inode: 1329785
+      inode: 1329775
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-07-20T10:17:35-07:00
-      atime: 2020-07-20T10:17:35-07:00
-      ctime: 2020-07-20T10:17:35-07:00
+      mtime: 2020-07-20T14:22:58-07:00
+      atime: 2020-07-20T14:22:58-07:00
+      ctime: 2020-07-20T14:22:58-07:00
       uid: 550
       user: scitech
       gid: 808
@@ -210,49 +211,49 @@
       descriptor_number: 1
       mode: 0o100644
       size: 4096
-      inode: 1329245
+      inode: 1329253
       nlink: 1
       blksize: 4096
       blocks: 8
-      mtime: 2020-07-20T10:19:05-07:00
-      atime: 2020-07-20T10:17:34-07:00
-      ctime: 2020-07-20T10:19:05-07:00
+      mtime: 2020-07-20T14:24:28-07:00
+      atime: 2020-07-20T14:22:57-07:00
+      ctime: 2020-07-20T14:24:28-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
   environment:
     "BATCH_SYSTEM": "HTCondor"
-    "CONDOR_JOBID": "5.0"
-    "KICKSTART_INTEGRITY_DATA": "/var/lib/condor/execute/dir_1121/ks.integrity.bOjPdo"
-    "KICKSTART_METADATA": "/var/lib/condor/execute/dir_1121/ks.meta.AsIpWc"
+    "CONDOR_JOBID": "96.0"
+    "KICKSTART_INTEGRITY_DATA": "/var/lib/condor/execute/dir_31821/ks.integrity.a1r2Xf"
+    "KICKSTART_METADATA": "/var/lib/condor/execute/dir_31821/ks.meta.eS3TAc"
     "LANG": "en_US.UTF-8"
     "OMP_NUM_THREADS": "1"
-    "PATH": "/var/lib/condor/execute/dir_1121/pegasus-5.0.0dev-x86_64_rhel_7/bin:/usr/local/bin:/usr/bin"
-    "PEGASUS_DAG_JOB_ID": "checkpoint_program_py_ID0000001"
-    "PEGASUS_MULTIPART_DIR": "/var/lib/condor/execute/dir_1121/.pegasus.mulitpart.d"
+    "PATH": "/var/lib/condor/execute/dir_31821/pegasus-5.0.0dev-x86_64_rhel_7/bin:/usr/local/bin:/usr/bin"
+    "PEGASUS_DAG_JOB_ID": "print_nums1_py_ID0000001"
+    "PEGASUS_MULTIPART_DIR": "/var/lib/condor/execute/dir_31821/.pegasus.mulitpart.d"
     "PEGASUS_SITE": "condorpool"
     "PEGASUS_WF_LABEL": "checkpoint-wf"
-    "PEGASUS_WF_UUID": "fb9dc136-ae69-4b51-8c13-fdff6be6cbb5"
-    "PWD": "/var/lib/condor/execute/dir_1121"
+    "PEGASUS_WF_UUID": "635f9f66-5346-4f98-ad34-e4a4b71d02bb"
+    "PWD": "/var/lib/condor/execute/dir_31821"
     "SHLVL": "1"
-    "TEMP": "/var/lib/condor/execute/dir_1121"
-    "TMP": "/var/lib/condor/execute/dir_1121"
-    "TMPDIR": "/var/lib/condor/execute/dir_1121"
-    "_": "/var/lib/condor/execute/dir_1121/pegasus-5.0.0dev-x86_64_rhel_7/bin/pegasus-kickstart"
+    "TEMP": "/var/lib/condor/execute/dir_31821"
+    "TMP": "/var/lib/condor/execute/dir_31821"
+    "TMPDIR": "/var/lib/condor/execute/dir_31821"
+    "_": "/var/lib/condor/execute/dir_31821/pegasus-5.0.0dev-x86_64_rhel_7/bin/pegasus-kickstart"
     "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
-    "_CONDOR_ANCESTOR_1121": "1141:1595265454:4093909013"
     "_CONDOR_ANCESTOR_269": "280:1595265378:2517009639"
-    "_CONDOR_ANCESTOR_280": "1121:1595265453:564135842"
+    "_CONDOR_ANCESTOR_280": "31821:1595280176:564135872"
+    "_CONDOR_ANCESTOR_31821": "31841:1595280177:2308604124"
     "_CONDOR_BIN": "/usr/bin"
-    "_CONDOR_CHIRP_CONFIG": "/var/lib/condor/execute/dir_1121/.chirp.config"
-    "_CONDOR_JOB_AD": "/var/lib/condor/execute/dir_1121/.job.ad"
-    "_CONDOR_JOB_IWD": "/var/lib/condor/execute/dir_1121"
+    "_CONDOR_CHIRP_CONFIG": "/var/lib/condor/execute/dir_31821/.chirp.config"
+    "_CONDOR_JOB_AD": "/var/lib/condor/execute/dir_31821/.job.ad"
+    "_CONDOR_JOB_IWD": "/var/lib/condor/execute/dir_31821"
     "_CONDOR_JOB_PIDS": ""
-    "_CONDOR_MACHINE_AD": "/var/lib/condor/execute/dir_1121/.machine.ad"
-    "_CONDOR_SCRATCH_DIR": "/var/lib/condor/execute/dir_1121"
+    "_CONDOR_MACHINE_AD": "/var/lib/condor/execute/dir_31821/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/var/lib/condor/execute/dir_31821"
     "_CONDOR_SLOT": "slot1"
-    "pegasus_lite_work_dir": "/var/lib/condor/execute/dir_1121"
+    "pegasus_lite_work_dir": "/var/lib/condor/execute/dir_31821"
   limits:
     RLIMIT_CPU_soft: unlimited
     RLIMIT_CPU_hard: unlimited
@@ -289,11 +290,11 @@
 
 ---------------pegasus-multipart
 - integrity_verification_attempts:
-  - lfn: "checkpoint_program_py"
-    pfn: "checkpoint_program_py"
-    sha256: 3f3684a3cf2ca0e9f8b424ae15c570f908f917c4170922756768419f0d1dde19
+  - lfn: "print_nums1_py"
+    pfn: "print_nums1_py"
+    sha256: 28e30e00f0a5431177f12afde6ccd5bf8720beaef267e629c21dda2d423c22a3
     success: True
 - integrity_summary:
     succeeded: 1
     failed: 0
-    duration: 0.010
+    duration: 0.011
