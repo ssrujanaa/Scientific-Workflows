@@ -1,0 +1,180 @@
+- invocation: True
+  version: 3.0
+  start: 2020-07-20T10:51:16.462-07:00
+  duration: 4.170
+  transformation: "pegasus::cleanup"
+  derivation: "null"
+  resource: "local"
+  wf-label: "checkpoint-wf"
+  wf-stamp: "2020-07-20T17:45:23+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 473c998606ff
+  pid: 14275
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-07-20T10:51:16.467-07:00
+    duration: 4.163
+    pid: 14277
+    usage:
+      utime: 0.109
+      stime: 0.041
+      maxrss: 17560
+      minflt: 11786
+      majflt: 0
+      nswap: 0
+      inblock: 8
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 179
+      nivcsw: 147
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2111
+      inode: 933633
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-11T21:33:11-07:00
+      atime: 2020-07-11T21:33:11-07:00
+      ctime: 2020-07-11T21:33:18-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+    procs:
+  jobids:
+    condor: 46.0
+  cwd: /home/scitech/shared-data/Workflow5/scitech/pegasus/checkpoint-wf/run0002
+  usage:
+    utime: 0.004
+    stime: 0.005
+    maxrss: 5236
+    minflt: 324
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 16
+    nivcsw: 15
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 473c998606ff
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 2038544
+    ram_free: 423904
+    ram_shared: 476
+    ram_buffer: 157368
+    swap_total: 1048572
+    swap_free: 1030128
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 0.19
+    load_min5: 0.20
+    load_min15: 0.14
+    procs_total: 31
+    procs_running: 2
+    procs_sleeping: 25
+    procs_zombie: 4
+    procs_vmsize: 6304796
+    procs_rss: 680656
+    task_total: 94
+    task_running: 2
+    task_sleeping: 88
+    task_zombie: 4
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 464
+      inode: 8018619
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-20T10:45:24-07:00
+      atime: 2020-07-20T10:45:24-07:00
+      ctime: 2020-07-20T10:45:24-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_14273/ks.out.xh0Er7
+      descriptor: 3
+      mode: 0o100600
+      size: 1000
+      inode: 1329249
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-20T10:51:20-07:00
+      atime: 2020-07-20T10:51:16-07:00
+      ctime: 2020-07-20T10:51:20-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2020-07-20 10:51:16,573    INFO:  Reading URL pairs from stdin
+        2020-07-20 10:51:16,575    INFO:  2 transfers loaded
+        2020-07-20 10:51:16,575    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-07-20 10:51:16,575    INFO:  LD_LIBRARY_PATH=
+        2020-07-20 10:51:16,616    INFO:  --------------------------------------------------------------------------------
+        2020-07-20 10:51:16,616    INFO:  Starting transfers - attempt 1
+        2020-07-20 10:51:18,619    INFO:  /bin/rm -f '//home/scitech/shared-data/Workflow5/wf-scratch/LOCAL/scitech/pegasus/checkpoint-wf/run0002/./output.txt' 
+        2020-07-20 10:51:18,629    INFO:  /bin/rm -f '//home/scitech/shared-data/Workflow5/wf-scratch/LOCAL/scitech/pegasus/checkpoint-wf/run0002/./saved_stated.txt' 
+        2020-07-20 10:51:20,620    INFO:  --------------------------------------------------------------------------------
+        2020-07-20 10:51:20,620    INFO:  Stats: no local files in the transfer set
+        2020-07-20 10:51:20,620    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_14273/ks.err.MjwCGw
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 1329251
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-07-20T10:51:16-07:00
+      atime: 2020-07-20T10:51:16-07:00
+      ctime: 2020-07-20T10:51:16-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_14273/ks.meta.rIHDVV
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1329254
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-07-20T10:51:16-07:00
+      atime: 2020-07-20T10:51:16-07:00
+      ctime: 2020-07-20T10:51:16-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
