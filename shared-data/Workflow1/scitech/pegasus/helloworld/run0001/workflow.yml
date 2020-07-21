@@ -1,0 +1,11 @@
+pegasus: '5.0'
+name: helloworld
+jobs:
+- type: job
+  name: echo
+  id: ID0000001
+  stdout: out.txt
+  arguments: [Hello World!!!]
+  uses:
+  - {lfn: out.txt, type: output, stageOut: true, registerReplica: true}
+jobDependencies: []
