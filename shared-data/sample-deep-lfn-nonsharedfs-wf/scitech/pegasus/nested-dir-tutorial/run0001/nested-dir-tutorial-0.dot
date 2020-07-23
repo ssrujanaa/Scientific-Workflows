@@ -1,0 +1,23 @@
+digraph E {
+size="8.0,10.0"
+ratio=fill
+node [shape=ellipse]
+edge [arrowhead=normal, arrowsize=1.0]
+	"cleanup_nested-dir-tutorial_0_stage" [color=deepskyblue,style=filled,label="cleanup_nested-dir-tutorial_0_stage"]
+	"print_file_contents_ID0000001" [color=blueviolet,style=filled,label="print_file_contents_ID0000001"]
+	"clean_up_stage_level_3_0" [color=deepskyblue,style=filled,label="clean_up_stage_level_3_0"]
+	"clean_up_stage_level_4_0" [color=deepskyblue,style=filled,label="clean_up_stage_level_4_0"]
+	"stage_out_local_stage_0_0" [color=goldenrod,style=filled,label="stage_out_local_stage_0_0"]
+	"create_dir_nested-dir-tutorial_0_stage" [color=darkturquoise,style=filled,label="create_dir_nested-dir-tutorial_0_stage"]
+	"stage_in_local_stage_0_0" [color=gold,style=filled,label="stage_in_local_stage_0_0"]
+	"register_stage_0_0" [color=orange,style=filled,label="register_stage_0_0"]
+
+	"print_file_contents_ID0000001" -> "clean_up_stage_level_3_0"
+	"print_file_contents_ID0000001" -> "stage_out_local_stage_0_0"
+	"clean_up_stage_level_3_0" -> "cleanup_nested-dir-tutorial_0_stage"
+	"clean_up_stage_level_4_0" -> "cleanup_nested-dir-tutorial_0_stage"
+	"stage_out_local_stage_0_0" -> "clean_up_stage_level_4_0"
+	"stage_out_local_stage_0_0" -> "register_stage_0_0"
+	"create_dir_nested-dir-tutorial_0_stage" -> "stage_in_local_stage_0_0"
+	"stage_in_local_stage_0_0" -> "print_file_contents_ID0000001"
+}

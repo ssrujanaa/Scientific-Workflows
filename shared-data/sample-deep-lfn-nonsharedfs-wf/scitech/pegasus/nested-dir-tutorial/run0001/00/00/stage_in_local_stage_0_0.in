@@ -1,0 +1,37 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "dog_sounds.txt",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/home/scitech/shared-data/sample-deep-lfn-nonsharedfs-wf/nested-dir/dogs/dog_sounds.txt", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "stage", "url": "file:///tmp//scitech/pegasus/nested-dir-tutorial/run0001/00/00/dog_sounds.txt" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "print_file_contents",
+   "id": 2,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/scitech/shared-data/sample-deep-lfn-condorio-wf/print_file_contents.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "stage", "url": "file:///tmp//scitech/pegasus/nested-dir-tutorial/run0001/00/00/print_file_contents" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "cat_sounds.txt",
+   "id": 3,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/home/scitech/shared-data/sample-deep-lfn-nonsharedfs-wf/nested-dir/cats/cat_sounds.txt", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "stage", "url": "file:///tmp//scitech/pegasus/nested-dir-tutorial/run0001/00/00/cat_sounds.txt" }
+   ] }
+]
