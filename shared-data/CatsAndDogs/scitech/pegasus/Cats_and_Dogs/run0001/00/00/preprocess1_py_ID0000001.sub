@@ -1,0 +1,43 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : Cats_and_Dogs, Index = 0, Count = null
+# SUBMIT FILE NAME : preprocess1_py_ID0000001.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=95280ca4-598e-4f2a-a511-7f344f4a0521 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=preprocess1_py_ID0000001 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001//00/00/preprocess1_py_ID0000001.err
+executable = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001/00/00/preprocess1_py_ID0000001.sh
+initialdir = /home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001
+log = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001/Cats_and_Dogs-0.log
+notification = NEVER
+output = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001//00/00/preprocess1_py_ID0000001.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 20
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = Cat17.jpg,Cat25.jpg,Dog68.jpg,Dog25.jpg,Cat61.jpg,Dog17.jpg,Cat6.jpg,Dog88.jpg,Cat53.jpg,Dog92.jpg,Cat96.jpg,Dog61.jpg,Dog29.jpg,Cat10.jpg,Dog33.jpg,Cat41.jpg,Cat68.jpg,Dog76.jpg,Cat84.jpg,Cat37.jpg,Dog45.jpg,Cat21.jpg,Dog3.jpg,Cat64.jpg,Dog81.jpg,Cat99.jpg,Dog21.jpg,Cat56.jpg,Cat81.jpg,Dog64.jpg,Cat73.jpg,Cat30.jpg,Dog72.jpg,Cat13.jpg,Cat88.jpg,Cat45.jpg,Cat28.jpg,Dog10.jpg,Dog96.jpg,Dog53.jpg,Cat92.jpg,Dog49.jpg,Dog79.jpg,Dog36.jpg,Dog26.jpg,Cat69.jpg,Cat26.jpg,Cat34.jpg,Dog69.jpg,Dog7.jpg,Cat60.jpg,Cat77.jpg,Dog87.jpg,Cat87.jpg,Cat44.jpg,Dog60.jpg,Dog75.jpg,Cat40.jpg,Cat83.jpg,Cat97.jpg,Dog16.jpg,Cat5.jpg,Cat49.jpg,Dog44.jpg,Dog59.jpg,Dog93.jpg,Dog2.jpg,Dog50.jpg,Cat54.jpg,Cat72.jpg,Cat11.jpg,Dog32.jpg,Cat12.jpg,Cat55.jpg,Dog48.jpg,Cat38.jpg,Dog82.jpg,Dog22.jpg,Dog65.jpg,Cat82.jpg,Cat48.jpg,Cat65.jpg,Cat22.jpg,Cat9.jpg,Dog37.jpg,Cat33.jpg,Cat16.jpg,Cat93.jpg,Cat59.jpg,Cat0.jpg,Dog11.jpg,Dog54.jpg,Dog6.jpg,Dog71.jpg,Cat50.jpg,Dog97.jpg,Cat76.jpg,Dog51.jpg,Cat94.jpg,Cat51.jpg,Dog94.jpg,Dog78.jpg,Cat43.jpg,Dog35.jpg,Cat86.jpg,Cat27.jpg,Dog43.jpg,Dog8.jpg,Cat35.jpg,Dog86.jpg,Cat78.jpg,Cat4.jpg,Dog15.jpg,Dog1.jpg,Cat66.jpg,Dog31.jpg,Cat23.jpg,Dog63.jpg,Dog20.jpg,Cat71.jpg,Cat19.jpg,Cat98.jpg,Dog27.jpg,preprocess1_py,Dog58.jpg,Cat39.jpg,Cat1.jpg,Dog55.jpg,Cat47.jpg,Cat90.jpg,Dog98.jpg,Dog38.jpg,Dog74.jpg,Dog12.jpg,Dog91.jpg,Dog47.jpg,Cat15.jpg,Dog40.jpg,Cat32.jpg,Dog5.jpg,Cat58.jpg,Dog66.jpg,Dog83.jpg,Cat75.jpg,Dog70.jpg,Cat62.jpg,Dog23.jpg,Cat8.jpg,Dog19.jpg,Cat42.jpg,Dog77.jpg,Cat18.jpg,Dog42.jpg,Dog18.jpg,Cat7.jpg,Dog85.jpg,Cat52.jpg,Dog52.jpg,Cat95.jpg,Dog95.jpg,Dog34.jpg,Cat70.jpg,Dog62.jpg,Dog0.jpg,Cat36.jpg,Cat79.jpg,Dog89.jpg,Dog46.jpg,Dog14.jpg,Dog9.jpg,Dog57.jpg,Cat3.jpg,Cat85.jpg,Cat24.jpg,Dog28.jpg,Cat67.jpg,Dog80.jpg,Dog99.jpg,Dog56.jpg,Dog13.jpg,Dog39.jpg,Dog4.jpg,Cat14.jpg,Dog90.jpg,Cat57.jpg,Cat31.jpg,Dog73.jpg,Cat91.jpg,Cat2.jpg,Cat74.jpg,Dog30.jpg,Dog67.jpg,Dog24.jpg,Cat29.jpg,Cat46.jpg,Cat80.jpg,Dog41.jpg,Cat20.jpg,Cat89.jpg,Cat63.jpg,Dog84.jpg,/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001/00/00/stage_in_remote_local_0_0.meta,/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001/00/00/stage_in_local_local_0_0.meta,/home/scitech/pegasus/dist/pegasus-5.0.0dev/share/pegasus/sh/pegasus-lite-common.sh,/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001/pegasus-worker-5.0.0dev-x86_64_rhel_7.tar.gz
+transfer_output_files = labels.txt,resized_images.txt
+universe = vanilla
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "95280ca4-598e-4f2a-a511-7f344f4a0521"
++pegasus_wf_uuid = "95280ca4-598e-4f2a-a511-7f344f4a0521"
++pegasus_version = "5.0.0dev"
++pegasus_wf_name = "Cats_and_Dogs-0"
++pegasus_wf_time = "20200729T160640+0000"
++pegasus_wf_xformation = "preprocess1.py"
++pegasus_wf_dax_job_id = "ID0000001"
++pegasus_wf_dag_job_id = "preprocess1_py_ID0000001"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################
