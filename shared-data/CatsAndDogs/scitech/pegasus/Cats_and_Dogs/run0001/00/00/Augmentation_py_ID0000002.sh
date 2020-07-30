@@ -43,7 +43,7 @@ set +e
 job_ec=0
 pegasus_lite_section_start task_execute
 printf "\n######################[Pegasus Lite] Executing the user task ######################\n"  1>&2
-pegasus-kickstart  -n Augmentation.py -N ID0000002 -R condorpool  -s aug_labels.txt=aug_labels.txt -s augmentation.txt=augmentation.txt -L Cats_and_Dogs -T 2020-07-29T16:06:39+00:00 ./Augmentation_py 
+pegasus-kickstart  -n Augmentation.py -N ID0000002 -R condorpool  -s aug_labels.txt=aug_labels.txt -s augmentation.txt=augmentation.txt -L Cats_and_Dogs -T 2020-07-30T15:11:35+00:00 ./Augmentation_py 
 job_ec=$?
 pegasus_lite_section_end task_execute
 set -e

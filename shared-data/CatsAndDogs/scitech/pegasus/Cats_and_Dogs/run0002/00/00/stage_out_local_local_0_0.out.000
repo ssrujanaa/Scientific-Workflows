@@ -1,0 +1,1277 @@
+- invocation: True
+  version: 3.0
+  start: 2020-07-30T08:53:24.293-07:00
+  duration: 13.660
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-07-30T15:21:16+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: aaaaab5e7244
+  pid: 31673
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-07-30T08:53:24.297-07:00
+    duration: 13.655
+    pid: 31679
+    usage:
+      utime: 12.989
+      stime: 4.562
+      maxrss: 18356
+      minflt: 1062397
+      majflt: 0
+      nswap: 0
+      inblock: 16
+      outblock: 1952
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 14867
+      nivcsw: 10917
+    status:
+      raw: 256
+      regular_exitcode: 1
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2111
+      inode: 1172
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-07-30T07:58:20-07:00
+      atime: 2020-07-30T07:58:20-07:00
+      ctime: 2020-07-30T07:58:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 29.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_31665
+  usage:
+    utime: 0.000
+    stime: 0.005
+    maxrss: 2388
+    minflt: 274
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 5
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: aaaaab5e7244
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 2038544
+    ram_free: 292600
+    ram_shared: 168
+    ram_buffer: 93820
+    swap_total: 1048572
+    swap_free: 881916
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 0.00
+    load_min5: 0.07
+    load_min15: 0.16
+    procs_total: 33
+    procs_running: 1
+    procs_sleeping: 27
+    procs_zombie: 4
+    procs_vmsize: 6423208
+    procs_rss: 818804
+    task_total: 93
+    task_running: 1
+    task_sleeping: 88
+    task_zombie: 4
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 1809756
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-07-30T08:53:24-07:00
+      atime: 2020-07-30T08:53:24-07:00
+      ctime: 2020-07-30T08:53:24-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_31665/ks.out.V6qSjb
+      descriptor: 3
+      mode: 0o100600
+      size: 169280
+      inode: 1076111
+      nlink: 1
+      blksize: 4096
+      blocks: 336
+      mtime: 2020-07-30T08:53:37-07:00
+      atime: 2020-07-30T08:53:24-07:00
+      ctime: 2020-07-30T08:53:37-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2020-07-30 08:53:24,400    INFO:  Reading URL pairs from stdin
+        2020-07-30 08:53:24,410    INFO:  203 transfers loaded
+        2020-07-30 08:53:24,412    INFO:  PATH=/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/usr/sbin
+        2020-07-30 08:53:24,412    INFO:  LD_LIBRARY_PATH=
+        2020-07-30 08:53:24,449    INFO:  --------------------------------------------------------------------------------
+        2020-07-30 08:53:24,449    INFO:  Starting transfers - attempt 1
+        2020-07-30 08:53:26,462    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./labels.txt' '//home/scitech/shared-data/CatsAndDogs/wf-output/labels.txt'
+        2020-07-30 08:53:26,479    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_.DS_Store' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_.DS_Store'
+        2020-07-30 08:53:26,493    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat0.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat0.jpg'
+        2020-07-30 08:53:26,508    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat1.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat1.jpg'
+        2020-07-30 08:53:26,522    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat10.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat10.jpg'
+        2020-07-30 08:53:26,536    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat11.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat11.jpg'
+        2020-07-30 08:53:26,552    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat12.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat12.jpg'
+        2020-07-30 08:53:26,567    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat13.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat13.jpg'
+        2020-07-30 08:53:26,584    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat14.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat14.jpg'
+        2020-07-30 08:53:26,600    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat15.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat15.jpg'
+        2020-07-30 08:53:26,621    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat16.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat16.jpg'
+        2020-07-30 08:53:26,649    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat17.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat17.jpg'
+        2020-07-30 08:53:26,674    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat18.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat18.jpg'
+        2020-07-30 08:53:26,689    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat19.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat19.jpg'
+        2020-07-30 08:53:26,706    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat2.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat2.jpg'
+        2020-07-30 08:53:26,724    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat20.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat20.jpg'
+        2020-07-30 08:53:26,740    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat21.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat21.jpg'
+        2020-07-30 08:53:26,757    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat22.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat22.jpg'
+        2020-07-30 08:53:26,774    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat23.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat23.jpg'
+        2020-07-30 08:53:26,791    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat24.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat24.jpg'
+        2020-07-30 08:53:26,809    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat25.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat25.jpg'
+        2020-07-30 08:53:26,834    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat26.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat26.jpg'
+        2020-07-30 08:53:26,859    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat27.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat27.jpg'
+        2020-07-30 08:53:26,882    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat28.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat28.jpg'
+        2020-07-30 08:53:26,897    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat29.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat29.jpg'
+        2020-07-30 08:53:26,913    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat3.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat3.jpg'
+        2020-07-30 08:53:26,930    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat30.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat30.jpg'
+        2020-07-30 08:53:26,947    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat31.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat31.jpg'
+        2020-07-30 08:53:26,966    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat32.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat32.jpg'
+        2020-07-30 08:53:26,982    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat33.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat33.jpg'
+        2020-07-30 08:53:27,003    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat34.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat34.jpg'
+        2020-07-30 08:53:27,020    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat35.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat35.jpg'
+        2020-07-30 08:53:27,039    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat36.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat36.jpg'
+        2020-07-30 08:53:27,060    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat37.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat37.jpg'
+        2020-07-30 08:53:27,076    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat38.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat38.jpg'
+        2020-07-30 08:53:27,092    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat39.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat39.jpg'
+        2020-07-30 08:53:27,109    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat4.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat4.jpg'
+        2020-07-30 08:53:27,127    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat40.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat40.jpg'
+        2020-07-30 08:53:27,145    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat41.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat41.jpg'
+        2020-07-30 08:53:27,161    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat42.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat42.jpg'
+        2020-07-30 08:53:27,177    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat43.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat43.jpg'
+        2020-07-30 08:53:27,191    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat44.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat44.jpg'
+        2020-07-30 08:53:27,209    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat45.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat45.jpg'
+        2020-07-30 08:53:27,225    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat46.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat46.jpg'
+        2020-07-30 08:53:27,243    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat47.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat47.jpg'
+        2020-07-30 08:53:27,259    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat48.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat48.jpg'
+        2020-07-30 08:53:27,275    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat49.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat49.jpg'
+        2020-07-30 08:53:27,292    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat5.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat5.jpg'
+        2020-07-30 08:53:27,309    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat50.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat50.jpg'
+        2020-07-30 08:53:27,323    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat51.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat51.jpg'
+        2020-07-30 08:53:27,342    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat52.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat52.jpg'
+        2020-07-30 08:53:27,358    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat53.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat53.jpg'
+        2020-07-30 08:53:27,374    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat54.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat54.jpg'
+        2020-07-30 08:53:27,392    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat55.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat55.jpg'
+        2020-07-30 08:53:27,408    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat56.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat56.jpg'
+        2020-07-30 08:53:27,424    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat57.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat57.jpg'
+        2020-07-30 08:53:27,441    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat58.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat58.jpg'
+        2020-07-30 08:53:27,458    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat59.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat59.jpg'
+        2020-07-30 08:53:27,477    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat6.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat6.jpg'
+        2020-07-30 08:53:27,503    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat60.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat60.jpg'
+        2020-07-30 08:53:27,530    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat61.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat61.jpg'
+        2020-07-30 08:53:27,555    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat62.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat62.jpg'
+        2020-07-30 08:53:27,578    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat63.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat63.jpg'
+        2020-07-30 08:53:27,603    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat64.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat64.jpg'
+        2020-07-30 08:53:27,627    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat65.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat65.jpg'
+        2020-07-30 08:53:27,644    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat66.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat66.jpg'
+        2020-07-30 08:53:27,663    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat67.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat67.jpg'
+        2020-07-30 08:53:27,683    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat68.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat68.jpg'
+        2020-07-30 08:53:27,706    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat69.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat69.jpg'
+        2020-07-30 08:53:27,725    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat7.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat7.jpg'
+        2020-07-30 08:53:27,740    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat70.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat70.jpg'
+        2020-07-30 08:53:27,755    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat71.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat71.jpg'
+        2020-07-30 08:53:27,771    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat72.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat72.jpg'
+        2020-07-30 08:53:27,787    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat73.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat73.jpg'
+        2020-07-30 08:53:27,801    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat74.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat74.jpg'
+        2020-07-30 08:53:27,823    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat75.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat75.jpg'
+        2020-07-30 08:53:27,839    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat76.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat76.jpg'
+        2020-07-30 08:53:27,853    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat77.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat77.jpg'
+        2020-07-30 08:53:27,870    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat78.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat78.jpg'
+        2020-07-30 08:53:27,887    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat79.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat79.jpg'
+        2020-07-30 08:53:27,904    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat8.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat8.jpg'
+        2020-07-30 08:53:27,921    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat80.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat80.jpg'
+        2020-07-30 08:53:27,938    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat81.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat81.jpg'
+        2020-07-30 08:53:27,954    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat82.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat82.jpg'
+        2020-07-30 08:53:27,973    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat83.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat83.jpg'
+        2020-07-30 08:53:27,992    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat84.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat84.jpg'
+        2020-07-30 08:53:28,010    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat85.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat85.jpg'
+        2020-07-30 08:53:28,034    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat86.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat86.jpg'
+        2020-07-30 08:53:28,054    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat87.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat87.jpg'
+        2020-07-30 08:53:28,074    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat88.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat88.jpg'
+        2020-07-30 08:53:28,092    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat89.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat89.jpg'
+        2020-07-30 08:53:28,110    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat9.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat9.jpg'
+        2020-07-30 08:53:28,134    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat90.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat90.jpg'
+        2020-07-30 08:53:28,151    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat91.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat91.jpg'
+        2020-07-30 08:53:28,167    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat92.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat92.jpg'
+        2020-07-30 08:53:28,189    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat93.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat93.jpg'
+        2020-07-30 08:53:28,208    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat94.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat94.jpg'
+        2020-07-30 08:53:28,227    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat95.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat95.jpg'
+        2020-07-30 08:53:28,244    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat96.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat96.jpg'
+        2020-07-30 08:53:28,264    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat97.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat97.jpg'
+        2020-07-30 08:53:28,277    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity
+        2020-07-30 08:53:28,278    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="labels.txt=//home/scitech/shared-data/CatsAndDogs/wf-output/labels.txt"
+        2020-07-30 08:53:28,394    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_.DS_Store=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_.DS_Store"
+        2020-07-30 08:53:28,463    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Cat99.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat99.jpg'
+        2020-07-30 08:53:28,480    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog0.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog0.jpg'
+        2020-07-30 08:53:28,482    INFO:  Integrity check: No checksum in the meta data for resized_.DS_Store
+        Integrity check: No checksum in the meta data for resized_.DS_Store
+        2020-07-30 08:53:28,483   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_.DS_Store=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_.DS_Store"
+        2020-07-30 08:53:28,483    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat0.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat0.jpg"
+        2020-07-30 08:53:28,497    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog1.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog1.jpg'
+        2020-07-30 08:53:28,514    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog10.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog10.jpg'
+        2020-07-30 08:53:28,530    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog11.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog11.jpg'
+        2020-07-30 08:53:28,545    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog12.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog12.jpg'
+        2020-07-30 08:53:28,562    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog13.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog13.jpg'
+        2020-07-30 08:53:28,579    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog14.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog14.jpg'
+        2020-07-30 08:53:28,591    INFO:  Integrity check: No checksum in the meta data for resized_Cat0.jpg
+        Integrity check: No checksum in the meta data for resized_Cat0.jpg
+        2020-07-30 08:53:28,591   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat0.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat0.jpg"
+        2020-07-30 08:53:28,592    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat1.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat1.jpg"
+        2020-07-30 08:53:28,603    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog15.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog15.jpg'
+        2020-07-30 08:53:28,624    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog16.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog16.jpg'
+        2020-07-30 08:53:28,643    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog17.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog17.jpg'
+        2020-07-30 08:53:28,661    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog18.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog18.jpg'
+        2020-07-30 08:53:28,678    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog19.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog19.jpg'
+        2020-07-30 08:53:28,681    INFO:  Integrity check: No checksum in the meta data for resized_Cat1.jpg
+        Integrity check: No checksum in the meta data for resized_Cat1.jpg
+        2020-07-30 08:53:28,681   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat1.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat1.jpg"
+        2020-07-30 08:53:28,681    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat10.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat10.jpg"
+        2020-07-30 08:53:28,697    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog2.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog2.jpg'
+        2020-07-30 08:53:28,712    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog20.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog20.jpg'
+        2020-07-30 08:53:28,727    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog21.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog21.jpg'
+        2020-07-30 08:53:28,745    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog22.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog22.jpg'
+        2020-07-30 08:53:28,760    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog23.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog23.jpg'
+        2020-07-30 08:53:28,777    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog24.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog24.jpg'
+        2020-07-30 08:53:28,792    INFO:  Integrity check: No checksum in the meta data for resized_Cat10.jpg
+        Integrity check: No checksum in the meta data for resized_Cat10.jpg
+        2020-07-30 08:53:28,792   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat10.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat10.jpg"
+        2020-07-30 08:53:28,793    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat11.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat11.jpg"
+        2020-07-30 08:53:28,799    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog25.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog25.jpg'
+        2020-07-30 08:53:28,816    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog26.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog26.jpg'
+        2020-07-30 08:53:28,832    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog27.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog27.jpg'
+        2020-07-30 08:53:28,848    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog28.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog28.jpg'
+        2020-07-30 08:53:28,865    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog29.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog29.jpg'
+        2020-07-30 08:53:28,883    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog3.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog3.jpg'
+        2020-07-30 08:53:28,896    INFO:  Integrity check: No checksum in the meta data for resized_Cat11.jpg
+        Integrity check: No checksum in the meta data for resized_Cat11.jpg
+        2020-07-30 08:53:28,896   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat11.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat11.jpg"
+        2020-07-30 08:53:28,897    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat12.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat12.jpg"
+        2020-07-30 08:53:28,906    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog30.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog30.jpg'
+        2020-07-30 08:53:28,922    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog31.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog31.jpg'
+        2020-07-30 08:53:28,937    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog32.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog32.jpg'
+        2020-07-30 08:53:28,955    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog33.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog33.jpg'
+        2020-07-30 08:53:28,970    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog34.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog34.jpg'
+        2020-07-30 08:53:28,987    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog35.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog35.jpg'
+        2020-07-30 08:53:28,995    INFO:  Integrity check: No checksum in the meta data for resized_Cat12.jpg
+        Integrity check: No checksum in the meta data for resized_Cat12.jpg
+        2020-07-30 08:53:28,995   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat12.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat12.jpg"
+        2020-07-30 08:53:28,995    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat13.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat13.jpg"
+        2020-07-30 08:53:29,013    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog36.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog36.jpg'
+        2020-07-30 08:53:29,031    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog37.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog37.jpg'
+        2020-07-30 08:53:29,050    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog38.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog38.jpg'
+        2020-07-30 08:53:29,067    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog39.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog39.jpg'
+        2020-07-30 08:53:29,084    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog4.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog4.jpg'
+        2020-07-30 08:53:29,086    INFO:  Integrity check: No checksum in the meta data for resized_Cat13.jpg
+        Integrity check: No checksum in the meta data for resized_Cat13.jpg
+        2020-07-30 08:53:29,087   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat13.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat13.jpg"
+        2020-07-30 08:53:29,087    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat14.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat14.jpg"
+        2020-07-30 08:53:29,105    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog40.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog40.jpg'
+        2020-07-30 08:53:29,121    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog41.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog41.jpg'
+        2020-07-30 08:53:29,137    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog42.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog42.jpg'
+        2020-07-30 08:53:29,154    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog43.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog43.jpg'
+        2020-07-30 08:53:29,172    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog44.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog44.jpg'
+        2020-07-30 08:53:29,181    INFO:  Integrity check: No checksum in the meta data for resized_Cat14.jpg
+        Integrity check: No checksum in the meta data for resized_Cat14.jpg
+        2020-07-30 08:53:29,181   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat14.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat14.jpg"
+        2020-07-30 08:53:29,181    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat15.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat15.jpg"
+        2020-07-30 08:53:29,193    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog45.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog45.jpg'
+        2020-07-30 08:53:29,211    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog46.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog46.jpg'
+        2020-07-30 08:53:29,228    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog47.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog47.jpg'
+        2020-07-30 08:53:29,248    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog48.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog48.jpg'
+        2020-07-30 08:53:29,265    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog49.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog49.jpg'
+        2020-07-30 08:53:29,283    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog5.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog5.jpg'
+        2020-07-30 08:53:29,287    INFO:  Integrity check: No checksum in the meta data for resized_Cat15.jpg
+        Integrity check: No checksum in the meta data for resized_Cat15.jpg
+        2020-07-30 08:53:29,287   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat15.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat15.jpg"
+        2020-07-30 08:53:29,287    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat16.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat16.jpg"
+        2020-07-30 08:53:29,305    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog50.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog50.jpg'
+        2020-07-30 08:53:29,322    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog51.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog51.jpg'
+        2020-07-30 08:53:29,337    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog52.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog52.jpg'
+        2020-07-30 08:53:29,352    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog53.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog53.jpg'
+        2020-07-30 08:53:29,367    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog54.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog54.jpg'
+        2020-07-30 08:53:29,379    INFO:  Integrity check: No checksum in the meta data for resized_Cat16.jpg
+        Integrity check: No checksum in the meta data for resized_Cat16.jpg
+        2020-07-30 08:53:29,379   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat16.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat16.jpg"
+        2020-07-30 08:53:29,379    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat17.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat17.jpg"
+        2020-07-30 08:53:29,386    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog55.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog55.jpg'
+        2020-07-30 08:53:29,401    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog56.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog56.jpg'
+        2020-07-30 08:53:29,416    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog57.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog57.jpg'
+        2020-07-30 08:53:29,432    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog58.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog58.jpg'
+        2020-07-30 08:53:29,453    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog59.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog59.jpg'
+        2020-07-30 08:53:29,475    INFO:  Integrity check: No checksum in the meta data for resized_Cat17.jpg
+        Integrity check: No checksum in the meta data for resized_Cat17.jpg
+        2020-07-30 08:53:29,476   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat17.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat17.jpg"
+        2020-07-30 08:53:29,476    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat18.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat18.jpg"
+        2020-07-30 08:53:29,478    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog6.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog6.jpg'
+        2020-07-30 08:53:29,500    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog60.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog60.jpg'
+        2020-07-30 08:53:29,523    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog61.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog61.jpg'
+        2020-07-30 08:53:29,543    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog62.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog62.jpg'
+        2020-07-30 08:53:29,565    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog63.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog63.jpg'
+        2020-07-30 08:53:29,591    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog64.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog64.jpg'
+        2020-07-30 08:53:29,614    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog65.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog65.jpg'
+        2020-07-30 08:53:29,619    INFO:  Integrity check: No checksum in the meta data for resized_Cat18.jpg
+        Integrity check: No checksum in the meta data for resized_Cat18.jpg
+        2020-07-30 08:53:29,620   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat18.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat18.jpg"
+        2020-07-30 08:53:29,620    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat19.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat19.jpg"
+        2020-07-30 08:53:29,638    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog66.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog66.jpg'
+        2020-07-30 08:53:29,656    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog67.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog67.jpg'
+        2020-07-30 08:53:29,672    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog68.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog68.jpg'
+        2020-07-30 08:53:29,685    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog69.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog69.jpg'
+        2020-07-30 08:53:29,699    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog7.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog7.jpg'
+        2020-07-30 08:53:29,715    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog70.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog70.jpg'
+        2020-07-30 08:53:29,728    INFO:  Integrity check: No checksum in the meta data for resized_Cat19.jpg
+        Integrity check: No checksum in the meta data for resized_Cat19.jpg
+        2020-07-30 08:53:29,728   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat19.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat19.jpg"
+        2020-07-30 08:53:29,728    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat2.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat2.jpg"
+        2020-07-30 08:53:29,741    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog71.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog71.jpg'
+        2020-07-30 08:53:29,761    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog72.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog72.jpg'
+        2020-07-30 08:53:29,777    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog73.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog73.jpg'
+        2020-07-30 08:53:29,791    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog74.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog74.jpg'
+        2020-07-30 08:53:29,806    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog75.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog75.jpg'
+        2020-07-30 08:53:29,821    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog76.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog76.jpg'
+        2020-07-30 08:53:29,824    INFO:  Integrity check: No checksum in the meta data for resized_Cat2.jpg
+        Integrity check: No checksum in the meta data for resized_Cat2.jpg
+        2020-07-30 08:53:29,824   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat2.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat2.jpg"
+        2020-07-30 08:53:29,824    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat20.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat20.jpg"
+        2020-07-30 08:53:29,838    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog77.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog77.jpg'
+        2020-07-30 08:53:29,851    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog78.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog78.jpg'
+        2020-07-30 08:53:29,865    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog79.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog79.jpg'
+        2020-07-30 08:53:29,880    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog8.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog8.jpg'
+        2020-07-30 08:53:29,894    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog80.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog80.jpg'
+        2020-07-30 08:53:29,907    INFO:  Integrity check: No checksum in the meta data for resized_Cat20.jpg
+        Integrity check: No checksum in the meta data for resized_Cat20.jpg
+        2020-07-30 08:53:29,907   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat20.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat20.jpg"
+        2020-07-30 08:53:29,907    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat21.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat21.jpg"
+        2020-07-30 08:53:29,912    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog81.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog81.jpg'
+        2020-07-30 08:53:29,925    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog82.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog82.jpg'
+        2020-07-30 08:53:29,941    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog83.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog83.jpg'
+        2020-07-30 08:53:29,956    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog84.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog84.jpg'
+        2020-07-30 08:53:29,971    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog85.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog85.jpg'
+        2020-07-30 08:53:29,985    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog86.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog86.jpg'
+        2020-07-30 08:53:29,991    INFO:  Integrity check: No checksum in the meta data for resized_Cat21.jpg
+        Integrity check: No checksum in the meta data for resized_Cat21.jpg
+        2020-07-30 08:53:29,992   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat21.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat21.jpg"
+        2020-07-30 08:53:29,992    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat22.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat22.jpg"
+        2020-07-30 08:53:30,000    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog87.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog87.jpg'
+        2020-07-30 08:53:30,014    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog88.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog88.jpg'
+        2020-07-30 08:53:30,028    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog89.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog89.jpg'
+        2020-07-30 08:53:30,043    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog9.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog9.jpg'
+        2020-07-30 08:53:30,057    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog90.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog90.jpg'
+        2020-07-30 08:53:30,072    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog91.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog91.jpg'
+        2020-07-30 08:53:30,076    INFO:  Integrity check: No checksum in the meta data for resized_Cat22.jpg
+        Integrity check: No checksum in the meta data for resized_Cat22.jpg
+        2020-07-30 08:53:30,076   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat22.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat22.jpg"
+        2020-07-30 08:53:30,076    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat23.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat23.jpg"
+        2020-07-30 08:53:30,088    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog92.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog92.jpg'
+        2020-07-30 08:53:30,103    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog93.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog93.jpg'
+        2020-07-30 08:53:30,117    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog94.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog94.jpg'
+        2020-07-30 08:53:30,130    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog95.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog95.jpg'
+        2020-07-30 08:53:30,144    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog96.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog96.jpg'
+        2020-07-30 08:53:30,159    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog97.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog97.jpg'
+        2020-07-30 08:53:30,171    INFO:  Integrity check: No checksum in the meta data for resized_Cat23.jpg
+        Integrity check: No checksum in the meta data for resized_Cat23.jpg
+        2020-07-30 08:53:30,172   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat23.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat23.jpg"
+        2020-07-30 08:53:30,172    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat24.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat24.jpg"
+        2020-07-30 08:53:30,177    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0002/./resized_Dog98.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog98.jpg'
+        2020-07-30 08:53:30,189    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat99.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat99.jpg"
+        2020-07-30 08:53:30,253    INFO:  Integrity check: No checksum in the meta data for resized_Cat24.jpg
+        Integrity check: No checksum in the meta data for resized_Cat24.jpg
+        2020-07-30 08:53:30,253   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat24.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat24.jpg"
+        2020-07-30 08:53:30,253    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat25.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat25.jpg"
+        2020-07-30 08:53:30,268    INFO:  Integrity check: No checksum in the meta data for resized_Cat99.jpg
+        Integrity check: No checksum in the meta data for resized_Cat99.jpg
+        2020-07-30 08:53:30,268   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat99.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat99.jpg"
+        2020-07-30 08:53:30,268    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog0.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog0.jpg"
+        2020-07-30 08:53:30,330    INFO:  Integrity check: No checksum in the meta data for resized_Cat25.jpg
+        Integrity check: No checksum in the meta data for resized_Cat25.jpg
+        2020-07-30 08:53:30,331   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat25.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat25.jpg"
+        2020-07-30 08:53:30,331    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat26.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat26.jpg"
+        2020-07-30 08:53:30,348    INFO:  Integrity check: No checksum in the meta data for resized_Dog0.jpg
+        Integrity check: No checksum in the meta data for resized_Dog0.jpg
+        2020-07-30 08:53:30,348   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog0.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog0.jpg"
+        2020-07-30 08:53:30,349    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog1.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog1.jpg"
+        2020-07-30 08:53:30,408    INFO:  Integrity check: No checksum in the meta data for resized_Cat26.jpg
+        Integrity check: No checksum in the meta data for resized_Cat26.jpg
+        2020-07-30 08:53:30,409   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat26.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat26.jpg"
+        2020-07-30 08:53:30,409    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat27.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat27.jpg"
+        2020-07-30 08:53:30,428    INFO:  Integrity check: No checksum in the meta data for resized_Dog1.jpg
+        Integrity check: No checksum in the meta data for resized_Dog1.jpg
+        2020-07-30 08:53:30,428   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog1.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog1.jpg"
+        2020-07-30 08:53:30,428    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog10.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog10.jpg"
+        2020-07-30 08:53:30,486    INFO:  Integrity check: No checksum in the meta data for resized_Cat27.jpg
+        Integrity check: No checksum in the meta data for resized_Cat27.jpg
+        2020-07-30 08:53:30,486   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat27.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat27.jpg"
+        2020-07-30 08:53:30,486    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat28.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat28.jpg"
+        2020-07-30 08:53:30,510    INFO:  Integrity check: No checksum in the meta data for resized_Dog10.jpg
+        Integrity check: No checksum in the meta data for resized_Dog10.jpg
+        2020-07-30 08:53:30,510   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog10.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog10.jpg"
+        2020-07-30 08:53:30,510    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog11.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog11.jpg"
+        2020-07-30 08:53:30,562    INFO:  Integrity check: No checksum in the meta data for resized_Cat28.jpg
+        Integrity check: No checksum in the meta data for resized_Cat28.jpg
+        2020-07-30 08:53:30,563   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat28.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat28.jpg"
+        2020-07-30 08:53:30,563    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat29.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat29.jpg"
+        2020-07-30 08:53:30,586    INFO:  Integrity check: No checksum in the meta data for resized_Dog11.jpg
+        Integrity check: No checksum in the meta data for resized_Dog11.jpg
+        2020-07-30 08:53:30,586   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog11.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog11.jpg"
+        2020-07-30 08:53:30,587    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog12.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog12.jpg"
+        2020-07-30 08:53:30,641    INFO:  Integrity check: No checksum in the meta data for resized_Cat29.jpg
+        Integrity check: No checksum in the meta data for resized_Cat29.jpg
+        2020-07-30 08:53:30,641   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat29.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat29.jpg"
+        2020-07-30 08:53:30,642    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat3.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat3.jpg"
+        2020-07-30 08:53:30,662    INFO:  Integrity check: No checksum in the meta data for resized_Dog12.jpg
+        Integrity check: No checksum in the meta data for resized_Dog12.jpg
+        2020-07-30 08:53:30,662   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog12.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog12.jpg"
+        2020-07-30 08:53:30,663    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog13.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog13.jpg"
+        2020-07-30 08:53:30,718    INFO:  Integrity check: No checksum in the meta data for resized_Cat3.jpg
+        Integrity check: No checksum in the meta data for resized_Cat3.jpg
+        2020-07-30 08:53:30,719   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat3.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat3.jpg"
+        2020-07-30 08:53:30,719    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat30.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat30.jpg"
+        2020-07-30 08:53:30,741    INFO:  Integrity check: No checksum in the meta data for resized_Dog13.jpg
+        Integrity check: No checksum in the meta data for resized_Dog13.jpg
+        2020-07-30 08:53:30,741   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog13.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog13.jpg"
+        2020-07-30 08:53:30,741    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog14.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog14.jpg"
+        2020-07-30 08:53:30,795    INFO:  Integrity check: No checksum in the meta data for resized_Cat30.jpg
+        Integrity check: No checksum in the meta data for resized_Cat30.jpg
+        2020-07-30 08:53:30,796   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat30.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat30.jpg"
+        2020-07-30 08:53:30,796    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat31.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat31.jpg"
+        2020-07-30 08:53:30,817    INFO:  Integrity check: No checksum in the meta data for resized_Dog14.jpg
+        Integrity check: No checksum in the meta data for resized_Dog14.jpg
+        2020-07-30 08:53:30,818   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog14.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog14.jpg"
+        2020-07-30 08:53:30,818    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog15.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog15.jpg"
+        2020-07-30 08:53:30,873    INFO:  Integrity check: No checksum in the meta data for resized_Cat31.jpg
+        Integrity check: No checksum in the meta data for resized_Cat31.jpg
+        2020-07-30 08:53:30,873   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat31.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat31.jpg"
+        2020-07-30 08:53:30,873    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat32.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat32.jpg"
+        2020-07-30 08:53:30,895    INFO:  Integrity check: No checksum in the meta data for resized_Dog15.jpg
+        Integrity check: No checksum in the meta data for resized_Dog15.jpg
+        2020-07-30 08:53:30,895   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog15.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog15.jpg"
+        2020-07-30 08:53:30,895    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog16.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog16.jpg"
+        2020-07-30 08:53:30,950    INFO:  Integrity check: No checksum in the meta data for resized_Cat32.jpg
+        Integrity check: No checksum in the meta data for resized_Cat32.jpg
+        2020-07-30 08:53:30,951   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat32.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat32.jpg"
+        2020-07-30 08:53:30,951    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat33.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat33.jpg"
+        2020-07-30 08:53:30,973    INFO:  Integrity check: No checksum in the meta data for resized_Dog16.jpg
+        Integrity check: No checksum in the meta data for resized_Dog16.jpg
+        2020-07-30 08:53:30,973   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog16.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog16.jpg"
+        2020-07-30 08:53:30,973    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog17.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog17.jpg"
+        2020-07-30 08:53:31,030    INFO:  Integrity check: No checksum in the meta data for resized_Cat33.jpg
+        Integrity check: No checksum in the meta data for resized_Cat33.jpg
+        2020-07-30 08:53:31,030   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat33.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat33.jpg"
+        2020-07-30 08:53:31,030    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat34.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat34.jpg"
+        2020-07-30 08:53:31,049    INFO:  Integrity check: No checksum in the meta data for resized_Dog17.jpg
+        Integrity check: No checksum in the meta data for resized_Dog17.jpg
+        2020-07-30 08:53:31,050   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog17.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog17.jpg"
+        2020-07-30 08:53:31,050    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog18.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog18.jpg"
+        2020-07-30 08:53:31,106    INFO:  Integrity check: No checksum in the meta data for resized_Cat34.jpg
+        Integrity check: No checksum in the meta data for resized_Cat34.jpg
+        2020-07-30 08:53:31,107   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat34.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat34.jpg"
+        2020-07-30 08:53:31,107    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat35.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat35.jpg"
+        2020-07-30 08:53:31,127    INFO:  Integrity check: No checksum in the meta data for resized_Dog18.jpg
+        Integrity check: No checksum in the meta data for resized_Dog18.jpg
+        2020-07-30 08:53:31,127   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog18.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog18.jpg"
+        2020-07-30 08:53:31,127    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog19.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog19.jpg"
+        2020-07-30 08:53:31,183    INFO:  Integrity check: No checksum in the meta data for resized_Cat35.jpg
+        Integrity check: No checksum in the meta data for resized_Cat35.jpg
+        2020-07-30 08:53:31,183   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat35.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat35.jpg"
+        2020-07-30 08:53:31,183    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat36.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat36.jpg"
+        2020-07-30 08:53:31,204    INFO:  Integrity check: No checksum in the meta data for resized_Dog19.jpg
+        Integrity check: No checksum in the meta data for resized_Dog19.jpg
+        2020-07-30 08:53:31,205   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog19.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog19.jpg"
+        2020-07-30 08:53:31,205    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog2.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog2.jpg"
+        2020-07-30 08:53:31,260    INFO:  Integrity check: No checksum in the meta data for resized_Cat36.jpg
+        Integrity check: No checksum in the meta data for resized_Cat36.jpg
+        2020-07-30 08:53:31,260   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat36.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat36.jpg"
+        2020-07-30 08:53:31,260    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat37.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat37.jpg"
+        2020-07-30 08:53:31,282    INFO:  Integrity check: No checksum in the meta data for resized_Dog2.jpg
+        Integrity check: No checksum in the meta data for resized_Dog2.jpg
+        2020-07-30 08:53:31,282   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog2.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog2.jpg"
+        2020-07-30 08:53:31,282    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog20.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog20.jpg"
+        2020-07-30 08:53:31,338    INFO:  Integrity check: No checksum in the meta data for resized_Cat37.jpg
+        Integrity check: No checksum in the meta data for resized_Cat37.jpg
+        2020-07-30 08:53:31,339   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat37.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat37.jpg"
+        2020-07-30 08:53:31,339    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat38.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat38.jpg"
+        2020-07-30 08:53:31,367    INFO:  Integrity check: No checksum in the meta data for resized_Dog20.jpg
+        Integrity check: No checksum in the meta data for resized_Dog20.jpg
+        2020-07-30 08:53:31,367   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog20.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog20.jpg"
+        2020-07-30 08:53:31,367    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog21.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog21.jpg"
+        2020-07-30 08:53:31,422    INFO:  Integrity check: No checksum in the meta data for resized_Cat38.jpg
+        Integrity check: No checksum in the meta data for resized_Cat38.jpg
+        2020-07-30 08:53:31,422   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat38.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat38.jpg"
+        2020-07-30 08:53:31,422    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat39.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat39.jpg"
+        2020-07-30 08:53:31,446    INFO:  Integrity check: No checksum in the meta data for resized_Dog21.jpg
+        Integrity check: No checksum in the meta data for resized_Dog21.jpg
+        2020-07-30 08:53:31,447   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog21.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog21.jpg"
+        2020-07-30 08:53:31,447    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog22.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog22.jpg"
+        2020-07-30 08:53:31,500    INFO:  Integrity check: No checksum in the meta data for resized_Cat39.jpg
+        Integrity check: No checksum in the meta data for resized_Cat39.jpg
+        2020-07-30 08:53:31,500   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat39.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat39.jpg"
+        2020-07-30 08:53:31,500    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat4.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat4.jpg"
+        2020-07-30 08:53:31,523    INFO:  Integrity check: No checksum in the meta data for resized_Dog22.jpg
+        Integrity check: No checksum in the meta data for resized_Dog22.jpg
+        2020-07-30 08:53:31,524   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog22.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog22.jpg"
+        2020-07-30 08:53:31,524    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog23.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog23.jpg"
+        2020-07-30 08:53:31,577    INFO:  Integrity check: No checksum in the meta data for resized_Cat4.jpg
+        Integrity check: No checksum in the meta data for resized_Cat4.jpg
+        2020-07-30 08:53:31,577   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat4.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat4.jpg"
+        2020-07-30 08:53:31,577    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat40.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat40.jpg"
+        2020-07-30 08:53:31,600    INFO:  Integrity check: No checksum in the meta data for resized_Dog23.jpg
+        Integrity check: No checksum in the meta data for resized_Dog23.jpg
+        2020-07-30 08:53:31,600   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog23.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog23.jpg"
+        2020-07-30 08:53:31,601    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog24.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog24.jpg"
+        2020-07-30 08:53:31,653    INFO:  Integrity check: No checksum in the meta data for resized_Cat40.jpg
+        Integrity check: No checksum in the meta data for resized_Cat40.jpg
+        2020-07-30 08:53:31,653   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat40.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat40.jpg"
+        2020-07-30 08:53:31,654    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat41.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat41.jpg"
+        2020-07-30 08:53:31,677    INFO:  Integrity check: No checksum in the meta data for resized_Dog24.jpg
+        Integrity check: No checksum in the meta data for resized_Dog24.jpg
+        2020-07-30 08:53:31,678   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog24.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog24.jpg"
+        2020-07-30 08:53:31,678    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog25.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog25.jpg"
+        2020-07-30 08:53:31,730    INFO:  Integrity check: No checksum in the meta data for resized_Cat41.jpg
+        Integrity check: No checksum in the meta data for resized_Cat41.jpg
+        2020-07-30 08:53:31,730   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat41.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat41.jpg"
+        2020-07-30 08:53:31,730    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat42.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat42.jpg"
+        2020-07-30 08:53:31,754    INFO:  Integrity check: No checksum in the meta data for resized_Dog25.jpg
+        Integrity check: No checksum in the meta data for resized_Dog25.jpg
+        2020-07-30 08:53:31,754   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog25.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog25.jpg"
+        2020-07-30 08:53:31,754    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog26.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog26.jpg"
+        2020-07-30 08:53:31,807    INFO:  Integrity check: No checksum in the meta data for resized_Cat42.jpg
+        Integrity check: No checksum in the meta data for resized_Cat42.jpg
+        2020-07-30 08:53:31,807   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat42.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat42.jpg"
+        2020-07-30 08:53:31,807    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat43.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat43.jpg"
+        2020-07-30 08:53:31,832    INFO:  Integrity check: No checksum in the meta data for resized_Dog26.jpg
+        Integrity check: No checksum in the meta data for resized_Dog26.jpg
+        2020-07-30 08:53:31,832   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog26.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog26.jpg"
+        2020-07-30 08:53:31,832    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog27.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog27.jpg"
+        2020-07-30 08:53:31,888    INFO:  Integrity check: No checksum in the meta data for resized_Cat43.jpg
+        Integrity check: No checksum in the meta data for resized_Cat43.jpg
+        2020-07-30 08:53:31,889   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat43.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat43.jpg"
+        2020-07-30 08:53:31,889    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat44.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat44.jpg"
+        2020-07-30 08:53:31,911    INFO:  Integrity check: No checksum in the meta data for resized_Dog27.jpg
+        Integrity check: No checksum in the meta data for resized_Dog27.jpg
+        2020-07-30 08:53:31,912   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog27.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog27.jpg"
+        2020-07-30 08:53:31,912    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog28.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog28.jpg"
+        2020-07-30 08:53:31,967    INFO:  Integrity check: No checksum in the meta data for resized_Cat44.jpg
+        Integrity check: No checksum in the meta data for resized_Cat44.jpg
+        2020-07-30 08:53:31,968   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat44.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat44.jpg"
+        2020-07-30 08:53:31,968    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat45.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat45.jpg"
+        2020-07-30 08:53:31,988    INFO:  Integrity check: No checksum in the meta data for resized_Dog28.jpg
+        Integrity check: No checksum in the meta data for resized_Dog28.jpg
+        2020-07-30 08:53:31,988   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog28.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog28.jpg"
+        2020-07-30 08:53:31,988    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog29.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog29.jpg"
+        2020-07-30 08:53:32,044    INFO:  Integrity check: No checksum in the meta data for resized_Cat45.jpg
+        Integrity check: No checksum in the meta data for resized_Cat45.jpg
+        2020-07-30 08:53:32,044   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat45.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat45.jpg"
+        2020-07-30 08:53:32,045    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat46.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat46.jpg"
+        2020-07-30 08:53:32,064    INFO:  Integrity check: No checksum in the meta data for resized_Dog29.jpg
+        Integrity check: No checksum in the meta data for resized_Dog29.jpg
+        2020-07-30 08:53:32,064   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog29.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog29.jpg"
+        2020-07-30 08:53:32,065    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog3.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog3.jpg"
+        2020-07-30 08:53:32,123    INFO:  Integrity check: No checksum in the meta data for resized_Cat46.jpg
+        Integrity check: No checksum in the meta data for resized_Cat46.jpg
+        2020-07-30 08:53:32,123   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat46.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat46.jpg"
+        2020-07-30 08:53:32,123    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat47.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat47.jpg"
+        2020-07-30 08:53:32,141    INFO:  Integrity check: No checksum in the meta data for resized_Dog3.jpg
+        Integrity check: No checksum in the meta data for resized_Dog3.jpg
+        2020-07-30 08:53:32,142   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog3.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog3.jpg"
+        2020-07-30 08:53:32,142    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog30.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog30.jpg"
+        2020-07-30 08:53:32,200    INFO:  Integrity check: No checksum in the meta data for resized_Cat47.jpg
+        Integrity check: No checksum in the meta data for resized_Cat47.jpg
+        2020-07-30 08:53:32,200   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat47.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat47.jpg"
+        2020-07-30 08:53:32,201    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat48.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat48.jpg"
+        2020-07-30 08:53:32,218    INFO:  Integrity check: No checksum in the meta data for resized_Dog30.jpg
+        Integrity check: No checksum in the meta data for resized_Dog30.jpg
+        2020-07-30 08:53:32,218   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog30.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog30.jpg"
+        2020-07-30 08:53:32,218    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog31.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog31.jpg"
+        2020-07-30 08:53:32,276    INFO:  Integrity check: No checksum in the meta data for resized_Cat48.jpg
+        Integrity check: No checksum in the meta data for resized_Cat48.jpg
+        2020-07-30 08:53:32,277   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat48.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat48.jpg"
+        2020-07-30 08:53:32,277    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat49.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat49.jpg"
+        2020-07-30 08:53:32,260    INFO:  Integrity check: No checksum in the meta data for resized_Dog31.jpg
+        Integrity check: No checksum in the meta data for resized_Dog31.jpg
+        2020-07-30 08:53:32,260   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog31.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog31.jpg"
+        2020-07-30 08:53:32,260    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog32.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog32.jpg"
+        2020-07-30 08:53:32,320    INFO:  Integrity check: No checksum in the meta data for resized_Cat49.jpg
+        Integrity check: No checksum in the meta data for resized_Cat49.jpg
+        2020-07-30 08:53:32,320   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat49.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat49.jpg"
+        2020-07-30 08:53:32,320    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat5.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat5.jpg"
+        2020-07-30 08:53:32,338    INFO:  Integrity check: No checksum in the meta data for resized_Dog32.jpg
+        Integrity check: No checksum in the meta data for resized_Dog32.jpg
+        2020-07-30 08:53:32,338   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog32.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog32.jpg"
+        2020-07-30 08:53:32,338    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog33.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog33.jpg"
+        2020-07-30 08:53:32,401    INFO:  Integrity check: No checksum in the meta data for resized_Cat5.jpg
+        Integrity check: No checksum in the meta data for resized_Cat5.jpg
+        2020-07-30 08:53:32,401   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat5.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat5.jpg"
+        2020-07-30 08:53:32,401    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat50.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat50.jpg"
+        2020-07-30 08:53:32,414    INFO:  Integrity check: No checksum in the meta data for resized_Dog33.jpg
+        Integrity check: No checksum in the meta data for resized_Dog33.jpg
+        2020-07-30 08:53:32,415   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog33.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog33.jpg"
+        2020-07-30 08:53:32,415    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog34.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog34.jpg"
+        2020-07-30 08:53:32,478    INFO:  Integrity check: No checksum in the meta data for resized_Cat50.jpg
+        Integrity check: No checksum in the meta data for resized_Cat50.jpg
+        2020-07-30 08:53:32,478   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat50.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat50.jpg"
+        2020-07-30 08:53:32,479    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat51.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat51.jpg"
+        2020-07-30 08:53:32,494    INFO:  Integrity check: No checksum in the meta data for resized_Dog34.jpg
+        Integrity check: No checksum in the meta data for resized_Dog34.jpg
+        2020-07-30 08:53:32,494   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog34.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog34.jpg"
+        2020-07-30 08:53:32,494    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog35.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog35.jpg"
+        2020-07-30 08:53:32,555    INFO:  Integrity check: No checksum in the meta data for resized_Cat51.jpg
+        Integrity check: No checksum in the meta data for resized_Cat51.jpg
+        2020-07-30 08:53:32,555   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat51.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat51.jpg"
+        2020-07-30 08:53:32,555    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat52.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat52.jpg"
+        2020-07-30 08:53:32,571    INFO:  Integrity check: No checksum in the meta data for resized_Dog35.jpg
+        Integrity check: No checksum in the meta data for resized_Dog35.jpg
+        2020-07-30 08:53:32,571   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog35.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog35.jpg"
+        2020-07-30 08:53:32,571    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog36.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog36.jpg"
+        2020-07-30 08:53:32,632    INFO:  Integrity check: No checksum in the meta data for resized_Cat52.jpg
+        Integrity check: No checksum in the meta data for resized_Cat52.jpg
+        2020-07-30 08:53:32,632   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat52.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat52.jpg"
+        2020-07-30 08:53:32,632    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat53.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat53.jpg"
+        2020-07-30 08:53:32,648    INFO:  Integrity check: No checksum in the meta data for resized_Dog36.jpg
+        Integrity check: No checksum in the meta data for resized_Dog36.jpg
+        2020-07-30 08:53:32,648   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog36.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog36.jpg"
+        2020-07-30 08:53:32,648    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog37.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog37.jpg"
+        2020-07-30 08:53:32,709    INFO:  Integrity check: No checksum in the meta data for resized_Cat53.jpg
+        Integrity check: No checksum in the meta data for resized_Cat53.jpg
+        2020-07-30 08:53:32,709   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat53.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat53.jpg"
+        2020-07-30 08:53:32,710    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat54.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat54.jpg"
+        2020-07-30 08:53:32,726    INFO:  Integrity check: No checksum in the meta data for resized_Dog37.jpg
+        Integrity check: No checksum in the meta data for resized_Dog37.jpg
+        2020-07-30 08:53:32,726   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog37.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog37.jpg"
+        2020-07-30 08:53:32,726    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog38.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog38.jpg"
+        2020-07-30 08:53:32,786    INFO:  Integrity check: No checksum in the meta data for resized_Cat54.jpg
+        Integrity check: No checksum in the meta data for resized_Cat54.jpg
+        2020-07-30 08:53:32,787   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat54.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat54.jpg"
+        2020-07-30 08:53:32,787    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat55.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat55.jpg"
+        2020-07-30 08:53:32,805    INFO:  Integrity check: No checksum in the meta data for resized_Dog38.jpg
+        Integrity check: No checksum in the meta data for resized_Dog38.jpg
+        2020-07-30 08:53:32,805   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog38.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog38.jpg"
+        2020-07-30 08:53:32,805    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog39.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog39.jpg"
+        2020-07-30 08:53:32,863    INFO:  Integrity check: No checksum in the meta data for resized_Cat55.jpg
+        Integrity check: No checksum in the meta data for resized_Cat55.jpg
+        2020-07-30 08:53:32,863   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat55.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat55.jpg"
+        2020-07-30 08:53:32,863    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat56.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat56.jpg"
+        2020-07-30 08:53:32,885    INFO:  Integrity check: No checksum in the meta data for resized_Dog39.jpg
+        Integrity check: No checksum in the meta data for resized_Dog39.jpg
+        2020-07-30 08:53:32,885   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog39.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog39.jpg"
+        2020-07-30 08:53:32,885    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog4.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog4.jpg"
+        2020-07-30 08:53:32,941    INFO:  Integrity check: No checksum in the meta data for resized_Cat56.jpg
+        Integrity check: No checksum in the meta data for resized_Cat56.jpg
+        2020-07-30 08:53:32,942   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat56.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat56.jpg"
+        2020-07-30 08:53:32,942    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat57.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat57.jpg"
+        2020-07-30 08:53:32,965    INFO:  Integrity check: No checksum in the meta data for resized_Dog4.jpg
+        Integrity check: No checksum in the meta data for resized_Dog4.jpg
+        2020-07-30 08:53:32,965   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog4.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog4.jpg"
+        2020-07-30 08:53:32,965    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog40.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog40.jpg"
+        2020-07-30 08:53:33,019    INFO:  Integrity check: No checksum in the meta data for resized_Cat57.jpg
+        Integrity check: No checksum in the meta data for resized_Cat57.jpg
+        2020-07-30 08:53:33,019   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat57.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat57.jpg"
+        2020-07-30 08:53:33,020    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat58.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat58.jpg"
+        2020-07-30 08:53:33,042    INFO:  Integrity check: No checksum in the meta data for resized_Dog40.jpg
+        Integrity check: No checksum in the meta data for resized_Dog40.jpg
+        2020-07-30 08:53:33,042   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog40.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog40.jpg"
+        2020-07-30 08:53:33,042    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog41.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog41.jpg"
+        2020-07-30 08:53:33,098    INFO:  Integrity check: No checksum in the meta data for resized_Cat58.jpg
+        Integrity check: No checksum in the meta data for resized_Cat58.jpg
+        2020-07-30 08:53:33,098   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat58.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat58.jpg"
+        2020-07-30 08:53:33,098    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat59.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat59.jpg"
+        2020-07-30 08:53:33,119    INFO:  Integrity check: No checksum in the meta data for resized_Dog41.jpg
+        Integrity check: No checksum in the meta data for resized_Dog41.jpg
+        2020-07-30 08:53:33,119   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog41.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog41.jpg"
+        2020-07-30 08:53:33,119    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog42.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog42.jpg"
+        2020-07-30 08:53:33,175    INFO:  Integrity check: No checksum in the meta data for resized_Cat59.jpg
+        Integrity check: No checksum in the meta data for resized_Cat59.jpg
+        2020-07-30 08:53:33,175   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat59.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat59.jpg"
+        2020-07-30 08:53:33,175    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat6.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat6.jpg"
+        2020-07-30 08:53:33,196    INFO:  Integrity check: No checksum in the meta data for resized_Dog42.jpg
+        Integrity check: No checksum in the meta data for resized_Dog42.jpg
+        2020-07-30 08:53:33,196   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog42.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog42.jpg"
+        2020-07-30 08:53:33,197    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog43.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog43.jpg"
+        2020-07-30 08:53:33,251    INFO:  Integrity check: No checksum in the meta data for resized_Cat6.jpg
+        Integrity check: No checksum in the meta data for resized_Cat6.jpg
+        2020-07-30 08:53:33,252   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat6.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat6.jpg"
+        2020-07-30 08:53:33,252    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat60.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat60.jpg"
+        2020-07-30 08:53:33,273    INFO:  Integrity check: No checksum in the meta data for resized_Dog43.jpg
+        Integrity check: No checksum in the meta data for resized_Dog43.jpg
+        2020-07-30 08:53:33,273   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog43.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog43.jpg"
+        2020-07-30 08:53:33,274    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog44.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog44.jpg"
+        2020-07-30 08:53:33,329    INFO:  Integrity check: No checksum in the meta data for resized_Cat60.jpg
+        Integrity check: No checksum in the meta data for resized_Cat60.jpg
+        2020-07-30 08:53:33,329   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat60.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat60.jpg"
+        2020-07-30 08:53:33,329    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat61.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat61.jpg"
+        2020-07-30 08:53:33,352    INFO:  Integrity check: No checksum in the meta data for resized_Dog44.jpg
+        Integrity check: No checksum in the meta data for resized_Dog44.jpg
+        2020-07-30 08:53:33,353   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog44.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog44.jpg"
+        2020-07-30 08:53:33,353    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog45.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog45.jpg"
+        2020-07-30 08:53:33,407    INFO:  Integrity check: No checksum in the meta data for resized_Cat61.jpg
+        Integrity check: No checksum in the meta data for resized_Cat61.jpg
+        2020-07-30 08:53:33,407   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat61.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat61.jpg"
+        2020-07-30 08:53:33,407    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat62.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat62.jpg"
+        2020-07-30 08:53:33,433    INFO:  Integrity check: No checksum in the meta data for resized_Dog45.jpg
+        Integrity check: No checksum in the meta data for resized_Dog45.jpg
+        2020-07-30 08:53:33,433   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog45.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog45.jpg"
+        2020-07-30 08:53:33,433    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog46.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog46.jpg"
+        2020-07-30 08:53:33,484    INFO:  Integrity check: No checksum in the meta data for resized_Cat62.jpg
+        Integrity check: No checksum in the meta data for resized_Cat62.jpg
+        2020-07-30 08:53:33,484   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat62.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat62.jpg"
+        2020-07-30 08:53:33,485    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat63.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat63.jpg"
+        2020-07-30 08:53:33,510    INFO:  Integrity check: No checksum in the meta data for resized_Dog46.jpg
+        Integrity check: No checksum in the meta data for resized_Dog46.jpg
+        2020-07-30 08:53:33,510   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog46.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog46.jpg"
+        2020-07-30 08:53:33,510    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog47.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog47.jpg"
+        2020-07-30 08:53:33,564    INFO:  Integrity check: No checksum in the meta data for resized_Cat63.jpg
+        Integrity check: No checksum in the meta data for resized_Cat63.jpg
+        2020-07-30 08:53:33,564   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat63.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat63.jpg"
+        2020-07-30 08:53:33,564    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat64.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat64.jpg"
+        2020-07-30 08:53:33,587    INFO:  Integrity check: No checksum in the meta data for resized_Dog47.jpg
+        Integrity check: No checksum in the meta data for resized_Dog47.jpg
+        2020-07-30 08:53:33,587   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog47.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog47.jpg"
+        2020-07-30 08:53:33,588    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog48.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog48.jpg"
+        2020-07-30 08:53:33,641    INFO:  Integrity check: No checksum in the meta data for resized_Cat64.jpg
+        Integrity check: No checksum in the meta data for resized_Cat64.jpg
+        2020-07-30 08:53:33,641   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat64.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat64.jpg"
+        2020-07-30 08:53:33,641    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat65.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat65.jpg"
+        2020-07-30 08:53:33,665    INFO:  Integrity check: No checksum in the meta data for resized_Dog48.jpg
+        Integrity check: No checksum in the meta data for resized_Dog48.jpg
+        2020-07-30 08:53:33,665   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog48.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog48.jpg"
+        2020-07-30 08:53:33,665    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog49.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog49.jpg"
+        2020-07-30 08:53:33,718    INFO:  Integrity check: No checksum in the meta data for resized_Cat65.jpg
+        Integrity check: No checksum in the meta data for resized_Cat65.jpg
+        2020-07-30 08:53:33,718   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat65.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat65.jpg"
+        2020-07-30 08:53:33,719    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat66.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat66.jpg"
+        2020-07-30 08:53:33,741    INFO:  Integrity check: No checksum in the meta data for resized_Dog49.jpg
+        Integrity check: No checksum in the meta data for resized_Dog49.jpg
+        2020-07-30 08:53:33,741   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog49.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog49.jpg"
+        2020-07-30 08:53:33,741    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog5.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog5.jpg"
+        2020-07-30 08:53:33,795    INFO:  Integrity check: No checksum in the meta data for resized_Cat66.jpg
+        Integrity check: No checksum in the meta data for resized_Cat66.jpg
+        2020-07-30 08:53:33,795   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat66.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat66.jpg"
+        2020-07-30 08:53:33,795    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat67.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat67.jpg"
+        2020-07-30 08:53:33,818    INFO:  Integrity check: No checksum in the meta data for resized_Dog5.jpg
+        Integrity check: No checksum in the meta data for resized_Dog5.jpg
+        2020-07-30 08:53:33,818   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog5.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog5.jpg"
+        2020-07-30 08:53:33,819    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog50.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog50.jpg"
+        2020-07-30 08:53:33,872    INFO:  Integrity check: No checksum in the meta data for resized_Cat67.jpg
+        Integrity check: No checksum in the meta data for resized_Cat67.jpg
+        2020-07-30 08:53:33,872   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat67.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat67.jpg"
+        2020-07-30 08:53:33,872    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat68.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat68.jpg"
+        2020-07-30 08:53:33,896    INFO:  Integrity check: No checksum in the meta data for resized_Dog50.jpg
+        Integrity check: No checksum in the meta data for resized_Dog50.jpg
+        2020-07-30 08:53:33,896   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog50.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog50.jpg"
+        2020-07-30 08:53:33,897    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog51.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog51.jpg"
+        2020-07-30 08:53:33,948    INFO:  Integrity check: No checksum in the meta data for resized_Cat68.jpg
+        Integrity check: No checksum in the meta data for resized_Cat68.jpg
+        2020-07-30 08:53:33,949   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat68.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat68.jpg"
+        2020-07-30 08:53:33,949    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat69.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat69.jpg"
+        2020-07-30 08:53:33,974    INFO:  Integrity check: No checksum in the meta data for resized_Dog51.jpg
+        Integrity check: No checksum in the meta data for resized_Dog51.jpg
+        2020-07-30 08:53:33,974   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog51.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog51.jpg"
+        2020-07-30 08:53:33,974    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog52.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog52.jpg"
+        2020-07-30 08:53:34,025    INFO:  Integrity check: No checksum in the meta data for resized_Cat69.jpg
+        Integrity check: No checksum in the meta data for resized_Cat69.jpg
+        2020-07-30 08:53:34,026   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat69.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat69.jpg"
+        2020-07-30 08:53:34,026    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat7.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat7.jpg"
+        2020-07-30 08:53:34,050    INFO:  Integrity check: No checksum in the meta data for resized_Dog52.jpg
+        Integrity check: No checksum in the meta data for resized_Dog52.jpg
+        2020-07-30 08:53:34,051   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog52.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog52.jpg"
+        2020-07-30 08:53:34,051    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog53.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog53.jpg"
+        2020-07-30 08:53:34,103    INFO:  Integrity check: No checksum in the meta data for resized_Cat7.jpg
+        Integrity check: No checksum in the meta data for resized_Cat7.jpg
+        2020-07-30 08:53:34,103   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat7.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat7.jpg"
+        2020-07-30 08:53:34,103    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat70.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat70.jpg"
+        2020-07-30 08:53:34,127    INFO:  Integrity check: No checksum in the meta data for resized_Dog53.jpg
+        Integrity check: No checksum in the meta data for resized_Dog53.jpg
+        2020-07-30 08:53:34,127   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog53.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog53.jpg"
+        2020-07-30 08:53:34,127    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog54.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog54.jpg"
+        2020-07-30 08:53:34,181    INFO:  Integrity check: No checksum in the meta data for resized_Cat70.jpg
+        Integrity check: No checksum in the meta data for resized_Cat70.jpg
+        2020-07-30 08:53:34,181   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat70.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat70.jpg"
+        2020-07-30 08:53:34,181    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat71.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat71.jpg"
+        2020-07-30 08:53:34,204    INFO:  Integrity check: No checksum in the meta data for resized_Dog54.jpg
+        Integrity check: No checksum in the meta data for resized_Dog54.jpg
+        2020-07-30 08:53:34,204   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog54.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog54.jpg"
+        2020-07-30 08:53:34,204    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog55.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog55.jpg"
+        2020-07-30 08:53:34,262    INFO:  Integrity check: No checksum in the meta data for resized_Cat71.jpg
+        Integrity check: No checksum in the meta data for resized_Cat71.jpg
+        2020-07-30 08:53:34,263   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat71.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat71.jpg"
+        2020-07-30 08:53:34,263    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat72.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat72.jpg"
+        2020-07-30 08:53:34,289    INFO:  Integrity check: No checksum in the meta data for resized_Dog55.jpg
+        Integrity check: No checksum in the meta data for resized_Dog55.jpg
+        2020-07-30 08:53:34,289   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog55.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog55.jpg"
+        2020-07-30 08:53:34,289    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog56.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog56.jpg"
+        2020-07-30 08:53:34,350    INFO:  Integrity check: No checksum in the meta data for resized_Cat72.jpg
+        Integrity check: No checksum in the meta data for resized_Cat72.jpg
+        2020-07-30 08:53:34,350   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat72.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat72.jpg"
+        2020-07-30 08:53:34,350    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat73.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat73.jpg"
+        2020-07-30 08:53:34,371    INFO:  Integrity check: No checksum in the meta data for resized_Dog56.jpg
+        Integrity check: No checksum in the meta data for resized_Dog56.jpg
+        2020-07-30 08:53:34,371   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog56.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog56.jpg"
+        2020-07-30 08:53:34,371    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog57.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog57.jpg"
+        2020-07-30 08:53:34,431    INFO:  Integrity check: No checksum in the meta data for resized_Cat73.jpg
+        Integrity check: No checksum in the meta data for resized_Cat73.jpg
+        2020-07-30 08:53:34,432   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat73.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat73.jpg"
+        2020-07-30 08:53:34,432    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat74.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat74.jpg"
+        2020-07-30 08:53:34,461    INFO:  Integrity check: No checksum in the meta data for resized_Dog57.jpg
+        Integrity check: No checksum in the meta data for resized_Dog57.jpg
+        2020-07-30 08:53:34,461   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog57.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog57.jpg"
+        2020-07-30 08:53:34,461    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog58.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog58.jpg"
+        2020-07-30 08:53:34,515    INFO:  Integrity check: No checksum in the meta data for resized_Cat74.jpg
+        Integrity check: No checksum in the meta data for resized_Cat74.jpg
+        2020-07-30 08:53:34,515   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat74.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat74.jpg"
+        2020-07-30 08:53:34,515    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat75.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat75.jpg"
+        2020-07-30 08:53:34,539    INFO:  Integrity check: No checksum in the meta data for resized_Dog58.jpg
+        Integrity check: No checksum in the meta data for resized_Dog58.jpg
+        2020-07-30 08:53:34,539   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog58.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog58.jpg"
+        2020-07-30 08:53:34,540    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog59.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog59.jpg"
+        2020-07-30 08:53:34,592    INFO:  Integrity check: No checksum in the meta data for resized_Cat75.jpg
+        Integrity check: No checksum in the meta data for resized_Cat75.jpg
+        2020-07-30 08:53:34,593   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat75.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat75.jpg"
+        2020-07-30 08:53:34,593    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat76.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat76.jpg"
+        2020-07-30 08:53:34,617    INFO:  Integrity check: No checksum in the meta data for resized_Dog59.jpg
+        Integrity check: No checksum in the meta data for resized_Dog59.jpg
+        2020-07-30 08:53:34,617   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog59.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog59.jpg"
+        2020-07-30 08:53:34,617    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog6.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog6.jpg"
+        2020-07-30 08:53:34,671    INFO:  Integrity check: No checksum in the meta data for resized_Cat76.jpg
+        Integrity check: No checksum in the meta data for resized_Cat76.jpg
+        2020-07-30 08:53:34,671   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat76.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat76.jpg"
+        2020-07-30 08:53:34,671    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat77.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat77.jpg"
+        2020-07-30 08:53:34,694    INFO:  Integrity check: No checksum in the meta data for resized_Dog6.jpg
+        Integrity check: No checksum in the meta data for resized_Dog6.jpg
+        2020-07-30 08:53:34,695   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog6.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog6.jpg"
+        2020-07-30 08:53:34,695    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog60.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog60.jpg"
+        2020-07-30 08:53:34,749    INFO:  Integrity check: No checksum in the meta data for resized_Cat77.jpg
+        Integrity check: No checksum in the meta data for resized_Cat77.jpg
+        2020-07-30 08:53:34,749   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat77.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat77.jpg"
+        2020-07-30 08:53:34,749    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat78.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat78.jpg"
+        2020-07-30 08:53:34,771    INFO:  Integrity check: No checksum in the meta data for resized_Dog60.jpg
+        Integrity check: No checksum in the meta data for resized_Dog60.jpg
+        2020-07-30 08:53:34,771   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog60.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog60.jpg"
+        2020-07-30 08:53:34,771    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog61.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog61.jpg"
+        2020-07-30 08:53:34,830    INFO:  Integrity check: No checksum in the meta data for resized_Cat78.jpg
+        Integrity check: No checksum in the meta data for resized_Cat78.jpg
+        2020-07-30 08:53:34,830   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat78.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat78.jpg"
+        2020-07-30 08:53:34,830    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat79.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat79.jpg"
+        2020-07-30 08:53:34,849    INFO:  Integrity check: No checksum in the meta data for resized_Dog61.jpg
+        Integrity check: No checksum in the meta data for resized_Dog61.jpg
+        2020-07-30 08:53:34,849   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog61.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog61.jpg"
+        2020-07-30 08:53:34,849    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog62.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog62.jpg"
+        2020-07-30 08:53:34,908    INFO:  Integrity check: No checksum in the meta data for resized_Cat79.jpg
+        Integrity check: No checksum in the meta data for resized_Cat79.jpg
+        2020-07-30 08:53:34,908   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat79.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat79.jpg"
+        2020-07-30 08:53:34,908    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat8.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat8.jpg"
+        2020-07-30 08:53:34,925    INFO:  Integrity check: No checksum in the meta data for resized_Dog62.jpg
+        Integrity check: No checksum in the meta data for resized_Dog62.jpg
+        2020-07-30 08:53:34,926   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog62.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog62.jpg"
+        2020-07-30 08:53:34,926    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog63.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog63.jpg"
+        2020-07-30 08:53:34,986    INFO:  Integrity check: No checksum in the meta data for resized_Cat8.jpg
+        Integrity check: No checksum in the meta data for resized_Cat8.jpg
+        2020-07-30 08:53:34,987   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat8.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat8.jpg"
+        2020-07-30 08:53:34,987    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat80.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat80.jpg"
+        2020-07-30 08:53:35,001    INFO:  Integrity check: No checksum in the meta data for resized_Dog63.jpg
+        Integrity check: No checksum in the meta data for resized_Dog63.jpg
+        2020-07-30 08:53:35,002   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog63.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog63.jpg"
+        2020-07-30 08:53:35,002    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog64.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog64.jpg"
+        2020-07-30 08:53:35,063    INFO:  Integrity check: No checksum in the meta data for resized_Cat80.jpg
+        Integrity check: No checksum in the meta data for resized_Cat80.jpg
+        2020-07-30 08:53:35,063   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat80.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat80.jpg"
+        2020-07-30 08:53:35,063    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat81.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat81.jpg"
+        2020-07-30 08:53:35,078    INFO:  Integrity check: No checksum in the meta data for resized_Dog64.jpg
+        Integrity check: No checksum in the meta data for resized_Dog64.jpg
+        2020-07-30 08:53:35,078   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog64.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog64.jpg"
+        2020-07-30 08:53:35,078    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog65.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog65.jpg"
+        2020-07-30 08:53:35,140    INFO:  Integrity check: No checksum in the meta data for resized_Cat81.jpg
+        Integrity check: No checksum in the meta data for resized_Cat81.jpg
+        2020-07-30 08:53:35,140   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat81.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat81.jpg"
+        2020-07-30 08:53:35,141    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat82.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat82.jpg"
+        2020-07-30 08:53:35,155    INFO:  Integrity check: No checksum in the meta data for resized_Dog65.jpg
+        Integrity check: No checksum in the meta data for resized_Dog65.jpg
+        2020-07-30 08:53:35,155   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog65.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog65.jpg"
+        2020-07-30 08:53:35,155    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog66.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog66.jpg"
+        2020-07-30 08:53:35,217    INFO:  Integrity check: No checksum in the meta data for resized_Cat82.jpg
+        Integrity check: No checksum in the meta data for resized_Cat82.jpg
+        2020-07-30 08:53:35,217   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat82.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat82.jpg"
+        2020-07-30 08:53:35,218    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat83.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat83.jpg"
+        2020-07-30 08:53:35,234    INFO:  Integrity check: No checksum in the meta data for resized_Dog66.jpg
+        Integrity check: No checksum in the meta data for resized_Dog66.jpg
+        2020-07-30 08:53:35,234   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog66.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog66.jpg"
+        2020-07-30 08:53:35,234    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog67.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog67.jpg"
+        2020-07-30 08:53:35,294    INFO:  Integrity check: No checksum in the meta data for resized_Cat83.jpg
+        Integrity check: No checksum in the meta data for resized_Cat83.jpg
+        2020-07-30 08:53:35,294   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat83.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat83.jpg"
+        2020-07-30 08:53:35,295    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat84.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat84.jpg"
+        2020-07-30 08:53:35,322    INFO:  Integrity check: No checksum in the meta data for resized_Dog67.jpg
+        Integrity check: No checksum in the meta data for resized_Dog67.jpg
+        2020-07-30 08:53:35,323   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog67.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog67.jpg"
+        2020-07-30 08:53:35,323    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog68.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog68.jpg"
+        2020-07-30 08:53:35,372    INFO:  Integrity check: No checksum in the meta data for resized_Cat84.jpg
+        Integrity check: No checksum in the meta data for resized_Cat84.jpg
+        2020-07-30 08:53:35,373   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat84.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat84.jpg"
+        2020-07-30 08:53:35,373    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat85.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat85.jpg"
+        2020-07-30 08:53:35,403    INFO:  Integrity check: No checksum in the meta data for resized_Dog68.jpg
+        Integrity check: No checksum in the meta data for resized_Dog68.jpg
+        2020-07-30 08:53:35,403   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog68.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog68.jpg"
+        2020-07-30 08:53:35,403    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog69.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog69.jpg"
+        2020-07-30 08:53:35,450    INFO:  Integrity check: No checksum in the meta data for resized_Cat85.jpg
+        Integrity check: No checksum in the meta data for resized_Cat85.jpg
+        2020-07-30 08:53:35,451   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat85.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat85.jpg"
+        2020-07-30 08:53:35,451    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat86.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat86.jpg"
+        2020-07-30 08:53:35,480    INFO:  Integrity check: No checksum in the meta data for resized_Dog69.jpg
+        Integrity check: No checksum in the meta data for resized_Dog69.jpg
+        2020-07-30 08:53:35,481   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog69.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog69.jpg"
+        2020-07-30 08:53:35,481    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog7.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog7.jpg"
+        2020-07-30 08:53:35,527    INFO:  Integrity check: No checksum in the meta data for resized_Cat86.jpg
+        Integrity check: No checksum in the meta data for resized_Cat86.jpg
+        2020-07-30 08:53:35,528   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat86.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat86.jpg"
+        2020-07-30 08:53:35,528    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat87.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat87.jpg"
+        2020-07-30 08:53:35,558    INFO:  Integrity check: No checksum in the meta data for resized_Dog7.jpg
+        Integrity check: No checksum in the meta data for resized_Dog7.jpg
+        2020-07-30 08:53:35,558   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog7.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog7.jpg"
+        2020-07-30 08:53:35,558    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog70.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog70.jpg"
+        2020-07-30 08:53:35,604    INFO:  Integrity check: No checksum in the meta data for resized_Cat87.jpg
+        Integrity check: No checksum in the meta data for resized_Cat87.jpg
+        2020-07-30 08:53:35,604   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat87.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat87.jpg"
+        2020-07-30 08:53:35,605    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat88.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat88.jpg"
+        2020-07-30 08:53:35,635    INFO:  Integrity check: No checksum in the meta data for resized_Dog70.jpg
+        Integrity check: No checksum in the meta data for resized_Dog70.jpg
+        2020-07-30 08:53:35,635   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog70.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog70.jpg"
+        2020-07-30 08:53:35,635    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog71.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog71.jpg"
+        2020-07-30 08:53:35,682    INFO:  Integrity check: No checksum in the meta data for resized_Cat88.jpg
+        Integrity check: No checksum in the meta data for resized_Cat88.jpg
+        2020-07-30 08:53:35,682   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat88.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat88.jpg"
+        2020-07-30 08:53:35,682    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat89.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat89.jpg"
+        2020-07-30 08:53:35,712    INFO:  Integrity check: No checksum in the meta data for resized_Dog71.jpg
+        Integrity check: No checksum in the meta data for resized_Dog71.jpg
+        2020-07-30 08:53:35,712   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog71.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog71.jpg"
+        2020-07-30 08:53:35,712    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog72.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog72.jpg"
+        2020-07-30 08:53:35,760    INFO:  Integrity check: No checksum in the meta data for resized_Cat89.jpg
+        Integrity check: No checksum in the meta data for resized_Cat89.jpg
+        2020-07-30 08:53:35,760   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat89.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat89.jpg"
+        2020-07-30 08:53:35,760    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat9.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat9.jpg"
+        2020-07-30 08:53:35,788    INFO:  Integrity check: No checksum in the meta data for resized_Dog72.jpg
+        Integrity check: No checksum in the meta data for resized_Dog72.jpg
+        2020-07-30 08:53:35,789   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog72.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog72.jpg"
+        2020-07-30 08:53:35,789    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog73.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog73.jpg"
+        2020-07-30 08:53:35,841    INFO:  Integrity check: No checksum in the meta data for resized_Cat9.jpg
+        Integrity check: No checksum in the meta data for resized_Cat9.jpg
+        2020-07-30 08:53:35,842   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat9.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat9.jpg"
+        2020-07-30 08:53:35,842    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat90.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat90.jpg"
+        2020-07-30 08:53:35,869    INFO:  Integrity check: No checksum in the meta data for resized_Dog73.jpg
+        Integrity check: No checksum in the meta data for resized_Dog73.jpg
+        2020-07-30 08:53:35,869   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog73.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog73.jpg"
+        2020-07-30 08:53:35,869    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog74.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog74.jpg"
+        2020-07-30 08:53:35,921    INFO:  Integrity check: No checksum in the meta data for resized_Cat90.jpg
+        Integrity check: No checksum in the meta data for resized_Cat90.jpg
+        2020-07-30 08:53:35,921   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat90.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat90.jpg"
+        2020-07-30 08:53:35,921    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat91.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat91.jpg"
+        2020-07-30 08:53:35,948    INFO:  Integrity check: No checksum in the meta data for resized_Dog74.jpg
+        Integrity check: No checksum in the meta data for resized_Dog74.jpg
+        2020-07-30 08:53:35,948   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog74.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog74.jpg"
+        2020-07-30 08:53:35,948    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog75.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog75.jpg"
+        2020-07-30 08:53:35,998    INFO:  Integrity check: No checksum in the meta data for resized_Cat91.jpg
+        Integrity check: No checksum in the meta data for resized_Cat91.jpg
+        2020-07-30 08:53:35,998   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat91.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat91.jpg"
+        2020-07-30 08:53:35,998    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat92.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat92.jpg"
+        2020-07-30 08:53:36,026    INFO:  Integrity check: No checksum in the meta data for resized_Dog75.jpg
+        Integrity check: No checksum in the meta data for resized_Dog75.jpg
+        2020-07-30 08:53:36,026   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog75.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog75.jpg"
+        2020-07-30 08:53:36,026    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog76.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog76.jpg"
+        2020-07-30 08:53:36,076    INFO:  Integrity check: No checksum in the meta data for resized_Cat92.jpg
+        Integrity check: No checksum in the meta data for resized_Cat92.jpg
+        2020-07-30 08:53:36,076   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat92.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat92.jpg"
+        2020-07-30 08:53:36,076    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat93.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat93.jpg"
+        2020-07-30 08:53:36,104    INFO:  Integrity check: No checksum in the meta data for resized_Dog76.jpg
+        Integrity check: No checksum in the meta data for resized_Dog76.jpg
+        2020-07-30 08:53:36,104   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog76.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog76.jpg"
+        2020-07-30 08:53:36,104    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog77.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog77.jpg"
+        2020-07-30 08:53:36,153    INFO:  Integrity check: No checksum in the meta data for resized_Cat93.jpg
+        Integrity check: No checksum in the meta data for resized_Cat93.jpg
+        2020-07-30 08:53:36,153   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat93.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat93.jpg"
+        2020-07-30 08:53:36,153    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat94.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat94.jpg"
+        2020-07-30 08:53:36,183    INFO:  Integrity check: No checksum in the meta data for resized_Dog77.jpg
+        Integrity check: No checksum in the meta data for resized_Dog77.jpg
+        2020-07-30 08:53:36,183   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog77.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog77.jpg"
+        2020-07-30 08:53:36,183    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog78.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog78.jpg"
+        2020-07-30 08:53:36,231    INFO:  Integrity check: No checksum in the meta data for resized_Cat94.jpg
+        Integrity check: No checksum in the meta data for resized_Cat94.jpg
+        2020-07-30 08:53:36,231   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat94.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat94.jpg"
+        2020-07-30 08:53:36,232    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat95.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat95.jpg"
+        2020-07-30 08:53:36,260    INFO:  Integrity check: No checksum in the meta data for resized_Dog78.jpg
+        Integrity check: No checksum in the meta data for resized_Dog78.jpg
+        2020-07-30 08:53:36,260   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog78.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog78.jpg"
+        2020-07-30 08:53:36,261    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog79.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog79.jpg"
+        2020-07-30 08:53:36,308    INFO:  Integrity check: No checksum in the meta data for resized_Cat95.jpg
+        Integrity check: No checksum in the meta data for resized_Cat95.jpg
+        2020-07-30 08:53:36,308   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat95.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat95.jpg"
+        2020-07-30 08:53:36,308    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat96.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat96.jpg"
+        2020-07-30 08:53:36,338    INFO:  Integrity check: No checksum in the meta data for resized_Dog79.jpg
+        Integrity check: No checksum in the meta data for resized_Dog79.jpg
+        2020-07-30 08:53:36,338   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog79.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog79.jpg"
+        2020-07-30 08:53:36,338    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog8.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog8.jpg"
+        2020-07-30 08:53:36,385    INFO:  Integrity check: No checksum in the meta data for resized_Cat96.jpg
+        Integrity check: No checksum in the meta data for resized_Cat96.jpg
+        2020-07-30 08:53:36,385   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat96.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat96.jpg"
+        2020-07-30 08:53:36,386    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat97.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat97.jpg"
+        2020-07-30 08:53:36,416    INFO:  Integrity check: No checksum in the meta data for resized_Dog8.jpg
+        Integrity check: No checksum in the meta data for resized_Dog8.jpg
+        2020-07-30 08:53:36,416   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog8.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog8.jpg"
+        2020-07-30 08:53:36,416    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog80.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog80.jpg"
+        2020-07-30 08:53:36,463    INFO:  Integrity check: No checksum in the meta data for resized_Cat97.jpg
+        Integrity check: No checksum in the meta data for resized_Cat97.jpg
+        2020-07-30 08:53:36,463   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Cat97.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Cat97.jpg"
+        2020-07-30 08:53:36,495    INFO:  Integrity check: No checksum in the meta data for resized_Dog80.jpg
+        Integrity check: No checksum in the meta data for resized_Dog80.jpg
+        2020-07-30 08:53:36,495   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog80.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog80.jpg"
+        2020-07-30 08:53:36,495    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog81.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog81.jpg"
+        2020-07-30 08:53:36,570    INFO:  Integrity check: No checksum in the meta data for resized_Dog81.jpg
+        Integrity check: No checksum in the meta data for resized_Dog81.jpg
+        2020-07-30 08:53:36,571   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog81.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog81.jpg"
+        2020-07-30 08:53:36,571    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog82.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog82.jpg"
+        2020-07-30 08:53:36,647    INFO:  Integrity check: No checksum in the meta data for resized_Dog82.jpg
+        Integrity check: No checksum in the meta data for resized_Dog82.jpg
+        2020-07-30 08:53:36,647   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog82.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog82.jpg"
+        2020-07-30 08:53:36,647    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog83.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog83.jpg"
+        2020-07-30 08:53:36,723    INFO:  Integrity check: No checksum in the meta data for resized_Dog83.jpg
+        Integrity check: No checksum in the meta data for resized_Dog83.jpg
+        2020-07-30 08:53:36,723   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog83.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog83.jpg"
+        2020-07-30 08:53:36,723    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog84.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog84.jpg"
+        2020-07-30 08:53:36,799    INFO:  Integrity check: No checksum in the meta data for resized_Dog84.jpg
+        Integrity check: No checksum in the meta data for resized_Dog84.jpg
+        2020-07-30 08:53:36,799   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog84.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog84.jpg"
+        2020-07-30 08:53:36,800    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog85.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog85.jpg"
+        2020-07-30 08:53:36,875    INFO:  Integrity check: No checksum in the meta data for resized_Dog85.jpg
+        Integrity check: No checksum in the meta data for resized_Dog85.jpg
+        2020-07-30 08:53:36,876   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog85.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog85.jpg"
+        2020-07-30 08:53:36,876    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog86.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog86.jpg"
+        2020-07-30 08:53:36,952    INFO:  Integrity check: No checksum in the meta data for resized_Dog86.jpg
+        Integrity check: No checksum in the meta data for resized_Dog86.jpg
+        2020-07-30 08:53:36,952   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog86.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog86.jpg"
+        2020-07-30 08:53:36,952    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog87.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog87.jpg"
+        2020-07-30 08:53:37,027    INFO:  Integrity check: No checksum in the meta data for resized_Dog87.jpg
+        Integrity check: No checksum in the meta data for resized_Dog87.jpg
+        2020-07-30 08:53:37,027   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog87.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog87.jpg"
+        2020-07-30 08:53:37,028    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog88.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog88.jpg"
+        2020-07-30 08:53:37,103    INFO:  Integrity check: No checksum in the meta data for resized_Dog88.jpg
+        Integrity check: No checksum in the meta data for resized_Dog88.jpg
+        2020-07-30 08:53:37,103   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog88.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog88.jpg"
+        2020-07-30 08:53:37,103    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog89.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog89.jpg"
+        2020-07-30 08:53:37,179    INFO:  Integrity check: No checksum in the meta data for resized_Dog89.jpg
+        Integrity check: No checksum in the meta data for resized_Dog89.jpg
+        2020-07-30 08:53:37,180   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog89.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog89.jpg"
+        2020-07-30 08:53:37,180    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog9.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog9.jpg"
+        2020-07-30 08:53:37,255    INFO:  Integrity check: No checksum in the meta data for resized_Dog9.jpg
+        Integrity check: No checksum in the meta data for resized_Dog9.jpg
+        2020-07-30 08:53:37,256   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog9.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog9.jpg"
+        2020-07-30 08:53:37,256    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog90.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog90.jpg"
+        2020-07-30 08:53:37,332    INFO:  Integrity check: No checksum in the meta data for resized_Dog90.jpg
+        Integrity check: No checksum in the meta data for resized_Dog90.jpg
+        2020-07-30 08:53:37,332   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog90.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog90.jpg"
+        2020-07-30 08:53:37,332    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog91.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog91.jpg"
+        2020-07-30 08:53:37,410    INFO:  Integrity check: No checksum in the meta data for resized_Dog91.jpg
+        Integrity check: No checksum in the meta data for resized_Dog91.jpg
+        2020-07-30 08:53:37,410   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog91.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog91.jpg"
+        2020-07-30 08:53:37,410    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog92.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog92.jpg"
+        2020-07-30 08:53:37,485    INFO:  Integrity check: No checksum in the meta data for resized_Dog92.jpg
+        Integrity check: No checksum in the meta data for resized_Dog92.jpg
+        2020-07-30 08:53:37,485   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog92.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog92.jpg"
+        2020-07-30 08:53:37,486    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog93.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog93.jpg"
+        2020-07-30 08:53:37,561    INFO:  Integrity check: No checksum in the meta data for resized_Dog93.jpg
+        Integrity check: No checksum in the meta data for resized_Dog93.jpg
+        2020-07-30 08:53:37,562   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog93.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog93.jpg"
+        2020-07-30 08:53:37,562    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog94.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog94.jpg"
+        2020-07-30 08:53:37,638    INFO:  Integrity check: No checksum in the meta data for resized_Dog94.jpg
+        Integrity check: No checksum in the meta data for resized_Dog94.jpg
+        2020-07-30 08:53:37,638   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog94.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog94.jpg"
+        2020-07-30 08:53:37,638    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog95.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog95.jpg"
+        2020-07-30 08:53:37,714    INFO:  Integrity check: No checksum in the meta data for resized_Dog95.jpg
+        Integrity check: No checksum in the meta data for resized_Dog95.jpg
+        2020-07-30 08:53:37,714   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog95.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog95.jpg"
+        2020-07-30 08:53:37,714    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog96.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog96.jpg"
+        2020-07-30 08:53:37,789    INFO:  Integrity check: No checksum in the meta data for resized_Dog96.jpg
+        Integrity check: No checksum in the meta data for resized_Dog96.jpg
+        2020-07-30 08:53:37,789   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog96.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog96.jpg"
+        2020-07-30 08:53:37,790    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog97.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog97.jpg"
+        2020-07-30 08:53:37,865    INFO:  Integrity check: No checksum in the meta data for resized_Dog97.jpg
+        Integrity check: No checksum in the meta data for resized_Dog97.jpg
+        2020-07-30 08:53:37,865   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog97.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog97.jpg"
+        2020-07-30 08:53:37,866    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog98.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog98.jpg"
+        2020-07-30 08:53:37,942    INFO:  Integrity check: No checksum in the meta data for resized_Dog98.jpg
+        Integrity check: No checksum in the meta data for resized_Dog98.jpg
+        2020-07-30 08:53:37,942   ERROR:  Command exited with non-zero exit code (1): /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="resized_Dog98.jpg=//home/scitech/shared-data/CatsAndDogs/wf-output/resized_Dog98.jpg"
+        2020-07-30 08:53:37,944   ERROR:  Too many failures to continue trying - exiting early
+        2020-07-30 08:53:37,944    INFO:  --------------------------------------------------------------------------------
+        2020-07-30 08:53:37,944    INFO:  @@@MONITORING_PAYLOAD - START@@@{"ts": 1596124417, "monitoring_event": "int.metric", "payload": [{"event": "check", "file_type": "output", "succeeded": 1, "failed": 199, "duration": "15.784"}]}@@@MONITORING_PAYLOAD - END@@@
+        2020-07-30 08:53:37,945    INFO:  Stats: Total 200 transfers, 0.0 B transferred in 14 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2020-07-30 08:53:37,945    INFO:         Between sites local->local : 200 transfers, 0.0 B transferred in 14 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2020-07-30 08:53:37,945 CRITICAL:  Some transfers failed! See above, and possibly stderr.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_31665/ks.err.4VJyKP
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 1076112
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-07-30T08:53:24-07:00
+      atime: 2020-07-30T08:53:24-07:00
+      ctime: 2020-07-30T08:53:24-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_31665/ks.meta.dBwjbu
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1076113
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-07-30T08:53:24-07:00
+      atime: 2020-07-30T08:53:24-07:00
+      ctime: 2020-07-30T08:53:24-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    kickstart:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-kickstart
+      mode: 0o100755
+      size: 356072
+      inode: 1155
+      nlink: 1
+      blksize: 4096
+      blocks: 696
+      mtime: 2020-07-30T07:57:21-07:00
+      atime: 2020-07-30T07:57:21-07:00
+      ctime: 2020-07-30T07:58:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    logfile:
+      descriptor_number: 1
+      mode: 0o100644
+      size: 180224
+      inode: 8895723
+      nlink: 1
+      blksize: 4096
+      blocks: 384
+      mtime: 2020-07-30T08:53:37-07:00
+      atime: 2020-07-30T08:53:24-07:00
+      ctime: 2020-07-30T08:53:37-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+  environment:
+    "BATCH_SYSTEM": "HTCondor"
+    "CONDOR_JOBID": "29.0"
+    "KICKSTART_INTEGRITY_DATA": "/var/lib/condor/spool/local_univ_execute/dir_31665/ks.integrity.m7w4B8"
+    "KICKSTART_METADATA": "/var/lib/condor/spool/local_univ_execute/dir_31665/ks.meta.dBwjbu"
+    "LANG": "en_US.UTF-8"
+    "OLDPWD": "/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002"
+    "PATH": "/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin"
+    "PEGASUS_BIN_DIR": "/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin"
+    "PEGASUS_DAG_JOB_ID": "stage_out_local_local_0_0"
+    "PEGASUS_HOME": "/home/scitech/pegasus/dist/pegasus-5.0.0dev"
+    "PEGASUS_SITE": "local"
+    "PEGASUS_WF_LABEL": "Cats_and_Dogs"
+    "PEGASUS_WF_UUID": "90a39732-85a7-4e80-b9ab-6ba7542c6bfb"
+    "PWD": "/var/lib/condor/spool/local_univ_execute/dir_31665"
+    "SHLVL": "1"
+    "TEMP": "/var/lib/condor/spool/local_univ_execute/dir_31665"
+    "TMP": "/var/lib/condor/spool/local_univ_execute/dir_31665"
+    "TMPDIR": "/var/lib/condor/spool/local_univ_execute/dir_31665"
+    "_": "/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-kickstart"
+    "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
+    "_CONDOR_ANCESTOR_269": "277:1596121726:2517009638"
+    "_CONDOR_ANCESTOR_277": "31665:1596124404:3928492206"
+    "_CONDOR_ANCESTOR_31665": "31667:1596124404:1724639758"
+    "_CONDOR_BIN": "/usr/bin"
+    "_CONDOR_JOB_AD": "/var/lib/condor/spool/local_univ_execute/dir_31665/.job.ad"
+    "_CONDOR_JOB_IWD": "/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002"
+    "_CONDOR_JOB_PIDS": ""
+    "_CONDOR_MACHINE_AD": "/var/lib/condor/spool/local_univ_execute/dir_31665/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/var/lib/condor/spool/local_univ_execute/dir_31665"
+    "_CONDOR_SLOT": ""
+    "_PEGASUS_CONNECT_STDIN": "true"
+    "_PEGASUS_TRANSFER_INPUT_FILES": "/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002/00/00/preprocess1_py_ID0000001.meta,"
+  limits:
+    RLIMIT_CPU_soft: unlimited
+    RLIMIT_CPU_hard: unlimited
+    RLIMIT_FSIZE_soft: unlimited
+    RLIMIT_FSIZE_hard: unlimited
+    RLIMIT_DATA_soft: unlimited
+    RLIMIT_DATA_hard: unlimited
+    RLIMIT_STACK_soft: unlimited
+    RLIMIT_STACK_hard: unlimited
+    RLIMIT_CORE_soft: 0
+    RLIMIT_CORE_hard: 0
+    RESOURCE_5_soft: unlimited
+    RESOURCE_5_hard: unlimited
+    RLIMIT_NPROC_soft: 4096
+    RLIMIT_NPROC_hard: unlimited
+    RLIMIT_NOFILE_soft: 4096
+    RLIMIT_NOFILE_hard: 4096
+    RLIMIT_MEMLOCK_soft: 83968000
+    RLIMIT_MEMLOCK_hard: 83968000
+    RLIMIT_AS_soft: unlimited
+    RLIMIT_AS_hard: unlimited
+    RLIMIT_LOCKS_soft: unlimited
+    RLIMIT_LOCKS_hard: unlimited
+    RLIMIT_SIGPENDING_soft: 7829
+    RLIMIT_SIGPENDING_hard: 7829
+    RLIMIT_MSGQUEUE_soft: 819200
+    RLIMIT_MSGQUEUE_hard: 819200
+    RLIMIT_NICE_soft: 0
+    RLIMIT_NICE_hard: 0
+    RLIMIT_RTPRIO_soft: 0
+    RLIMIT_RTPRIO_hard: 0
+    RESOURCE_15_soft: unlimited
+    RESOURCE_15_hard: unlimited

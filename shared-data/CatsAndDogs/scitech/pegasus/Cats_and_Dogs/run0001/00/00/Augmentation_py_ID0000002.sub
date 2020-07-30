@@ -5,7 +5,7 @@
 ######################################################################
 stream_error  = false
 stream_output = false
-environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=95280ca4-598e-4f2a-a511-7f344f4a0521 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=Augmentation_py_ID0000002 PEGASUS_SITE=condorpool"
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=32d89e08-b836-4318-8779-b159432f8603 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=Augmentation_py_ID0000002 PEGASUS_SITE=condorpool"
 +WantIOProxy = True
 error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001//00/00/Augmentation_py_ID0000002.err
 executable = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001/00/00/Augmentation_py_ID0000002.sh
@@ -24,11 +24,11 @@ transfer_output_files = aug_labels.txt,augmentation.txt
 universe = vanilla
 when_to_transfer_output = ON_EXIT
 +pegasus_generator = "Pegasus"
-+pegasus_root_wf_uuid = "95280ca4-598e-4f2a-a511-7f344f4a0521"
-+pegasus_wf_uuid = "95280ca4-598e-4f2a-a511-7f344f4a0521"
++pegasus_root_wf_uuid = "32d89e08-b836-4318-8779-b159432f8603"
++pegasus_wf_uuid = "32d89e08-b836-4318-8779-b159432f8603"
 +pegasus_version = "5.0.0dev"
 +pegasus_wf_name = "Cats_and_Dogs-0"
-+pegasus_wf_time = "20200729T160640+0000"
++pegasus_wf_time = "20200730T151136+0000"
 +pegasus_wf_xformation = "Augmentation.py"
 +pegasus_wf_dax_job_id = "ID0000002"
 +pegasus_wf_dag_job_id = "Augmentation_py_ID0000002"

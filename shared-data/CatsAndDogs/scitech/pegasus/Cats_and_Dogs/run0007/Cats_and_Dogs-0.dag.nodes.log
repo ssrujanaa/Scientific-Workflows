@@ -1,0 +1,78 @@
+000 (041.000.000) 07/30 09:09:01 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_4>
+    DAG Node: create_dir_Cats_and_Dogs_0_local
+    pool:local
+...
+001 (041.000.000) 07/30 09:09:03 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=277_ebe4_41>
+...
+005 (041.000.000) 07/30 09:09:06 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (041.000.000) 07/30 09:09:07 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: create_dir_Cats_and_Dogs_0_local
+...
+000 (042.000.000) 07/30 09:09:16 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_4>
+    DAG Node: stage_in_remote_local_0_0
+    pool:local
+...
+000 (043.000.000) 07/30 09:09:16 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_4>
+    DAG Node: stage_in_local_local_0_0
+    pool:local
+...
+001 (043.000.000) 07/30 09:09:19 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=277_ebe4_42>
+...
+001 (042.000.000) 07/30 09:09:19 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=277_ebe4_43>
+...
+005 (042.000.000) 07/30 09:09:21 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (042.000.000) 07/30 09:09:26 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_remote_local_0_0
+...
+005 (043.000.000) 07/30 09:09:44 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (043.000.000) 07/30 09:09:47 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: stage_in_local_local_0_0
+...
+000 (044.000.000) 07/30 09:09:56 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_4>
+    DAG Node: preprocess1_py_ID0000001
+    pool:condorpool
+...
+001 (044.000.000) 07/30 09:10:04 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_5>
+...
+007 (044.000.000) 07/30 09:10:09 Shadow exception!
+	Error from slot1@aaaaab5e7244: STARTER at 127.0.0.1 failed to send file(s) to <127.0.0.1:9618>: error reading from /var/lib/condor/execute/dir_47725/resized_Dog23.jpg: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <127.0.0.1:44653>
+	58016  -  Run Bytes Sent By Job
+	13835996  -  Run Bytes Received By Job
+...
+012 (044.000.000) 07/30 09:10:09 Job was held.
+	Error from slot1@aaaaab5e7244: STARTER at 127.0.0.1 failed to send file(s) to <127.0.0.1:9618>: error reading from /var/lib/condor/execute/dir_47725/resized_Dog23.jpg: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <127.0.0.1:44653>
+	Code 13 Subcode 2
+...
