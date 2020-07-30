@@ -33,19 +33,19 @@ for i in range(len(input_files)):
         output = 1.0
         photo = load_img(input_files[i], target_size=(200, 200))
 #         photo = cv.normalize(photo, norm_img, 0, 255, cv.NORM_MINMAX)
-        photo.save(cwd + '/wf-output/resized_Cat'+ str(i) + '.jpg', 'JPEG', quality=90)
+        photo.save('resized_Cat'+ str(c) + '.jpg', 'JPEG', quality=90)
         photos.append(photo)
         labels.append(output)
-#         c+=1
+        c+=1
     else:
         dog_files.append(input_files[i]) 
         output = 0.0
         photo = load_img(input_files[i], target_size=(200, 200))
-        photo.save(cwd + '/wf-output/resized_Dog'+ str(i) + '.jpg', 'JPEG', quality=90)
+        photo.save('resized_Dog'+ str(d) + '.jpg', 'JPEG', quality=90)
     #     photo = img_to_array(photo)
         photos.append(photo)
         labels.append(output)   
-#         d+=1
+        d+=1
     
 with open('resized_images.txt', 'w') as f:
     for item in photos:

@@ -76,3 +76,73 @@
 	Error from slot1@aaaaab5e7244: STARTER at 127.0.0.1 failed to send file(s) to <127.0.0.1:9618>: error reading from /var/lib/condor/execute/dir_30446/resized_Dog23.jpg: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <127.0.0.1:33005>
 	Code 13 Subcode 2
 ...
+009 (027.000.000) 07/30 09:14:16 Job was aborted by the user.
+	The job attribute PeriodicRemove expression '(JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)' evaluated to TRUE
+...
+016 (027.000.000) 07/30 09:14:20 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: preprocess1_py_ID0000001
+...
+000 (045.000.000) 07/30 09:14:29 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_4>
+    DAG Node: clean_up_local_level_3_0
+    pool:local
+...
+000 (046.000.000) 07/30 09:14:29 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_4>
+    DAG Node: stage_out_local_local_0_0
+    pool:local
+...
+001 (046.000.000) 07/30 09:14:32 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=277_ebe4_45>
+...
+001 (045.000.000) 07/30 09:14:32 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=277_ebe4_46>
+...
+005 (046.000.000) 07/30 09:14:47 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (045.000.000) 07/30 09:14:48 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (046.000.000) 07/30 09:14:49 POST Script terminated.
+	(1) Normal termination (return value 1)
+    DAG Node: stage_out_local_local_0_0
+...
+016 (045.000.000) 07/30 09:14:49 POST Script terminated.
+	(1) Normal termination (return value 0)
+    DAG Node: clean_up_local_level_3_0
+...
+000 (047.000.000) 07/30 09:14:59 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=269_6778_4>
+    DAG Node: stage_out_local_local_0_0
+    pool:local
+...
+001 (047.000.000) 07/30 09:15:04 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=277_ebe4_47>
+...
+005 (047.000.000) 07/30 09:15:19 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+016 (047.000.000) 07/30 09:15:24 POST Script terminated.
+	(1) Normal termination (return value 1)
+    DAG Node: stage_out_local_local_0_0
+...
