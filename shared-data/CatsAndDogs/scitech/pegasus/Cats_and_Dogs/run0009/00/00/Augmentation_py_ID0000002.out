@@ -1,0 +1,318 @@
+- invocation: True
+  version: 3.0
+  start: 2020-08-03T11:13:16.967-07:00
+  duration: 2.254
+  transformation: "Augmentation.py"
+  derivation: "ID0000002"
+  resource: "condorpool"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-08-03T18:11:41+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 113f55eee0e5
+  pid: 83155
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-08-03T11:13:16.972-07:00
+    duration: 2.250
+    pid: 83156
+    usage:
+      utime: 2.003
+      stime: 0.219
+      maxrss: 226624
+      minflt: 41402
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 17
+      nivcsw: 358
+    status:
+      raw: 256
+      regular_exitcode: 1
+    executable:
+      file_name: /var/lib/condor/execute/dir_82996/Augmentation_py
+      mode: 0o100755
+      size: 2892
+      inode: 1470379
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-03T11:13:15-07:00
+      atime: 2020-08-03T11:13:16-07:00
+      ctime: 2020-08-03T11:13:16-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+      - "resized_Cat0.jpg"
+    procs:
+  jobids:
+    condor: 74.0
+  cwd: /var/lib/condor/execute/dir_82996
+  usage:
+    utime: 0.001
+    stime: 0.004
+    maxrss: 2176
+    minflt: 266
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 113f55eee0e5
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 2038544
+    ram_free: 236648
+    ram_shared: 160
+    ram_buffer: 103960
+    swap_total: 1048572
+    swap_free: 860924
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 0.87
+    load_min5: 0.41
+    load_min15: 0.37
+    procs_total: 32
+    procs_running: 1
+    procs_sleeping: 24
+    procs_zombie: 7
+    procs_vmsize: 6690336
+    procs_rss: 679084
+    task_total: 105
+    task_running: 1
+    task_sleeping: 97
+    task_zombie: 7
+  files:
+    aug_labels.txt:
+      error: 2
+      lfn: "aug_labels.txt"
+      file_name: aug_labels.txt
+    Aug_resized_Cat0_0.jpg:
+      error: 2
+      lfn: "Aug_resized_Cat0_0.jpg"
+      file_name: Aug_resized_Cat0_0.jpg
+    augmentation.txt:
+      error: 2
+      lfn: "augmentation.txt"
+      file_name: augmentation.txt
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 2767430
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-03T09:40:43-07:00
+      atime: 2020-08-03T09:40:43-07:00
+      ctime: 2020-08-03T09:40:43-07:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/execute/dir_82996/ks.out.LZAYn8
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 1470822
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-03T11:13:16-07:00
+      atime: 2020-08-03T11:13:16-07:00
+      ctime: 2020-08-03T11:13:16-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stderr:
+      temporary_name: /var/lib/condor/execute/dir_82996/ks.err.ifSxr0
+      descriptor: 4
+      mode: 0o100600
+      size: 3767
+      inode: 1470824
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-03T11:13:18-07:00
+      atime: 2020-08-03T11:13:16-07:00
+      ctime: 2020-08-03T11:13:18-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        Using TensorFlow backend.
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          np_resource = np.dtype([("resource", np.ubyte, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorboard/compat/tensorflow_stub/dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          np_resource = np.dtype([("resource", np.ubyte, 1)])
+        Traceback (most recent call last):
+          File "./Augmentation_py", line 8, in <module>
+            resized_images = sys.argv[1]
+        NameError: name 'sys' is not defined
+        
+    metadata:
+      temporary_name: /var/lib/condor/execute/dir_82996/ks.meta.bGT7uS
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1470825
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-03T11:13:16-07:00
+      atime: 2020-08-03T11:13:16-07:00
+      ctime: 2020-08-03T11:13:16-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    kickstart:
+      error: 2
+      note: ignore error - it is just a warning
+      file_name: pegasus-kickstart
+    logfile:
+      descriptor_number: 1
+      mode: 0o100644
+      size: 8192
+      inode: 1470385
+      nlink: 1
+      blksize: 4096
+      blocks: 16
+      mtime: 2020-08-03T11:13:19-07:00
+      atime: 2020-08-03T11:13:15-07:00
+      ctime: 2020-08-03T11:13:19-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+  environment:
+    "BATCH_SYSTEM": "HTCondor"
+    "CONDOR_JOBID": "74.0"
+    "KICKSTART_INTEGRITY_DATA": "/var/lib/condor/execute/dir_82996/ks.integrity.MeVHyK"
+    "KICKSTART_METADATA": "/var/lib/condor/execute/dir_82996/ks.meta.bGT7uS"
+    "LANG": "en_US.UTF-8"
+    "OMP_NUM_THREADS": "1"
+    "PATH": "/var/lib/condor/execute/dir_82996/pegasus-5.0.0dev-x86_64_rhel_7/bin:/usr/local/bin:/usr/bin"
+    "PEGASUS_DAG_JOB_ID": "Augmentation_py_ID0000002"
+    "PEGASUS_MULTIPART_DIR": "/var/lib/condor/execute/dir_82996/.pegasus.mulitpart.d"
+    "PEGASUS_SITE": "condorpool"
+    "PEGASUS_WF_LABEL": "Cats_and_Dogs"
+    "PEGASUS_WF_UUID": "520fca32-78e6-4cb5-ad86-a00ee7239588"
+    "PWD": "/var/lib/condor/execute/dir_82996"
+    "SHLVL": "1"
+    "TEMP": "/var/lib/condor/execute/dir_82996"
+    "TMP": "/var/lib/condor/execute/dir_82996"
+    "TMPDIR": "/var/lib/condor/execute/dir_82996"
+    "_": "/var/lib/condor/execute/dir_82996/pegasus-5.0.0dev-x86_64_rhel_7/bin/pegasus-kickstart"
+    "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
+    "_CONDOR_ANCESTOR_271": "282:1596472849:361765217"
+    "_CONDOR_ANCESTOR_282": "82996:1596478394:1184543160"
+    "_CONDOR_ANCESTOR_82996": "83011:1596478395:4150539166"
+    "_CONDOR_BIN": "/usr/bin"
+    "_CONDOR_CHIRP_CONFIG": "/var/lib/condor/execute/dir_82996/.chirp.config"
+    "_CONDOR_JOB_AD": "/var/lib/condor/execute/dir_82996/.job.ad"
+    "_CONDOR_JOB_IWD": "/var/lib/condor/execute/dir_82996"
+    "_CONDOR_JOB_PIDS": ""
+    "_CONDOR_MACHINE_AD": "/var/lib/condor/execute/dir_82996/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/var/lib/condor/execute/dir_82996"
+    "_CONDOR_SLOT": "slot1"
+    "pegasus_lite_work_dir": "/var/lib/condor/execute/dir_82996"
+  limits:
+    RLIMIT_CPU_soft: unlimited
+    RLIMIT_CPU_hard: unlimited
+    RLIMIT_FSIZE_soft: unlimited
+    RLIMIT_FSIZE_hard: unlimited
+    RLIMIT_DATA_soft: unlimited
+    RLIMIT_DATA_hard: unlimited
+    RLIMIT_STACK_soft: unlimited
+    RLIMIT_STACK_hard: unlimited
+    RLIMIT_CORE_soft: 0
+    RLIMIT_CORE_hard: 0
+    RESOURCE_5_soft: unlimited
+    RESOURCE_5_hard: unlimited
+    RLIMIT_NPROC_soft: 4096
+    RLIMIT_NPROC_hard: unlimited
+    RLIMIT_NOFILE_soft: 1048576
+    RLIMIT_NOFILE_hard: 1048576
+    RLIMIT_MEMLOCK_soft: 83968000
+    RLIMIT_MEMLOCK_hard: 83968000
+    RLIMIT_AS_soft: unlimited
+    RLIMIT_AS_hard: unlimited
+    RLIMIT_LOCKS_soft: unlimited
+    RLIMIT_LOCKS_hard: unlimited
+    RLIMIT_SIGPENDING_soft: 7829
+    RLIMIT_SIGPENDING_hard: 7829
+    RLIMIT_MSGQUEUE_soft: 819200
+    RLIMIT_MSGQUEUE_hard: 819200
+    RLIMIT_NICE_soft: 0
+    RLIMIT_NICE_hard: 0
+    RLIMIT_RTPRIO_soft: 0
+    RLIMIT_RTPRIO_hard: 0
+    RESOURCE_15_soft: unlimited
+    RESOURCE_15_hard: unlimited
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "labels.txt"
+    pfn: "labels.txt"
+    sha256: 25561e22c352cee7c6be47c5e0fb73b8af4ca78bdb6c501d8940bb5e949d82c3
+    success: True
+  - lfn: "resized_Cat0.jpg"
+    pfn: "resized_Cat0.jpg"
+    sha256: 143018991b07b809968cc995fa733386260f85ae7425c35bb058d32943e192fa
+    success: True
+  - lfn: "resized_images.txt"
+    pfn: "resized_images.txt"
+    sha256: 29f725fc21b5d1bc6f6ef04f4766164b0dcef13a9a65dd047fb4a015c78fdb8b
+    success: True
+  - lfn: "Augmentation_py"
+    pfn: "Augmentation_py"
+    sha256: 25f84fd746298e79764ac37560afc86e68b9df66d3efed5fdfb9e909d33d8157
+    success: True
+- integrity_summary:
+    succeeded: 4
+    failed: 0
+    duration: 0.029

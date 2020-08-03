@@ -18,34 +18,29 @@ import sys
 from glob import glob
 cwd = os.getcwd()
 
+def replace_filename(input, pattern, replaceWith): 
+    return input.replace(pattern, replaceWith) 
 
-input_files = glob('images/*.jpg')
-norm_img = np.zeros((800,800))
+input_files = glob('*.jpg')
 photos, labels = list(), list()
 cat_files =[]
 dog_files =[]
-c=0
-d=0
 
 for i in range(len(input_files)):
     if 'Cat' in input_files[i]:
         cat_files.append(input_files[i])
         output = 1.0
         photo = load_img(input_files[i], target_size=(200, 200))
-#         photo = cv.normalize(photo, norm_img, 0, 255, cv.NORM_MINMAX)
-        photo.save('resized_Cat'+ str(c) + '.jpg', 'JPEG', quality=90)
+        photo.save(replace_filename(input_files[i],'Cat','resized_Cat'), 'JPEG', quality=90)
         photos.append(photo)
         labels.append(output)
-        c+=1
     else:
         dog_files.append(input_files[i]) 
         output = 0.0
         photo = load_img(input_files[i], target_size=(200, 200))
-        photo.save('resized_Dog'+ str(d) + '.jpg', 'JPEG', quality=90)
-    #     photo = img_to_array(photo)
+        photo.save(replace_filename(input_files[i],'Dog','resized_Dog'), 'JPEG', quality=90)
         photos.append(photo)
-        labels.append(output)   
-        d+=1
+        labels.append(output)  
     
 with open('resized_images.txt', 'w') as f:
     for item in photos:

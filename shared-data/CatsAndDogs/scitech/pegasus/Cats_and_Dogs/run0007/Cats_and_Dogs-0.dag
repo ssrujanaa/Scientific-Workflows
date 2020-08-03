@@ -14,6 +14,13 @@ PRIORITY create_dir_Cats_and_Dogs_0_local 800
 RETRY create_dir_Cats_and_Dogs_0_local 1
 VARS create_dir_Cats_and_Dogs_0_local +DAGNodeRetry="$(RETRY)"
 
+JOB stage_in_remote_local_1_0 00/00/stage_in_remote_local_1_0.sub
+SCRIPT POST stage_in_remote_local_1_0 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/stage_in_remote_local_1_0.out
+PRIORITY stage_in_remote_local_1_0 700
+RETRY stage_in_remote_local_1_0 1
+CATEGORY stage_in_remote_local_1_0 stagein
+VARS stage_in_remote_local_1_0 +DAGNodeRetry="$(RETRY)"
+
 JOB stage_in_remote_local_0_0 00/00/stage_in_remote_local_0_0.sub
 SCRIPT POST stage_in_remote_local_0_0 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/stage_in_remote_local_0_0.out
 PRIORITY stage_in_remote_local_0_0 700
@@ -34,6 +41,12 @@ PRIORITY preprocess1_py_ID0000001 20
 RETRY preprocess1_py_ID0000001 1
 VARS preprocess1_py_ID0000001 +DAGNodeRetry="$(RETRY)"
 
+JOB Augmentation_py_ID0000002 00/00/Augmentation_py_ID0000002.sub
+SCRIPT POST Augmentation_py_ID0000002 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -s PegasusLite:+exitcode+0 -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/Augmentation_py_ID0000002.out
+PRIORITY Augmentation_py_ID0000002 30
+RETRY Augmentation_py_ID0000002 1
+VARS Augmentation_py_ID0000002 +DAGNodeRetry="$(RETRY)"
+
 JOB clean_up_local_level_3_0 00/00/clean_up_local_level_3_0.sub
 SCRIPT POST clean_up_local_level_3_0 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/clean_up_local_level_3_0.out
 PRIORITY clean_up_local_level_3_0 1000
@@ -47,6 +60,13 @@ PRIORITY stage_out_local_local_0_0 900
 RETRY stage_out_local_local_0_0 1
 CATEGORY stage_out_local_local_0_0 stageout
 VARS stage_out_local_local_0_0 +DAGNodeRetry="$(RETRY)"
+
+JOB stage_out_local_local_1_0 00/00/stage_out_local_local_1_0.sub
+SCRIPT POST stage_out_local_local_1_0 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/stage_out_local_local_1_0.out
+PRIORITY stage_out_local_local_1_0 900
+RETRY stage_out_local_local_1_0 1
+CATEGORY stage_out_local_local_1_0 stageout
+VARS stage_out_local_local_1_0 +DAGNodeRetry="$(RETRY)"
 
 JOB register_local_0_0 00/00/register_local_0_0.sub
 SCRIPT POST register_local_0_0 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/register_local_0_0.out
@@ -62,22 +82,44 @@ RETRY clean_up_local_level_4_0 1
 CATEGORY clean_up_local_level_4_0 cleanup
 VARS clean_up_local_level_4_0 +DAGNodeRetry="$(RETRY)"
 
+JOB register_local_1_0 00/00/register_local_1_0.sub
+SCRIPT POST register_local_1_0 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/register_local_1_0.out
+PRIORITY register_local_1_0 50
+RETRY register_local_1_0 1
+CATEGORY register_local_1_0 registration
+VARS register_local_1_0 +DAGNodeRetry="$(RETRY)"
+
+JOB clean_up_local_level_5_0 00/00/clean_up_local_level_5_0.sub
+SCRIPT POST clean_up_local_level_5_0 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/clean_up_local_level_5_0.out
+PRIORITY clean_up_local_level_5_0 1000
+RETRY clean_up_local_level_5_0 1
+CATEGORY clean_up_local_level_5_0 cleanup
+VARS clean_up_local_level_5_0 +DAGNodeRetry="$(RETRY)"
+
 JOB cleanup_Cats_and_Dogs_0_local 00/00/cleanup_Cats_and_Dogs_0_local.sub
 SCRIPT POST cleanup_Cats_and_Dogs_0_local /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-exitcode  -l Cats_and_Dogs-0.exitcode.log -M Cats_and_Dogs-0.cache.meta  .//00/00/cleanup_Cats_and_Dogs_0_local.out
 PRIORITY cleanup_Cats_and_Dogs_0_local 1000
 RETRY cleanup_Cats_and_Dogs_0_local 1
 VARS cleanup_Cats_and_Dogs_0_local +DAGNodeRetry="$(RETRY)"
 
-PARENT  create_dir_Cats_and_Dogs_0_local CHILD stage_in_remote_local_0_0
-PARENT  create_dir_Cats_and_Dogs_0_local CHILD stage_in_local_local_0_0
+PARENT  stage_in_remote_local_1_0 CHILD Augmentation_py_ID0000002
 PARENT  stage_in_remote_local_0_0 CHILD preprocess1_py_ID0000001
+PARENT  stage_out_local_local_1_0 CHILD register_local_1_0
+PARENT  stage_out_local_local_1_0 CHILD clean_up_local_level_5_0
 PARENT  clean_up_local_level_3_0 CHILD cleanup_Cats_and_Dogs_0_local
+PARENT  preprocess1_py_ID0000001 CHILD Augmentation_py_ID0000002
 PARENT  preprocess1_py_ID0000001 CHILD clean_up_local_level_3_0
 PARENT  preprocess1_py_ID0000001 CHILD stage_out_local_local_0_0
 PARENT  stage_out_local_local_0_0 CHILD register_local_0_0
 PARENT  stage_out_local_local_0_0 CHILD clean_up_local_level_4_0
 PARENT  clean_up_local_level_4_0 CHILD cleanup_Cats_and_Dogs_0_local
+PARENT  clean_up_local_level_5_0 CHILD cleanup_Cats_and_Dogs_0_local
 PARENT  stage_in_local_local_0_0 CHILD preprocess1_py_ID0000001
+PARENT  Augmentation_py_ID0000002 CHILD stage_out_local_local_1_0
+PARENT  Augmentation_py_ID0000002 CHILD clean_up_local_level_4_0
+PARENT  create_dir_Cats_and_Dogs_0_local CHILD stage_in_remote_local_1_0
+PARENT  create_dir_Cats_and_Dogs_0_local CHILD stage_in_remote_local_0_0
+PARENT  create_dir_Cats_and_Dogs_0_local CHILD stage_in_local_local_0_0
 ######################################################################
 # End of DAG
 ######################################################################
