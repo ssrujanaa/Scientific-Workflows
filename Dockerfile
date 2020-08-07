@@ -70,7 +70,7 @@ RUN pip3 install tox
 # Documentation - FIXME: not a great idea to use pip3 install in this container
 RUN pip3 install six sphinx recommonmark sphinx_rtd_theme sphinxcontrib-openapi javasphinx jupyter
 
-RUN pip3 install keras==2.1.5 tensorflow numpy pandas pillow opencv--python
+RUN pip3 install keras==2.1.5 tensorflow==1.13.1 numpy pandas pillow opencv--python sklearn optuna scikit-image
 
 # Set Timezone
 RUN cp /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
