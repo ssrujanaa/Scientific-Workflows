@@ -1,39 +1,39 @@
 - invocation: True
   version: 3.0
-  start: 2020-08-07T11:41:54.491-07:00
-  duration: 2.209
+  start: 2020-08-07T16:35:55.582-07:00
+  duration: 2.291
   transformation: "pegasus::dirmanager"
   derivation: "null"
   resource: "local"
   wf-label: "Cats_and_Dogs"
-  wf-stamp: "2020-08-07T18:41:39+00:00"
+  wf-stamp: "2020-08-07T23:35:38+00:00"
   interface: eth0
   hostaddr: 172.17.0.2
   hostname: 084e2bf2180d
-  pid: 75758
+  pid: 21414
   uid: 550
   user: scitech
   gid: 808
   group: scitech-group
   umask: 0o0022
   mainjob:
-    start: 2020-08-07T11:41:54.508-07:00
-    duration: 2.192
-    pid: 75759
+    start: 2020-08-07T16:35:55.595-07:00
+    duration: 2.278
+    pid: 21415
     usage:
-      utime: 0.119
-      stime: 0.039
-      maxrss: 17608
-      minflt: 10980
+      utime: 0.168
+      stime: 0.057
+      maxrss: 17680
+      minflt: 11012
       majflt: 1
       nswap: 0
-      inblock: 40
+      inblock: 608
       outblock: 16
       msgsnd: 0
       msgrcv: 0
       nsignals: 0
-      nvcsw: 181
-      nivcsw: 37
+      nvcsw: 195
+      nivcsw: 47
     status:
       raw: 0
       regular_exitcode: 0
@@ -55,22 +55,22 @@
     argument_vector:
     procs:
   jobids:
-    condor: 42.0
+    condor: 123.0
   cwd: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001
   usage:
     utime: 0.005
-    stime: 0.005
-    maxrss: 5412
-    minflt: 389
+    stime: 0.009
+    maxrss: 5436
+    minflt: 382
     majflt: 1
     nswap: 0
-    inblock: 128
+    inblock: 552
     outblock: 0
     msgsnd: 0
     msgrcv: 0
     nsignals: 0
     nvcsw: 21
-    nivcsw: 0
+    nivcsw: 2
   machine:
     page-size: 4096
     uname_system: linux
@@ -78,101 +78,101 @@
     uname_release: 4.19.76-linuxkit
     uname_machine: x86_64
     ram_total: 2038544
-    ram_free: 258220
-    ram_shared: 76
-    ram_buffer: 23284
+    ram_free: 572784
+    ram_shared: 8
+    ram_buffer: 21928
     swap_total: 1048572
-    swap_free: 292092
+    swap_free: 282456
     cpu_count: 6
     cpu_speed: 2600
     cpu_vendor: GenuineIntel
     cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
-    load_min1: 0.43
-    load_min5: 0.81
-    load_min15: 0.43
-    procs_total: 27
+    load_min1: 0.33
+    load_min5: 0.26
+    load_min15: 0.32
+    procs_total: 33
     procs_running: 1
-    procs_sleeping: 22
-    procs_zombie: 4
-    procs_vmsize: 12951308
-    procs_rss: 1441684
-    task_total: 156
+    procs_sleeping: 24
+    procs_zombie: 8
+    procs_vmsize: 10415156
+    procs_rss: 1131148
+    task_total: 141
     task_running: 1
-    task_sleeping: 151
-    task_zombie: 4
+    task_sleeping: 132
+    task_zombie: 8
   files:
     stdin:
       descriptor_number: 0
       mode: 0o100644
       size: 195
-      inode: 9447012
+      inode: 9508687
       nlink: 1
       blksize: 4096
       blocks: 8
-      mtime: 2020-08-07T11:41:41-07:00
-      atime: 2020-08-07T11:41:41-07:00
-      ctime: 2020-08-07T11:41:41-07:00
+      mtime: 2020-08-07T16:35:41-07:00
+      atime: 2020-08-07T16:35:41-07:00
+      ctime: 2020-08-07T16:35:41-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     stdout:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_75757/ks.out.otVFFc
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_21413/ks.out.vA6BAk
       descriptor: 3
       mode: 0o100600
       size: 833
-      inode: 3178334
+      inode: 3178336
       nlink: 1
       blksize: 4096
       blocks: 8
-      mtime: 2020-08-07T11:41:56-07:00
-      atime: 2020-08-07T11:41:54-07:00
-      ctime: 2020-08-07T11:41:56-07:00
+      mtime: 2020-08-07T16:35:57-07:00
+      atime: 2020-08-07T16:35:55-07:00
+      ctime: 2020-08-07T16:35:57-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
       data_truncated: false
       data: |
-        2020-08-07 11:41:54,613    INFO:  Reading URL pairs from stdin
-        2020-08-07 11:41:54,616    INFO:  1 transfers loaded
-        2020-08-07 11:41:54,616    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
-        2020-08-07 11:41:54,616    INFO:  LD_LIBRARY_PATH=
-        2020-08-07 11:41:54,666    INFO:  --------------------------------------------------------------------------------
-        2020-08-07 11:41:54,666    INFO:  Starting transfers - attempt 1
-        2020-08-07 11:41:56,668    INFO:  /bin/mkdir -p '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001' 
-        2020-08-07 11:41:56,689    INFO:  --------------------------------------------------------------------------------
-        2020-08-07 11:41:56,689    INFO:  Stats: no local files in the transfer set
-        2020-08-07 11:41:56,689    INFO:  All transfers completed successfully.
+        2020-08-07 16:35:55,755    INFO:  Reading URL pairs from stdin
+        2020-08-07 16:35:55,758    INFO:  1 transfers loaded
+        2020-08-07 16:35:55,758    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-08-07 16:35:55,758    INFO:  LD_LIBRARY_PATH=
+        2020-08-07 16:35:55,826    INFO:  --------------------------------------------------------------------------------
+        2020-08-07 16:35:55,826    INFO:  Starting transfers - attempt 1
+        2020-08-07 16:35:57,831    INFO:  /bin/mkdir -p '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001' 
+        2020-08-07 16:35:57,859    INFO:  --------------------------------------------------------------------------------
+        2020-08-07 16:35:57,859    INFO:  Stats: no local files in the transfer set
+        2020-08-07 16:35:57,860    INFO:  All transfers completed successfully.
         
     stderr:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_75757/ks.err.UBHkbE
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_21413/ks.err.xd57bN
       descriptor: 4
       mode: 0o100600
       size: 0
-      inode: 3178335
+      inode: 3178337
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-08-07T11:41:54-07:00
-      atime: 2020-08-07T11:41:54-07:00
-      ctime: 2020-08-07T11:41:54-07:00
+      mtime: 2020-08-07T16:35:55-07:00
+      atime: 2020-08-07T16:35:55-07:00
+      ctime: 2020-08-07T16:35:55-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     metadata:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_75757/ks.meta.weT2G5
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_21413/ks.meta.nDnMNf
       descriptor: 5
       mode: 0o100600
       size: 0
-      inode: 3178336
+      inode: 3178338
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-08-07T11:41:54-07:00
-      atime: 2020-08-07T11:41:54-07:00
-      ctime: 2020-08-07T11:41:54-07:00
+      mtime: 2020-08-07T16:35:55-07:00
+      atime: 2020-08-07T16:35:55-07:00
+      ctime: 2020-08-07T16:35:55-07:00
       uid: 550
       user: scitech
       gid: 808

@@ -88,7 +88,6 @@ model_info = model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=epoc
                    verbose=1,validation_data=(val_photos,val_labels))
 
 model.save('model.h5')
-model.save('model.h5.tar.gz')
 
 m= load_model("model.h5")
 test_photos = test_photos.astype("float32")

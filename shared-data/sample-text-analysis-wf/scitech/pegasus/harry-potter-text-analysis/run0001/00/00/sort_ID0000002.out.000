@@ -1,0 +1,289 @@
+- invocation: True
+  version: 3.0
+  start: 2020-08-10T13:47:27.735-07:00
+  duration: 0.027
+  transformation: "sort"
+  derivation: "ID0000002"
+  resource: "condorpool"
+  wf-label: "harry-potter-text-analysis"
+  wf-stamp: "2020-08-10T20:46:23+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 7472e2f1ea68
+  pid: 1715
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-08-10T13:47:27.738-07:00
+    duration: 0.024
+    pid: 1716
+    usage:
+      utime: 0.018
+      stime: 0.006
+      maxrss: 9032
+      minflt: 1204
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 8
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1
+      nivcsw: 1
+    status:
+      raw: 256
+      regular_exitcode: 1
+    executable:
+      file_name: /var/lib/condor/execute/dir_1564/sort
+      mode: 0o100755
+      size: 315
+      inode: 3178470
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-10T13:47:26-07:00
+      atime: 2020-08-10T13:47:27-07:00
+      ctime: 2020-08-10T13:47:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+    procs:
+  jobids:
+    condor: 10.0
+  cwd: /var/lib/condor/execute/dir_1564
+  usage:
+    utime: 0.003
+    stime: 0.001
+    maxrss: 2256
+    minflt: 215
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 7472e2f1ea68
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 2038544
+    ram_free: 552604
+    ram_shared: 816
+    ram_buffer: 52880
+    swap_total: 1048572
+    swap_free: 1048572
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 0.26
+    load_min5: 0.23
+    load_min15: 0.11
+    procs_total: 21
+    procs_running: 1
+    procs_sleeping: 20
+    procs_vmsize: 4554660
+    procs_rss: 491136
+    task_total: 69
+    task_running: 1
+    task_sleeping: 68
+  files:
+    wc-sorted.txt:
+      lfn: "wc-sorted.txt"
+      file_name: /var/lib/condor/execute/dir_1564/wc-sorted.txt
+      mode: 0o100644
+      size: 0
+      inode: 3180455
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-10T13:47:27-07:00
+      atime: 2020-08-10T13:47:27-07:00
+      ctime: 2020-08-10T13:47:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 14313
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-10T13:43:03-07:00
+      atime: 2020-08-10T13:43:03-07:00
+      ctime: 2020-08-10T13:43:03-07:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/execute/dir_1564/ks.out.K9psms
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 3180449
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-10T13:47:27-07:00
+      atime: 2020-08-10T13:47:27-07:00
+      ctime: 2020-08-10T13:47:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stderr:
+      temporary_name: /var/lib/condor/execute/dir_1564/ks.err.tkTUrU
+      descriptor: 4
+      mode: 0o100600
+      size: 158
+      inode: 3180452
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-10T13:47:27-07:00
+      atime: 2020-08-10T13:47:27-07:00
+      ctime: 2020-08-10T13:47:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        Traceback (most recent call last):
+          File "./sort", line 5, in <module>
+            word, num = l.split()
+        ValueError: not enough values to unpack (expected 2, got 1)
+        
+    metadata:
+      temporary_name: /var/lib/condor/execute/dir_1564/ks.meta.w4znxm
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 3180453
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-10T13:47:27-07:00
+      atime: 2020-08-10T13:47:27-07:00
+      ctime: 2020-08-10T13:47:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    kickstart:
+      error: 2
+      note: ignore error - it is just a warning
+      file_name: pegasus-kickstart
+    logfile:
+      descriptor_number: 1
+      mode: 0o100644
+      size: 4096
+      inode: 3178476
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-10T13:47:27-07:00
+      atime: 2020-08-10T13:47:26-07:00
+      ctime: 2020-08-10T13:47:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+  environment:
+    "BATCH_SYSTEM": "HTCondor"
+    "CONDOR_JOBID": "10.0"
+    "KICKSTART_INTEGRITY_DATA": "/var/lib/condor/execute/dir_1564/ks.integrity.LXoQCO"
+    "KICKSTART_METADATA": "/var/lib/condor/execute/dir_1564/ks.meta.w4znxm"
+    "LANG": "en_US.UTF-8"
+    "OMP_NUM_THREADS": "1"
+    "PATH": "/var/lib/condor/execute/dir_1564/pegasus-5.0.0dev-x86_64_rhel_7/bin:/usr/local/bin:/usr/bin"
+    "PEGASUS_DAG_JOB_ID": "sort_ID0000002"
+    "PEGASUS_MULTIPART_DIR": "/var/lib/condor/execute/dir_1564/.pegasus.mulitpart.d"
+    "PEGASUS_SITE": "condorpool"
+    "PEGASUS_WF_LABEL": "harry-potter-text-analysis"
+    "PEGASUS_WF_UUID": "618d7b9c-5599-434b-bc77-bd43d9250360"
+    "PWD": "/var/lib/condor/execute/dir_1564"
+    "SHLVL": "1"
+    "TEMP": "/var/lib/condor/execute/dir_1564"
+    "TMP": "/var/lib/condor/execute/dir_1564"
+    "TMPDIR": "/var/lib/condor/execute/dir_1564"
+    "_": "/var/lib/condor/execute/dir_1564/pegasus-5.0.0dev-x86_64_rhel_7/bin/pegasus-kickstart"
+    "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
+    "_CONDOR_ANCESTOR_1564": "1586:1597092446:3009534130"
+    "_CONDOR_ANCESTOR_269": "280:1597092190:2517009639"
+    "_CONDOR_ANCESTOR_280": "1564:1597092445:564135843"
+    "_CONDOR_BIN": "/usr/bin"
+    "_CONDOR_CHIRP_CONFIG": "/var/lib/condor/execute/dir_1564/.chirp.config"
+    "_CONDOR_JOB_AD": "/var/lib/condor/execute/dir_1564/.job.ad"
+    "_CONDOR_JOB_IWD": "/var/lib/condor/execute/dir_1564"
+    "_CONDOR_JOB_PIDS": ""
+    "_CONDOR_MACHINE_AD": "/var/lib/condor/execute/dir_1564/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/var/lib/condor/execute/dir_1564"
+    "_CONDOR_SLOT": "slot1"
+    "pegasus_lite_work_dir": "/var/lib/condor/execute/dir_1564"
+  limits:
+    RLIMIT_CPU_soft: unlimited
+    RLIMIT_CPU_hard: unlimited
+    RLIMIT_FSIZE_soft: unlimited
+    RLIMIT_FSIZE_hard: unlimited
+    RLIMIT_DATA_soft: unlimited
+    RLIMIT_DATA_hard: unlimited
+    RLIMIT_STACK_soft: unlimited
+    RLIMIT_STACK_hard: unlimited
+    RLIMIT_CORE_soft: 0
+    RLIMIT_CORE_hard: 0
+    RESOURCE_5_soft: unlimited
+    RESOURCE_5_hard: unlimited
+    RLIMIT_NPROC_soft: 4096
+    RLIMIT_NPROC_hard: unlimited
+    RLIMIT_NOFILE_soft: 1048576
+    RLIMIT_NOFILE_hard: 1048576
+    RLIMIT_MEMLOCK_soft: 83968000
+    RLIMIT_MEMLOCK_hard: 83968000
+    RLIMIT_AS_soft: unlimited
+    RLIMIT_AS_hard: unlimited
+    RLIMIT_LOCKS_soft: unlimited
+    RLIMIT_LOCKS_hard: unlimited
+    RLIMIT_SIGPENDING_soft: 7829
+    RLIMIT_SIGPENDING_hard: 7829
+    RLIMIT_MSGQUEUE_soft: 819200
+    RLIMIT_MSGQUEUE_hard: 819200
+    RLIMIT_NICE_soft: 0
+    RLIMIT_NICE_hard: 0
+    RLIMIT_RTPRIO_soft: 0
+    RLIMIT_RTPRIO_hard: 0
+    RESOURCE_15_soft: unlimited
+    RESOURCE_15_hard: unlimited
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "wc.txt"
+    pfn: "wc.txt"
+    sha256: 209af6d2a21c43956c3cb5c2f518dbdc86a400cb2099431a0cb486a72ee454c8
+    success: True
+  - lfn: "sort"
+    pfn: "sort"
+    sha256: 11c8ad73b84ea03584f57d0f285c42534c7aab99c3350a962d444d91b2151d8a
+    success: True
+- integrity_summary:
+    succeeded: 2
+    failed: 0
+    duration: 0.013

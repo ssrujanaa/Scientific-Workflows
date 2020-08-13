@@ -1,0 +1,180 @@
+- invocation: True
+  version: 3.0
+  start: 2020-08-10T13:52:28.359-07:00
+  duration: 4.174
+  transformation: "pegasus::cleanup"
+  derivation: "null"
+  resource: "local"
+  wf-label: "harry-potter-text-analysis"
+  wf-stamp: "2020-08-10T20:51:00+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 7472e2f1ea68
+  pid: 6696
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-08-10T13:52:28.364-07:00
+    duration: 4.168
+    pid: 6698
+    usage:
+      utime: 0.106
+      stime: 0.050
+      maxrss: 17664
+      minflt: 11769
+      majflt: 0
+      nswap: 0
+      inblock: 8
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 193
+      nivcsw: 91
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2253
+      inode: 3313558
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-10T13:38:17-07:00
+      atime: 2020-08-10T13:38:17-07:00
+      ctime: 2020-08-10T13:38:24-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+    procs:
+  jobids:
+    condor: 45.0
+  cwd: /home/scitech/shared-data/sample-text-analysis-wf/scitech/pegasus/harry-potter-text-analysis/run0003
+  usage:
+    utime: 0.003
+    stime: 0.004
+    maxrss: 5436
+    minflt: 294
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 15
+    nivcsw: 47
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 7472e2f1ea68
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 2038544
+    ram_free: 551340
+    ram_shared: 816
+    ram_buffer: 57024
+    swap_total: 1048572
+    swap_free: 1048572
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 0.31
+    load_min5: 0.30
+    load_min15: 0.17
+    procs_total: 21
+    procs_running: 1
+    procs_sleeping: 18
+    procs_zombie: 2
+    procs_vmsize: 4501936
+    procs_rss: 482096
+    task_total: 69
+    task_running: 1
+    task_sleeping: 66
+    task_zombie: 2
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 502
+      inode: 9599224
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-10T13:51:01-07:00
+      atime: 2020-08-10T13:51:01-07:00
+      ctime: 2020-08-10T13:51:01-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_6694/ks.out.49zd9L
+      descriptor: 3
+      mode: 0o100600
+      size: 1038
+      inode: 3178466
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-10T13:52:32-07:00
+      atime: 2020-08-10T13:52:28-07:00
+      ctime: 2020-08-10T13:52:32-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2020-08-10 13:52:28,476    INFO:  Reading URL pairs from stdin
+        2020-08-10 13:52:28,478    INFO:  2 transfers loaded
+        2020-08-10 13:52:28,478    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-08-10 13:52:28,478    INFO:  LD_LIBRARY_PATH=
+        2020-08-10 13:52:28,514    INFO:  --------------------------------------------------------------------------------
+        2020-08-10 13:52:28,515    INFO:  Starting transfers - attempt 1
+        2020-08-10 13:52:30,521    INFO:  /bin/rm -f '//home/scitech/shared-data/sample-text-analysis-wf/wf-scratch/LOCAL/scitech/pegasus/harry-potter-text-analysis/run0003/./sort' 
+        2020-08-10 13:52:30,536    INFO:  /bin/rm -f '//home/scitech/shared-data/sample-text-analysis-wf/wf-scratch/LOCAL/scitech/pegasus/harry-potter-text-analysis/run0003/./wc.txt' 
+        2020-08-10 13:52:32,521    INFO:  --------------------------------------------------------------------------------
+        2020-08-10 13:52:32,521    INFO:  Stats: no local files in the transfer set
+        2020-08-10 13:52:32,521    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_6694/ks.err.ukLEMW
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 3178467
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-10T13:52:28-07:00
+      atime: 2020-08-10T13:52:28-07:00
+      ctime: 2020-08-10T13:52:28-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_6694/ks.meta.uHg9p7
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 3178469
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-08-10T13:52:28-07:00
+      atime: 2020-08-10T13:52:28-07:00
+      ctime: 2020-08-10T13:52:28-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
