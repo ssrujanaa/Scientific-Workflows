@@ -70,7 +70,7 @@ RUN pip3 install tox
 # Documentation - FIXME: not a great idea to use pip3 install in this container
 RUN pip3 install six sphinx recommonmark sphinx_rtd_theme sphinxcontrib-openapi javasphinx jupyter
 
-RUN pip3 install keras==2.1.5 tensorflow==1.13.1 numpy pandas pillow opencv--python sklearn optuna scikit-image ray ray[tune]
+RUN pip3 install --upgrade pip
 
 # Set Timezone
 RUN cp /usr/share/zoneinfo/America/Los_Angeles /etc/localtime
@@ -115,6 +115,10 @@ RUN /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-db-admin update sqli
 ADD ./config/kernel.json /usr/local/share/jupyter/kernels/python3/kernel.json
 RUN echo -e "export PATH=/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin:/home/scitech/.pyenv/bin:\$PATH:/usr/lib64/mpich/bin" >> /home/scitech/.bashrc
 RUN echo -e "export PYTHONPATH=/home/scitech/pegasus/dist/pegasus-5.0.0dev/lib64/python3.6/site-packages" >> /home/scitech/.bashrc
+
+# Set notebook password to 'scitech'. This pw will be used instead of token authentication
+RUN mkdir /home/scitech/.jupyter \ 
+    && echo "{ \"NotebookApp\": { \"password\": \"sha1:30a323540baa:6eec8eaf3b4e0f44f2f2aa7b504f80d5bf0ad745\" } }" >> /home/scitech/.jupyter/jupyter_notebook_config.json
 
 ENTRYPOINT ["sudo", "/usr/local/bin/wrapdocker"]
 CMD ["su", "-", "scitech", "-c", "jupyter notebook --notebook-dir=/home/scitech/shared-data --port=8888 --no-browser --ip=0.0.0.0 --allow-root"] 

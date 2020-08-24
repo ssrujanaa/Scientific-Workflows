@@ -12,7 +12,7 @@ import tensorflow as tf
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 import sys
-import cv2 as cv
+# import cv2 as cv
 import os
 import sys
 from glob import glob

@@ -1,0 +1,48 @@
+2020-08-21 09:31:42,760:INFO:pegasus-monitord(58): pegasus-monitord starting - pid 4244 
+2020-08-21 09:31:42,775:INFO:pegasus-monitord(455): Final Command line options are: ['-N', 'Cats_and_Dogs-0.dag.dagman.out']
+2020-08-21 09:31:42,778:INFO:Pegasus.tools.utils(525): pid 73765 not running anymore...
+2020-08-21 09:31:42,794:WARNING:pegasus-monitord(1158): monitord entering it's own recovery mode. Population will start again for the workflow..
+2020-08-21 09:31:42,794:INFO:Pegasus.monitoring.event_output(629): Connecting workflow event sink to sqlite:////home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.stampede.db
+2020-08-21 09:31:42,795:INFO:Pegasus.db.connection(737): Rotating sqlite db file /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.stampede.db
+Created Pegasus database in: sqlite:////home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.stampede.db
+Your database is compatible with Pegasus version: 5.0.0dev
+2020-08-21 09:31:43,483:INFO:Pegasus.monitoring.event_output(703): output type=DB namespace=stampede. name=sqlite:////home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.stampede.db
+2020-08-21 09:31:43,484:INFO:Pegasus.monitoring.event_output(629): Connecting workflow event sink to sqlite:////home/scitech/.pegasus/workflow.db
+Your database is compatible with Pegasus version: 5.0.0dev
+2020-08-21 09:31:43,882:INFO:Pegasus.monitoring.event_output(703): output type=DB namespace=dashboard. name=sqlite:////home/scitech/.pegasus/workflow.db
+2020-08-21 09:31:43,889:INFO:Pegasus.db.expunge(102): Expunging 616e7d37-81dc-435d-9936-50f471cbc330 from dashboard database
+Your database is compatible with Pegasus version: 5.0.0dev
+2020-08-21 09:31:44,353:INFO:Pegasus.db.expunge(118): Flush took: 0.005670 seconds
+2020-08-21 09:31:44,354:INFO:pegasus-monitord(1247): monitord started in fast start mode
+2020-08-21 09:31:44,372:INFO:Pegasus.monitoring.workflow(567): monitord last processed line: 768
+2020-08-21 09:31:44,373:INFO:Pegasus.monitoring.workflow(1129): Setting last processed line to 0 in recovery mode to ensure population starts afresh
+2020-08-21 09:31:44,375:INFO:Pegasus.monitoring.workflow(1169):  Rotating jobstate.log replay_mode 0 previous_processed_line 768
+2020-08-21 09:31:44,376:INFO:Pegasus.monitoring.notifications(474): loading notifications from /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.notify
+2020-08-21 09:31:44,534:INFO:Pegasus.monitoring.workflow(205): Parsing DAG file /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.dag
+2020-08-21 09:31:44,538:INFO:pegasus-monitord(974): Using DAGMan version 8.8.10 80810
+2020-08-21 09:31:44,538:INFO:pegasus-monitord(949): DAGMan runs at pid 73764
+2020-08-21 09:31:44,541:INFO:pegasus-monitord(955): using dag Cats_and_Dogs-0.dag
+2020-08-21 09:31:44,541:INFO:Pegasus.monitoring.workflow(811): DAGMan starting with condor id 62.0
+2020-08-21 09:32:13,098:WARNING:Pegasus.monitoring.workflow(1707): truncating stdout for job stage_in_local_local_0_0
+2020-08-21 09:34:09,295:WARNING:Pegasus.monitoring.workflow(1707): truncating stdout for job stage_out_local_local_0_0
+2020-08-21 09:34:09,468:INFO:Pegasus.monitoring.workflow(2468): Populating locations corresponding to succeeded registration job  /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/00/00/register_local_0_0.in 
+2020-08-21 09:34:10,783:INFO:Pegasus.monitoring.workflow(2468): Populating locations corresponding to succeeded registration job  /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/00/00/register_local_2_0.in 
+2020-08-21 09:34:11,120:WARNING:Pegasus.monitoring.workflow(1707): truncating stdout for job stage_out_local_local_1_0
+2020-08-21 09:34:11,231:INFO:Pegasus.monitoring.workflow(2468): Populating locations corresponding to succeeded registration job  /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/00/00/register_local_1_0.in 
+2020-08-21 09:34:11,845:INFO:pegasus-monitord(927): DAGMan Cats_and_Dogs-0.dag finished with exit code 3
+2020-08-21 09:34:11,851:INFO:pegasus-monitord(974): Using DAGMan version 8.8.10 80810
+2020-08-21 09:34:11,852:INFO:pegasus-monitord(949): DAGMan runs at pid 4243
+2020-08-21 09:34:11,854:INFO:pegasus-monitord(955): using dag Cats_and_Dogs-0.dag
+2020-08-21 09:34:11,855:INFO:Pegasus.monitoring.workflow(811): DAGMan starting with condor id 62.0
+2020-08-21 09:34:11,862:INFO:pegasus-monitord(1022): Enabling DAGMAN RECOVERY MODE
+2020-08-21 09:34:11,867:INFO:pegasus-monitord(825): DONE with DAGMAN RECOVERY MODE
+2020-08-21 09:34:11,869:WARNING:Pegasus.monitoring.workflow(2770): Set main job exitcode for Optuna_py_ID0000004 to post script failure code 256
+2020-08-21 09:34:13,392:INFO:pegasus-monitord(1427): workflow /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.dag.dagman.out ended
+2020-08-21 09:34:13,397:INFO:Pegasus.monitoring.workflow(1378): recovery file deleted: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/monitord.recover
+2020-08-21 09:34:13,400:INFO:pegasus-monitord(1665): finishing workflow: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0010/Cats_and_Dogs-0.dag.dagman.out
+2020-08-21 09:34:13,401:INFO:pegasus-monitord(1719): finishing notifications...
+2020-08-21 09:34:13,401:INFO:pegasus-monitord(1727): monitord process 4244 exiting with 0
+2020-08-21 09:34:13,403:INFO:pegasus-monitord(197): DB flushing beginning
+2020-08-21 09:34:13,403:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1244): Executing final flush
+2020-08-21 09:34:13,524:INFO:Pegasus.db.dashboard_loader.DashboardLoader(397): Executing final flush
+2020-08-21 09:34:13,525:INFO:pegasus-monitord(213): DB flushing ended

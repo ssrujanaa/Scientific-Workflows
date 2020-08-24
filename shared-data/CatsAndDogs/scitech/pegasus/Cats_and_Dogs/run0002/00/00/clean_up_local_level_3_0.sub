@@ -1,0 +1,39 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : Cats_and_Dogs, Index = 0, Count = null
+# SUBMIT FILE NAME : clean_up_local_level_3_0.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "PEGASUS_HOME=/home/scitech/pegasus/dist/pegasus-5.0.0dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=aebeea91-9a33-4b5e-bb80-6dad9cba495b PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=clean_up_local_level_3_0 PEGASUS_SITE=local"
+arguments = " -n pegasus::cleanup -N null -i - -R local  -L Cats_and_Dogs -T 2020-08-18T03:42:44+00:00 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer "
+error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002//00/00/clean_up_local_level_3_0.err
+executable = /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-kickstart
+input = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002//00/00/clean_up_local_level_3_0.in
+log = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002/Cats_and_Dogs-0.log
+notification = NEVER
+output = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002//00/00/clean_up_local_level_3_0.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 1000
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "aebeea91-9a33-4b5e-bb80-6dad9cba495b"
++pegasus_wf_uuid = "aebeea91-9a33-4b5e-bb80-6dad9cba495b"
++pegasus_version = "5.0.0dev"
++pegasus_wf_name = "Cats_and_Dogs-0"
++pegasus_wf_time = "20200818T034245+0000"
++pegasus_wf_xformation = "pegasus::cleanup"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "clean_up_local_level_3_0"
++pegasus_job_class = 8
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################
