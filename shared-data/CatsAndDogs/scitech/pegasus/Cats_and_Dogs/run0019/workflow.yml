@@ -1,0 +1,3057 @@
+x-pegasus: {apiLang: python, createdBy: scitech, createdOn: '08-25-20T12:36:36Z'}
+pegasus: '5.0'
+name: Cats_and_Dogs
+jobs:
+- type: job
+  name: preprocess1.py
+  id: ID0000001
+  arguments: []
+  uses:
+  - {lfn: Cat75.jpg, type: input}
+  - {lfn: Cat42.jpg, type: input}
+  - {lfn: Dog23.jpg, type: input}
+  - {lfn: Cat5.jpg, type: input}
+  - {lfn: resized_Dog21.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat50.jpg, type: input}
+  - {lfn: Dog3.jpg, type: input}
+  - {lfn: resized_Cat58.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat40.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat76.jpg, type: input}
+  - {lfn: Cat7.jpg, type: input}
+  - {lfn: Cat1.jpg, type: input}
+  - {lfn: Dog5.jpg, type: input}
+  - {lfn: Dog50.jpg, type: input}
+  - {lfn: resized_Dog26.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat54.jpg, type: input}
+  - {lfn: Cat84.jpg, type: input}
+  - {lfn: Dog58.jpg, type: input}
+  - {lfn: resized_Cat97.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat6.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog82.jpg, type: input}
+  - {lfn: resized_Dog55.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat50.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat35.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog56.jpg, type: input}
+  - {lfn: resized_Cat74.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat66.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat29.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat60.jpg, type: input}
+  - {lfn: resized_Cat19.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat31.jpg, type: input}
+  - {lfn: Cat85.jpg, type: input}
+  - {lfn: Cat28.jpg, type: input}
+  - {lfn: Dog10.jpg, type: input}
+  - {lfn: Dog70.jpg, type: input}
+  - {lfn: Cat2.jpg, type: input}
+  - {lfn: resized_Cat54.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog58.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog15.jpg, type: input}
+  - {lfn: resized_Dog70.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog47.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat59.jpg, type: input}
+  - {lfn: Cat8.jpg, type: input}
+  - {lfn: Cat46.jpg, type: input}
+  - {lfn: Cat49.jpg, type: input}
+  - {lfn: Cat3.jpg, type: input}
+  - {lfn: Cat32.jpg, type: input}
+  - {lfn: Cat48.jpg, type: input}
+  - {lfn: Dog73.jpg, type: input}
+  - {lfn: resized_Dog56.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog97.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat69.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog79.jpg, type: input}
+  - {lfn: resized_Cat84.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog83.jpg, type: input}
+  - {lfn: Dog31.jpg, type: input}
+  - {lfn: Dog53.jpg, type: input}
+  - {lfn: Dog47.jpg, type: input}
+  - {lfn: resized_Dog3.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat0.jpg, type: input}
+  - {lfn: resized_Dog49.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog36.jpg, type: input}
+  - {lfn: resized_Cat33.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog76.jpg, type: input}
+  - {lfn: resized_Dog29.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog42.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat36.jpg, type: input}
+  - {lfn: Dog81.jpg, type: input}
+  - {lfn: Cat87.jpg, type: input}
+  - {lfn: resized_Cat91.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat14.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog26.jpg, type: input}
+  - {lfn: Dog74.jpg, type: input}
+  - {lfn: resized_Dog4.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog38.jpg, type: input}
+  - {lfn: Cat68.jpg, type: input}
+  - {lfn: Dog71.jpg, type: input}
+  - {lfn: Dog93.jpg, type: input}
+  - {lfn: Dog85.jpg, type: input}
+  - {lfn: Cat98.jpg, type: input}
+  - {lfn: resized_Cat73.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog18.jpg, type: input}
+  - {lfn: resized_Cat70.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog18.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat97.jpg, type: input}
+  - {lfn: Cat71.jpg, type: input}
+  - {lfn: resized_Cat59.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog34.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat74.jpg, type: input}
+  - {lfn: Cat62.jpg, type: input}
+  - {lfn: Cat6.jpg, type: input}
+  - {lfn: Dog39.jpg, type: input}
+  - {lfn: resized_Dog63.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog28.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat39.jpg, type: input}
+  - {lfn: Dog51.jpg, type: input}
+  - {lfn: resized_Cat83.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat60.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog84.jpg, type: input}
+  - {lfn: resized_Cat94.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat38.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat33.jpg, type: input}
+  - {lfn: resized_Cat78.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog19.jpg, type: input}
+  - {lfn: resized_Cat64.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat15.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat82.jpg, type: input}
+  - {lfn: Dog4.jpg, type: input}
+  - {lfn: Cat11.jpg, type: input}
+  - {lfn: Cat58.jpg, type: input}
+  - {lfn: Cat23.jpg, type: input}
+  - {lfn: Dog12.jpg, type: input}
+  - {lfn: resized_Dog66.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat92.jpg, type: input}
+  - {lfn: Cat52.jpg, type: input}
+  - {lfn: resized_Dog92.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog65.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat17.jpg, type: input}
+  - {lfn: Cat89.jpg, type: input}
+  - {lfn: Cat93.jpg, type: input}
+  - {lfn: Dog43.jpg, type: input}
+  - {lfn: Cat88.jpg, type: input}
+  - {lfn: resized_Cat67.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog14.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog97.jpg, type: input}
+  - {lfn: resized_Dog74.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat16.jpg, type: input}
+  - {lfn: resized_Dog72.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog40.jpg, type: input}
+  - {lfn: Dog17.jpg, type: input}
+  - {lfn: Dog28.jpg, type: input}
+  - {lfn: resized_Dog88.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat40.jpg, type: input}
+  - {lfn: resized_Cat55.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog13.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog75.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat26.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat45.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog20.jpg, type: input}
+  - {lfn: resized_Cat79.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat9.jpg, type: input}
+  - {lfn: Cat66.jpg, type: input}
+  - {lfn: Dog59.jpg, type: input}
+  - {lfn: Dog92.jpg, type: input}
+  - {lfn: resized_Dog85.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog66.jpg, type: input}
+  - {lfn: resized_Dog91.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat43.jpg, type: input}
+  - {lfn: resized_Dog40.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat73.jpg, type: input}
+  - {lfn: Dog55.jpg, type: input}
+  - {lfn: resized_Dog53.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat24.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat99.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog59.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog72.jpg, type: input}
+  - {lfn: Cat45.jpg, type: input}
+  - {lfn: resized_Dog39.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat26.jpg, type: input}
+  - {lfn: Dog2.jpg, type: input}
+  - {lfn: resized_Cat31.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog13.jpg, type: input}
+  - {lfn: resized_Dog41.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat71.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog95.jpg, type: input}
+  - {lfn: resized_Dog0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog98.jpg, type: input}
+  - {lfn: resized_Dog69.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog9.jpg, type: input}
+  - {lfn: resized_Dog61.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog95.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat53.jpg, type: input}
+  - {lfn: resized_Dog51.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog99.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat46.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat25.jpg, type: input}
+  - {lfn: Cat67.jpg, type: input}
+  - {lfn: resized_Cat77.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog75.jpg, type: input}
+  - {lfn: resized_Dog32.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog6.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat36.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog77.jpg, type: input}
+  - {lfn: resized_Dog83.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat10.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat82.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat80.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat18.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat83.jpg, type: input}
+  - {lfn: Cat72.jpg, type: input}
+  - {lfn: resized_Dog93.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog38.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat90.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat29.jpg, type: input}
+  - {lfn: Cat64.jpg, type: input}
+  - {lfn: resized_Cat28.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog33.jpg, type: input}
+  - {lfn: resized_Cat13.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog32.jpg, type: input}
+  - {lfn: Cat10.jpg, type: input}
+  - {lfn: Cat96.jpg, type: input}
+  - {lfn: resized_Cat32.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat56.jpg, type: input}
+  - {lfn: resized_Cat98.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog44.jpg, type: input}
+  - {lfn: Cat18.jpg, type: input}
+  - {lfn: resized_Dog73.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog60.jpg, type: input}
+  - {lfn: Cat69.jpg, type: input}
+  - {lfn: Cat19.jpg, type: input}
+  - {lfn: resized_Dog10.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat86.jpg, type: input}
+  - {lfn: resized_Cat9.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog79.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog62.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat22.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat35.jpg, type: input}
+  - {lfn: Cat21.jpg, type: input}
+  - {lfn: Dog45.jpg, type: input}
+  - {lfn: resized_Cat86.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat96.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog86.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog37.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog9.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat80.jpg, type: input}
+  - {lfn: resized_Dog33.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat20.jpg, type: input}
+  - {lfn: Dog25.jpg, type: input}
+  - {lfn: Dog27.jpg, type: input}
+  - {lfn: resized_Dog57.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog6.jpg, type: input}
+  - {lfn: Dog69.jpg, type: input}
+  - {lfn: Cat55.jpg, type: input}
+  - {lfn: Dog64.jpg, type: input}
+  - {lfn: Cat27.jpg, type: input}
+  - {lfn: Cat47.jpg, type: input}
+  - {lfn: Cat94.jpg, type: input}
+  - {lfn: resized_Dog1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog46.jpg, type: input}
+  - {lfn: resized_Cat76.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat4.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog99.jpg, type: input}
+  - {lfn: resized_Cat11.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog76.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat65.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat39.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog31.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat62.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat53.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog94.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat41.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat37.jpg, type: input}
+  - {lfn: resized_Cat20.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog54.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog21.jpg, type: input}
+  - {lfn: resized_Cat43.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog96.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog68.jpg, type: input}
+  - {lfn: resized_Dog71.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog48.jpg, type: input}
+  - {lfn: Dog54.jpg, type: input}
+  - {lfn: resized_Cat7.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat57.jpg, type: input}
+  - {lfn: Cat34.jpg, type: input}
+  - {lfn: resized_Cat5.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat30.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat12.jpg, type: input}
+  - {lfn: resized_Dog19.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog82.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog35.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog89.jpg, type: input}
+  - {lfn: resized_Cat92.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat41.jpg, type: input}
+  - {lfn: resized_Cat88.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog80.jpg, type: input}
+  - {lfn: resized_Cat63.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat68.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat23.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat51.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog60.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat65.jpg, type: input}
+  - {lfn: resized_Cat57.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog87.jpg, type: input}
+  - {lfn: resized_Dog27.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog8.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog44.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog67.jpg, type: input}
+  - {lfn: Dog7.jpg, type: input}
+  - {lfn: Dog24.jpg, type: input}
+  - {lfn: resized_Dog11.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog81.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat37.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat95.jpg, type: input}
+  - {lfn: Cat90.jpg, type: input}
+  - {lfn: Cat13.jpg, type: input}
+  - {lfn: Dog14.jpg, type: input}
+  - {lfn: resized_Cat42.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat95.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat27.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_images.txt, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog15.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog37.jpg, type: input}
+  - {lfn: resized_Cat61.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog48.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat93.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog25.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat91.jpg, type: input}
+  - {lfn: resized_Dog22.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat17.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat79.jpg, type: input}
+  - {lfn: resized_Cat85.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat87.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog36.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat24.jpg, type: input}
+  - {lfn: resized_Dog46.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog67.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat38.jpg, type: input}
+  - {lfn: Cat70.jpg, type: input}
+  - {lfn: resized_Cat49.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog34.jpg, type: input}
+  - {lfn: resized_Dog45.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat47.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat34.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat99.jpg, type: input}
+  - {lfn: Dog78.jpg, type: input}
+  - {lfn: resized_Cat8.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog78.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog80.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog20.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog87.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog17.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog50.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog0.jpg, type: input}
+  - {lfn: Dog57.jpg, type: input}
+  - {lfn: resized_Dog52.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat15.jpg, type: input}
+  - {lfn: resized_Dog24.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat56.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog30.jpg, type: input}
+  - {lfn: Dog62.jpg, type: input}
+  - {lfn: resized_Cat44.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat14.jpg, type: input}
+  - {lfn: resized_Cat72.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog98.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog22.jpg, type: input}
+  - {lfn: resized_Cat48.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat63.jpg, type: input}
+  - {lfn: resized_Dog23.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat89.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog16.jpg, type: input}
+  - {lfn: Dog29.jpg, type: input}
+  - {lfn: Dog63.jpg, type: input}
+  - {lfn: resized_Dog90.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat52.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat12.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat51.jpg, type: input}
+  - {lfn: Dog86.jpg, type: input}
+  - {lfn: resized_Dog64.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat61.jpg, type: input}
+  - {lfn: resized_Dog30.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog11.jpg, type: input}
+  - {lfn: resized_Dog68.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog8.jpg, type: input}
+  - {lfn: Cat4.jpg, type: input}
+  - {lfn: resized_Dog84.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: labels.txt, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog16.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Cat30.jpg, type: input}
+  - {lfn: Dog96.jpg, type: input}
+  - {lfn: resized_Cat75.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog43.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog12.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog1.jpg, type: input}
+  - {lfn: Dog88.jpg, type: input}
+  - {lfn: Cat44.jpg, type: input}
+  - {lfn: resized_Dog89.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog65.jpg, type: input}
+  - {lfn: Dog52.jpg, type: input}
+  - {lfn: resized_Cat81.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog7.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog90.jpg, type: input}
+  - {lfn: Cat81.jpg, type: input}
+  - {lfn: Cat22.jpg, type: input}
+  - {lfn: resized_Dog77.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog49.jpg, type: input}
+  - {lfn: Dog41.jpg, type: input}
+  - {lfn: resized_Cat3.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog61.jpg, type: input}
+  - {lfn: Dog91.jpg, type: input}
+  - {lfn: resized_Cat25.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog42.jpg, type: input}
+  - {lfn: Cat78.jpg, type: input}
+  - {lfn: Dog94.jpg, type: input}
+  - {lfn: Cat77.jpg, type: input}
+  - {lfn: resized_Cat16.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Dog35.jpg, type: input}
+  - {lfn: resized_Cat21.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog5.jpg, type: output, stageOut: true, registerReplica: true}
+- type: job
+  name: Augmentation.py
+  id: ID0000002
+  arguments: []
+  uses:
+  - {lfn: Aug_resized_Cat38_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat17_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog65_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog6_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog21.jpg, type: input}
+  - {lfn: Aug_resized_Cat48_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat41_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog15_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat64_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog73_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog31_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog24_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog58_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog80_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog84_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog53_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat58.jpg, type: input}
+  - {lfn: resized_Cat40.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat11_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat71_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat94_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog17_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat36_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog36_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat59_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog31_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat45_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat21_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog84_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat95_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog86_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat32_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog60_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog76_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog85_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog26.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog40_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog28_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog64_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat17_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat63_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat97.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog87_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog11_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat6.jpg, type: input}
+  - {lfn: resized_Dog55.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat50.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog47_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat35_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog83_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat84_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog90_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog94_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat35.jpg, type: input}
+  - {lfn: resized_Cat74.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat66.jpg, type: input}
+  - {lfn: resized_Cat29.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat19.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog57_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat65_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog74_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog8_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat48_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat59_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog97_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat68_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat58_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat27_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat6_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog19_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog95_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat54.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog58.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog70.jpg, type: input}
+  - {lfn: resized_Dog47.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog27_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog39_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog51_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat41_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog68_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat19_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat29_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog38_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog53_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog67_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog96_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog56.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog97.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog82_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat0.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat69.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog80_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat3_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat0_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat84.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog59_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog71_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat71_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog74_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog40_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog13_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog58_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat72_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog3.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog68_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog97_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog49.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat28_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog26_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat33.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog81_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog29.jpg, type: input}
+  - {lfn: resized_Dog42.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog93_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog7_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat91.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat57_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog80_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog92_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat14.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog35_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog29_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat83_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog4.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat79_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat97_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog55_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog92_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog33_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat86_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat73.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog91_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat91_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat70.jpg, type: input}
+  - {lfn: resized_Dog18.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat50_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog26_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog46_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog71_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat52_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat22_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat59.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat49_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat7_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog49_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog67_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog34.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog11_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat37_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat19_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat35_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog63.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog28.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat80_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog50_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat85_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat83.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog17_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog8_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat99_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog77_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat60.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat20_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat78_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog98_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog81_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat94.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat38.jpg, type: input}
+  - {lfn: resized_Cat78.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat57_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat64.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat15.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog23_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog74_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog73_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat62_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat48_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat54_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat84_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat84_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat89_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog66.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat31_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog64_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat59_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog7_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat29_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat26_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog90_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog90_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog92.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat12_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat94_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat55_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog65.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat9_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat47_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat89_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog30_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog25_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat77_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat67.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog38_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog14.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog31_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat71_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog74.jpg, type: input}
+  - {lfn: resized_Dog72.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat33_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat27_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog86_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat97_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat56_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat99_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat68_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog95_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog88.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog75.jpg, type: input}
+  - {lfn: resized_Cat55.jpg, type: input}
+  - {lfn: resized_Dog13.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat16_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog75_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat33_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat4_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat9_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog36_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat39_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog66_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat26.jpg, type: input}
+  - {lfn: resized_Cat45.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog21_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog52_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat26_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog19_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat79.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog33_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog48_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog2.jpg, type: input}
+  - {lfn: resized_Dog85.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat24_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat38_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog91.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat52_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog21_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog7_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog44_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog82_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog91_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog40.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat76_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog61_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog88_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog53.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat24.jpg, type: input}
+  - {lfn: resized_Cat99.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat55_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog59.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat85_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat58_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat75_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat45_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat81_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog65_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog39.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog91_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat34_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog14_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat31.jpg, type: input}
+  - {lfn: resized_Dog41.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat71.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog59_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat62_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog93_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog95_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog0.jpg, type: input}
+  - {lfn: resized_Dog69.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat87_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat22_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat55_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog85_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog61.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat20_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog18_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog95.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat90_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog51.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog4_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat69_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat31_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog72_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog34_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog99.jpg, type: input}
+  - {lfn: resized_Cat46.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat39_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat47_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat77.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat42_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog32.jpg, type: input}
+  - {lfn: resized_Dog6.jpg, type: input}
+  - {lfn: resized_Cat36.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog62_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog58_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog43_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog93_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog83.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat5_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat10.jpg, type: input}
+  - {lfn: resized_Cat2.jpg, type: input}
+  - {lfn: resized_Cat82.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat80.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat32_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat18.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat73_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat75_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog2_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat8_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat93_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog93.jpg, type: input}
+  - {lfn: resized_Dog38.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog25_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog50_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat90.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog9_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat28.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat13.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat87_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat56_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog94_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog96_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog42_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog14_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat32.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog73_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat98.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat11_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog73.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat40_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat65_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat50_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat18_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog30_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat80_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog10.jpg, type: input}
+  - {lfn: resized_Cat9.jpg, type: input}
+  - {lfn: resized_Dog79.jpg, type: input}
+  - {lfn: resized_Dog62.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat12_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat38_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog77_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat43_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog1_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog99_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat22.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog63_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog37_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog44_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog46_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat93_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat5_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat87_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog18_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog32_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog88_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat64_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog77_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat86.jpg, type: input}
+  - {lfn: resized_Cat96.jpg, type: input}
+  - {lfn: resized_Dog86.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog14_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog37.jpg, type: input}
+  - {lfn: resized_Dog9.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog33.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat13_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat44_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat25_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat13_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog57.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog65_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog71_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog79_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat76_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog49_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog35_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog56_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog69_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat3_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat6_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat70_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog78_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog24_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog76_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog1.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog76_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat76.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog22_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog49_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat4.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat13_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat90_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat11.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog35_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog76.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat51_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat74_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog52_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog57_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat65.jpg, type: input}
+  - {lfn: resized_Cat39.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog31.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat62.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat53.jpg, type: input}
+  - {lfn: resized_Dog94.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog51_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat56_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat41.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat54_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat53_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat20.jpg, type: input}
+  - {lfn: resized_Dog54.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog43_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat60_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat43.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog94_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog26_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog66_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog44_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat66_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog47_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat77_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog32_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog96.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog37_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat1_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat53_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog75_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog99_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat18_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog33_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat11_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog0_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog71.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat7.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat5.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat30.jpg, type: input}
+  - {lfn: resized_Dog19.jpg, type: input}
+  - {lfn: resized_Dog82.jpg, type: input}
+  - {lfn: resized_Dog35.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat61_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat92.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog89_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog29_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog45_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog54_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat88.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog81_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat63.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog41_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat68.jpg, type: input}
+  - {lfn: resized_Cat23.jpg, type: input}
+  - {lfn: resized_Cat51.jpg, type: input}
+  - {lfn: resized_Dog60.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat57.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog75_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog61_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog27.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog9_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat61_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat74_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog72_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog86_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog50_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat42_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog23_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat32_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat4_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog39_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog8.jpg, type: input}
+  - {lfn: aug_labels.txt, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog44.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat66_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog11.jpg, type: input}
+  - {lfn: resized_Dog81.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat96_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog1_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat37.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog16_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog34_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog79_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat83_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat42.jpg, type: input}
+  - {lfn: resized_Cat95.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog53_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat27.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog20_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog15.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat61.jpg, type: input}
+  - {lfn: resized_Dog48.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat89_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog60_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog63_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat93.jpg, type: input}
+  - {lfn: resized_Dog25.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat33_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat14_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat88_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog41_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog97_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog22.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat17_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat1.jpg, type: input}
+  - {lfn: resized_Cat17.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat85.jpg, type: input}
+  - {lfn: resized_Cat87.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat19_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog36.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog82_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog46.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog68_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog3_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog67.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog70_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog24_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog15_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat49.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog45.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat96_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat47.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat34.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat8.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog78.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat92_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog11_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog80.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog12_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog69_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog85_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog20.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog34_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog87.jpg, type: input}
+  - {lfn: resized_Dog17.jpg, type: input}
+  - {lfn: resized_Dog50.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat26_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat70_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog78_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog98_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat14_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog52.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog25_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog3_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog88_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog57_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat41_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat97_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog19_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat50_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat28_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog24.jpg, type: input}
+  - {lfn: resized_Cat56.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat88_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat95_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog16_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat77_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat44.jpg, type: input}
+  - {lfn: resized_Cat72.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat24_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat72_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat69_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog98.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog28_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog47_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog23_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog0_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat48.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog51_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog23.jpg, type: input}
+  - {lfn: resized_Cat89.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat92_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog90.jpg, type: input}
+  - {lfn: Aug_resized_Dog60_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat52.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat45_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog13_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat12.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog78_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog42_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat81_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog54_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat82_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat42_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog64.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat15_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog54_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog55_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog62_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat73_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat8_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat85_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog5_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog52_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog87_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat57_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog3_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog1_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog30.jpg, type: input}
+  - {lfn: resized_Dog68.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat91_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog2_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog84.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat67_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: labels.txt, type: input}
+  - {lfn: Aug_resized_Cat39_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog16.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat73_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat2_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat75.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog43.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat49_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog12.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog48_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog28_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog4_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog4_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat7_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog72_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog89.jpg, type: input}
+  - {lfn: augmentation.txt, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat2_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat36_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat98_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog12_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat81.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog7.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog5_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog83_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat1_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat63_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat7_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Dog77.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat5_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat3.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat70_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog37_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat88_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat25.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat80_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog99_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat37_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat99_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog62_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat90_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog59_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat66_1.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog67_0.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat37_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: resized_Cat16.jpg, type: input}
+  - {lfn: resized_Cat21.jpg, type: input}
+  - {lfn: resized_Dog5.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_2.jpg, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat95_0.jpg, type: output, stageOut: true, registerReplica: true}
+- type: job
+  name: Data_Split.py
+  id: ID0000003
+  arguments: []
+  uses:
+  - {lfn: Aug_resized_Cat38_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_1.jpg, type: input}
+  - {lfn: training.pkl, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat48_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog60_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat48_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat48_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat38_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat38_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_1.jpg, type: input}
+  - {lfn: validation.pkl, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog45_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog60_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_0.jpg, type: input}
+  - {lfn: testing.pkl, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog60_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_2.jpg, type: input}
+  - {lfn: labels.txt, type: input}
+  - {lfn: Aug_resized_Dog8_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_2.jpg, type: input}
+- type: job
+  name: VGG_model.py
+  id: ID0000004
+  arguments: []
+  uses:
+  - {lfn: Aug_resized_Cat38_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_1.jpg, type: input}
+  - {lfn: training.pkl, type: input}
+  - {lfn: Aug_resized_Cat48_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog60_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat48_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat48_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat38_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat38_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_1.jpg, type: input}
+  - {lfn: validation.pkl, type: input}
+  - {lfn: Aug_resized_Dog45_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog60_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_2.jpg, type: input}
+  - {lfn: model.h5, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Dog10_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_0.jpg, type: input}
+  - {lfn: testing.pkl, type: input}
+  - {lfn: Aug_resized_Dog60_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_2.jpg, type: input}
+- type: job
+  name: Optuna.py
+  id: ID0000005
+  arguments: [Optuna_log_file.csv]
+  uses:
+  - {lfn: Aug_resized_Cat38_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_1.jpg, type: input}
+  - {lfn: training.pkl, type: input}
+  - {lfn: model1.h5, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat48_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog60_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat48_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog80_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_0.jpg, type: input}
+  - {lfn: Optuna_log_file.csv, type: output, stageOut: true, registerReplica: true}
+  - {lfn: Aug_resized_Cat3_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog92_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog74_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat48_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat84_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat59_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat29_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog90_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog31_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat71_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat68_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat9_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat38_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog7_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog40_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog17_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog91_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat34_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog21_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog95_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat22_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat55_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog64_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat58_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog58_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog93_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat27_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat75_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog96_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog73_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat94_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog84_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat65_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat78_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat38_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat43_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat87_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog18_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat64_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog77_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog14_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog10_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog30_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat44_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat10_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog65_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog71_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat3_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat46_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog76_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog49_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat13_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog27_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog35_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat51_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat62_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat56_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog43_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat16_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog94_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog26_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog44_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat79_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog33_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat11_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat20_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat21_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat23_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog29_1.jpg, type: input}
+  - {lfn: validation.pkl, type: input}
+  - {lfn: Aug_resized_Dog45_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog81_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog22_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat86_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog75_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog61_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog9_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat61_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog86_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog50_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat32_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat4_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog39_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog56_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat12_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat6_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog79_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat83_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog53_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat76_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat89_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog60_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog63_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat33_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog41_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog97_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat54_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat17_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog6_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat19_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat18_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog82_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog68_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog24_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog15_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat96_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat52_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat53_2.jpg, type: input}
+  - {lfn: model.h5, type: input}
+  - {lfn: Aug_resized_Dog10_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog11_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog69_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog85_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog34_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog70_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat26_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat14_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat30_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog88_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog57_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat41_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat97_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog19_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat50_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat28_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat47_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog16_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat77_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog32_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat24_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat72_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat69_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat93_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog47_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog23_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog0_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat40_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog51_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog46_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat92_0.jpg, type: input}
+  - {lfn: testing.pkl, type: input}
+  - {lfn: Aug_resized_Dog60_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog98_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat45_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog13_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat0_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog78_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog42_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat81_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat82_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat42_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat74_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog54_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog55_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat8_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat85_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog52_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog87_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat57_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog3_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog1_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog38_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat91_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog2_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat25_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat67_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat39_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog8_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat73_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat15_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog36_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog48_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat35_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat49_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog28_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog4_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog72_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog25_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat2_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat36_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog12_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat60_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat98_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog5_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog83_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat1_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat63_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat7_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog89_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat5_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog66_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat70_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog37_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat88_0.jpg, type: input}
+  - {lfn: Aug_resized_Dog45_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat80_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog99_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat99_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog62_1.jpg, type: input}
+  - {lfn: Aug_resized_Cat90_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog59_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat66_1.jpg, type: input}
+  - {lfn: Aug_resized_Dog67_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat37_2.jpg, type: input}
+  - {lfn: Aug_resized_Cat95_0.jpg, type: input}
+  - {lfn: Aug_resized_Cat31_2.jpg, type: input}
+  - {lfn: Aug_resized_Dog20_2.jpg, type: input}
+jobDependencies:
+- id: ID0000001
+  children: [ID0000003, ID0000002]
+- id: ID0000002
+  children: [ID0000003, ID0000004, ID0000005]
+- id: ID0000003
+  children: [ID0000004, ID0000005]
+- id: ID0000004
+  children: [ID0000005]

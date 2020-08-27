@@ -1,0 +1,38 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : Cats_and_Dogs, Index = 0, Count = null
+# SUBMIT FILE NAME : register_local_2_0.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 PEGASUS_HOME=/home/scitech/pegasus/dist/pegasus-5.0.0dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=d7a6c030-a5fd-48d5-bd81-72201196ad4e PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=register_local_2_0 PEGASUS_SITE=local"
+arguments = " -n pegasus::rc-client -N null -R local  -L Cats_and_Dogs -T 2020-08-27T03:17:17+00:00 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-rc-client --prefix pegasus.catalog.replica.output --conf /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0021/pegasus.1678042230635015736.properties -v --meta /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0021/00/00/Data_Split_py_ID0000003.meta --insert /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0021/00/00/register_local_2_0.in"
+error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0021//00/00/register_local_2_0.err
+executable = /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-kickstart
+log = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0021/Cats_and_Dogs-0.log
+notification = NEVER
+output = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0021//00/00/register_local_2_0.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 60
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "d7a6c030-a5fd-48d5-bd81-72201196ad4e"
++pegasus_wf_uuid = "d7a6c030-a5fd-48d5-bd81-72201196ad4e"
++pegasus_version = "5.0.0dev"
++pegasus_wf_name = "Cats_and_Dogs-0"
++pegasus_wf_time = "20200827T031718+0000"
++pegasus_wf_xformation = "pegasus::rc-client"
++pegasus_wf_dax_job_id = "null"
++pegasus_wf_dag_job_id = "register_local_2_0"
++pegasus_job_class = 4
++pegasus_site = "local"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

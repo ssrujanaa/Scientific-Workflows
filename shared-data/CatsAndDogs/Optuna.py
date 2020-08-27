@@ -1,15 +1,25 @@
 #!/usr/bin/env python3
 # coding: utf-8
-
+import sys
 import pickle
-from glob import glob
-from keras.models import load_model
-from keras.preprocessing.image import load_img
-from keras.preprocessing.image import img_to_array
+from os import listdir
 from numpy import asarray
 from numpy import save
+from keras.preprocessing.image import load_img
+from keras.preprocessing.image import img_to_array
+import numpy as np
+from keras import layers
+from keras.layers import Input,Dense,BatchNormalization,Flatten,Dropout,GlobalAveragePooling2D
+from keras.models import Model, load_model
+from keras.utils import layer_utils
+from keras.optimizers import Adam
+from keras.callbacks import ModelCheckpoint
+from keras.callbacks import EarlyStopping
+import keras.backend as K
+from keras.applications.vgg16 import VGG16
+from keras.models import Model,load_model
 
-optuna_csv = glob("*.csv")
+optuna_csv = sys.argv[1]
 
 with open('training.pkl', 'rb') as f:
      train = pickle.load(f)
@@ -61,7 +71,29 @@ for file in val:
 val_photos = asarray(val_photos)
 val_labels = asarray(val_labels)
 
-model= load_model("model.h5")
+# ########
+# nb_classes = 2
+# epochs=3
+# batch_size =2
+
+# vgg16_model = VGG16(weights = 'imagenet', include_top = False)
+# x = vgg16_model.output
+# x = GlobalAveragePooling2D()(x)
+# x = Dense(1024, activation='relu')(x)
+# predictions = Dense(nb_classes, activation = 'softmax')(x)
+# model = Model(input = vgg16_model.input, output = predictions)
+
+# for layer in vgg16_model.layers:
+#     layer.trainable = False
+    
+# model.compile(optimizer = 'rmsprop',loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
+# model_info = model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=epochs, 
+#                    verbose=1,validation_data=(val_photos,val_labels))
+
+# model.save('model.h5')
+# ########
+
+# model= load_model("model.h5")
 train_photos =train_photos.astype('float32')
 test_photos= test_photos.astype('float32')
 val_photos =val_photos.astype('float32')
@@ -111,14 +143,12 @@ model.compile(optimizer = 'rmsprop',loss = 'sparse_categorical_crossentropy', me
 model_info = model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=epochs, 
                    verbose=1,validation_data=(val_photos,val_labels))
 
-model.save('model.h5')
+model.save('model_hpo.h5')
 
-m= load_model("model.h5")
+m= load_model("model_hpo.h5")
 test_photos = test_photos.astype("float32")
 
 results = m.evaluate(test_photos, test_labels, batch_size=1)
-
-
 optkeras.optkeras.get_trial_default = lambda: optuna.trial.FrozenTrial(
             None, None, None, None, None, None, None, None, None, None, None)
 study_name = "CatsAndDogs" + '_Simple'
@@ -137,7 +167,6 @@ def objective(trial):
     x = Dense(1024, activation=trial.suggest_categorical('activation', ['relu', 'linear']))(x)
     predictions = Dense(nb_classes, activation = 'softmax')(x)
     model = Model(input = vgg16_model.input, output = predictions)
-
     for layer in vgg16_model.layers:
         layer.trainable = False
 
@@ -148,23 +177,10 @@ def objective(trial):
 
 ok.optimize(objective, timeout = 3*60)
 import pandas as pd
-""" Show Results """
-# print('Best trial number: ', ok.best_trial.number)
-# print('Best value:', ok.best_trial.value)
-# print('Best parameters: \n', ok.best_trial.params)
 
-# print("Best parameters (retrieved directly from Optuna)", ok.study.best_trial.params)
+pd.options.display.max_rows = 8 
 
-""" Check the Optuna CSV log file """
-pd.options.display.max_rows = 8 # limit rows to display
-# print('Data Frame read from', ok.optuna_log_file_path, '\n')
-display(pd.read_csv(ok.optuna_log_file_path))
-
-""" Check the Keras CSV log file """
-pd.options.display.max_rows = 8 # limit rows to display
-# print('Data Frame read from', ok.keras_log_file_path, '\n')
-display(pd.read_csv(ok.keras_log_file_path))
+pd.options.display.max_rows = 8
 
 put_csv = pd.read_csv(ok.keras_log_file_path)
 put_csv.to_csv(optuna_csv)
-
