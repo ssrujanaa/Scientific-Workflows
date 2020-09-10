@@ -20,6 +20,7 @@ from keras.applications.vgg16 import VGG16
 from keras.models import Model,load_model
 
 optuna_csv = sys.argv[1]
+N_TRIALS = 5
 
 with open('training.pkl', 'rb') as f:
      train = pickle.load(f)
@@ -160,6 +161,7 @@ def objective(trial):
     nb_classes = 2
     epochs=3
     batch_size =2
+    optimizer_options = ["RMSprop", "Adam", "SGD"]
 
     vgg16_model = VGG16(weights = 'imagenet', include_top = False)
     x = vgg16_model.output
@@ -170,17 +172,56 @@ def objective(trial):
     for layer in vgg16_model.layers:
         layer.trainable = False
 
-    model.compile(optimizer = 'rmsprop',loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
+    model.compile(optimizer = trial.suggest_categorical("optimizer", ["rmsprop", "Adam", "SGD"]),loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
     model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=epochs, callbacks=ok.callbacks(trial),
               verbose=ok.keras_verbose ,validation_data=(val_photos,val_labels))
     return ok.trial_best_value
 
-ok.optimize(objective, timeout = 3*60)
+
+
+
+import os
+import signal
+import sys
+import time
+import traceback
 import pandas as pd
 
-pd.options.display.max_rows = 8 
+from pathlib import Path
 
-pd.options.display.max_rows = 8
 
-put_csv = pd.read_csv(ok.keras_log_file_path)
-put_csv.to_csv(optuna_csv)
+CHECKPOINT_FILE = "saved_state.txt"
+
+i = 0
+try:
+    with open(CHECKPOINT_FILE, mode="r") as f:
+        i = int(f.read())
+            
+    def SIGTERM_handler(signum, frame):
+        with open(CHECKPOINT_FILE, mode="w") as f:
+            f.write(str(i))
+            
+    signal.signal(signal.SIGTERM, SIGTERM_handler)
+    for _ in range(N_TRIALS+1):
+        ok.optimize(objective, timeout = 600)
+        if i == N_TRIALS:
+            break
+        i += 1
+        with open(CHECKPOINT_FILE, mode="w") as f:
+            f.write(str(i))
+    put_csv = pd.read_csv(ok.keras_log_file_path)
+    put_csv.to_csv(optuna_csv)    
+            
+except Exception as e:
+    traceback.print_exc()
+
+        
+
+# ok.optimize(objective, timeout = 3*60)
+
+
+# pd.options.display.max_rows = 8 
+
+
+# put_csv = pd.read_csv(ok.keras_log_file_path)
+# put_csv.to_csv(optuna_csv)

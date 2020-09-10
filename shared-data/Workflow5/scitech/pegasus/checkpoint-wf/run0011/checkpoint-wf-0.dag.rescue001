@@ -1,0 +1,20 @@
+# Rescue DAG file, created after running
+#   the checkpoint-wf-0.dag DAG file
+# Created 9/10/2020 21:14:23 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 8
+# Nodes premarked DONE: 2
+# Nodes that failed: 1
+#   print_nums_py_ID0000001,<ENDLIST>
+
+DONE create_dir_checkpoint-wf_0_local
+RETRY create_dir_checkpoint-wf_0_local 5
+DONE stage_in_remote_local_0_0
+RETRY stage_in_remote_local_0_0 5
+RETRY print_nums_py_ID0000001 5
+RETRY clean_up_local_level_3_0 5
+RETRY stage_out_local_local_0_0 5
+RETRY register_local_0_0 5
+RETRY clean_up_local_level_4_0 5
+RETRY cleanup_checkpoint-wf_0_local 5
