@@ -1,0 +1,184 @@
+- invocation: True
+  version: 3.0
+  start: 2020-09-14T13:31:42.075-07:00
+  duration: 2.270
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-09-14T20:31:28+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 2a7c1e923640
+  pid: 26451
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-09-14T13:31:42.084-07:00
+    duration: 2.261
+    pid: 26454
+    usage:
+      utime: 0.127
+      stime: 0.067
+      maxrss: 18124
+      minflt: 11038
+      majflt: 0
+      nswap: 0
+      inblock: 80
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 178
+      nivcsw: 558
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2253
+      inode: 1584794
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-25T09:36:31-07:00
+      atime: 2020-08-25T09:36:31-07:00
+      ctime: 2020-08-25T09:36:37-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 149.0
+  cwd: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0013
+  usage:
+    utime: 0.002
+    stime: 0.009
+    maxrss: 5304
+    minflt: 352
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 15
+    nivcsw: 6
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 2a7c1e923640
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 6092936
+    ram_free: 2805444
+    ram_shared: 816
+    ram_buffer: 163208
+    swap_total: 1048572
+    swap_free: 1048572
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 1.22
+    load_min5: 1.10
+    load_min15: 1.20
+    procs_total: 47
+    procs_running: 1
+    procs_sleeping: 34
+    procs_waiting: 1
+    procs_zombie: 9
+    procs_vmsize: 7258632
+    procs_rss: 953248
+    task_total: 102
+    task_running: 1
+    task_sleeping: 91
+    task_waiting: 1
+    task_zombie: 9
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 352
+      inode: 12872730
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-14T13:31:32-07:00
+      atime: 2020-09-14T13:31:32-07:00
+      ctime: 2020-09-14T13:31:32-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_26448/ks.out.HCMLkF
+      descriptor: 3
+      mode: 0o100600
+      size: 1050
+      inode: 2891935
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-14T13:31:44-07:00
+      atime: 2020-09-14T13:31:42-07:00
+      ctime: 2020-09-14T13:31:44-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2020-09-14 13:31:42,241    INFO:  Reading URL pairs from stdin
+        2020-09-14 13:31:42,243    INFO:  1 transfers loaded
+        2020-09-14 13:31:42,244    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-09-14 13:31:42,244    INFO:  LD_LIBRARY_PATH=
+        2020-09-14 13:31:42,308    INFO:  --------------------------------------------------------------------------------
+        2020-09-14 13:31:42,309    INFO:  Starting transfers - attempt 1
+        2020-09-14 13:31:44,316    INFO:  /bin/cp -f -R -L '/home/scitech/shared-data/CatsAndDogs/Dog99.jpg' '//home/scitech/shared-data/CatsAndDogs/wf-output/study_checkpoint.pkl'
+        2020-09-14 13:31:44,335    INFO:  --------------------------------------------------------------------------------
+        2020-09-14 13:31:44,335    INFO:  Stats: Total 1 transfers, 18.7 KB transferred in 2 seconds. Rate: 8.9 KB/s (71.5 Kb/s)
+        2020-09-14 13:31:44,335    INFO:         Between sites local->local : 1 transfers, 18.7 KB transferred in 2 seconds. Rate: 8.9 KB/s (71.5 Kb/s)
+        2020-09-14 13:31:44,336    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_26448/ks.err.mK0yf5
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 2891936
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-14T13:31:42-07:00
+      atime: 2020-09-14T13:31:42-07:00
+      ctime: 2020-09-14T13:31:42-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_26448/ks.meta.t7Yqav
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 2891937
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-14T13:31:42-07:00
+      atime: 2020-09-14T13:31:42-07:00
+      ctime: 2020-09-14T13:31:42-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group

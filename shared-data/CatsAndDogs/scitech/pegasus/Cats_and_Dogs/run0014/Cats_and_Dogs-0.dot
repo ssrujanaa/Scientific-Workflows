@@ -1,0 +1,87 @@
+digraph E {
+size="8.0,10.0"
+ratio=fill
+node [shape=ellipse]
+edge [arrowhead=normal, arrowsize=1.0]
+	"stage_in_remote_local_2_0" [color=gold,style=filled,label="stage_in_remote_local_2_0"]
+	"cleanup_Cats_and_Dogs_0_local" [color=deepskyblue,style=filled,label="cleanup_Cats_and_Dogs_0_local"]
+	"stage_in_remote_local_1_0" [color=gold,style=filled,label="stage_in_remote_local_1_0"]
+	"stage_in_remote_local_0_0" [color=gold,style=filled,label="stage_in_remote_local_0_0"]
+	"clean_up_local_level_3_0" [color=deepskyblue,style=filled,label="clean_up_local_level_3_0"]
+	"preprocess1_py_ID0000001" [color=blueviolet,style=filled,label="preprocess1_py_ID0000001"]
+	"stage_in_local_local_4_0" [color=gold,style=filled,label="stage_in_local_local_4_0"]
+	"clean_up_local_level_4_0" [color=deepskyblue,style=filled,label="clean_up_local_level_4_0"]
+	"clean_up_local_level_5_0" [color=deepskyblue,style=filled,label="clean_up_local_level_5_0"]
+	"clean_up_local_level_6_0" [color=deepskyblue,style=filled,label="clean_up_local_level_6_0"]
+	"clean_up_local_level_7_0" [color=deepskyblue,style=filled,label="clean_up_local_level_7_0"]
+	"stage_in_local_local_0_0" [color=gold,style=filled,label="stage_in_local_local_0_0"]
+	"clean_up_local_level_8_0" [color=deepskyblue,style=filled,label="clean_up_local_level_8_0"]
+	"Data_Split_py_ID0000003" [color=blueviolet,style=filled,label="Data_Split_py_ID0000003"]
+	"hpo_checkpointing_py_ID0000005" [color=blueviolet,style=filled,label="hpo_checkpointing_py_ID0000005"]
+	"stage_in_remote_local_4_0" [color=gold,style=filled,label="stage_in_remote_local_4_0"]
+	"stage_in_remote_local_3_0" [color=gold,style=filled,label="stage_in_remote_local_3_0"]
+	"stage_out_local_local_4_0" [color=goldenrod,style=filled,label="stage_out_local_local_4_0"]
+	"stage_out_local_local_3_0" [color=goldenrod,style=filled,label="stage_out_local_local_3_0"]
+	"stage_out_local_local_2_0" [color=goldenrod,style=filled,label="stage_out_local_local_2_0"]
+	"stage_out_local_local_1_0" [color=goldenrod,style=filled,label="stage_out_local_local_1_0"]
+	"VGG_model_py_ID0000004" [color=blueviolet,style=filled,label="VGG_model_py_ID0000004"]
+	"stage_out_local_local_0_0" [color=goldenrod,style=filled,label="stage_out_local_local_0_0"]
+	"Augmentation_py_ID0000002" [color=blueviolet,style=filled,label="Augmentation_py_ID0000002"]
+	"create_dir_Cats_and_Dogs_0_local" [color=darkturquoise,style=filled,label="create_dir_Cats_and_Dogs_0_local"]
+	"register_local_4_0" [color=orange,style=filled,label="register_local_4_0"]
+	"register_local_3_0" [color=orange,style=filled,label="register_local_3_0"]
+	"register_local_2_0" [color=orange,style=filled,label="register_local_2_0"]
+	"register_local_1_0" [color=orange,style=filled,label="register_local_1_0"]
+	"register_local_0_0" [color=orange,style=filled,label="register_local_0_0"]
+
+	"stage_in_remote_local_2_0" -> "Data_Split_py_ID0000003"
+	"stage_in_remote_local_1_0" -> "Augmentation_py_ID0000002"
+	"stage_in_remote_local_0_0" -> "preprocess1_py_ID0000001"
+	"clean_up_local_level_3_0" -> "cleanup_Cats_and_Dogs_0_local"
+	"preprocess1_py_ID0000001" -> "Augmentation_py_ID0000002"
+	"preprocess1_py_ID0000001" -> "Data_Split_py_ID0000003"
+	"preprocess1_py_ID0000001" -> "clean_up_local_level_3_0"
+	"preprocess1_py_ID0000001" -> "stage_out_local_local_0_0"
+	"stage_in_local_local_4_0" -> "hpo_checkpointing_py_ID0000005"
+	"clean_up_local_level_4_0" -> "cleanup_Cats_and_Dogs_0_local"
+	"clean_up_local_level_5_0" -> "cleanup_Cats_and_Dogs_0_local"
+	"clean_up_local_level_6_0" -> "cleanup_Cats_and_Dogs_0_local"
+	"clean_up_local_level_7_0" -> "cleanup_Cats_and_Dogs_0_local"
+	"stage_in_local_local_0_0" -> "preprocess1_py_ID0000001"
+	"clean_up_local_level_8_0" -> "cleanup_Cats_and_Dogs_0_local"
+	"Data_Split_py_ID0000003" -> "stage_out_local_local_2_0"
+	"Data_Split_py_ID0000003" -> "VGG_model_py_ID0000004"
+	"Data_Split_py_ID0000003" -> "hpo_checkpointing_py_ID0000005"
+	"Data_Split_py_ID0000003" -> "clean_up_local_level_5_0"
+	"hpo_checkpointing_py_ID0000005" -> "stage_out_local_local_4_0"
+	"hpo_checkpointing_py_ID0000005" -> "clean_up_local_level_7_0"
+	"stage_in_remote_local_4_0" -> "hpo_checkpointing_py_ID0000005"
+	"stage_in_remote_local_3_0" -> "VGG_model_py_ID0000004"
+	"stage_out_local_local_4_0" -> "register_local_4_0"
+	"stage_out_local_local_4_0" -> "clean_up_local_level_8_0"
+	"stage_out_local_local_3_0" -> "register_local_3_0"
+	"stage_out_local_local_3_0" -> "clean_up_local_level_7_0"
+	"stage_out_local_local_2_0" -> "register_local_2_0"
+	"stage_out_local_local_2_0" -> "clean_up_local_level_7_0"
+	"stage_out_local_local_1_0" -> "register_local_1_0"
+	"stage_out_local_local_1_0" -> "clean_up_local_level_5_0"
+	"stage_out_local_local_1_0" -> "clean_up_local_level_7_0"
+	"VGG_model_py_ID0000004" -> "stage_out_local_local_3_0"
+	"VGG_model_py_ID0000004" -> "hpo_checkpointing_py_ID0000005"
+	"VGG_model_py_ID0000004" -> "clean_up_local_level_6_0"
+	"stage_out_local_local_0_0" -> "register_local_0_0"
+	"stage_out_local_local_0_0" -> "clean_up_local_level_4_0"
+	"stage_out_local_local_0_0" -> "clean_up_local_level_5_0"
+	"Augmentation_py_ID0000002" -> "Data_Split_py_ID0000003"
+	"Augmentation_py_ID0000002" -> "stage_out_local_local_1_0"
+	"Augmentation_py_ID0000002" -> "VGG_model_py_ID0000004"
+	"Augmentation_py_ID0000002" -> "clean_up_local_level_4_0"
+	"Augmentation_py_ID0000002" -> "hpo_checkpointing_py_ID0000005"
+	"create_dir_Cats_and_Dogs_0_local" -> "stage_in_remote_local_2_0"
+	"create_dir_Cats_and_Dogs_0_local" -> "stage_in_remote_local_1_0"
+	"create_dir_Cats_and_Dogs_0_local" -> "stage_in_remote_local_0_0"
+	"create_dir_Cats_and_Dogs_0_local" -> "stage_in_local_local_4_0"
+	"create_dir_Cats_and_Dogs_0_local" -> "stage_in_local_local_0_0"
+	"create_dir_Cats_and_Dogs_0_local" -> "stage_in_remote_local_4_0"
+	"create_dir_Cats_and_Dogs_0_local" -> "stage_in_remote_local_3_0"
+}

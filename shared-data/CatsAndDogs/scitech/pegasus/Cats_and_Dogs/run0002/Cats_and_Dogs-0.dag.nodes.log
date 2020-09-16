@@ -546,3 +546,72 @@
 ...
 001 (145.000.000) 09/10 14:28:38 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=268_b7e0_5>
 ...
+005 (145.000.000) 09/10 14:45:43 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:16:05, Sys 0 00:00:23  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:16:05, Sys 0 00:00:23  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	63351532  -  Run Bytes Sent By Job
+	81132336  -  Run Bytes Received By Job
+	63351532  -  Total Bytes Sent By Job
+	81132336  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.98        1         1 
+	   Disk (KB)            : 254792      100000   4687149 
+	   Memory (MB)          :   1013           1       991 
+...
+016 (145.000.000) 09/10 14:45:45 POST Script terminated.
+	(1) Normal termination (return value 1)
+    DAG Node: hpo_checkpointing_py_ID0000005
+...
+000 (148.000.000) 09/10 14:45:56 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=268_b7e0_4>
+    DAG Node: hpo_checkpointing_py_ID0000005
+    pool:condorpool
+...
+001 (148.000.000) 09/10 14:46:02 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=268_b7e0_5>
+...
+007 (148.000.000) 09/10 14:59:57 Shadow exception!
+	Error from slot4@23512e8a13a2: STARTER at 127.0.0.1 failed to send file(s) to <127.0.0.1:9618>: error reading from /var/lib/condor/execute/dir_88957/model_hpo.h5: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <127.0.0.1:41599>
+	186191  -  Run Bytes Sent By Job
+	81132336  -  Run Bytes Received By Job
+...
+012 (148.000.000) 09/10 14:59:57 Job was held.
+	Error from slot4@23512e8a13a2: STARTER at 127.0.0.1 failed to send file(s) to <127.0.0.1:9618>: error reading from /var/lib/condor/execute/dir_88957/model_hpo.h5: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <127.0.0.1:41599>
+	Code 13 Subcode 2
+...
+009 (148.000.000) 09/10 15:30:28 Job was aborted by the user.
+	The job attribute PeriodicRemove expression '(JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)' evaluated to TRUE
+...
+016 (148.000.000) 09/10 15:30:32 POST Script terminated.
+	(1) Normal termination (return value 1)
+    DAG Node: hpo_checkpointing_py_ID0000005
+...
+000 (180.000.000) 09/10 15:30:41 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=268_b7e0_4>
+    DAG Node: hpo_checkpointing_py_ID0000005
+    pool:condorpool
+...
+001 (180.000.000) 09/10 15:30:49 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=268_b7e0_5>
+...
+007 (180.000.000) 09/10 15:46:29 Shadow exception!
+	Error from slot2@23512e8a13a2: STARTER at 127.0.0.1 failed to send file(s) to <127.0.0.1:9618>: error reading from /var/lib/condor/execute/dir_95256/model_hpo.h5: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <127.0.0.1:36447>
+	179292  -  Run Bytes Sent By Job
+	81132336  -  Run Bytes Received By Job
+...
+012 (180.000.000) 09/10 15:46:29 Job was held.
+	Error from slot2@23512e8a13a2: STARTER at 127.0.0.1 failed to send file(s) to <127.0.0.1:9618>: error reading from /var/lib/condor/execute/dir_95256/model_hpo.h5: (errno 2) No such file or directory; SHADOW failed to receive file(s) from <127.0.0.1:36447>
+	Code 13 Subcode 2
+...
+009 (180.000.000) 09/10 16:16:31 Job was aborted by the user.
+	The job attribute PeriodicRemove expression '(JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)' evaluated to TRUE
+...
+016 (180.000.000) 09/10 16:16:31 POST Script terminated.
+	(1) Normal termination (return value 1)
+    DAG Node: hpo_checkpointing_py_ID0000005
+...
+000 (239.000.000) 09/10 16:16:42 Job submitted from host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=268_b7e0_4>
+    DAG Node: hpo_checkpointing_py_ID0000005
+    pool:condorpool
+...
+001 (239.000.000) 09/10 16:16:50 Job executing on host: <127.0.0.1:9618?addrs=127.0.0.1-9618&noUDP&sock=268_b7e0_5>
+...

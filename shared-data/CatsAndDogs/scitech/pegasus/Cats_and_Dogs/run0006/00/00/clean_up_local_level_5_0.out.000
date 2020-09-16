@@ -1,0 +1,182 @@
+- invocation: True
+  version: 3.0
+  start: 2020-09-10T15:45:56.195-07:00
+  duration: 8.520
+  transformation: "pegasus::cleanup"
+  derivation: "null"
+  resource: "local"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-09-10T22:38:34+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 23512e8a13a2
+  pid: 76515
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-09-10T15:45:56.277-07:00
+    duration: 8.437
+    pid: 76538
+    usage:
+      utime: 0.168
+      stime: 0.074
+      maxrss: 17556
+      minflt: 13503
+      majflt: 0
+      nswap: 0
+      inblock: 8
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 258
+      nivcsw: 294
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2253
+      inode: 1584794
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-25T09:36:31-07:00
+      atime: 2020-08-25T09:36:31-07:00
+      ctime: 2020-08-25T09:36:37-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+    procs:
+  jobids:
+    condor: 223.0
+  cwd: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0006
+  usage:
+    utime: 0.004
+    stime: 0.020
+    maxrss: 5184
+    minflt: 638
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 15
+    nivcsw: 10
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 23512e8a13a2
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 6092936
+    ram_free: 329860
+    ram_shared: 68
+    ram_buffer: 47900
+    swap_total: 1048572
+    swap_free: 12
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 10.88
+    load_min5: 9.88
+    load_min15: 6.44
+    procs_total: 110
+    procs_running: 5
+    procs_sleeping: 73
+    procs_zombie: 23
+    procs_vmsize: 29471416
+    procs_rss: 4855288
+    task_total: 335
+    task_running: 11
+    task_sleeping: 301
+    task_zombie: 23
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o100644
+      size: 937
+      inode: 12561942
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-10T15:38:39-07:00
+      atime: 2020-09-10T15:38:39-07:00
+      ctime: 2020-09-10T15:38:39-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_76505/ks.out.bGqP89
+      descriptor: 3
+      mode: 0o100600
+      size: 1321
+      inode: 1721216
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-10T15:46:04-07:00
+      atime: 2020-09-10T15:45:56-07:00
+      ctime: 2020-09-10T15:46:04-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2020-09-10 15:45:56,562    INFO:  Reading URL pairs from stdin
+        2020-09-10 15:45:56,567    INFO:  4 transfers loaded
+        2020-09-10 15:45:56,567    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-09-10 15:45:56,567    INFO:  LD_LIBRARY_PATH=
+        2020-09-10 15:45:56,672    INFO:  --------------------------------------------------------------------------------
+        2020-09-10 15:45:56,673    INFO:  Starting transfers - attempt 1
+        2020-09-10 15:45:58,679    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0006/./Data_Split_py' 
+        2020-09-10 15:45:58,716    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0006/./augmentation.txt' 
+        2020-09-10 15:45:58,742    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0006/./aug_labels.txt' 
+        2020-09-10 15:45:58,772    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0006/./labels.txt' 
+        2020-09-10 15:46:04,698    INFO:  --------------------------------------------------------------------------------
+        2020-09-10 15:46:04,699    INFO:  Stats: no local files in the transfer set
+        2020-09-10 15:46:04,699    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_76505/ks.err.IBVf8O
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 1721217
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:45:56-07:00
+      atime: 2020-09-10T15:45:56-07:00
+      ctime: 2020-09-10T15:45:56-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_76505/ks.meta.buSa8t
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 1721218
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:45:56-07:00
+      atime: 2020-09-10T15:45:56-07:00
+      ctime: 2020-09-10T15:45:56-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
