@@ -70,8 +70,8 @@ val_photos = asarray(val_photos)
 val_labels = asarray(val_labels)
 
 nb_classes = 2
-epochs=3
-batch_size =2
+epochs=1
+batch_size =5
 
 vgg16_model = VGG16(weights = 'imagenet', include_top = False)
 x = vgg16_model.output

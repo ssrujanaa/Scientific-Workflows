@@ -1,39 +1,39 @@
 - invocation: True
   version: 3.0
-  start: 2020-09-14T11:46:32.866-07:00
-  duration: 16.303
+  start: 2020-09-23T21:30:48.335-07:00
+  duration: 16.221
   transformation: "pegasus::cleanup"
   derivation: "null"
   resource: "local"
   wf-label: "Cats_and_Dogs"
-  wf-stamp: "2020-09-14T18:44:12+00:00"
+  wf-stamp: "2020-09-24T04:29:24+00:00"
   interface: eth0
   hostaddr: 172.17.0.2
-  hostname: 2a7c1e923640
-  pid: 16167
+  hostname: bb9d46431d29
+  pid: 43790
   uid: 550
   user: scitech
   gid: 808
   group: scitech-group
   umask: 0o0022
   mainjob:
-    start: 2020-09-14T11:46:32.872-07:00
-    duration: 16.297
-    pid: 16171
+    start: 2020-09-23T21:30:48.345-07:00
+    duration: 16.211
+    pid: 43804
     usage:
-      utime: 0.569
-      stime: 1.110
-      maxrss: 17784
-      minflt: 181322
+      utime: 0.186
+      stime: 0.144
+      maxrss: 17824
+      minflt: 29099
       majflt: 0
       nswap: 0
-      inblock: 96
-      outblock: 80
+      inblock: 16
+      outblock: 32
       msgsnd: 0
       msgrcv: 0
       nsignals: 0
-      nvcsw: 4845
-      nivcsw: 5792
+      nvcsw: 722
+      nivcsw: 425
     status:
       raw: 0
       regular_exitcode: 0
@@ -55,13 +55,13 @@
     argument_vector:
     procs:
   jobids:
-    condor: 16.0
+    condor: 118.0
   cwd: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0008
   usage:
-    utime: 0.005
-    stime: 0.003
-    maxrss: 5456
-    minflt: 309
+    utime: 0.003
+    stime: 0.008
+    maxrss: 5320
+    minflt: 427
     majflt: 0
     nswap: 0
     inblock: 0
@@ -69,311 +69,131 @@
     msgsnd: 0
     msgrcv: 0
     nsignals: 0
-    nvcsw: 15
-    nivcsw: 4
+    nvcsw: 20
+    nivcsw: 29
   machine:
     page-size: 4096
     uname_system: linux
-    uname_nodename: 2a7c1e923640
+    uname_nodename: bb9d46431d29
     uname_release: 4.19.76-linuxkit
     uname_machine: x86_64
     ram_total: 6092936
-    ram_free: 3306652
-    ram_shared: 816
-    ram_buffer: 128568
+    ram_free: 1989920
+    ram_shared: 828
+    ram_buffer: 219640
     swap_total: 1048572
     swap_free: 1048572
     cpu_count: 6
     cpu_speed: 2600
     cpu_vendor: GenuineIntel
     cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
-    load_min1: 1.80
-    load_min5: 0.70
-    load_min15: 0.26
-    procs_total: 30
+    load_min1: 1.38
+    load_min5: 0.51
+    load_min15: 0.33
+    procs_total: 51
     procs_running: 4
-    procs_sleeping: 25
-    procs_zombie: 1
-    procs_vmsize: 5668684
-    procs_rss: 759488
-    task_total: 75
-    task_running: 4
-    task_sleeping: 70
-    task_zombie: 1
+    procs_sleeping: 38
+    procs_zombie: 3
+    procs_vmsize: 15216908
+    procs_rss: 2008884
+    task_total: 182
+    task_running: 6
+    task_sleeping: 173
+    task_zombie: 3
   files:
     stdin:
       descriptor_number: 0
       mode: 0o100644
-      size: 48351
-      inode: 12823593
+      size: 5228
+      inode: 14094140
       nlink: 1
       blksize: 4096
-      blocks: 96
-      mtime: 2020-09-14T11:44:15-07:00
-      atime: 2020-09-14T11:44:15-07:00
-      ctime: 2020-09-14T11:44:15-07:00
+      blocks: 16
+      mtime: 2020-09-23T21:29:26-07:00
+      atime: 2020-09-23T21:29:26-07:00
+      ctime: 2020-09-23T21:29:26-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     stdout:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_16162/ks.out.byzy8E
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_43782/ks.out.QC3XZI
       descriptor: 3
       mode: 0o100600
-      size: 33393
-      inode: 2640089
+      size: 4232
+      inode: 2388499
       nlink: 1
       blksize: 4096
-      blocks: 72
-      mtime: 2020-09-14T11:46:49-07:00
-      atime: 2020-09-14T11:46:32-07:00
-      ctime: 2020-09-14T11:46:49-07:00
+      blocks: 16
+      mtime: 2020-09-23T21:31:04-07:00
+      atime: 2020-09-23T21:30:48-07:00
+      ctime: 2020-09-23T21:31:04-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
       data_truncated: false
       data: |
-        2020-09-14 11:46:33,034    INFO:  Reading URL pairs from stdin
-        2020-09-14 11:46:33,040    INFO:  202 transfers loaded
-        2020-09-14 11:46:33,041    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
-        2020-09-14 11:46:33,042    INFO:  LD_LIBRARY_PATH=
-        2020-09-14 11:46:33,152    INFO:  --------------------------------------------------------------------------------
-        2020-09-14 11:46:33,153    INFO:  Starting transfers - attempt 1
-        2020-09-14 11:46:35,157    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./Augmentation_py' 
-        2020-09-14 11:46:35,170    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat0.jpg' 
-        2020-09-14 11:46:35,184    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat1.jpg' 
-        2020-09-14 11:46:35,196    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat10.jpg' 
-        2020-09-14 11:46:35,210    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat11.jpg' 
-        2020-09-14 11:46:35,224    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat12.jpg' 
-        2020-09-14 11:46:35,236    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat13.jpg' 
-        2020-09-14 11:46:35,248    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat14.jpg' 
-        2020-09-14 11:46:35,259    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat15.jpg' 
-        2020-09-14 11:46:35,271    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat16.jpg' 
-        2020-09-14 11:46:35,283    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat17.jpg' 
-        2020-09-14 11:46:35,297    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat18.jpg' 
-        2020-09-14 11:46:35,311    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat19.jpg' 
-        2020-09-14 11:46:35,322    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat2.jpg' 
-        2020-09-14 11:46:35,331    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat20.jpg' 
-        2020-09-14 11:46:35,347    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat21.jpg' 
-        2020-09-14 11:46:35,361    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat22.jpg' 
-        2020-09-14 11:46:35,373    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat23.jpg' 
-        2020-09-14 11:46:35,389    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat24.jpg' 
-        2020-09-14 11:46:35,415    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat25.jpg' 
-        2020-09-14 11:46:35,429    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat26.jpg' 
-        2020-09-14 11:46:35,445    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat27.jpg' 
-        2020-09-14 11:46:35,456    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat28.jpg' 
-        2020-09-14 11:46:35,471    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat29.jpg' 
-        2020-09-14 11:46:35,484    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat3.jpg' 
-        2020-09-14 11:46:35,500    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat30.jpg' 
-        2020-09-14 11:46:35,516    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat32.jpg' 
-        2020-09-14 11:46:35,533    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat33.jpg' 
-        2020-09-14 11:46:35,547    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat34.jpg' 
-        2020-09-14 11:46:35,562    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat35.jpg' 
-        2020-09-14 11:46:35,575    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat36.jpg' 
-        2020-09-14 11:46:35,587    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat37.jpg' 
-        2020-09-14 11:46:35,602    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat38.jpg' 
-        2020-09-14 11:46:35,612    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat39.jpg' 
-        2020-09-14 11:46:35,625    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat4.jpg' 
-        2020-09-14 11:46:35,642    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat40.jpg' 
-        2020-09-14 11:46:35,657    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat41.jpg' 
-        2020-09-14 11:46:35,672    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat42.jpg' 
-        2020-09-14 11:46:35,686    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat43.jpg' 
-        2020-09-14 11:46:35,698    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat44.jpg' 
-        2020-09-14 11:46:35,713    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat45.jpg' 
-        2020-09-14 11:46:35,727    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat46.jpg' 
-        2020-09-14 11:46:35,744    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat47.jpg' 
-        2020-09-14 11:46:35,758    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat48.jpg' 
-        2020-09-14 11:46:35,773    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat49.jpg' 
-        2020-09-14 11:46:35,787    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat5.jpg' 
-        2020-09-14 11:46:35,803    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat50.jpg' 
-        2020-09-14 11:46:35,821    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat51.jpg' 
-        2020-09-14 11:46:35,834    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat52.jpg' 
-        2020-09-14 11:46:35,846    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat53.jpg' 
-        2020-09-14 11:46:35,865    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat54.jpg' 
-        2020-09-14 11:46:35,895    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat55.jpg' 
-        2020-09-14 11:46:35,917    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat57.jpg' 
-        2020-09-14 11:46:35,932    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat58.jpg' 
-        2020-09-14 11:46:35,948    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat59.jpg' 
-        2020-09-14 11:46:35,963    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat6.jpg' 
-        2020-09-14 11:46:35,981    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat60.jpg' 
-        2020-09-14 11:46:35,995    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat61.jpg' 
-        2020-09-14 11:46:36,016    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat62.jpg' 
-        2020-09-14 11:46:36,036    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat63.jpg' 
-        2020-09-14 11:46:36,047    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat64.jpg' 
-        2020-09-14 11:46:36,058    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat65.jpg' 
-        2020-09-14 11:46:36,070    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat66.jpg' 
-        2020-09-14 11:46:36,082    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat67.jpg' 
-        2020-09-14 11:46:36,101    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat68.jpg' 
-        2020-09-14 11:46:36,115    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat69.jpg' 
-        2020-09-14 11:46:36,129    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat7.jpg' 
-        2020-09-14 11:46:36,151    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat70.jpg' 
-        2020-09-14 11:46:36,170    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat71.jpg' 
-        2020-09-14 11:46:36,192    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat72.jpg' 
-        2020-09-14 11:46:36,207    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat73.jpg' 
-        2020-09-14 11:46:36,222    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat74.jpg' 
-        2020-09-14 11:46:36,235    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat75.jpg' 
-        2020-09-14 11:46:36,252    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat76.jpg' 
-        2020-09-14 11:46:36,264    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat77.jpg' 
-        2020-09-14 11:46:36,282    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat78.jpg' 
-        2020-09-14 11:46:36,300    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat79.jpg' 
-        2020-09-14 11:46:36,315    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat8.jpg' 
-        2020-09-14 11:46:36,330    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat81.jpg' 
-        2020-09-14 11:46:36,344    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat82.jpg' 
-        2020-09-14 11:46:36,356    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat83.jpg' 
-        2020-09-14 11:46:36,369    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat84.jpg' 
-        2020-09-14 11:46:36,382    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat85.jpg' 
-        2020-09-14 11:46:36,393    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat86.jpg' 
-        2020-09-14 11:46:36,407    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat87.jpg' 
-        2020-09-14 11:46:36,420    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat88.jpg' 
-        2020-09-14 11:46:36,432    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat89.jpg' 
-        2020-09-14 11:46:36,444    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat9.jpg' 
-        2020-09-14 11:46:36,457    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat90.jpg' 
-        2020-09-14 11:46:36,468    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat91.jpg' 
-        2020-09-14 11:46:36,481    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat92.jpg' 
-        2020-09-14 11:46:36,493    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat93.jpg' 
-        2020-09-14 11:46:36,513    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat94.jpg' 
-        2020-09-14 11:46:36,526    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat95.jpg' 
-        2020-09-14 11:46:36,544    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat96.jpg' 
-        2020-09-14 11:46:36,556    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat97.jpg' 
-        2020-09-14 11:46:36,570    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat98.jpg' 
-        2020-09-14 11:46:36,582    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat99.jpg' 
-        2020-09-14 11:46:36,600    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog0.jpg' 
-        2020-09-14 11:46:36,609    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog1.jpg' 
-        2020-09-14 11:46:36,618    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog10.jpg' 
-        2020-09-14 11:46:36,627    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog11.jpg' 
-        2020-09-14 11:46:36,638    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog12.jpg' 
-        2020-09-14 11:46:36,649    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog13.jpg' 
-        2020-09-14 11:46:36,657    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog15.jpg' 
-        2020-09-14 11:46:36,669    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog16.jpg' 
-        2020-09-14 11:46:36,680    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog17.jpg' 
-        2020-09-14 11:46:36,692    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog18.jpg' 
-        2020-09-14 11:46:36,704    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog19.jpg' 
-        2020-09-14 11:46:36,716    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog2.jpg' 
-        2020-09-14 11:46:36,723    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog20.jpg' 
-        2020-09-14 11:46:36,733    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog21.jpg' 
-        2020-09-14 11:46:36,741    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog22.jpg' 
-        2020-09-14 11:46:36,753    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog23.jpg' 
-        2020-09-14 11:46:36,765    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog24.jpg' 
-        2020-09-14 11:46:36,776    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog25.jpg' 
-        2020-09-14 11:46:36,788    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog26.jpg' 
-        2020-09-14 11:46:36,800    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog27.jpg' 
-        2020-09-14 11:46:36,811    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog28.jpg' 
-        2020-09-14 11:46:36,823    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog29.jpg' 
-        2020-09-14 11:46:36,837    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog3.jpg' 
-        2020-09-14 11:46:36,849    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog30.jpg' 
-        2020-09-14 11:46:36,861    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog31.jpg' 
-        2020-09-14 11:46:36,873    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog32.jpg' 
-        2020-09-14 11:46:36,885    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog33.jpg' 
-        2020-09-14 11:46:36,897    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog34.jpg' 
-        2020-09-14 11:46:36,909    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog35.jpg' 
-        2020-09-14 11:46:36,926    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog36.jpg' 
-        2020-09-14 11:46:36,940    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog37.jpg' 
-        2020-09-14 11:46:36,956    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog38.jpg' 
-        2020-09-14 11:46:36,969    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog4.jpg' 
-        2020-09-14 11:46:36,984    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog40.jpg' 
-        2020-09-14 11:46:36,996    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog41.jpg' 
-        2020-09-14 11:46:37,013    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog42.jpg' 
-        2020-09-14 11:46:37,026    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog43.jpg' 
-        2020-09-14 11:46:37,039    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog44.jpg' 
-        2020-09-14 11:46:37,053    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog45.jpg' 
-        2020-09-14 11:46:37,066    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog46.jpg' 
-        2020-09-14 11:46:37,078    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog47.jpg' 
-        2020-09-14 11:46:37,101    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog48.jpg' 
-        2020-09-14 11:46:37,116    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog49.jpg' 
-        2020-09-14 11:46:37,126    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog5.jpg' 
-        2020-09-14 11:46:37,145    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog50.jpg' 
-        2020-09-14 11:46:37,155    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog51.jpg' 
-        2020-09-14 11:46:37,160    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog64.jpg' 
-        2020-09-14 11:46:37,172    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog52.jpg' 
-        2020-09-14 11:46:37,175    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog65.jpg' 
-        2020-09-14 11:46:37,184    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog53.jpg' 
-        2020-09-14 11:46:37,190    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog66.jpg' 
-        2020-09-14 11:46:37,201    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog67.jpg' 
-        2020-09-14 11:46:37,203    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog54.jpg' 
-        2020-09-14 11:46:37,213    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog55.jpg' 
-        2020-09-14 11:46:37,222    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog68.jpg' 
-        2020-09-14 11:46:37,228    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog56.jpg' 
-        2020-09-14 11:46:37,237    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog69.jpg' 
-        2020-09-14 11:46:37,249    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog57.jpg' 
-        2020-09-14 11:46:37,254    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog7.jpg' 
-        2020-09-14 11:46:37,264    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog58.jpg' 
-        2020-09-14 11:46:37,268    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog70.jpg' 
-        2020-09-14 11:46:37,281    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog71.jpg' 
-        2020-09-14 11:46:37,282    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog59.jpg' 
-        2020-09-14 11:46:37,296    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog6.jpg' 
-        2020-09-14 11:46:37,299    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog72.jpg' 
-        2020-09-14 11:46:37,310    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog60.jpg' 
-        2020-09-14 11:46:37,317    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog73.jpg' 
-        2020-09-14 11:46:37,331    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog61.jpg' 
-        2020-09-14 11:46:37,342    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog74.jpg' 
-        2020-09-14 11:46:37,353    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog62.jpg' 
-        2020-09-14 11:46:37,368    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog75.jpg' 
-        2020-09-14 11:46:37,369    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog89.jpg' 
-        2020-09-14 11:46:37,387    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog9.jpg' 
-        2020-09-14 11:46:37,404    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog76.jpg' 
-        2020-09-14 11:46:37,406    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog90.jpg' 
-        2020-09-14 11:46:37,419    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog77.jpg' 
-        2020-09-14 11:46:37,430    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog91.jpg' 
-        2020-09-14 11:46:37,449    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog92.jpg' 
-        2020-09-14 11:46:37,450    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog78.jpg' 
-        2020-09-14 11:46:37,468    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog79.jpg' 
-        2020-09-14 11:46:37,469    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog93.jpg' 
-        2020-09-14 11:46:37,483    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog8.jpg' 
-        2020-09-14 11:46:37,487    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog94.jpg' 
-        2020-09-14 11:46:37,496    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog80.jpg' 
-        2020-09-14 11:46:37,500    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog95.jpg' 
-        2020-09-14 11:46:37,515    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog96.jpg' 
-        2020-09-14 11:46:37,520    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog81.jpg' 
-        2020-09-14 11:46:37,529    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog97.jpg' 
-        2020-09-14 11:46:37,544    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog82.jpg' 
-        2020-09-14 11:46:37,546    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog98.jpg' 
-        2020-09-14 11:46:37,565    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog83.jpg' 
-        2020-09-14 11:46:37,565    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog99.jpg' 
-        2020-09-14 11:46:37,582    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_images.txt' 
-        2020-09-14 11:46:37,588    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog84.jpg' 
-        2020-09-14 11:46:37,602    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat31.jpg' 
-        2020-09-14 11:46:37,610    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog85.jpg' 
-        2020-09-14 11:46:37,621    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat56.jpg' 
-        2020-09-14 11:46:37,629    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog86.jpg' 
-        2020-09-14 11:46:37,642    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat80.jpg' 
-        2020-09-14 11:46:37,647    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog87.jpg' 
-        2020-09-14 11:46:37,660    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog14.jpg' 
-        2020-09-14 11:46:37,684    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog39.jpg' 
-        2020-09-14 11:46:37,709    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog63.jpg' 
-        2020-09-14 11:46:37,727    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog88.jpg' 
-        2020-09-14 11:46:49,142    INFO:  --------------------------------------------------------------------------------
-        2020-09-14 11:46:49,142    INFO:  Stats: no local files in the transfer set
-        2020-09-14 11:46:49,142    INFO:  All transfers completed successfully.
+        2020-09-23 21:30:48,481    INFO:  Reading URL pairs from stdin
+        2020-09-23 21:30:48,484    INFO:  22 transfers loaded
+        2020-09-23 21:30:48,484    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-09-23 21:30:48,484    INFO:  LD_LIBRARY_PATH=
+        2020-09-23 21:30:48,535    INFO:  --------------------------------------------------------------------------------
+        2020-09-23 21:30:48,535    INFO:  Starting transfers - attempt 1
+        2020-09-23 21:30:50,538    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./Augmentation_py' 
+        2020-09-23 21:30:50,551    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat0.jpg' 
+        2020-09-23 21:30:50,562    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat1.jpg' 
+        2020-09-23 21:30:50,576    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat3.jpg' 
+        2020-09-23 21:30:50,587    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat4.jpg' 
+        2020-09-23 21:30:50,608    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat5.jpg' 
+        2020-09-23 21:30:50,623    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat7.jpg' 
+        2020-09-23 21:30:50,638    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat8.jpg' 
+        2020-09-23 21:30:50,656    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat9.jpg' 
+        2020-09-23 21:30:50,670    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog1.jpg' 
+        2020-09-23 21:30:50,681    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog2.jpg' 
+        2020-09-23 21:30:50,699    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog3.jpg' 
+        2020-09-23 21:30:50,713    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog5.jpg' 
+        2020-09-23 21:30:50,723    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog6.jpg' 
+        2020-09-23 21:30:50,736    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog7.jpg' 
+        2020-09-23 21:30:50,748    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog9.jpg' 
+        2020-09-23 21:30:50,759    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_images.txt' 
+        2020-09-23 21:30:50,769    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat2.jpg' 
+        2020-09-23 21:30:50,785    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog0.jpg' 
+        2020-09-23 21:30:50,807    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog4.jpg' 
+        2020-09-23 21:30:50,843    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Dog8.jpg' 
+        2020-09-23 21:30:50,865    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0008/./resized_Cat6.jpg' 
+        2020-09-23 21:31:04,548    INFO:  --------------------------------------------------------------------------------
+        2020-09-23 21:31:04,548    INFO:  Stats: no local files in the transfer set
+        2020-09-23 21:31:04,548    INFO:  All transfers completed successfully.
         
     stderr:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_16162/ks.err.U30CJa
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_43782/ks.err.CZT9PT
       descriptor: 4
       mode: 0o100600
       size: 0
-      inode: 2640090
+      inode: 2388500
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-09-14T11:46:32-07:00
-      atime: 2020-09-14T11:46:32-07:00
-      ctime: 2020-09-14T11:46:32-07:00
+      mtime: 2020-09-23T21:30:48-07:00
+      atime: 2020-09-23T21:30:48-07:00
+      ctime: 2020-09-23T21:30:48-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     metadata:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_16162/ks.meta.5bPKkG
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_43782/ks.meta.u1gqG4
       descriptor: 5
       mode: 0o100600
       size: 0
-      inode: 2640091
+      inode: 2388501
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-09-14T11:46:32-07:00
-      atime: 2020-09-14T11:46:32-07:00
-      ctime: 2020-09-14T11:46:32-07:00
+      mtime: 2020-09-23T21:30:48-07:00
+      atime: 2020-09-23T21:30:48-07:00
+      ctime: 2020-09-23T21:30:48-07:00
       uid: 550
       user: scitech
       gid: 808

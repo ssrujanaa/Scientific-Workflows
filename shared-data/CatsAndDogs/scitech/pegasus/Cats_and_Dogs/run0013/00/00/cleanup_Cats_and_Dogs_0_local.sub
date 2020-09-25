@@ -5,8 +5,8 @@
 ######################################################################
 stream_error  = false
 stream_output = false
-environment = "LANG=en_US.UTF-8 PEGASUS_HOME=/home/scitech/pegasus/dist/pegasus-5.0.0dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=59900de0-38d5-4662-8de5-eb74ebc081d1 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=cleanup_Cats_and_Dogs_0_local PEGASUS_SITE=local PEGASUS_BIN_DIR=/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin _PEGASUS_CONNECT_STDIN=true"
-arguments = "pegasus-kickstart  -n pegasus::cleanup -N null -i - -R local  -L Cats_and_Dogs -T 2020-09-14T20:31:28+00:00 pegasus-transfer "
+environment = "LANG=en_US.UTF-8 PEGASUS_HOME=/home/scitech/pegasus/dist/pegasus-5.0.0dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=02f864f4-2b24-4733-b273-0b4fd5c967b6 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=cleanup_Cats_and_Dogs_0_local PEGASUS_SITE=local PEGASUS_BIN_DIR=/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin _PEGASUS_CONNECT_STDIN=true"
+arguments = "pegasus-kickstart  -n pegasus::cleanup -N null -i - -R local  -L Cats_and_Dogs -T 2020-09-24T05:31:40+00:00 pegasus-transfer "
 error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0013//00/00/cleanup_Cats_and_Dogs_0_local.err
 executable = /home/scitech/pegasus/dist/pegasus-5.0.0dev/share/pegasus/sh/pegasus-lite-local.sh
 input = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0013//00/00/cleanup_Cats_and_Dogs_0_local.in
@@ -20,11 +20,11 @@ submit_event_user_notes = pool:local
 transfer_executable = false
 universe = local
 +pegasus_generator = "Pegasus"
-+pegasus_root_wf_uuid = "59900de0-38d5-4662-8de5-eb74ebc081d1"
-+pegasus_wf_uuid = "59900de0-38d5-4662-8de5-eb74ebc081d1"
++pegasus_root_wf_uuid = "02f864f4-2b24-4733-b273-0b4fd5c967b6"
++pegasus_wf_uuid = "02f864f4-2b24-4733-b273-0b4fd5c967b6"
 +pegasus_version = "5.0.0dev"
 +pegasus_wf_name = "Cats_and_Dogs-0"
-+pegasus_wf_time = "20200914T203129+0000"
++pegasus_wf_time = "20200924T053141+0000"
 +pegasus_wf_xformation = "pegasus::cleanup"
 +pegasus_wf_dax_job_id = "null"
 +pegasus_wf_dag_job_id = "cleanup_Cats_and_Dogs_0_local"

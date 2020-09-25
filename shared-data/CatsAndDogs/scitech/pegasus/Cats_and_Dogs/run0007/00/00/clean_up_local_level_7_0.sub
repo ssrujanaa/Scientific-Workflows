@@ -5,8 +5,8 @@
 ######################################################################
 stream_error  = false
 stream_output = false
-environment = "PEGASUS_HOME=/home/scitech/pegasus/dist/pegasus-5.0.0dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=2bde2afb-b00c-4766-a0c1-b50156d9530f PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=clean_up_local_level_7_0 PEGASUS_SITE=local"
-arguments = " -n pegasus::cleanup -N null -i - -R local  -L Cats_and_Dogs -T 2020-09-10T22:39:16+00:00 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer "
+environment = "PEGASUS_HOME=/home/scitech/pegasus/dist/pegasus-5.0.0dev CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=0aeddaf0-5979-4a64-ab9f-41857f77dce7 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=clean_up_local_level_7_0 PEGASUS_SITE=local"
+arguments = " -n pegasus::cleanup -N null -i - -R local  -L Cats_and_Dogs -T 2020-09-24T04:28:46+00:00 /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer "
 error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0007//00/00/clean_up_local_level_7_0.err
 executable = /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-kickstart
 input = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0007//00/00/clean_up_local_level_7_0.in
@@ -20,11 +20,11 @@ submit_event_user_notes = pool:local
 transfer_executable = false
 universe = local
 +pegasus_generator = "Pegasus"
-+pegasus_root_wf_uuid = "2bde2afb-b00c-4766-a0c1-b50156d9530f"
-+pegasus_wf_uuid = "2bde2afb-b00c-4766-a0c1-b50156d9530f"
++pegasus_root_wf_uuid = "0aeddaf0-5979-4a64-ab9f-41857f77dce7"
++pegasus_wf_uuid = "0aeddaf0-5979-4a64-ab9f-41857f77dce7"
 +pegasus_version = "5.0.0dev"
 +pegasus_wf_name = "Cats_and_Dogs-0"
-+pegasus_wf_time = "20200910T223918+0000"
++pegasus_wf_time = "20200924T042846+0000"
 +pegasus_wf_xformation = "pegasus::cleanup"
 +pegasus_wf_dax_job_id = "null"
 +pegasus_wf_dag_job_id = "clean_up_local_level_7_0"

@@ -1,39 +1,39 @@
 - invocation: True
   version: 3.0
-  start: 2020-09-10T13:34:29.359-07:00
-  duration: 15.964
+  start: 2020-09-17T14:25:11.143-07:00
+  duration: 2.256
   transformation: "pegasus::rc-client"
   derivation: "null"
   resource: "local"
   wf-label: "Cats_and_Dogs"
-  wf-stamp: "2020-09-10T20:31:40+00:00"
+  wf-stamp: "2020-09-17T21:23:35+00:00"
   interface: eth0
   hostaddr: 172.17.0.2
-  hostname: 23512e8a13a2
-  pid: 2485
+  hostname: b23729467fae
+  pid: 11653
   uid: 550
   user: scitech
   gid: 808
   group: scitech-group
   umask: 0o0022
   mainjob:
-    start: 2020-09-10T13:34:29.398-07:00
-    duration: 15.923
-    pid: 2519
+    start: 2020-09-17T14:25:11.148-07:00
+    duration: 2.250
+    pid: 11657
     usage:
-      utime: 4.595
-      stime: 2.808
-      maxrss: 140420
-      minflt: 72025
+      utime: 1.688
+      stime: 0.863
+      maxrss: 86268
+      minflt: 59447
       majflt: 0
       nswap: 0
-      inblock: 528
-      outblock: 1704
+      inblock: 368
+      outblock: 1664
       msgsnd: 0
       msgrcv: 0
       nsignals: 0
-      nvcsw: 2346
-      nivcsw: 34380
+      nvcsw: 1940
+      nivcsw: 1112
     status:
       raw: 0
       regular_exitcode: 0
@@ -56,7 +56,7 @@
       - "--prefix"
       - "pegasus.catalog.replica.output"
       - "--conf"
-      - "/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002/pegasus.5736444586297896645.properties"
+      - "/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002/pegasus.3688536131573318909.properties"
       - "-v"
       - "--meta"
       - "/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002/00/00/preprocess1_py_ID0000001.meta"
@@ -64,13 +64,13 @@
       - "/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002/00/00/register_local_0_0.in"
     procs:
   jobids:
-    condor: 99.0
+    condor: 217.0
   cwd: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0002
   usage:
-    utime: 0.009
-    stime: 0.015
-    maxrss: 5168
-    minflt: 559
+    utime: 0.005
+    stime: 0.004
+    maxrss: 5440
+    minflt: 340
     majflt: 0
     nswap: 0
     inblock: 0
@@ -78,108 +78,106 @@
     msgsnd: 0
     msgrcv: 0
     nsignals: 0
-    nvcsw: 14
-    nivcsw: 73
+    nvcsw: 15
+    nivcsw: 2
   machine:
     page-size: 4096
     uname_system: linux
-    uname_nodename: 23512e8a13a2
+    uname_nodename: b23729467fae
     uname_release: 4.19.76-linuxkit
     uname_machine: x86_64
-    ram_total: 6092936
-    ram_free: 813628
-    ram_shared: 204
-    ram_buffer: 99212
+    ram_total: 6092952
+    ram_free: 1790880
+    ram_shared: 828
+    ram_buffer: 176272
     swap_total: 1048572
-    swap_free: 753660
+    swap_free: 1048572
     cpu_count: 6
     cpu_speed: 2600
     cpu_vendor: GenuineIntel
     cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
-    load_min1: 6.02
-    load_min5: 3.09
-    load_min15: 1.97
-    procs_total: 92
-    procs_running: 8
-    procs_sleeping: 69
-    procs_waiting: 1
-    procs_zombie: 11
-    procs_vmsize: 23705180
-    procs_rss: 4613304
-    task_total: 270
-    task_running: 9
-    task_sleeping: 249
-    task_waiting: 1
-    task_zombie: 11
+    load_min1: 0.59
+    load_min5: 0.51
+    load_min15: 0.56
+    procs_total: 46
+    procs_running: 2
+    procs_sleeping: 39
+    procs_zombie: 5
+    procs_vmsize: 7023032
+    procs_rss: 970716
+    task_total: 90
+    task_running: 2
+    task_sleeping: 83
+    task_zombie: 5
   files:
     stdin:
       file_name: /dev/null
       mode: 0o20666
       size: 0
-      inode: 119154
+      inode: 226462
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-09-10T08:30:05-07:00
-      atime: 2020-09-10T08:30:05-07:00
-      ctime: 2020-09-10T08:30:05-07:00
+      mtime: 2020-09-17T09:56:50-07:00
+      atime: 2020-09-17T09:56:50-07:00
+      ctime: 2020-09-17T09:56:50-07:00
       uid: 0
       user: root
       gid: 0
       group: root
     stdout:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_2467/ks.out.colRUo
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_11651/ks.out.EWmo2U
       descriptor: 3
       mode: 0o100600
       size: 91
-      inode: 1989927
+      inode: 2251971
       nlink: 1
       blksize: 4096
       blocks: 8
-      mtime: 2020-09-10T13:34:40-07:00
-      atime: 2020-09-10T13:34:29-07:00
-      ctime: 2020-09-10T13:34:40-07:00
+      mtime: 2020-09-17T14:25:12-07:00
+      atime: 2020-09-17T14:25:11-07:00
+      ctime: 2020-09-17T14:25:12-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
       data_truncated: false
       data: |
-        2020.09.10 20:34:40.910 UTC:   Your database is compatible with Pegasus version: 5.0.0dev 
+        2020.09.17 21:25:12.745 UTC:   Your database is compatible with Pegasus version: 5.0.0dev 
         
     stderr:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_2467/ks.err.LDCI09
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_11651/ks.err.tm2vYv
       descriptor: 4
       mode: 0o100600
-      size: 80
-      inode: 1989928
+      size: 78
+      inode: 2251972
       nlink: 1
       blksize: 4096
       blocks: 8
-      mtime: 2020-09-10T13:34:45-07:00
-      atime: 2020-09-10T13:34:29-07:00
-      ctime: 2020-09-10T13:34:45-07:00
+      mtime: 2020-09-17T14:25:13-07:00
+      atime: 2020-09-17T14:25:11-07:00
+      ctime: 2020-09-17T14:25:13-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
       data_truncated: false
       data: |
-        #Successfully worked on    : 202 lines.
-        #Worked on total number of : 202 lines.
+        #Successfully worked on    : 22 lines.
+        #Worked on total number of : 22 lines.
         
     metadata:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_2467/ks.meta.6RpN6U
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_11651/ks.meta.0m2HU6
       descriptor: 5
       mode: 0o100600
       size: 0
-      inode: 1989930
+      inode: 2251973
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-09-10T13:34:29-07:00
-      atime: 2020-09-10T13:34:29-07:00
-      ctime: 2020-09-10T13:34:29-07:00
+      mtime: 2020-09-17T14:25:11-07:00
+      atime: 2020-09-17T14:25:11-07:00
+      ctime: 2020-09-17T14:25:11-07:00
       uid: 550
       user: scitech
       gid: 808
