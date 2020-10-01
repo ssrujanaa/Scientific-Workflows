@@ -1,0 +1,8 @@
+x-pegasus: {apiLang: python, createdBy: scitech, createdOn: '07-15-20T18:35:05Z'}
+pegasus: '5.0'
+transformations:
+- name: Thumbs_up
+  sites:
+  - {name: condorpool, pfn: /usr/bin/add_thumbs_up.py, type: installed, container: tools-container}
+containers:
+- {name: tools-container, type: docker, image: 'docker:///ssrujanaa/workflow_docker4:latest'}

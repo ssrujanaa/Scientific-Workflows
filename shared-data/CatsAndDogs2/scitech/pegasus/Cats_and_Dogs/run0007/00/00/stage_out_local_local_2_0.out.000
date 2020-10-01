@@ -1,0 +1,189 @@
+- invocation: True
+  version: 3.0
+  start: 2020-09-10T15:44:46.770-07:00
+  duration: 4.888
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-09-10T22:39:16+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 23512e8a13a2
+  pid: 61899
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-09-10T15:44:46.835-07:00
+    duration: 4.823
+    pid: 61910
+    usage:
+      utime: 0.608
+      stime: 0.430
+      maxrss: 17904
+      minflt: 35711
+      majflt: 0
+      nswap: 0
+      inblock: 600
+      outblock: 64
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 444
+      nivcsw: 5525
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2253
+      inode: 1584794
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-08-25T09:36:31-07:00
+      atime: 2020-08-25T09:36:31-07:00
+      ctime: 2020-08-25T09:36:37-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  jobids:
+    condor: 219.0
+  cwd: /var/lib/condor/spool/local_univ_execute/dir_61876
+  usage:
+    utime: 0.011
+    stime: 0.017
+    maxrss: 2204
+    minflt: 591
+    majflt: 0
+    nswap: 0
+    inblock: 264
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 6
+    nivcsw: 8
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 23512e8a13a2
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 6092936
+    ram_free: 525764
+    ram_shared: 68
+    ram_buffer: 37408
+    swap_total: 1048572
+    swap_free: 0
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 14.26
+    load_min5: 9.83
+    load_min15: 6.14
+    procs_total: 106
+    procs_running: 5
+    procs_sleeping: 76
+    procs_zombie: 23
+    procs_vmsize: 29961852
+    procs_rss: 5064344
+    task_total: 340
+    task_running: 10
+    task_sleeping: 307
+    task_zombie: 23
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 1623245
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:44:46-07:00
+      atime: 2020-09-10T15:44:46-07:00
+      ctime: 2020-09-10T15:44:46-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stdout:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_61876/ks.out.jlvDxC
+      descriptor: 3
+      mode: 0o100600
+      size: 2612
+      inode: 419737
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-10T15:44:51-07:00
+      atime: 2020-09-10T15:44:46-07:00
+      ctime: 2020-09-10T15:44:51-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        2020-09-10 15:44:47,346    INFO:  Reading URL pairs from stdin
+        2020-09-10 15:44:47,347    INFO:  3 transfers loaded
+        2020-09-10 15:44:47,348    INFO:  PATH=/home/scitech/pegasus/dist/pegasus-5.0.0dev/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin:/usr/sbin
+        2020-09-10 15:44:47,348    INFO:  LD_LIBRARY_PATH=
+        2020-09-10 15:44:47,594    INFO:  --------------------------------------------------------------------------------
+        2020-09-10 15:44:47,595    INFO:  Starting transfers - attempt 1
+        2020-09-10 15:44:49,618    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0007/./testing.pkl' '//home/scitech/shared-data/CatsAndDogs/wf-output/testing.pkl'
+        2020-09-10 15:44:49,697    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0007/./training.pkl' '//home/scitech/shared-data/CatsAndDogs/wf-output/training.pkl'
+        2020-09-10 15:44:49,739    INFO:  Tool found: pegasus-integrity   Version: N/A   Path: /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity
+        2020-09-10 15:44:49,739    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="testing.pkl=//home/scitech/shared-data/CatsAndDogs/wf-output/testing.pkl"
+        2020-09-10 15:44:50,159    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="training.pkl=//home/scitech/shared-data/CatsAndDogs/wf-output/training.pkl"
+        2020-09-10 15:44:50,762    INFO:  /bin/cp -f -R -L '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0007/./validation.pkl' '//home/scitech/shared-data/CatsAndDogs/wf-output/validation.pkl'
+        2020-09-10 15:44:50,802    INFO:  /home/scitech/pegasus/dist/pegasus-5.0.0dev/bin/pegasus-integrity --verify="validation.pkl=//home/scitech/shared-data/CatsAndDogs/wf-output/validation.pkl"
+        2020-09-10 15:44:51,611    INFO:  --------------------------------------------------------------------------------
+        2020-09-10 15:44:51,612    INFO:  @@@MONITORING_PAYLOAD - START@@@{"ts": 1599777891, "monitoring_event": "int.metric", "payload": [{"event": "check", "file_type": "output", "succeeded": 3, "failed": 0, "duration": "1.607"}]}@@@MONITORING_PAYLOAD - END@@@
+        2020-09-10 15:44:51,612    INFO:  Stats: Total 3 transfers, 18.1 KB transferred in 4 seconds. Rate: 4.2 KB/s (33.9 Kb/s)
+        2020-09-10 15:44:51,612    INFO:         Between sites local->local : 3 transfers, 18.1 KB transferred in 4 seconds. Rate: 4.2 KB/s (33.9 Kb/s)
+        2020-09-10 15:44:51,613    INFO:  All transfers completed successfully.
+        
+    stderr:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_61876/ks.err.MCdm56
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 419738
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:44:46-07:00
+      atime: 2020-09-10T15:44:46-07:00
+      ctime: 2020-09-10T15:44:46-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_61876/ks.meta.lsJrDB
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 419739
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:44:46-07:00
+      atime: 2020-09-10T15:44:46-07:00
+      ctime: 2020-09-10T15:44:46-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group

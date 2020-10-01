@@ -1,0 +1,19 @@
+x-pegasus: {apiLang: python, createdBy: scitech, createdOn: '09-10-20T13:32:19Z'}
+pegasus: '5.0'
+transformations:
+- name: preprocess1.py
+  sites:
+  - {name: local, pfn: /home/scitech/shared-data/CatsAndDogs/preprocess1.py, type: stageable}
+- name: Augmentation.py
+  sites:
+  - {name: local, pfn: /home/scitech/shared-data/CatsAndDogs/Augmentation.py, type: stageable}
+- name: Data_Split.py
+  sites:
+  - {name: local, pfn: /home/scitech/shared-data/CatsAndDogs/Data_Split.py, type: stageable}
+- name: VGG_model.py
+  sites:
+  - {name: local, pfn: /home/scitech/shared-data/CatsAndDogs/VGG_model.py, type: stageable}
+- name: hpo_checkpointing.py
+  sites:
+  - {name: local, pfn: /home/scitech/shared-data/CatsAndDogs/hpo_checkpointing.py,
+    type: stageable}

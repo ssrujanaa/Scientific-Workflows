@@ -1,0 +1,2640 @@
+- invocation: True
+  version: 3.0
+  start: 2020-09-10T15:44:27.337-07:00
+  duration: 2.703
+  transformation: "Data_Split.py"
+  derivation: "ID0000003"
+  resource: "condorpool"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-09-10T22:39:16+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: 23512e8a13a2
+  pid: 58524
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-09-10T15:44:27.388-07:00
+    duration: 2.652
+    pid: 58529
+    usage:
+      utime: 1.132
+      stime: 0.246
+      maxrss: 72828
+      minflt: 17458
+      majflt: 177
+      nswap: 0
+      inblock: 81512
+      outblock: 48
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1152
+      nivcsw: 2110
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_48131/Data_Split_py
+      mode: 0o100755
+      size: 1063
+      inode: 3559279
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-10T15:43:41-07:00
+      atime: 2020-09-10T15:43:54-07:00
+      ctime: 2020-09-10T15:43:47-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+    procs:
+  jobids:
+    condor: 215.0
+  cwd: /var/lib/condor/execute/dir_48131
+  usage:
+    utime: 0.004
+    stime: 0.025
+    maxrss: 2308
+    minflt: 580
+    majflt: 1
+    nswap: 0
+    inblock: 552
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 4
+    nivcsw: 11
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: 23512e8a13a2
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 6092936
+    ram_free: 549736
+    ram_shared: 68
+    ram_buffer: 32328
+    swap_total: 1048572
+    swap_free: 0
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 15.17
+    load_min5: 9.68
+    load_min15: 6.02
+    procs_total: 104
+    procs_running: 5
+    procs_sleeping: 75
+    procs_waiting: 1
+    procs_zombie: 23
+    procs_vmsize: 29928684
+    procs_rss: 5077408
+    task_total: 340
+    task_running: 8
+    task_sleeping: 308
+    task_waiting: 1
+    task_zombie: 23
+  files:
+    testing.pkl:
+      lfn: "testing.pkl"
+      file_name: /var/lib/condor/execute/dir_48131/testing.pkl
+      mode: 0o100644
+      size: 3597
+      inode: 3559154
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-10T15:44:29-07:00
+      atime: 2020-09-10T15:44:29-07:00
+      ctime: 2020-09-10T15:44:29-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: 710fe69dddd8b5d295eb9e8494756b1bbb1ee31c7ccf7b5330783ef933b15f50
+      checksum_timing: 0.00
+    validation.pkl:
+      lfn: "validation.pkl"
+      file_name: /var/lib/condor/execute/dir_48131/validation.pkl
+      mode: 0o100644
+      size: 1441
+      inode: 3559776
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-10T15:44:29-07:00
+      atime: 2020-09-10T15:44:29-07:00
+      ctime: 2020-09-10T15:44:29-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: c47c01a7b20597881c69eac82c9561ede60696386a5ca9199be2c5cd6bc7c448
+      checksum_timing: 0.00
+    training.pkl:
+      lfn: "training.pkl"
+      file_name: /var/lib/condor/execute/dir_48131/training.pkl
+      mode: 0o100644
+      size: 13457
+      inode: 3559149
+      nlink: 1
+      blksize: 4096
+      blocks: 32
+      mtime: 2020-09-10T15:44:29-07:00
+      atime: 2020-09-10T15:44:29-07:00
+      ctime: 2020-09-10T15:44:29-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: 3963e7670df38641b4ab1aecaa95be8ca56a8e3e522604596e069d154e88bcf5
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 119154
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T08:30:05-07:00
+      atime: 2020-09-10T08:30:05-07:00
+      ctime: 2020-09-10T08:30:05-07:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/execute/dir_48131/ks.out.pu2huc
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 3559148
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:44:27-07:00
+      atime: 2020-09-10T15:44:27-07:00
+      ctime: 2020-09-10T15:44:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    stderr:
+      temporary_name: /var/lib/condor/execute/dir_48131/ks.err.H8jWZN
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 3559150
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:44:27-07:00
+      atime: 2020-09-10T15:44:27-07:00
+      ctime: 2020-09-10T15:44:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    metadata:
+      temporary_name: /var/lib/condor/execute/dir_48131/ks.meta.fRRAvp
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 3559151
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-10T15:44:27-07:00
+      atime: 2020-09-10T15:44:27-07:00
+      ctime: 2020-09-10T15:44:27-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "Aug_resized_Cat94_0.jpg"
+    pfn: "Aug_resized_Cat94_0.jpg"
+    sha256: 83c39baa0558f29cc3e17fe63f1e494445b13514d9023301ade437c9cc20fac7
+    success: True
+  - lfn: "Aug_resized_Dog90_1.jpg"
+    pfn: "Aug_resized_Dog90_1.jpg"
+    sha256: eaca61fa91dd37bec505424f7d748a92d6818626c8d38164ed2c7f79c3cc5d2d
+    success: True
+  - lfn: "Aug_resized_Dog34_0.jpg"
+    pfn: "Aug_resized_Dog34_0.jpg"
+    sha256: 67b35b6b05bf5b19fb31dc44e5389c4b21f25cd09f92a52d8f6130c5a565046e
+    success: True
+  - lfn: "Aug_resized_Cat77_2.jpg"
+    pfn: "Aug_resized_Cat77_2.jpg"
+    sha256: 0ecdb86e1e03ade3f975fdc52e2f6558ec01fadd3b440fb74533a1f75c452d2a
+    success: True
+  - lfn: "Aug_resized_Cat37_2.jpg"
+    pfn: "Aug_resized_Cat37_2.jpg"
+    sha256: 31bfe9100eeea96c62082737a990547763b65890fd857c33610066bfe878a21b
+    success: True
+  - lfn: "Aug_resized_Cat54_0.jpg"
+    pfn: "Aug_resized_Cat54_0.jpg"
+    sha256: 8834aa8a4556eb17bffdf47414723649b66dca6f2702e78b8db194cdc8b79719
+    success: True
+  - lfn: "Aug_resized_Dog74_0.jpg"
+    pfn: "Aug_resized_Dog74_0.jpg"
+    sha256: 289750b2bf8910e16edd89baed11ab12c38e90ce670eb304aa6a8b071eba0d1a
+    success: True
+  - lfn: "Aug_resized_Dog21_0.jpg"
+    pfn: "Aug_resized_Dog21_0.jpg"
+    sha256: f190d4d544ec8389207517ff8221f6c0494e378475ad5399bce7e5ebd4a23f8c
+    success: True
+  - lfn: "Aug_resized_Cat24_2.jpg"
+    pfn: "Aug_resized_Cat24_2.jpg"
+    sha256: c452858d608c4bd43a701b78a1484a6bcc12481b2cdf1568a4b8621b8cb7c13a
+    success: True
+  - lfn: "Aug_resized_Cat6_0.jpg"
+    pfn: "Aug_resized_Cat6_0.jpg"
+    sha256: f6c50a45d8a2d9936dc5e2826f80efd0c0b8d925c6f349ef3b2adcea4ee9869b
+    success: True
+  - lfn: "Aug_resized_Dog61_0.jpg"
+    pfn: "Aug_resized_Dog61_0.jpg"
+    sha256: 3851f9186be062a70cdf2bf8c1fe035347a022e06a71ec4caa17dd09031de867
+    success: True
+  - lfn: "Aug_resized_Cat30_1.jpg"
+    pfn: "Aug_resized_Cat30_1.jpg"
+    sha256: 3cf0d6d3343f55e0345e51fdea212cc7c9f11da157d9cc7a86df41841e351c6d
+    success: True
+  - lfn: "Aug_resized_Cat70_1.jpg"
+    pfn: "Aug_resized_Cat70_1.jpg"
+    sha256: 33f4dbdc353669336459ed11621c5de38cb05a0ee2d3c4c7a0e5874cde93405b
+    success: True
+  - lfn: "Aug_resized_Cat48_1.jpg"
+    pfn: "Aug_resized_Cat48_1.jpg"
+    sha256: 6c513c54c0dd4bed9dc389384d9debed7da28477d308ef824c2f1f1e94b7fb9b
+    success: True
+  - lfn: "Aug_resized_Cat83_1.jpg"
+    pfn: "Aug_resized_Cat83_1.jpg"
+    sha256: da68d67d37251e08e19fe2a3cd44fbd402f36041790fb98749388427f3f543e7
+    success: True
+  - lfn: "Aug_resized_Cat11_2.jpg"
+    pfn: "Aug_resized_Cat11_2.jpg"
+    sha256: ecdbd2bf61edeaf7503ec3a747fd481ad24ad9e1cd24d532c40ea3c998f2b8ce
+    success: True
+  - lfn: "Aug_resized_Dog97_2.jpg"
+    pfn: "Aug_resized_Dog97_2.jpg"
+    sha256: 479171b94e2119dc4c9402cdf46e5f85f58ea5b2948521222d1a5a927d95d073
+    success: True
+  - lfn: "Aug_resized_Dog17_2.jpg"
+    pfn: "Aug_resized_Dog17_2.jpg"
+    sha256: ccb84416b74e5ba0e51e5dbdc00bcc4d7866c678b7bc82541996abff9b950c46
+    success: True
+  - lfn: "Aug_resized_Dog57_2.jpg"
+    pfn: "Aug_resized_Dog57_2.jpg"
+    sha256: f4827369903965bc04c9248d4fd586415cb0911efc30828b92e7106bbaa6a9b2
+    success: True
+  - lfn: "Aug_resized_Cat27_0.jpg"
+    pfn: "Aug_resized_Cat27_0.jpg"
+    sha256: c05e3bebf295fbfc07f5499b65418aca0ef47d16f5f5ecd1c07038dcbd1ba68f
+    success: True
+  - lfn: "Aug_resized_Dog28_1.jpg"
+    pfn: "Aug_resized_Dog28_1.jpg"
+    sha256: fe772f1c628789ee01b5886de056dffcb6555fc5bec844189d64eea963bb88d7
+    success: True
+  - lfn: "Aug_resized_Dog68_1.jpg"
+    pfn: "Aug_resized_Dog68_1.jpg"
+    sha256: ad629813ba5d28a1475f5983ea198b37f020d3b5329ee1a9ae3fb45911e16731
+    success: True
+  - lfn: "Aug_resized_Dog84_2.jpg"
+    pfn: "Aug_resized_Dog84_2.jpg"
+    sha256: 708db208cb2e669dac713eb9bf2e166a64739d323ad3c32ba99d37bc069bf884
+    success: True
+  - lfn: "Aug_resized_Dog44_2.jpg"
+    pfn: "Aug_resized_Dog44_2.jpg"
+    sha256: f0b7b76e03a24c20b7ba91652a53e8904e80b4c5e16bd3cf463d0313ef7b4e73
+    success: True
+  - lfn: "Aug_resized_Dog76_1.jpg"
+    pfn: "Aug_resized_Dog76_1.jpg"
+    sha256: 9020497055773c13b0803d7aad3ca7a896557db7200d733a12df17a79b8b0e26
+    success: True
+  - lfn: "Aug_resized_Cat96_1.jpg"
+    pfn: "Aug_resized_Cat96_1.jpg"
+    sha256: 3abe620b61bb854268de192135d0f78722813614b6dc26e85d4200881dd0a640
+    success: True
+  - lfn: "Aug_resized_Cat35_1.jpg"
+    pfn: "Aug_resized_Cat35_1.jpg"
+    sha256: 837e3a23c908eb2c9892975a3b150bd27b7064abea500f5f7faec0b657c52aed
+    success: True
+  - lfn: "Aug_resized_Cat67_0.jpg"
+    pfn: "Aug_resized_Cat67_0.jpg"
+    sha256: 0fdf48d618d3d735185c97b4ec535328f3673336c43bded85cb3439dac4ec1cf
+    success: True
+  - lfn: "Aug_resized_Cat64_2.jpg"
+    pfn: "Aug_resized_Cat64_2.jpg"
+    sha256: bb92367d7e02d47d0c1265074827b9ea05f87ccb4fb743c72132544f235bdc1c
+    success: True
+  - lfn: "Aug_resized_Dog10_1.jpg"
+    pfn: "Aug_resized_Dog10_1.jpg"
+    sha256: d9c8ee8c798e65e68134b0cf6a0c6589b3893ab7ff0319752f6b79d8920dafcc
+    success: True
+  - lfn: "Aug_resized_Cat72_2.jpg"
+    pfn: "Aug_resized_Cat72_2.jpg"
+    sha256: 4439c9aaacebddfdf3a3df403108b17bbd6923832bfe1364c0a25c647b3a8907
+    success: True
+  - lfn: "Aug_resized_Cat59_0.jpg"
+    pfn: "Aug_resized_Cat59_0.jpg"
+    sha256: 700212c0a7ffb1d44a1c08fb1ded27113ea405ca3c658e8d026db9cfa68f776f
+    success: True
+  - lfn: "Aug_resized_Cat19_0.jpg"
+    pfn: "Aug_resized_Cat19_0.jpg"
+    sha256: 1fb844ad606f39c834372687c4c47b47e2875bad62d95f4bed9bc320a0eda441
+    success: True
+  - lfn: "Aug_resized_Dog50_1.jpg"
+    pfn: "Aug_resized_Dog50_1.jpg"
+    sha256: 5bebc8c55a0b67c9efe31d1d910d8a8dfc2453486a4bce7f4fe9bf122c71f694
+    success: True
+  - lfn: "Aug_resized_Dog5_0.jpg"
+    pfn: "Aug_resized_Dog5_0.jpg"
+    sha256: 8ece059f663b406bea3bdd7d930dc54e3184a9893cb85dc35aa85267cd0c9021
+    success: True
+  - lfn: "Aug_resized_Cat41_0.jpg"
+    pfn: "Aug_resized_Cat41_0.jpg"
+    sha256: 3221daef3df39729ad5405b536952801fed62a2aac184275f8881217f30c64d0
+    success: True
+  - lfn: "Aug_resized_Cat81_0.jpg"
+    pfn: "Aug_resized_Cat81_0.jpg"
+    sha256: 8bed207debd2fef46a83260caa1fcc8f2c6f6dc26de92cd965300ecd980d200c
+    success: True
+  - lfn: "Aug_resized_Cat46_0.jpg"
+    pfn: "Aug_resized_Cat46_0.jpg"
+    sha256: ebef8c6b86f5ddba92ecdeb4cafe257779bb04cafdc34bff7cad513391747c73
+    success: True
+  - lfn: "Aug_resized_Dog42_1.jpg"
+    pfn: "Aug_resized_Dog42_1.jpg"
+    sha256: 350b5d9afe32b3dd6a8a71da0d0882f825f896f14fb071f95069e2e43c34bf57
+    success: True
+  - lfn: "Aug_resized_Cat85_2.jpg"
+    pfn: "Aug_resized_Cat85_2.jpg"
+    sha256: cebd7860668a9e5da5856ee9e4122b8714d54c15007d68b7026e30b40495c3ca
+    success: True
+  - lfn: "Aug_resized_Dog82_0.jpg"
+    pfn: "Aug_resized_Dog82_0.jpg"
+    sha256: 29a7c3a70d17174a8705999134b477fc368e9d646cbe3486481460422fd3b77e
+    success: True
+  - lfn: "Aug_resized_Cat32_2.jpg"
+    pfn: "Aug_resized_Cat32_2.jpg"
+    sha256: 11e18e9817433c5f4aa3a14fbeb715329da2fa6dda55f4d71370cfd8abc7eb36
+    success: True
+  - lfn: "Aug_resized_Cat99_0.jpg"
+    pfn: "Aug_resized_Cat99_0.jpg"
+    sha256: 34d70eb083d17d6b4e9f141ce48b14fc3fc0de7338b8c8ce49660a7ef206b946
+    success: True
+  - lfn: "Aug_resized_Cat29_2.jpg"
+    pfn: "Aug_resized_Cat29_2.jpg"
+    sha256: 702a4ada8f5abca347295bfc951125aa9a8b303a924dd4efbbb2086c4409b81e
+    success: True
+  - lfn: "Aug_resized_Dog82_1.jpg"
+    pfn: "Aug_resized_Dog82_1.jpg"
+    sha256: f2ca114cd2d9c3d2ee26aa178d4acb752d1dab7a7d49b6c987eed5e383a375da
+    success: True
+  - lfn: "Aug_resized_Cat62_0.jpg"
+    pfn: "Aug_resized_Cat62_0.jpg"
+    sha256: dd787b4b95b115747bd62c99ccb4fc402f4950fd92ef6bc0a4fb92d3ce911072
+    success: True
+  - lfn: "Aug_resized_Dog52_2.jpg"
+    pfn: "Aug_resized_Dog52_2.jpg"
+    sha256: 974be9fc5f8624c3752ce0db423694078afd9e4bee7000bbffd189cb0e211289
+    success: True
+  - lfn: "Aug_resized_Dog89_1.jpg"
+    pfn: "Aug_resized_Dog89_1.jpg"
+    sha256: dfbe1d7b9728f7bcbf4c3ed6b4284b4fd67992cfceb05e13a81181c15f668965
+    success: True
+  - lfn: "Aug_resized_Cat69_2.jpg"
+    pfn: "Aug_resized_Cat69_2.jpg"
+    sha256: 173e3b824d590baa6ad962dfb3b55b7dcc09f441a7e585aeabe8151603019f15
+    success: True
+  - lfn: "Aug_resized_Dog12_2.jpg"
+    pfn: "Aug_resized_Dog12_2.jpg"
+    sha256: 198e568bd8c8b6105fd8b21accd2d045d7a058f23aca8e73f9ad13067abcff0b
+    success: True
+  - lfn: "Aug_resized_Cat22_0.jpg"
+    pfn: "Aug_resized_Cat22_0.jpg"
+    sha256: b6291a5a80057f4690ef7966afbdf72e9c5d856e899d37402e95d75a488d2509
+    success: True
+  - lfn: "Aug_resized_Dog49_1.jpg"
+    pfn: "Aug_resized_Dog49_1.jpg"
+    sha256: 92d88bfb933ff849ecc6283e2b4ead7bde6e7e301e97f5969f63e6c4e05853dd
+    success: True
+  - lfn: "Aug_resized_Cat8_2.jpg"
+    pfn: "Aug_resized_Cat8_2.jpg"
+    sha256: 6732ae18cfc80d566368fda001c2990f9252e2ce7b64986f711246779a0609ff
+    success: True
+  - lfn: "Aug_resized_Dog92_2.jpg"
+    pfn: "Aug_resized_Dog92_2.jpg"
+    sha256: aad2c9d7feadcd5ced444591daaf5f27d8937cbb48aa0c52a05c0cff3afb145d
+    success: True
+  - lfn: "Aug_resized_Dog53_0.jpg"
+    pfn: "Aug_resized_Dog53_0.jpg"
+    sha256: 040fff2e82658115a2509e347098e80edaac6da83985474b026999253c6d0ad0
+    success: True
+  - lfn: "Aug_resized_Cat16_2.jpg"
+    pfn: "Aug_resized_Cat16_2.jpg"
+    sha256: 21e73b1ad9c5f6d3d7e9a9a5afbcafe5f831c1deb23052d5b9c81e29668c709f
+    success: True
+  - lfn: "Aug_resized_Cat51_2.jpg"
+    pfn: "Aug_resized_Cat51_2.jpg"
+    sha256: ed66c71d9733f3880dc937b2ae00158ba3472802ca3e1569bdea811d9603b95d
+    success: True
+  - lfn: "Aug_resized_Cat91_2.jpg"
+    pfn: "Aug_resized_Cat91_2.jpg"
+    sha256: 212f9be7e9e8f8ec56a2cdd43d00509b6b0f42d888a40d9db125cd9c61e02215
+    success: True
+  - lfn: "Aug_resized_Cat56_2.jpg"
+    pfn: "Aug_resized_Cat56_2.jpg"
+    sha256: 6b968f34d816673e5c75205e857964e306eba4a328bb1c380f3aa6d6db37728b
+    success: True
+  - lfn: "Aug_resized_Dog13_0.jpg"
+    pfn: "Aug_resized_Dog13_0.jpg"
+    sha256: 57f30b7e82673153bbcf55fee5d5be1a105bd541214402818c331f51f353f67a
+    success: True
+  - lfn: "Aug_resized_Cat88_1.jpg"
+    pfn: "Aug_resized_Cat88_1.jpg"
+    sha256: fb4c5fdeca500f34bd82ff9cf18fdfab2b72e366ac0406f7f9b06b83cf48f38c
+    success: True
+  - lfn: "Aug_resized_Cat75_0.jpg"
+    pfn: "Aug_resized_Cat75_0.jpg"
+    sha256: 93950bd370bf0d32ed73664a9b928c0bd87abae4f76b0df050cc3b0100ca5887
+    success: True
+  - lfn: "Aug_resized_Cat43_1.jpg"
+    pfn: "Aug_resized_Cat43_1.jpg"
+    sha256: 67a379bc9819904204cedf40617e46bf859bae27730716efe0bd058b220e7226
+    success: True
+  - lfn: "Aug_resized_Dog71_1.jpg"
+    pfn: "Aug_resized_Dog71_1.jpg"
+    sha256: d0337f296b6561a2fb034dd75352a785e16048856ccc8e702bd4706d8b9cac66
+    success: True
+  - lfn: "Aug_resized_Cat3_2.jpg"
+    pfn: "Aug_resized_Cat3_2.jpg"
+    sha256: 3ba8a04d099439ce4f6aee88127b2f32968d459a1a25c69c542ded5fdd6cca7a
+    success: True
+  - lfn: "Aug_resized_Dog40_0.jpg"
+    pfn: "Aug_resized_Dog40_0.jpg"
+    sha256: 67c58620a26626a1d5593d0970d2925a083d1ce07461317e6c179b0668731374
+    success: True
+  - lfn: "Aug_resized_Dog23_2.jpg"
+    pfn: "Aug_resized_Dog23_2.jpg"
+    sha256: adf1c1324c1d80ed27f73085f92f3883bdaa81f252df1bdb6ce476aee7cfce5e
+    success: True
+  - lfn: "Aug_resized_Cat45_2.jpg"
+    pfn: "Aug_resized_Cat45_2.jpg"
+    sha256: eb1ab9e9d0a8583f20ce2d53d60a5652fa808643ec14597b6426959e9e83e4af
+    success: True
+  - lfn: "Aug_resized_Dog0_0.jpg"
+    pfn: "Aug_resized_Dog0_0.jpg"
+    sha256: 55986bc7844b1eafc5a86f37aa1e0cc82c9f5070be0d1c662568accfc2976b95
+    success: True
+  - lfn: "Aug_resized_Dog87_0.jpg"
+    pfn: "Aug_resized_Dog87_0.jpg"
+    sha256: d14d40a3fcfb30731c714a87f548d36ccabd5a8475b4701d7ea014a2dea7fc85
+    success: True
+  - lfn: "Aug_resized_Dog63_2.jpg"
+    pfn: "Aug_resized_Dog63_2.jpg"
+    sha256: 2f68bfa0919d67c36cf75117071be4d9deafaff48be78df117fbf89be989dc89
+    success: True
+  - lfn: "Aug_resized_Cat86_0.jpg"
+    pfn: "Aug_resized_Cat86_0.jpg"
+    sha256: d09dc561825039dc920369241527b7fec34c7dcf75c4b6ce92987817010ce23e
+    success: True
+  - lfn: "Aug_resized_Dog55_1.jpg"
+    pfn: "Aug_resized_Dog55_1.jpg"
+    sha256: 8524ccdd907481baf2426bf2c7a1b014ac42ba8d81af70935848da536bf82551
+    success: True
+  - lfn: "Aug_resized_Dog95_1.jpg"
+    pfn: "Aug_resized_Dog95_1.jpg"
+    sha256: 56da1594ce71a2c25a1e0fcb4465a8f461c0c6d8e43abe3e6ac85590152cbcdd
+    success: True
+  - lfn: "Aug_resized_Dog15_1.jpg"
+    pfn: "Aug_resized_Dog15_1.jpg"
+    sha256: 3fb16efe02dd2582a97a13e1a1202b71dee1cabe8eda8d9544db842b7377edfa
+    success: True
+  - lfn: "Aug_resized_Dog47_0.jpg"
+    pfn: "Aug_resized_Dog47_0.jpg"
+    sha256: 4dc18758d62b372b9ebe52bc1ee003165e8bca830825aa10cc4dac554849ffb6
+    success: True
+  - lfn: "Aug_resized_Dog20_2.jpg"
+    pfn: "Aug_resized_Dog20_2.jpg"
+    sha256: 563a9a625b90dffc66605d3318f25d31bf535151e651efb2a37c548ec047f470
+    success: True
+  - lfn: "Aug_resized_Cat24_1.jpg"
+    pfn: "Aug_resized_Cat24_1.jpg"
+    sha256: 1745c431c1dcb67f12f7d20f4190efb0ef3924385f5b898030ef969a1a06cfc3
+    success: True
+  - lfn: "Aug_resized_Cat14_1.jpg"
+    pfn: "Aug_resized_Cat14_1.jpg"
+    sha256: fbe110fd5dbff2c95ad58adbd558b4fda1a1b6978761a5d16d2eaa4713a268a5
+    success: True
+  - lfn: "Aug_resized_Cat80_2.jpg"
+    pfn: "Aug_resized_Cat80_2.jpg"
+    sha256: 6732ae18cfc80d566368fda001c2990f9252e2ce7b64986f711246779a0609ff
+    success: True
+  - lfn: "Aug_resized_Cat30_2.jpg"
+    pfn: "Aug_resized_Cat30_2.jpg"
+    sha256: 3ba8a04d099439ce4f6aee88127b2f32968d459a1a25c69c542ded5fdd6cca7a
+    success: True
+  - lfn: "Aug_resized_Cat38_0.jpg"
+    pfn: "Aug_resized_Cat38_0.jpg"
+    sha256: 6ffb967d77cd812cb48dd1dfbbbea73f612620c376e98d87d5a9ca80912aa0d0
+    success: True
+  - lfn: "Aug_resized_Dog50_2.jpg"
+    pfn: "Aug_resized_Dog50_2.jpg"
+    sha256: dfc3f1ddd365456cfec95cb2f32f0f570eefa825f07dd00e0ecc747417e63a40
+    success: True
+  - lfn: "Aug_resized_Cat83_2.jpg"
+    pfn: "Aug_resized_Cat83_2.jpg"
+    sha256: 636ea953ea03c2ff64d10185367f4cbe074c0778569b1ad0c9e13275610b511d
+    success: True
+  - lfn: "Aug_resized_Dog90_0.jpg"
+    pfn: "Aug_resized_Dog90_0.jpg"
+    sha256: 4c07fc764565bc1d0ac9ce9ddad3b2f5db070aba7ea7f66d5e6635c45a6981d4
+    success: True
+  - lfn: "Aug_resized_Dog57_1.jpg"
+    pfn: "Aug_resized_Dog57_1.jpg"
+    sha256: 4e53ed976e0ea243bc4a8e6353e44e9b742ee53dc739cd8d8f0d77dfbc73f604
+    success: True
+  - lfn: "Aug_resized_Dog87_1.jpg"
+    pfn: "Aug_resized_Dog87_1.jpg"
+    sha256: 9b24474b86545d4199a50064821589a8ea7c635e1c3f28b4415a82c11ab8d85c
+    success: True
+  - lfn: "Aug_resized_Dog7_2.jpg"
+    pfn: "Aug_resized_Dog7_2.jpg"
+    sha256: 7040b38bb4c6b0a2c4e0724a1720f286c9e3d577cdf2648af8292f188f9d14a7
+    success: True
+  - lfn: "Aug_resized_Dog28_0.jpg"
+    pfn: "Aug_resized_Dog28_0.jpg"
+    sha256: 17303f169a49d49fd4abe0de1a0cddd8f942d280fcd32ddc1613feddca57a9e3
+    success: True
+  - lfn: "Aug_resized_Cat53_2.jpg"
+    pfn: "Aug_resized_Cat53_2.jpg"
+    sha256: 3a3adcedef01aa2b03a8b92a7453def68cb52ac52ef7f3a1acc29b330ba8e447
+    success: True
+  - lfn: "Aug_resized_Dog84_1.jpg"
+    pfn: "Aug_resized_Dog84_1.jpg"
+    sha256: 5c20d1703f167ca87ea4eef43f7eae52a3fe622436524b17d2c9c61a74073640
+    success: True
+  - lfn: "Aug_resized_Dog58_0.jpg"
+    pfn: "Aug_resized_Dog58_0.jpg"
+    sha256: ba70653dbb9a82f0ffc086a61e06b4205729803336acdb48f0fa14d9ceb8e14a
+    success: True
+  - lfn: "Aug_resized_Dog34_1.jpg"
+    pfn: "Aug_resized_Dog34_1.jpg"
+    sha256: 1d37cb0fc72dd53385718d94320dd9c80f75287cb3d5753624dcf72db4168106
+    success: True
+  - lfn: "Aug_resized_Cat70_0.jpg"
+    pfn: "Aug_resized_Cat70_0.jpg"
+    sha256: aeac4f490d249d660b0294b8038f7c4a721813445ed5264e51212bf049823c06
+    success: True
+  - lfn: "Aug_resized_Cat35_0.jpg"
+    pfn: "Aug_resized_Cat35_0.jpg"
+    sha256: f9441b0ab222f0103a8ea3da213a79e9f98d5e64a596897f8a0f8cc5b592e745
+    success: True
+  - lfn: "Aug_resized_Cat65_0.jpg"
+    pfn: "Aug_resized_Cat65_0.jpg"
+    sha256: de7797f8501b9952859f6fc4dbbd0e5e9f9a1be4116aa5dd6bdb19ad8eacf0ba
+    success: True
+  - lfn: "Aug_resized_Dog61_1.jpg"
+    pfn: "Aug_resized_Dog61_1.jpg"
+    sha256: 8c09bcd276acd708338e71adc2f3a2d29422617d7456cd88e0ca05a861e5b37b
+    success: True
+  - lfn: "Aug_resized_Cat12_0.jpg"
+    pfn: "Aug_resized_Cat12_0.jpg"
+    sha256: a8d72a0b74d2f6977508e215d315bf6bfb83408d0b7959a8dd217bec239dbcfb
+    success: True
+  - lfn: "Aug_resized_Dog36_2.jpg"
+    pfn: "Aug_resized_Dog36_2.jpg"
+    sha256: a65bc3517c5528c697a0e5d23fe6bff065844d446770a0e95586e36957f76d81
+    success: True
+  - lfn: "Aug_resized_Cat73_0.jpg"
+    pfn: "Aug_resized_Cat73_0.jpg"
+    sha256: 33166ccb74a708970e57f3463c76da959836c0b0c5b3881a28c597f713d4a60b
+    success: True
+  - lfn: "Aug_resized_Dog59_2.jpg"
+    pfn: "Aug_resized_Dog59_2.jpg"
+    sha256: 74f6744d701b5a004b57cfafac785817d1db8a1e363fcfc1221f7d5d2465a192
+    success: True
+  - lfn: "Aug_resized_Dog5_1.jpg"
+    pfn: "Aug_resized_Dog5_1.jpg"
+    sha256: 5bebc8c55a0b67c9efe31d1d910d8a8dfc2453486a4bce7f4fe9bf122c71f694
+    success: True
+  - lfn: "Aug_resized_Cat81_1.jpg"
+    pfn: "Aug_resized_Cat81_1.jpg"
+    sha256: 1a4dd41c369f579ffd0fc9608af00a0910296afab9fbb04b8cc8d3e8c199ab9d
+    success: True
+  - lfn: "Aug_resized_Cat88_0.jpg"
+    pfn: "Aug_resized_Cat88_0.jpg"
+    sha256: c39ef1184afbcc43f9e4d95069e681521f1aa2b2767637957e2048fa55af4a50
+    success: True
+  - lfn: "Aug_resized_Dog10_0.jpg"
+    pfn: "Aug_resized_Dog10_0.jpg"
+    sha256: 8af76b5949de402c1b51b1f0ba19a9a65b6098d83c05875a31e354127136b7fc
+    success: True
+  - lfn: "Aug_resized_Dog85_0.jpg"
+    pfn: "Aug_resized_Dog85_0.jpg"
+    sha256: 4daa3c158503fbff829c393542df142458425182c64c671a666f1fe1373524da
+    success: True
+  - lfn: "Aug_resized_Cat18_2.jpg"
+    pfn: "Aug_resized_Cat18_2.jpg"
+    sha256: c4b1018d82ddd6aa2b762c2a6d073f46d91f85f0ef71fcf4033f4233d2a55484
+    success: True
+  - lfn: "Aug_resized_Cat98_2.jpg"
+    pfn: "Aug_resized_Cat98_2.jpg"
+    sha256: c492738cc868db1ce64b6bbdf7dd3ec391e6b0156b1fabe89896b08fdbeec6e4
+    success: True
+  - lfn: "Aug_resized_Dog68_2.jpg"
+    pfn: "Aug_resized_Dog68_2.jpg"
+    sha256: dbb8fab5cc4a798462786f12c9dcc3298d18c8f21eac0f3d37e3dbe4871a7732
+    success: True
+  - lfn: "Aug_resized_Cat19_1.jpg"
+    pfn: "Aug_resized_Cat19_1.jpg"
+    sha256: 206fdc7c725d3ce89ab1c413576871ebf8d75b9d2313b1753225b3cef1268418
+    success: True
+  - lfn: "Aug_resized_Cat67_1.jpg"
+    pfn: "Aug_resized_Cat67_1.jpg"
+    sha256: bb644f7c598c673613faf8268edbfddbf0ac1491da6f6681415c773cd88a99fd
+    success: True
+  - lfn: "Aug_resized_Cat1_1.jpg"
+    pfn: "Aug_resized_Cat1_1.jpg"
+    sha256: f457af1628f56042546ea9659a8f6f67651bb444d97444e2ba98b75d484b5bbd
+    success: True
+  - lfn: "Aug_resized_Cat96_0.jpg"
+    pfn: "Aug_resized_Cat96_0.jpg"
+    sha256: dacc1e536c2859e18d1aa61426c7f6c0414daca649091c8497ba9060441d7bec
+    success: True
+  - lfn: "Aug_resized_Dog73_2.jpg"
+    pfn: "Aug_resized_Dog73_2.jpg"
+    sha256: 0e8f41d514857f8964643fa36b72e49e185dfb340a54aa8cecb20b53150293f8
+    success: True
+  - lfn: "Data_Split_py"
+    pfn: "Data_Split_py"
+    sha256: d8d69a371e36e861b1ac402117d23d53c32313cd847b322b29fecfe9eb38eb2a
+    success: True
+  - lfn: "Aug_resized_Dog79_0.jpg"
+    pfn: "Aug_resized_Dog79_0.jpg"
+    sha256: bcba5eee50621d881ae2a5c9067f2d153be77fb166197f1c575c7b458ee911b1
+    success: True
+  - lfn: "Aug_resized_Dog3_0.jpg"
+    pfn: "Aug_resized_Dog3_0.jpg"
+    sha256: 582bea1402483d46215c9c207ac81dc0fea6aa851f4db6c490f60a9952fadc30
+    success: True
+  - lfn: "Aug_resized_Dog12_1.jpg"
+    pfn: "Aug_resized_Dog12_1.jpg"
+    sha256: d63be819f190b90a1bb6f300d652050633262123d9c319f7a0c369d244c11432
+    success: True
+  - lfn: "Aug_resized_Cat69_1.jpg"
+    pfn: "Aug_resized_Cat69_1.jpg"
+    sha256: fa1dde60a5e3c9136af9d99172d1211b5bce41ec197085b9b8002180d486e30c
+    success: True
+  - lfn: "Aug_resized_Dog9_2.jpg"
+    pfn: "Aug_resized_Dog9_2.jpg"
+    sha256: 610a877e618eecdc5e5b444ad6e7fce4ad064800955be4565c00ad8ad7971d44
+    success: True
+  - lfn: "Aug_resized_Dog26_0.jpg"
+    pfn: "Aug_resized_Dog26_0.jpg"
+    sha256: 80b8587afaee5eba717f5a767dae1e73c11716273305c73fc56dfaab731f990d
+    success: True
+  - lfn: "Aug_resized_Cat1_0.jpg"
+    pfn: "Aug_resized_Cat1_0.jpg"
+    sha256: 8e944bcf6270ff0db8e32fc444d8fc2a1e05bfafde87874eb31575bca5020adc
+    success: True
+  - lfn: "Aug_resized_Dog15_2.jpg"
+    pfn: "Aug_resized_Dog15_2.jpg"
+    sha256: ac3d7f6a05f5a837dac30dc24e4e66d8248038600fbd22576556f0f923bee732
+    success: True
+  - lfn: "Aug_resized_Cat16_1.jpg"
+    pfn: "Aug_resized_Cat16_1.jpg"
+    sha256: eaf1356ac6543173bbc6e5de96fff02b344cad4a2a8e5ed5e03b1ccde9ea649e
+    success: True
+  - lfn: "Aug_resized_Dog49_0.jpg"
+    pfn: "Aug_resized_Dog49_0.jpg"
+    sha256: e5c906536f6dab2f76c66b33781beabbe1e31abe2aee8cf13352ba31fab9540b
+    success: True
+  - lfn: "Aug_resized_Dog95_2.jpg"
+    pfn: "Aug_resized_Dog95_2.jpg"
+    sha256: 99cd75874097a1da857e434e5bf30eebb0eb2be263a3d960ca7bdbc56b967bd6
+    success: True
+  - lfn: "Aug_resized_Dog65_2.jpg"
+    pfn: "Aug_resized_Dog65_2.jpg"
+    sha256: e004410d338e4a113efe774911d11d4333dda6fc4819e7695e914c977522b444
+    success: True
+  - lfn: "Aug_resized_Dog42_2.jpg"
+    pfn: "Aug_resized_Dog42_2.jpg"
+    sha256: d691524ddf6f68cc4285b521079abf97df59fc00d9a068fa11e86356cc8688a4
+    success: True
+  - lfn: "Aug_resized_Cat46_1.jpg"
+    pfn: "Aug_resized_Cat46_1.jpg"
+    sha256: d0ac93312e804f4a0aa5b4e0462d36437545ac452f84283a91cb96e5450785e1
+    success: True
+  - lfn: "Aug_resized_Cat75_1.jpg"
+    pfn: "Aug_resized_Cat75_1.jpg"
+    sha256: 7f2c388081fabd6d7149e0b9e30a7f0393fa3a9c7e28e95135aebeb60fe4b3c1
+    success: True
+  - lfn: "Aug_resized_Dog36_1.jpg"
+    pfn: "Aug_resized_Dog36_1.jpg"
+    sha256: 5ae55deabd917cd19f1e4e5b773ee52eb75d20e5c4da167d3410f005916fe412
+    success: True
+  - lfn: "Aug_resized_Cat98_1.jpg"
+    pfn: "Aug_resized_Cat98_1.jpg"
+    sha256: bde1e187daadbc2902bd0ab3f043d05f1e80bdd1f3a41592f0146f0763e17f4a
+    success: True
+  - lfn: "Aug_resized_Cat26_2.jpg"
+    pfn: "Aug_resized_Cat26_2.jpg"
+    sha256: 35ee14af829becbaa8a47275fa90f878968820b865fbd005da73f3447358cca5
+    success: True
+  - lfn: "Aug_resized_Dog94_2.jpg"
+    pfn: "Aug_resized_Dog94_2.jpg"
+    sha256: c6536c10b22a7ee5f60ab424f3e2be6bb1b379f20fc17e44c7d322a6a84559dd
+    success: True
+  - lfn: "Aug_resized_Dog7_1.jpg"
+    pfn: "Aug_resized_Dog7_1.jpg"
+    sha256: f2752284e5f3b96666b2b89fe0a238fb8237894b2f8a78f0b6f03a218214da98
+    success: True
+  - lfn: "Aug_resized_Cat20_0.jpg"
+    pfn: "Aug_resized_Cat20_0.jpg"
+    sha256: c0f974a48a7869242866980e83774d2f797ce6f4c9e948b4329b78a68a37852f
+    success: True
+  - lfn: "Aug_resized_Cat5_2.jpg"
+    pfn: "Aug_resized_Cat5_2.jpg"
+    sha256: a5e21a7c063d5d3d7508224f3b7baf3eb1e2113bd4661c6c984d133f8d22c660
+    success: True
+  - lfn: "Aug_resized_Cat45_1.jpg"
+    pfn: "Aug_resized_Cat45_1.jpg"
+    sha256: 6fa677247dde9245073eff7e9db08560313848aa1af6d83310f6f68d4beea8c5
+    success: True
+  - lfn: "Aug_resized_Dog55_0.jpg"
+    pfn: "Aug_resized_Dog55_0.jpg"
+    sha256: d7af6878ca35b532c5a64aab291648c68d70ea23571a8c4a907af3489f685a42
+    success: True
+  - lfn: "Aug_resized_Dog89_2.jpg"
+    pfn: "Aug_resized_Dog89_2.jpg"
+    sha256: 6a7ebe02b5fd7335297e0b018a71c0725e273a62f78995e0d3f0661fa22a7f9d
+    success: True
+  - lfn: "Aug_resized_Dog63_1.jpg"
+    pfn: "Aug_resized_Dog63_1.jpg"
+    sha256: 67d18020a005c5ddbca094e450d1d8ff3c83831445b7ede6ed12f9efb9663d5b
+    success: True
+  - lfn: "Aug_resized_Cat51_1.jpg"
+    pfn: "Aug_resized_Cat51_1.jpg"
+    sha256: 3e903d69b1a5742e0c104cd697e43d989f1a5db2756f47f5f2d4e832e8091772
+    success: True
+  - lfn: "Aug_resized_Cat48_2.jpg"
+    pfn: "Aug_resized_Cat48_2.jpg"
+    sha256: 5a77b60c84362602438c082fae509fd9ce00d3ad00b7f5b2f96cdb1987b9afdc
+    success: True
+  - lfn: "Aug_resized_Cat3_1.jpg"
+    pfn: "Aug_resized_Cat3_1.jpg"
+    sha256: 3cf0d6d3343f55e0345e51fdea212cc7c9f11da157d9cc7a86df41841e351c6d
+    success: True
+  - lfn: "Aug_resized_Dog71_2.jpg"
+    pfn: "Aug_resized_Dog71_2.jpg"
+    sha256: 9786fbd6c3b050f6e1bbf453c23650331720a5ad8693743f25a60ed8783a9779
+    success: True
+  - lfn: "Aug_resized_Cat43_0.jpg"
+    pfn: "Aug_resized_Cat43_0.jpg"
+    sha256: be599767683e91b59c7d67a8f191383888a47625dd4fc3207ffecb96a5155593
+    success: True
+  - lfn: "Aug_resized_Dog32_0.jpg"
+    pfn: "Aug_resized_Dog32_0.jpg"
+    sha256: 702fc07a08fdf57f7286991dd35807ac9336cc4fee355950ca37f37acb8fd960
+    success: True
+  - lfn: "Aug_resized_Dog92_1.jpg"
+    pfn: "Aug_resized_Dog92_1.jpg"
+    sha256: c899443a9ffd2d92c9178601e9e5bc46aa87abb5aa42dcaa2b012cf70193c4ec
+    success: True
+  - lfn: "Aug_resized_Cat14_0.jpg"
+    pfn: "Aug_resized_Cat14_0.jpg"
+    sha256: 659ab1e2871f23b11f021f15ebb207a52df0665e745d3f46de2fef843600ea65
+    success: True
+  - lfn: "Aug_resized_Cat22_1.jpg"
+    pfn: "Aug_resized_Cat22_1.jpg"
+    sha256: c6e5175274411a488d1c927c6b67e1e4361ae994dcdc5acdd789e419db674876
+    success: True
+  - lfn: "Aug_resized_Dog38_2.jpg"
+    pfn: "Aug_resized_Dog38_2.jpg"
+    sha256: 75f947151ef31ee8f612af08b283b2d0a430a191642a66f46e416d6e44f7551f
+    success: True
+  - lfn: "Aug_resized_Dog40_1.jpg"
+    pfn: "Aug_resized_Dog40_1.jpg"
+    sha256: c5d51804ccd64ebc2abbf874e3cb1dcd671dd4d543163c60c57520d70080d2e8
+    success: True
+  - lfn: "Aug_resized_Cat47_2.jpg"
+    pfn: "Aug_resized_Cat47_2.jpg"
+    sha256: 8e5964f6df7430d1e851ad14e5980aba5d01d92cce86c8a565a1c8f617f811e5
+    success: True
+  - lfn: "Aug_resized_Dog80_1.jpg"
+    pfn: "Aug_resized_Dog80_1.jpg"
+    sha256: 5d6cf1f28f54399f878c44c0141a919e6694b7cfb1bf13f652e377365402e63f
+    success: True
+  - lfn: "Aug_resized_Cat84_0.jpg"
+    pfn: "Aug_resized_Cat84_0.jpg"
+    sha256: aba0836b41363ab9fa15426b011dc01339878be80e2c505f2c7e31ac20252aac
+    success: True
+  - lfn: "Aug_resized_Dog64_0.jpg"
+    pfn: "Aug_resized_Dog64_0.jpg"
+    sha256: 950ee18a24604f07d97c50cf2c1ad430152d733fc1f246780aa3e352f384d997
+    success: True
+  - lfn: "Aug_resized_Cat27_2.jpg"
+    pfn: "Aug_resized_Cat27_2.jpg"
+    sha256: 89bbf53816b475c6b583605785efd194a0efac0da4b4f98bbb38ed17f5446818
+    success: True
+  - lfn: "Aug_resized_Dog24_0.jpg"
+    pfn: "Aug_resized_Dog24_0.jpg"
+    sha256: 2d9257ad0b39847432b25c4a8bc8df26fc8f7c575dd3b4da3ec713829a6c3846
+    success: True
+  - lfn: "Aug_resized_Cat87_2.jpg"
+    pfn: "Aug_resized_Cat87_2.jpg"
+    sha256: d2e4f73612178cdfd206ad8602e60d2e07c5720fa0c67728f10c561dd2f6c199
+    success: True
+  - lfn: "Aug_resized_Dog11_0.jpg"
+    pfn: "Aug_resized_Dog11_0.jpg"
+    sha256: 8dfcd396934d8a7bcee0934241cbdaa9ed1f12eb45aaf0aacc9f0044a2d0b628
+    success: True
+  - lfn: "Aug_resized_Dog8_0.jpg"
+    pfn: "Aug_resized_Dog8_0.jpg"
+    sha256: 28a830d130e070b7e07ca60b7dcea6fb05a0ec8d46fdc9f50c4342084392d705
+    success: True
+  - lfn: "Aug_resized_Cat34_2.jpg"
+    pfn: "Aug_resized_Cat34_2.jpg"
+    sha256: 59571dd8c01607c9d68af931a66b8479ae7b30b8627ec229bb50e3b0608446a5
+    success: True
+  - lfn: "Aug_resized_Dog31_0.jpg"
+    pfn: "Aug_resized_Dog31_0.jpg"
+    sha256: fb4fc13ae1c5b85e5a2860679dcea1143c42cbdea9761dcf00a0159b6a58b14c
+    success: True
+  - lfn: "Aug_resized_Cat77_0.jpg"
+    pfn: "Aug_resized_Cat77_0.jpg"
+    sha256: ec20864fd754c0dd9b64b4b1cddfc9fdcf133c3034125d7b0cbb477919c79e40
+    success: True
+  - lfn: "Aug_resized_Cat40_1.jpg"
+    pfn: "Aug_resized_Cat40_1.jpg"
+    sha256: a0523477987b91a5b3af7bde16234b05d8795349d3fabc52341c1e4452df0d6b
+    success: True
+  - lfn: "Aug_resized_Cat80_1.jpg"
+    pfn: "Aug_resized_Cat80_1.jpg"
+    sha256: 4e7a3220ffcfc98f9fd9b7eaeb022d4cd9510e6a31b14fc50f07cac12569826e
+    success: True
+  - lfn: "Aug_resized_Dog34_2.jpg"
+    pfn: "Aug_resized_Dog34_2.jpg"
+    sha256: 97c74574fa2785e63fb01401d37b21f11660581b456ca2624dc5a77834e70ec4
+    success: True
+  - lfn: "Aug_resized_Cat93_1.jpg"
+    pfn: "Aug_resized_Cat93_1.jpg"
+    sha256: cd995c161cb208bc215b250a0b5b312521561c702cb3de8207ff8332353c0c72
+    success: True
+  - lfn: "Aug_resized_Dog27_2.jpg"
+    pfn: "Aug_resized_Dog27_2.jpg"
+    sha256: a51f771ff3492aced41136c40a24808ed45a61bc05f77d2f28e0609db320adc3
+    success: True
+  - lfn: "Aug_resized_Dog67_2.jpg"
+    pfn: "Aug_resized_Dog67_2.jpg"
+    sha256: e7dd31ee2faf52b8e97852701586d945ea5c6fde3580dde71cc6e06f26b8a04a
+    success: True
+  - lfn: "Aug_resized_Cat38_1.jpg"
+    pfn: "Aug_resized_Cat38_1.jpg"
+    sha256: a67ffb94aba4c278088c1fae86bdae2d9a6ade910b060b89b11c92ca3227402f
+    success: True
+  - lfn: "Aug_resized_Dog87_2.jpg"
+    pfn: "Aug_resized_Dog87_2.jpg"
+    sha256: cb0f034b00fa49dcee144f884c1af4dee42a6e9221ce9d782a6cf38b81180a70
+    success: True
+  - lfn: "Aug_resized_Cat18_1.jpg"
+    pfn: "Aug_resized_Cat18_1.jpg"
+    sha256: 1e781bd6e6c534085e4999a134ad9bf5620dde3de00667b43b882ce740fda90d
+    success: True
+  - lfn: "Aug_resized_Cat41_2.jpg"
+    pfn: "Aug_resized_Cat41_2.jpg"
+    sha256: b171be281a21c4ddf2e94c48dcce6c0ae04d73c311c066e80150336e366aae08
+    success: True
+  - lfn: "Aug_resized_Cat78_1.jpg"
+    pfn: "Aug_resized_Cat78_1.jpg"
+    sha256: 38a1d541c6e77ea3ca6df1da63eaddb53a0744a33ce55477cf844172e023fa95
+    success: True
+  - lfn: "Aug_resized_Dog13_1.jpg"
+    pfn: "Aug_resized_Dog13_1.jpg"
+    sha256: 9eb0438cba3cc8ea1386e4aa63ad900a02fde71307a999328f93c1332c95d220
+    success: True
+  - lfn: "Aug_resized_Dog41_2.jpg"
+    pfn: "Aug_resized_Dog41_2.jpg"
+    sha256: c602882afc6aa0dd9ec307f447f70341b830b374211dc3ad4c0f7de9fdd59746
+    success: True
+  - lfn: "Aug_resized_Dog71_0.jpg"
+    pfn: "Aug_resized_Dog71_0.jpg"
+    sha256: 32772f77860d2458a809b7515a75f96b5e33d2a8dc6ce599aad654babe3feee9
+    success: True
+  - lfn: "Aug_resized_Dog33_1.jpg"
+    pfn: "Aug_resized_Dog33_1.jpg"
+    sha256: 99695bbcc06ea3d02f99600ca61bb03ca360401e64cef2cc8bd7884cb41ff1ea
+    success: True
+  - lfn: "Aug_resized_Dog21_2.jpg"
+    pfn: "Aug_resized_Dog21_2.jpg"
+    sha256: 43c880e811b71f781c1617a987108afa7c684e742bf3d9d2e76d6d680a429a34
+    success: True
+  - lfn: "Aug_resized_Dog81_2.jpg"
+    pfn: "Aug_resized_Dog81_2.jpg"
+    sha256: d548ffcef2b43c2e004e9e0b9ad3216292be2418d749362e5378805b6f731481
+    success: True
+  - lfn: "Aug_resized_Dog73_1.jpg"
+    pfn: "Aug_resized_Dog73_1.jpg"
+    sha256: 388e9d2dbd86700028eed1f74e35159c8fe3d0540006f51b0f39a833f5409f10
+    success: True
+  - lfn: "Aug_resized_Cat24_0.jpg"
+    pfn: "Aug_resized_Cat24_0.jpg"
+    sha256: 80a8dfce50f6ce8e98a36daf03287df7d18c7ac42a3610d2fc63ad0237ff633c
+    success: True
+  - lfn: "Aug_resized_Cat1_2.jpg"
+    pfn: "Aug_resized_Cat1_2.jpg"
+    sha256: 1f5346204696c656b5df23cc087f4b9ffa2ea8b67370606aace14d704d9ac138
+    success: True
+  - lfn: "Aug_resized_Dog17_0.jpg"
+    pfn: "Aug_resized_Dog17_0.jpg"
+    sha256: 6ba23fe7b505d14ac2d7528bd1dc01cd5964323527fd4378965f84bf48d8e34e
+    success: True
+  - lfn: "Aug_resized_Cat16_0.jpg"
+    pfn: "Aug_resized_Cat16_0.jpg"
+    sha256: 981a7e3697cef358296c99f112bb29fc3a5827272e8024613582933faf597b3c
+    success: True
+  - lfn: "Aug_resized_Dog85_1.jpg"
+    pfn: "Aug_resized_Dog85_1.jpg"
+    sha256: 58f06a1546a164e305235a274b6bb72bb181ce260b7d6da3849cfca79e6d065c
+    success: True
+  - lfn: "Aug_resized_Dog65_1.jpg"
+    pfn: "Aug_resized_Dog65_1.jpg"
+    sha256: 07234e6580b2b0d9091bad0eda6b489be4ad5112f2d3aeca8dfc9554d61b2065
+    success: True
+  - lfn: "Aug_resized_Dog77_0.jpg"
+    pfn: "Aug_resized_Dog77_0.jpg"
+    sha256: 0cb2850db3da336f8f77e6d3f04bde31b7eb395c3f717058e8abf9bf9c0d0e8d
+    success: True
+  - lfn: "Aug_resized_Dog57_0.jpg"
+    pfn: "Aug_resized_Dog57_0.jpg"
+    sha256: e6246cf1e41010c964363e9848e5d5a6e3e853008969c4149f820438a3ce00af
+    success: True
+  - lfn: "Aug_resized_Dog25_1.jpg"
+    pfn: "Aug_resized_Dog25_1.jpg"
+    sha256: 65da1df8db381493d550dd23213ef95fb2923d9c09058d8b4d346ed7a37aab19
+    success: True
+  - lfn: "Aug_resized_Dog32_1.jpg"
+    pfn: "Aug_resized_Dog32_1.jpg"
+    sha256: 7114e5fde4f53202e21818f2443b763fe45df99137da8cfd5e728b0145f466a9
+    success: True
+  - lfn: "Aug_resized_Cat39_2.jpg"
+    pfn: "Aug_resized_Cat39_2.jpg"
+    sha256: 77f87925cbe5b5fcb713793c297393863d246c967e78bf9fcb2339d9760a697e
+    success: True
+  - lfn: "Aug_resized_Dog72_1.jpg"
+    pfn: "Aug_resized_Dog72_1.jpg"
+    sha256: 72262b26c56c0dc36357d75ddcdfdb3ff37d4936bca78f92f7487394f4557c5a
+    success: True
+  - lfn: "Aug_resized_Cat26_1.jpg"
+    pfn: "Aug_resized_Cat26_1.jpg"
+    sha256: 87cc1c91614d0277a7205d356478fa8c946ada5bee0232f52bcb6e2d758d8d79
+    success: True
+  - lfn: "Aug_resized_Cat32_1.jpg"
+    pfn: "Aug_resized_Cat32_1.jpg"
+    sha256: c43b4c42d98ab6ad5a3e6af44d331e7590eb036bae96b1bbede794eb6eae0bbf
+    success: True
+  - lfn: "Aug_resized_Dog35_2.jpg"
+    pfn: "Aug_resized_Dog35_2.jpg"
+    sha256: 04c3e051da5aa1627cef5357da82cfb859841a27ece4e2737082b7186df59088
+    success: True
+  - lfn: "Aug_resized_Cat23_0.jpg"
+    pfn: "Aug_resized_Cat23_0.jpg"
+    sha256: 14c4a1e9f6463f08e69a609abacc22967da06242d82335c88df72b2503fec95a
+    success: True
+  - lfn: "Aug_resized_Dog69_0.jpg"
+    pfn: "Aug_resized_Dog69_0.jpg"
+    sha256: c96f2cbf89792e848146deff926c30154ea626d61ea5668634344968b49aa750
+    success: True
+  - lfn: "Aug_resized_Dog75_2.jpg"
+    pfn: "Aug_resized_Dog75_2.jpg"
+    sha256: a5bcad7e74db2cf299f7f6a26a905880a698ea3c76dc0d080d72ed04113dcf71
+    success: True
+  - lfn: "Aug_resized_Dog76_0.jpg"
+    pfn: "Aug_resized_Dog76_0.jpg"
+    sha256: 20cfc37ad9b576bb64d3c45c2e7b90f1c7aaabb390f5157a9b13ff890a63dcc1
+    success: True
+  - lfn: "Aug_resized_Dog19_2.jpg"
+    pfn: "Aug_resized_Dog19_2.jpg"
+    sha256: db8990fabfa3a54fbe8514f00275f8a8bc2f0d320547cb5a81a45a3552661a11
+    success: True
+  - lfn: "Aug_resized_Dog22_2.jpg"
+    pfn: "Aug_resized_Dog22_2.jpg"
+    sha256: 7957aec44acd48e6815205b4017707bf00d58c22717c8f78b9df15d07b8d5bba
+    success: True
+  - lfn: "Aug_resized_Dog9_1.jpg"
+    pfn: "Aug_resized_Dog9_1.jpg"
+    sha256: eaca61fa91dd37bec505424f7d748a92d6818626c8d38164ed2c7f79c3cc5d2d
+    success: True
+  - lfn: "Aug_resized_Cat92_0.jpg"
+    pfn: "Aug_resized_Cat92_0.jpg"
+    sha256: de2af5c11532f4c8d5bc83a4f948b81e4aa3a1e54b47bc6479676547d50b2ada
+    success: True
+  - lfn: "Aug_resized_Dog26_1.jpg"
+    pfn: "Aug_resized_Dog26_1.jpg"
+    sha256: 5fd0f9aa062b7fc99c7651b0020a9526c7f41d9c8719d30a28ffff50852a9e9a
+    success: True
+  - lfn: "Aug_resized_Cat79_2.jpg"
+    pfn: "Aug_resized_Cat79_2.jpg"
+    sha256: 1ba628bf4c0928ff9a94357e140fe6f60a48cdc19c0c489d8d4fce7e8a157975
+    success: True
+  - lfn: "Aug_resized_Dog23_0.jpg"
+    pfn: "Aug_resized_Dog23_0.jpg"
+    sha256: 4565ca1788bd7baad8ca42c48aeb1ec6ba9a40b7316403df5ab8fa15837184f3
+    success: True
+  - lfn: "Aug_resized_Cat85_0.jpg"
+    pfn: "Aug_resized_Cat85_0.jpg"
+    sha256: edd0e63810680f5253ecc41d4e7ed8cf34f41a218737b7700ff163dd7e8d9906
+    success: True
+  - lfn: "Aug_resized_Cat46_2.jpg"
+    pfn: "Aug_resized_Cat46_2.jpg"
+    sha256: cc3ea99080f2684d53bd155741ae16aecc7b1d8ec559325b8e41663b154cc59b
+    success: True
+  - lfn: "Aug_resized_Dog79_1.jpg"
+    pfn: "Aug_resized_Dog79_1.jpg"
+    sha256: 0d00b88494e2e67f92a0b10dcc27647cc0dd385cf31acdf7feb3b7433a3dc5a6
+    success: True
+  - lfn: "Aug_resized_Cat0_1.jpg"
+    pfn: "Aug_resized_Cat0_1.jpg"
+    sha256: 26cf0ac436cff2324d399c56426c182ec7081b3f2a994a08d022405ab753dae7
+    success: True
+  - lfn: "Aug_resized_Dog74_2.jpg"
+    pfn: "Aug_resized_Dog74_2.jpg"
+    sha256: ac6f6b3d12a752caf4252cb6e5641f77ba720a28731a98ace19f323318c20931
+    success: True
+  - lfn: "Aug_resized_Cat17_0.jpg"
+    pfn: "Aug_resized_Cat17_0.jpg"
+    sha256: 30ba3cfe58d74e4492aa331e49ad464d8674e10a3e311a6e536d4c8f5a536e0b
+    success: True
+  - lfn: "Aug_resized_Dog63_0.jpg"
+    pfn: "Aug_resized_Dog63_0.jpg"
+    sha256: 1732057e08a8084510f274e7721f2e0d75c5d6efca95f804b6071317baf2543e
+    success: True
+  - lfn: "Aug_resized_Cat25_1.jpg"
+    pfn: "Aug_resized_Cat25_1.jpg"
+    sha256: b685f9da97d0585c102b1acb1c1f467cbf248417fcc7cdcbda0096e8ed7c00bf
+    success: True
+  - lfn: "Aug_resized_Dog66_1.jpg"
+    pfn: "Aug_resized_Dog66_1.jpg"
+    sha256: bd49b5d07fcdc0649893c1fc80186387bd926b94995288b90f7ae3ee3be5fda0
+    success: True
+  - lfn: "Aug_resized_Dog78_1.jpg"
+    pfn: "Aug_resized_Dog78_1.jpg"
+    sha256: 98d4898b0c62ad0f8a94bbbabd34dc0482f5580d9b4ba6c86deee62e4afb02bb
+    success: True
+  - lfn: "Aug_resized_Dog7_0.jpg"
+    pfn: "Aug_resized_Dog7_0.jpg"
+    sha256: 712310cc16cd2ef301c299951c1555b35a50dc5cb12aca9284e3dbcd34b4e6fb
+    success: True
+  - lfn: "Aug_resized_Cat33_2.jpg"
+    pfn: "Aug_resized_Cat33_2.jpg"
+    sha256: 055d8b5f1b7df86ce8e3248b87057b39c0e2ee145bf00721d5b21e7ad5127d10
+    success: True
+  - lfn: "Aug_resized_Cat28_2.jpg"
+    pfn: "Aug_resized_Cat28_2.jpg"
+    sha256: a4523e86f065a69fa2c35dc742b78c736df5e9ccf5f77af5ade8925c594da9a8
+    success: True
+  - lfn: "Aug_resized_Cat37_1.jpg"
+    pfn: "Aug_resized_Cat37_1.jpg"
+    sha256: f7cabd3fbe39b2fb9e0ba6d1fe0b21e9b5be6aa50de844757f0b61947c0d174a
+    success: True
+  - lfn: "Aug_resized_Dog12_0.jpg"
+    pfn: "Aug_resized_Dog12_0.jpg"
+    sha256: a6170fd1fcc4dd3b573f8dc2f46bc36f2afc33490082a05a2dd3fc2ac71dce3b
+    success: True
+  - lfn: "Aug_resized_Cat94_1.jpg"
+    pfn: "Aug_resized_Cat94_1.jpg"
+    sha256: bd309e9b4cb6d89c0af7037f64e7dd9842d57896beee4bac1a53019029f09e59
+    success: True
+  - lfn: "Aug_resized_Dog20_1.jpg"
+    pfn: "Aug_resized_Dog20_1.jpg"
+    sha256: 4e9d7312c1fa6b96abd0676032ba2012dba85f45b82f82b6442e7cda11d9497d
+    success: True
+  - lfn: "Aug_resized_Cat29_0.jpg"
+    pfn: "Aug_resized_Cat29_0.jpg"
+    sha256: eadfaafb86b97b6b89f24a1d9cf5e6573dd816233cc932577bcf69b901401b87
+    success: True
+  - lfn: "Aug_resized_Cat69_0.jpg"
+    pfn: "Aug_resized_Cat69_0.jpg"
+    sha256: 97cb0437df9ee4d69566200fe8d8e3af54791ecde9993ef9c357591640ee1680
+    success: True
+  - lfn: "Aug_resized_Dog86_2.jpg"
+    pfn: "Aug_resized_Dog86_2.jpg"
+    sha256: 6fd09fd9c5d2e8ee6031859c13e325e37b4077c2294716caecce8f121e67d105
+    success: True
+  - lfn: "Aug_resized_Cat77_1.jpg"
+    pfn: "Aug_resized_Cat77_1.jpg"
+    sha256: 18d816c18965eaa89e656469e6e70008337f27e3f1a8d43f9353cbdb42f09713
+    success: True
+  - lfn: "Aug_resized_Cat91_0.jpg"
+    pfn: "Aug_resized_Cat91_0.jpg"
+    sha256: f210186b5ac8acc985e8ae1b46b82bdafab16625a2a1779c8f5f4f98d6a38ddf
+    success: True
+  - lfn: "Aug_resized_Dog67_1.jpg"
+    pfn: "Aug_resized_Dog67_1.jpg"
+    sha256: 05a420fb0e4155c27a66143bdd767e187e73e7ebb045492664481d51e138bb36
+    success: True
+  - lfn: "Aug_resized_Dog30_2.jpg"
+    pfn: "Aug_resized_Dog30_2.jpg"
+    sha256: 9de62338fb50ca38a8a401aab53def1a0b1c1bfaf4a6dd193f172912f6c344ab
+    success: True
+  - lfn: "Aug_resized_Cat34_1.jpg"
+    pfn: "Aug_resized_Cat34_1.jpg"
+    sha256: 1b2099a49445b47ffc3671e3b2563cc5949c758831e96a53442cd6e7cd29a148
+    success: True
+  - lfn: "Aug_resized_Cat40_2.jpg"
+    pfn: "Aug_resized_Cat40_2.jpg"
+    sha256: ae691d3438e67b7addb391402d0e741311dc5fc471c2070a0d1c7476eef20906
+    success: True
+  - lfn: "Aug_resized_Cat87_1.jpg"
+    pfn: "Aug_resized_Cat87_1.jpg"
+    sha256: 6b3239c088c95e9bf87962119e5016cb88bc14a754a6242624248773bd4006eb
+    success: True
+  - lfn: "Aug_resized_Cat50_2.jpg"
+    pfn: "Aug_resized_Cat50_2.jpg"
+    sha256: a5e21a7c063d5d3d7508224f3b7baf3eb1e2113bd4661c6c984d133f8d22c660
+    success: True
+  - lfn: "Aug_resized_Cat2_2.jpg"
+    pfn: "Aug_resized_Cat2_2.jpg"
+    sha256: f5b2dbc444b87578ee91ef719a6824f8bbbfc4a1c40ce6dfdcda86245cf2b044
+    success: True
+  - lfn: "Aug_resized_Cat28_0.jpg"
+    pfn: "Aug_resized_Cat28_0.jpg"
+    sha256: 9b0b4548743d55b8aa35b750794549251af1b7dff2a634eacf681a39890f39fa
+    success: True
+  - lfn: "Aug_resized_Cat93_2.jpg"
+    pfn: "Aug_resized_Cat93_2.jpg"
+    sha256: 1dc13642030b9f70a34a2eaf71ae744f9b26e1cb12a2d7b9bdcf402e366b7aee
+    success: True
+  - lfn: "Aug_resized_Cat18_0.jpg"
+    pfn: "Aug_resized_Cat18_0.jpg"
+    sha256: e89b6843c238c4a7cbf822ca0be9f26a70140482f74e8428133a027c1d346b25
+    success: True
+  - lfn: "Aug_resized_Dog80_0.jpg"
+    pfn: "Aug_resized_Dog80_0.jpg"
+    sha256: 28a830d130e070b7e07ca60b7dcea6fb05a0ec8d46fdc9f50c4342084392d705
+    success: True
+  - lfn: "Aug_resized_Dog17_1.jpg"
+    pfn: "Aug_resized_Dog17_1.jpg"
+    sha256: e73de30130b8a4c81885bd557478adefab12b58c3d28fbd22e2aa36c59e65e72
+    success: True
+  - lfn: "Aug_resized_Dog77_1.jpg"
+    pfn: "Aug_resized_Dog77_1.jpg"
+    sha256: 89a665d737d68657d1c9e40703570501c3f7c39f624fa2ba86e11bc5c1f0c3bb
+    success: True
+  - lfn: "Aug_resized_Dog70_0.jpg"
+    pfn: "Aug_resized_Dog70_0.jpg"
+    sha256: 712310cc16cd2ef301c299951c1555b35a50dc5cb12aca9284e3dbcd34b4e6fb
+    success: True
+  - lfn: "Aug_resized_Cat78_0.jpg"
+    pfn: "Aug_resized_Cat78_0.jpg"
+    sha256: 0e8c83a03dfa4bba5b24d3039cbf1581df37b3041a448da39a707dea415fab63
+    success: True
+  - lfn: "Aug_resized_Cat90_0.jpg"
+    pfn: "Aug_resized_Cat90_0.jpg"
+    sha256: 6a50a97ad8bfeef23d5b55809762225218fba423f0d2a092d8cfc0e9371d1d5b
+    success: True
+  - lfn: "Aug_resized_Dog74_1.jpg"
+    pfn: "Aug_resized_Dog74_1.jpg"
+    sha256: 57d939bcdcf076a429d024797ffd6d076f772e58d9ff040ea9fb0ead5a0b65e5
+    success: True
+  - lfn: "Aug_resized_Dog18_0.jpg"
+    pfn: "Aug_resized_Dog18_0.jpg"
+    sha256: 8991407bf4b2761327b065ffe47bcf773e28855ca66b47bb3e9fdb46435969d5
+    success: True
+  - lfn: "Aug_resized_Cat80_0.jpg"
+    pfn: "Aug_resized_Cat80_0.jpg"
+    sha256: d0012f00d44262a8f08cc30cbbf719a2b24cc1b70bc60698eff2d3ce955d6efc
+    success: True
+  - lfn: "Aug_resized_Dog24_1.jpg"
+    pfn: "Aug_resized_Dog24_1.jpg"
+    sha256: 2ccf8f652fd3cb38a8143cbc3bc0a555f8c6779f5de1876e7556d5c944ce6ce0
+    success: True
+  - lfn: "Aug_resized_Dog21_1.jpg"
+    pfn: "Aug_resized_Dog21_1.jpg"
+    sha256: 82877c02335d4e358094adcc917f82c47e83728d294bb1997630ff579a08ec4b
+    success: True
+  - lfn: "Aug_resized_Dog31_1.jpg"
+    pfn: "Aug_resized_Dog31_1.jpg"
+    sha256: 7e01f33b718b30cb6a8e6fcdcbcb45d0c08b9f178ba468597604419f17be3c85
+    success: True
+  - lfn: "Aug_resized_Cat96_2.jpg"
+    pfn: "Aug_resized_Cat96_2.jpg"
+    sha256: 20bc4c11a6363e12a01f5f77fc023c4ad1c0e580fc5489c07eaec3988e31c3ee
+    success: True
+  - lfn: "Aug_resized_Cat25_0.jpg"
+    pfn: "Aug_resized_Cat25_0.jpg"
+    sha256: 1b7b70bb2f3144b522821a4d48877e20daa2d7537395fe755435bf0aa0e8d67b
+    success: True
+  - lfn: "Aug_resized_Cat86_2.jpg"
+    pfn: "Aug_resized_Cat86_2.jpg"
+    sha256: b0e6190e4788ec5ce4c7fc897861a2e6131c8a810264b4b41b1284328775d0ca
+    success: True
+  - lfn: "Aug_resized_Dog9_0.jpg"
+    pfn: "Aug_resized_Dog9_0.jpg"
+    sha256: 4c07fc764565bc1d0ac9ce9ddad3b2f5db070aba7ea7f66d5e6635c45a6981d4
+    success: True
+  - lfn: "Aug_resized_Dog73_0.jpg"
+    pfn: "Aug_resized_Dog73_0.jpg"
+    sha256: fca753737c93e1014de91d26bf92a3c2a087e757c3ba8bdad93b315b2ee403dc
+    success: True
+  - lfn: "Aug_resized_Cat30_0.jpg"
+    pfn: "Aug_resized_Cat30_0.jpg"
+    sha256: 7e45800b7f716c90826d28a7056da2613f134ad2a24daa6a3ca9a6c57c6a17a0
+    success: True
+  - lfn: "Aug_resized_Dog68_0.jpg"
+    pfn: "Aug_resized_Dog68_0.jpg"
+    sha256: ce3291dafb2410faf007598c5023600b4bfa4e31ae9bd089639f3536a46c4b5d
+    success: True
+  - lfn: "Aug_resized_Dog65_0.jpg"
+    pfn: "Aug_resized_Dog65_0.jpg"
+    sha256: e26232d5f42d38361e28a7ca118d3b3c72ae08ae4d07860f4742eb7216d31520
+    success: True
+  - lfn: "Aug_resized_Dog79_2.jpg"
+    pfn: "Aug_resized_Dog79_2.jpg"
+    sha256: 7cb5b9a54cfb402a44e6a49f4f94900b6158c2699f9cbb542c8a5b98e1ec3b2c
+    success: True
+  - lfn: "Aug_resized_Cat43_2.jpg"
+    pfn: "Aug_resized_Cat43_2.jpg"
+    sha256: 19b408f0accc18927be6181f79f195c4b9e9012bfc2598541075de08d3c039d8
+    success: True
+  - lfn: "Aug_resized_Cat41_1.jpg"
+    pfn: "Aug_resized_Cat41_1.jpg"
+    sha256: 2b41989565739630e19f4969797b47ea4c50059f3fec2a8eb140b758d89d20c2
+    success: True
+  - lfn: "Aug_resized_Cat38_2.jpg"
+    pfn: "Aug_resized_Cat38_2.jpg"
+    sha256: 5bd04a1ac52442f2a1dad9b05c631e970026778148ca92779c53c672ce228d06
+    success: True
+  - lfn: "Aug_resized_Dog22_0.jpg"
+    pfn: "Aug_resized_Dog22_0.jpg"
+    sha256: fc6b37eeef68be1e8ee2a333f3741238199f7a83dd12332b169dafee1c63bfe8
+    success: True
+  - lfn: "Aug_resized_Cat33_0.jpg"
+    pfn: "Aug_resized_Cat33_0.jpg"
+    sha256: 0f7677340f163c0f03fa54ee282257c6feb19a166261cae18cc663f4dd603ff1
+    success: True
+  - lfn: "Aug_resized_Dog90_2.jpg"
+    pfn: "Aug_resized_Dog90_2.jpg"
+    sha256: 610a877e618eecdc5e5b444ad6e7fce4ad064800955be4565c00ad8ad7971d44
+    success: True
+  - lfn: "Aug_resized_Cat84_1.jpg"
+    pfn: "Aug_resized_Cat84_1.jpg"
+    sha256: aa4424d628c6e3b3148addd3d74d88225f28d20b547fffaf13916cada2d4cb65
+    success: True
+  - lfn: "Aug_resized_Cat35_2.jpg"
+    pfn: "Aug_resized_Cat35_2.jpg"
+    sha256: 7de18b103698a9a42987d80bdf31c1507a79266079cc49d1bcd539dea9eb3e00
+    success: True
+  - lfn: "Aug_resized_Dog76_2.jpg"
+    pfn: "Aug_resized_Dog76_2.jpg"
+    sha256: 3da3750d97b5b623c24c8b8a9d8b68ea31adbdbef5ca7dac1039faf65e88d9e1
+    success: True
+  - lfn: "Aug_resized_Cat27_1.jpg"
+    pfn: "Aug_resized_Cat27_1.jpg"
+    sha256: 1fba39ba5d899c98e7ad80163638e86468ac69f2d2a813f2ebb4e80a9b815471
+    success: True
+  - lfn: "Aug_resized_Dog28_2.jpg"
+    pfn: "Aug_resized_Dog28_2.jpg"
+    sha256: 8df962476e7cebad75d80dbeb17fd889ccc650d7e1eda540d08fe49e02c44aae
+    success: True
+  - lfn: "Aug_resized_Cat76_0.jpg"
+    pfn: "Aug_resized_Cat76_0.jpg"
+    sha256: e8b9402abc996f48cacf28e8b172328cfe1286daa2414718028dfc516ddd418c
+    success: True
+  - lfn: "Aug_resized_Dog33_2.jpg"
+    pfn: "Aug_resized_Dog33_2.jpg"
+    sha256: 3a867ffd214ac4f074f64c9c2db9cfc0906249cdc0dbe57e136f19500c11192e
+    success: True
+  - lfn: "Aug_resized_Cat95_2.jpg"
+    pfn: "Aug_resized_Cat95_2.jpg"
+    sha256: fea8982270438f1242261bda0cefd577e506ce0cd911af2c7ba36768ba9511b7
+    success: True
+  - lfn: "Aug_resized_Dog19_1.jpg"
+    pfn: "Aug_resized_Dog19_1.jpg"
+    sha256: 1ad1955eae80a727365f8557bc64e4caf9837150ba70e3d441e5202173006a46
+    success: True
+  - lfn: "Aug_resized_Dog22_1.jpg"
+    pfn: "Aug_resized_Dog22_1.jpg"
+    sha256: 06e3f72a40c7941a8634acde044c2deba73a38a923b27e0373917c9cb87a74ae
+    success: True
+  - lfn: "Aug_resized_Cat92_1.jpg"
+    pfn: "Aug_resized_Cat92_1.jpg"
+    sha256: fce6b6cd04ecc4a56bd47abdd1471ba4e26cd6bdc0a845d030bd44052136671e
+    success: True
+  - lfn: "Aug_resized_Cat79_1.jpg"
+    pfn: "Aug_resized_Cat79_1.jpg"
+    sha256: bfaad0003136ceb42064952a564c8f04a7d477d0f40e39b26828f7a0b1971a11
+    success: True
+  - lfn: "Aug_resized_Dog16_0.jpg"
+    pfn: "Aug_resized_Dog16_0.jpg"
+    sha256: c6751b69094600e0ace6b20628bab7d47d5fdfdd5255b6c3e5ef14b137a1e01c
+    success: True
+  - lfn: "Aug_resized_Cat29_1.jpg"
+    pfn: "Aug_resized_Cat29_1.jpg"
+    sha256: 27373c3fc039022618d9d3bdd4e4fdfcb4abbd77af4ef8cdc7af0e2eec725e0e
+    success: True
+  - lfn: "Aug_resized_Dog25_2.jpg"
+    pfn: "Aug_resized_Dog25_2.jpg"
+    sha256: c0d4464a195ed5a168bc831b63046b9bd1d56f540caa20247c0454411bd2ffbf
+    success: True
+  - lfn: "Aug_resized_Cat85_1.jpg"
+    pfn: "Aug_resized_Cat85_1.jpg"
+    sha256: 729798c2d10842d57d1a5e2ca12bbd9d5a2148f826062e99698af028a64edfe1
+    success: True
+  - lfn: "Aug_resized_Cat0_2.jpg"
+    pfn: "Aug_resized_Cat0_2.jpg"
+    sha256: fa61a34814a3e16b226c92f123a8c7786eb3857c2069fba9d928459eddab23a4
+    success: True
+  - lfn: "Aug_resized_Cat82_0.jpg"
+    pfn: "Aug_resized_Cat82_0.jpg"
+    sha256: a47b9ef767d3bb27add26683308179e3952216b2a87834e5ca7312ba8caebeaf
+    success: True
+  - lfn: "Aug_resized_Dog32_2.jpg"
+    pfn: "Aug_resized_Dog32_2.jpg"
+    sha256: ac718d7edf03955dcdef590901a892fd2a9aa1e3167f697c37ecb843d166e08f
+    success: True
+  - lfn: "Aug_resized_Dog66_0.jpg"
+    pfn: "Aug_resized_Dog66_0.jpg"
+    sha256: f90e4104550e61bf413227493997667c95c4a515965b510699f6bf620e0601be
+    success: True
+  - lfn: "Aug_resized_Cat89_2.jpg"
+    pfn: "Aug_resized_Cat89_2.jpg"
+    sha256: bf411ab7a98db4bc626ee1151f23ca5db1ec3288b3829443fdf8828dfa06d0db
+    success: True
+  - lfn: "Aug_resized_Dog82_2.jpg"
+    pfn: "Aug_resized_Dog82_2.jpg"
+    sha256: e3e8a2a59ef4fd3d8bd25e26244b3ad5ceaf4eb718fd6278169f7b81b2055a2b
+    success: True
+  - lfn: "Aug_resized_Cat36_2.jpg"
+    pfn: "Aug_resized_Cat36_2.jpg"
+    sha256: c972d49520dd9301458000a1a938a61bd848ac75dac49ac85e8e8457b3ffb29e
+    success: True
+  - lfn: "Aug_resized_Cat32_0.jpg"
+    pfn: "Aug_resized_Cat32_0.jpg"
+    sha256: 220534ef6f3aee1de3e2c94aeb3e3246da59c245e1e9343c82ce988950a7ec75
+    success: True
+  - lfn: "Aug_resized_Dog81_1.jpg"
+    pfn: "Aug_resized_Dog81_1.jpg"
+    sha256: 7a1258770adb639c9fa6a6f817d953fcdacfb10028e6f1323c7425d9f10eab4b
+    success: True
+  - lfn: "Aug_resized_Cat33_1.jpg"
+    pfn: "Aug_resized_Cat33_1.jpg"
+    sha256: 04f19db7623be50a4895595c67d59d6b15ca17dd121e83748c2329018479a33b
+    success: True
+  - lfn: "Aug_resized_Dog69_1.jpg"
+    pfn: "Aug_resized_Dog69_1.jpg"
+    sha256: bbb5c0dac422df536364c6f3ad2f79e27f6d4b198440015ae68551bd15cba9a8
+    success: True
+  - lfn: "Aug_resized_Dog26_2.jpg"
+    pfn: "Aug_resized_Dog26_2.jpg"
+    sha256: aae3c8052168934a6c6998d7f85db6935a6b395c00c89f2964affcc22f970b11
+    success: True
+  - lfn: "Aug_resized_Dog18_1.jpg"
+    pfn: "Aug_resized_Dog18_1.jpg"
+    sha256: b2d254de276ead21a02ecd517e70ce50649417f2156a1f02a282c7b7ee0b2833
+    success: True
+  - lfn: "Aug_resized_Dog31_2.jpg"
+    pfn: "Aug_resized_Dog31_2.jpg"
+    sha256: f5818b34cecc0c324bf4efe30e43f10a1b3282851e8d0abaa57a6a266f7c14cc
+    success: True
+  - lfn: "Aug_resized_Cat83_0.jpg"
+    pfn: "Aug_resized_Cat83_0.jpg"
+    sha256: bd152e4f0b0d6fd488c0d775f1520a9be10312379cd346a4bd253c1e70a3c866
+    success: True
+  - lfn: "Aug_resized_Dog20_0.jpg"
+    pfn: "Aug_resized_Dog20_0.jpg"
+    sha256: e9f97dfa969ac6982ab63407c535f43a0bd4a10a18e7a51424d9478f908f7679
+    success: True
+  - lfn: "Aug_resized_Cat86_1.jpg"
+    pfn: "Aug_resized_Cat86_1.jpg"
+    sha256: a5d38d6af03c4c5087ef2dcc0232fc35dbbf711a4cd337157003292c7632f29e
+    success: True
+  - lfn: "Aug_resized_Cat94_2.jpg"
+    pfn: "Aug_resized_Cat94_2.jpg"
+    sha256: f328fbf5a8da0e6b189de1e32fc92e51ef7b5ab7ac2b11f9a88e008446c1d505
+    success: True
+  - lfn: "Aug_resized_Dog23_1.jpg"
+    pfn: "Aug_resized_Dog23_1.jpg"
+    sha256: 9670df02ec9d0762d1896d30a28b4462fb14fcfc7709a58edf6bfcb37fb16a07
+    success: True
+  - lfn: "Aug_resized_Dog15_0.jpg"
+    pfn: "Aug_resized_Dog15_0.jpg"
+    sha256: 07322c6a08fd12f51149437810c242f97d792b5885bcec79a7fde680ef432c61
+    success: True
+  - lfn: "Aug_resized_Cat88_2.jpg"
+    pfn: "Aug_resized_Cat88_2.jpg"
+    sha256: 2b820d1395524012c52b0be55fa177e10f05f11a3446af732ce65d74f6644701
+    success: True
+  - lfn: "Aug_resized_Cat91_1.jpg"
+    pfn: "Aug_resized_Cat91_1.jpg"
+    sha256: d8ca5871d7ffccaec334f26004fe8f842419d774f37d5e49f80c0295e2043aa5
+    success: True
+  - lfn: "Aug_resized_Dog78_2.jpg"
+    pfn: "Aug_resized_Dog78_2.jpg"
+    sha256: 5500c311b810d50d447266b767fdd18b41a9e9ed9279f68216df8baf31930699
+    success: True
+  - lfn: "Aug_resized_Dog75_1.jpg"
+    pfn: "Aug_resized_Dog75_1.jpg"
+    sha256: 4d3567244358fcafcb4ed698e56428cc3c8afbc123ef7b9d7514ccf45244b910
+    success: True
+  - lfn: "Aug_resized_Cat42_2.jpg"
+    pfn: "Aug_resized_Cat42_2.jpg"
+    sha256: 12bc3bf6aa877013c0841f08296b9a1ce1c6e346293713e219d6b6b303685119
+    success: True
+  - lfn: "Aug_resized_Dog72_0.jpg"
+    pfn: "Aug_resized_Dog72_0.jpg"
+    sha256: a3b39162daa31d0c9edf27dd6d349f94a8a2a80061959eb31db3310a9dbbf957
+    success: True
+  - lfn: "Aug_resized_Cat26_0.jpg"
+    pfn: "Aug_resized_Cat26_0.jpg"
+    sha256: 465951b573f930e08814f8467c81ab58231994c19ca19eae22698d6bc46fd438
+    success: True
+  - lfn: "Aug_resized_Cat31_0.jpg"
+    pfn: "Aug_resized_Cat31_0.jpg"
+    sha256: c1be3b38ada6941755f0676dd96689c2afb07d0f07a7ad5a095a99e895d60df6
+    success: True
+  - lfn: "Aug_resized_Dog83_2.jpg"
+    pfn: "Aug_resized_Dog83_2.jpg"
+    sha256: ec5d66ead0eda6f1ee7a99ef4567d779acc189116e4a17bf9d2492e2cccfcfde
+    success: True
+  - lfn: "Aug_resized_Dog67_0.jpg"
+    pfn: "Aug_resized_Dog67_0.jpg"
+    sha256: 9027202b669c557af1c319dc63050f81db813abdb13eeed2d76b4d734994e257
+    success: True
+  - lfn: "Aug_resized_Dog54_0.jpg"
+    pfn: "Aug_resized_Dog54_0.jpg"
+    sha256: 117c21b3d236f8804b2530c246ba0180a95ef6f62a833ad118806b56d9590158
+    success: True
+  - lfn: "Aug_resized_Dog70_1.jpg"
+    pfn: "Aug_resized_Dog70_1.jpg"
+    sha256: f2752284e5f3b96666b2b89fe0a238fb8237894b2f8a78f0b6f03a218214da98
+    success: True
+  - lfn: "Aug_resized_Cat9_2.jpg"
+    pfn: "Aug_resized_Cat9_2.jpg"
+    sha256: f170ac96093bf81c88e9caf3a57208ceea11cef1a56386447710438517472d1a
+    success: True
+  - lfn: "Aug_resized_Cat74_0.jpg"
+    pfn: "Aug_resized_Cat74_0.jpg"
+    sha256: ea12f7f4e794a2edd4e5e28e5ec2a7c763fec81600a56ae6778a6c29ec41b2e1
+    success: True
+  - lfn: "Aug_resized_Cat57_2.jpg"
+    pfn: "Aug_resized_Cat57_2.jpg"
+    sha256: 934dc6b773c2b6238709a1cd4d32b36cd3b1812b34b1988051f46e96e1aef26b
+    success: True
+  - lfn: "Aug_resized_Cat17_2.jpg"
+    pfn: "Aug_resized_Cat17_2.jpg"
+    sha256: 94a3250e3a879dbb53802f1cb7edaf975e73442f8f37bb484e0b2b0ea3fe49e7
+    success: True
+  - lfn: "Aug_resized_Cat90_1.jpg"
+    pfn: "Aug_resized_Cat90_1.jpg"
+    sha256: 0ae278d954e781210ccbc423c55b491d5e1c17450c31f06817a318a4bc8c91a7
+    success: True
+  - lfn: "Aug_resized_Dog14_0.jpg"
+    pfn: "Aug_resized_Dog14_0.jpg"
+    sha256: 55a2515409459dca89888269b695ac5dc3d2b613527d71c7e8cd01be7084bd36
+    success: True
+  - lfn: "Aug_resized_Dog94_0.jpg"
+    pfn: "Aug_resized_Dog94_0.jpg"
+    sha256: 993a336a07f5fb0876f2a8af53b9fd04bb2764389fdb4b853b064890f0af82c9
+    success: True
+  - lfn: "Aug_resized_Dog1_1.jpg"
+    pfn: "Aug_resized_Dog1_1.jpg"
+    sha256: d9c8ee8c798e65e68134b0cf6a0c6589b3893ab7ff0319752f6b79d8920dafcc
+    success: True
+  - lfn: "Aug_resized_Dog41_0.jpg"
+    pfn: "Aug_resized_Dog41_0.jpg"
+    sha256: 567bcd4490e19c068430395cd49c2f7acaec9206fea7f2864e15e24740785d8d
+    success: True
+  - lfn: "Aug_resized_Dog77_2.jpg"
+    pfn: "Aug_resized_Dog77_2.jpg"
+    sha256: a1b0cd0a2d0c928a201cfc7f466e400df66d8430b26589b84ef39bdf794614cb
+    success: True
+  - lfn: "Aug_resized_Cat44_2.jpg"
+    pfn: "Aug_resized_Cat44_2.jpg"
+    sha256: 09a4fb530956092e3c186b3c52a0374fa8824b445b12bcfd8d18e9c0c687ccee
+    success: True
+  - lfn: "Aug_resized_Cat50_1.jpg"
+    pfn: "Aug_resized_Cat50_1.jpg"
+    sha256: ac628fb6a8735435945bd119d89528f983719b57b3ed8b71316ef0c7650d1b15
+    success: True
+  - lfn: "Aug_resized_Cat87_0.jpg"
+    pfn: "Aug_resized_Cat87_0.jpg"
+    sha256: 623c8f31843184573c2b0c0ff0f099786b6d74bab0ff020bb51fba7e518dddc7
+    success: True
+  - lfn: "Aug_resized_Dog24_2.jpg"
+    pfn: "Aug_resized_Dog24_2.jpg"
+    sha256: 02ea74ac39a05f13b0fd47176867e2ef34c46cc6d6d6faf1baa40f3e10bee8e4
+    success: True
+  - lfn: "Aug_resized_Cat10_1.jpg"
+    pfn: "Aug_resized_Cat10_1.jpg"
+    sha256: f457af1628f56042546ea9659a8f6f67651bb444d97444e2ba98b75d484b5bbd
+    success: True
+  - lfn: "Aug_resized_Dog37_2.jpg"
+    pfn: "Aug_resized_Dog37_2.jpg"
+    sha256: c12edca2e5a5acf285e5b59f3a5ff06249b0ee392776c42c8cf14c8548cea4e3
+    success: True
+  - lfn: "Aug_resized_Cat2_1.jpg"
+    pfn: "Aug_resized_Cat2_1.jpg"
+    sha256: 46918248e0d6ae611557bc4a87ab935efed095e9cfb4b85c4232e3a03a496b03
+    success: True
+  - lfn: "Aug_resized_Cat28_1.jpg"
+    pfn: "Aug_resized_Cat28_1.jpg"
+    sha256: 50b1660d0c44d5144017fe2a3f7442b673f7930eeb197b00aad38ae73f86a33f
+    success: True
+  - lfn: "Aug_resized_Cat68_1.jpg"
+    pfn: "Aug_resized_Cat68_1.jpg"
+    sha256: 35b0f681ab35683fd49a72ce462ea385ec45b1b013bc98ca668392ae9853b555
+    success: True
+  - lfn: "Aug_resized_Dog48_1.jpg"
+    pfn: "Aug_resized_Dog48_1.jpg"
+    sha256: a57b28b912d9fdced7e58240e91ba6a9bcf79ebac2ea7ce320f1ae989afde844
+    success: True
+  - lfn: "Aug_resized_Cat15_1.jpg"
+    pfn: "Aug_resized_Cat15_1.jpg"
+    sha256: cf265acd82e7da1283479b375aa7fd9c4fde82eb6a8560eea9ba48bb04e0dea9
+    success: True
+  - lfn: "Aug_resized_Dog96_1.jpg"
+    pfn: "Aug_resized_Dog96_1.jpg"
+    sha256: 80a0075990d2fdd5244b3f30222c623f54a1c45ffc0ca610c11d0c45303e3e00
+    success: True
+  - lfn: "Aug_resized_Dog64_2.jpg"
+    pfn: "Aug_resized_Dog64_2.jpg"
+    sha256: 810d14d8d91a1e801d3d0e1afbbdadf04cfd8cd06a7e4df23a91e74ae5dd689d
+    success: True
+  - lfn: "Aug_resized_Cat7_1.jpg"
+    pfn: "Aug_resized_Cat7_1.jpg"
+    sha256: 33f4dbdc353669336459ed11621c5de38cb05a0ee2d3c4c7a0e5874cde93405b
+    success: True
+  - lfn: "Aug_resized_Dog56_1.jpg"
+    pfn: "Aug_resized_Dog56_1.jpg"
+    sha256: 5176fed343fd7083f8edf4455171ddff9770a5b5333cc45ea84bb62fc637d185
+    success: True
+  - lfn: "Aug_resized_Cat47_0.jpg"
+    pfn: "Aug_resized_Cat47_0.jpg"
+    sha256: 1b644eb417f5da60935949fe4332dc085a753ecef73c40f6fadf786f8a5842b0
+    success: True
+  - lfn: "Aug_resized_Cat55_1.jpg"
+    pfn: "Aug_resized_Cat55_1.jpg"
+    sha256: 34adce0c5784f2c2fe29b3a5b7ec17019475b13f1a723bdf45ab373dfe04cc2f
+    success: True
+  - lfn: "Aug_resized_Cat84_2.jpg"
+    pfn: "Aug_resized_Cat84_2.jpg"
+    sha256: 7b5c1b0ff15ff139f6cb09d0d0f102f441808cc21ccf91d7779b232b66f93ae6
+    success: True
+  - lfn: "Aug_resized_Cat76_1.jpg"
+    pfn: "Aug_resized_Cat76_1.jpg"
+    sha256: fb2a28470f29519f0ce8edbd59527ed64dc5567f49451e7af04d164c53e2d927
+    success: True
+  - lfn: "Aug_resized_Dog8_2.jpg"
+    pfn: "Aug_resized_Dog8_2.jpg"
+    sha256: 49c8b8c1daf5829d85ed99df729a21083b5e937713722d213c58fcd5a5ba4848
+    success: True
+  - lfn: "Aug_resized_Cat92_2.jpg"
+    pfn: "Aug_resized_Cat92_2.jpg"
+    sha256: 0fac4d832a85c755fe9d53c4006b74aa1c0ca3dcf019e4229be4e5a1746359f7
+    success: True
+  - lfn: "Aug_resized_Cat39_0.jpg"
+    pfn: "Aug_resized_Cat39_0.jpg"
+    sha256: fb8e793e60f5bf858ee6a06b6b682141473978262cebf2777e5fa7e86546079d
+    success: True
+  - lfn: "Aug_resized_Dog88_1.jpg"
+    pfn: "Aug_resized_Dog88_1.jpg"
+    sha256: 7b366a0c051803a18420134574aaf70ae3255d2a5f1a118afde6a6c4900bfd08
+    success: True
+  - lfn: "Aug_resized_Cat52_2.jpg"
+    pfn: "Aug_resized_Cat52_2.jpg"
+    sha256: d16677342cc358cf464528720bbf511b64a73091be64cbed57477a8e9748f149
+    success: True
+  - lfn: "Aug_resized_Cat79_0.jpg"
+    pfn: "Aug_resized_Cat79_0.jpg"
+    sha256: 9eb41808c9ff1069c853486d8012834c691207c7372d5e94578f1bac932f79b2
+    success: True
+  - lfn: "Aug_resized_Dog30_1.jpg"
+    pfn: "Aug_resized_Dog30_1.jpg"
+    sha256: 9bc3b5830dcac15a74fe88db6dd403ec291b4f409d44f31853ec893543d06dc5
+    success: True
+  - lfn: "Aug_resized_Cat21_0.jpg"
+    pfn: "Aug_resized_Cat21_0.jpg"
+    sha256: 1ba47e803c64ffa88ca0d6681af74f07ea89cabbab9fc7d35311d50303521c20
+    success: True
+  - lfn: "Aug_resized_Cat4_2.jpg"
+    pfn: "Aug_resized_Cat4_2.jpg"
+    sha256: ae691d3438e67b7addb391402d0e741311dc5fc471c2070a0d1c7476eef20906
+    success: True
+  - lfn: "Aug_resized_Cat61_0.jpg"
+    pfn: "Aug_resized_Cat61_0.jpg"
+    sha256: 08c0a37c05da333d735800791fe5b6937b677c8f614fac89942e7ef5f74a4269
+    success: True
+  - lfn: "Aug_resized_Cat82_1.jpg"
+    pfn: "Aug_resized_Cat82_1.jpg"
+    sha256: 590c204fdef82b5c74ff085d56af40b41819e864cf18688c4aefb28d1a71b4de
+    success: True
+  - lfn: "Aug_resized_Cat89_1.jpg"
+    pfn: "Aug_resized_Cat89_1.jpg"
+    sha256: dc2c343ada8a608e1318ca0ed563a9686ca5ed20e6359cbb0ee080a04ab1eb2d
+    success: True
+  - lfn: "Aug_resized_Cat49_1.jpg"
+    pfn: "Aug_resized_Cat49_1.jpg"
+    sha256: c7617292183c1bba574e245e18815e0d629d8cd1643a8f8e6f8e834c58f2a188
+    success: True
+  - lfn: "Aug_resized_Cat42_1.jpg"
+    pfn: "Aug_resized_Cat42_1.jpg"
+    sha256: 9ba17f25e942d0f1543fc3afa8e63cd818923fcd4efdb8b67cc35dbf0aac2476
+    success: True
+  - lfn: "Aug_resized_Dog91_2.jpg"
+    pfn: "Aug_resized_Dog91_2.jpg"
+    sha256: 4aa3064fadee172fd9287b93b8bd2be6c91f0dcb1ac717de3e24089309c75c17
+    success: True
+  - lfn: "Aug_resized_Dog59_0.jpg"
+    pfn: "Aug_resized_Dog59_0.jpg"
+    sha256: ec4184a787f227daa4c9e0e6cec33d0dd68fe2d6c742bd456dca7afd984bfc3f
+    success: True
+  - lfn: "Aug_resized_Dog99_0.jpg"
+    pfn: "Aug_resized_Dog99_0.jpg"
+    sha256: 41fd0811ccc1d4dc3672cf6aa8e51b8148b31de92d68f6a2c57acebd8f858b3f
+    success: True
+  - lfn: "Aug_resized_Dog19_0.jpg"
+    pfn: "Aug_resized_Dog19_0.jpg"
+    sha256: 34e3d9fcb0cfeb0d4a37ff9ad9c2f28082f83666941b8f8fc4c3c57fb1953680
+    success: True
+  - lfn: "Aug_resized_Cat36_1.jpg"
+    pfn: "Aug_resized_Cat36_1.jpg"
+    sha256: f2bbd024bd43e0fafb0b625d8788c4eb21c6cdc79e0cca0d6a9477b4c01b9cd7
+    success: True
+  - lfn: "Aug_resized_Dog45_2.jpg"
+    pfn: "Aug_resized_Dog45_2.jpg"
+    sha256: 679db766b50776583a63f17b633c4d117d630a71e4f429601278bb97d0529ca0
+    success: True
+  - lfn: "Aug_resized_Dog85_2.jpg"
+    pfn: "Aug_resized_Dog85_2.jpg"
+    sha256: d72bb6d323b287aed27b95e2911de46911129056e5c625bd74139f25188c2c1b
+    success: True
+  - lfn: "Aug_resized_Dog16_1.jpg"
+    pfn: "Aug_resized_Dog16_1.jpg"
+    sha256: bdf3b41feaf33f0e02b35cdb92817eaed724bd04c01c4b51463e3c41946860e1
+    success: True
+  - lfn: "Aug_resized_Dog29_2.jpg"
+    pfn: "Aug_resized_Dog29_2.jpg"
+    sha256: 97e2b83e1d417a6a994463c3f61640568e97b17195f904626bcbf655cf2f0da9
+    success: True
+  - lfn: "Aug_resized_Dog6_0.jpg"
+    pfn: "Aug_resized_Dog6_0.jpg"
+    sha256: 177c0c4f063dc72cf9aa5b8a12981ffd01036a11d2f4a79b5bde5714335ba1e0
+    success: True
+  - lfn: "Aug_resized_Cat95_1.jpg"
+    pfn: "Aug_resized_Cat95_1.jpg"
+    sha256: ba6ee7fdf61b786ee16e2db782262174eca6776fb9b207e2219585b410b32394
+    success: True
+  - lfn: "Aug_resized_Dog86_0.jpg"
+    pfn: "Aug_resized_Dog86_0.jpg"
+    sha256: 8ffcaee11dd4583520a20fb5fea6b9c079736f0d2728c73d85026265a5b43da4
+    success: True
+  - lfn: "Aug_resized_Dog46_0.jpg"
+    pfn: "Aug_resized_Dog46_0.jpg"
+    sha256: 2e6f771f7c957b2717f8e17632f27a394f64b87f6dbe313ffdbaf9b363550902
+    success: True
+  - lfn: "Aug_resized_Cat40_0.jpg"
+    pfn: "Aug_resized_Cat40_0.jpg"
+    sha256: 15d97cfbee375e40942fcbab380f5673d590de254ad56a43b912232d8c259913
+    success: True
+  - lfn: "Aug_resized_Dog81_0.jpg"
+    pfn: "Aug_resized_Dog81_0.jpg"
+    sha256: fdeb32c57d0dd19d74c342e9124674071ac57f455b823cd3bfeae269493e7c6a
+    success: True
+  - lfn: "Aug_resized_Dog69_2.jpg"
+    pfn: "Aug_resized_Dog69_2.jpg"
+    sha256: bcb29704e5ba11712394863438409002fd42bf120e69d3857f398c19d0edff36
+    success: True
+  - lfn: "Aug_resized_Dog43_1.jpg"
+    pfn: "Aug_resized_Dog43_1.jpg"
+    sha256: ea0196f51ec6d7b4691ee97258e4bba7bfd7db57bd7d392edcfb82b674ec81cb
+    success: True
+  - lfn: "Aug_resized_Dog51_2.jpg"
+    pfn: "Aug_resized_Dog51_2.jpg"
+    sha256: 97a80044a79e0110f997cbdd36e5c960acc22cb0e796273e1f3c8cb45b00a265
+    success: True
+  - lfn: "Aug_resized_Dog11_2.jpg"
+    pfn: "Aug_resized_Dog11_2.jpg"
+    sha256: 213d2b078c4940646450dcd38ae9028ce77cb358aae2080a0da0d182acbd153a
+    success: True
+  - lfn: "Aug_resized_Dog75_0.jpg"
+    pfn: "Aug_resized_Dog75_0.jpg"
+    sha256: c96bdd39b0a87a17fc77ad72da7c0dea8a779b3f7e386e386124ca31543f294d
+    success: True
+  - lfn: "Aug_resized_Dog35_0.jpg"
+    pfn: "Aug_resized_Dog35_0.jpg"
+    sha256: fe801fff3c276b4cc8349092825c743a8eb56a351bd99ca8f175dd253d3d3882
+    success: True
+  - lfn: "Aug_resized_Cat71_1.jpg"
+    pfn: "Aug_resized_Cat71_1.jpg"
+    sha256: 6b88d5d5ef558f0d18c9f4020147dd30ae100f67b8e42c2a06e5ef0cfe19ee9b
+    success: True
+  - lfn: "Aug_resized_Dog83_1.jpg"
+    pfn: "Aug_resized_Dog83_1.jpg"
+    sha256: e7e1a151913ab29eedb8f2af181bb8660ced014f8e9f57a4f323e3af883f2a11
+    success: True
+  - lfn: "Aug_resized_Cat31_1.jpg"
+    pfn: "Aug_resized_Cat31_1.jpg"
+    sha256: 0e81d5a5a2558ec5052a78cdd2b1df7b158ce3b4344f814894ef607ffaf8c2cf
+    success: True
+  - lfn: "Aug_resized_Dog58_2.jpg"
+    pfn: "Aug_resized_Dog58_2.jpg"
+    sha256: 6defecf65e062cbf392ed09ed97356b45829707c73044a5ec912c50ca4c882df
+    success: True
+  - lfn: "Aug_resized_Dog80_2.jpg"
+    pfn: "Aug_resized_Dog80_2.jpg"
+    sha256: 49c8b8c1daf5829d85ed99df729a21083b5e937713722d213c58fcd5a5ba4848
+    success: True
+  - lfn: "Aug_resized_Cat34_0.jpg"
+    pfn: "Aug_resized_Cat34_0.jpg"
+    sha256: 62efa2439f025f4dc0ee23a79cfb0aee7139afd3d8d47c9c65a4192fc416ec6d
+    success: True
+  - lfn: "Aug_resized_Cat97_2.jpg"
+    pfn: "Aug_resized_Cat97_2.jpg"
+    sha256: 54e72b0f72a6a50afc75f2b04688251e6e790d2c26b14c8f7dd065adfcbf4464
+    success: True
+  - lfn: "Aug_resized_Cat10_2.jpg"
+    pfn: "Aug_resized_Cat10_2.jpg"
+    sha256: 1f5346204696c656b5df23cc087f4b9ffa2ea8b67370606aace14d704d9ac138
+    success: True
+  - lfn: "Aug_resized_Dog18_2.jpg"
+    pfn: "Aug_resized_Dog18_2.jpg"
+    sha256: 247137a0c80c0174f75f01725d7f025bdecf742353ad7260647ef86082e592cb
+    success: True
+  - lfn: "Aug_resized_Dog98_2.jpg"
+    pfn: "Aug_resized_Dog98_2.jpg"
+    sha256: 548e89752c4587866056a294fdf284056fa0d12d374bf94f0447c8f39a6337bb
+    success: True
+  - lfn: "Aug_resized_Cat60_2.jpg"
+    pfn: "Aug_resized_Cat60_2.jpg"
+    sha256: af8f8c1a2f08001363378c358228c0d45c165d4e48f8fb2670e0ec94a2a4f956
+    success: True
+  - lfn: "Aug_resized_Dog93_2.jpg"
+    pfn: "Aug_resized_Dog93_2.jpg"
+    sha256: c5b04be2830ac1ada17838806abf3a5ab1c8c3cea26b5e84465263c8f3b7f667
+    success: True
+  - lfn: "Aug_resized_Cat97_1.jpg"
+    pfn: "Aug_resized_Cat97_1.jpg"
+    sha256: 95129cbad04b0a7a64f79611d0396a3a2214065d952f580d94a377e783140666
+    success: True
+  - lfn: "Aug_resized_Cat44_1.jpg"
+    pfn: "Aug_resized_Cat44_1.jpg"
+    sha256: b0b89ef0dbe464045ef98e3f60c3d47a06ce351709dc91412bfccfe962940412
+    success: True
+  - lfn: "Aug_resized_Cat90_2.jpg"
+    pfn: "Aug_resized_Cat90_2.jpg"
+    sha256: f170ac96093bf81c88e9caf3a57208ceea11cef1a56386447710438517472d1a
+    success: True
+  - lfn: "Aug_resized_Dog14_1.jpg"
+    pfn: "Aug_resized_Dog14_1.jpg"
+    sha256: 8086e74bb050f4e232c3e777a6d9f228b3a158938f6bda21b494e4d6c56779ba
+    success: True
+  - lfn: "Aug_resized_Dog27_1.jpg"
+    pfn: "Aug_resized_Dog27_1.jpg"
+    sha256: 72009d563917506cae96ebc1d86d464103e163ccd0b47983e189a36b9ef4e388
+    success: True
+  - lfn: "Aug_resized_Dog40_2.jpg"
+    pfn: "Aug_resized_Dog40_2.jpg"
+    sha256: b7c293e865ddcee7cc0efa3b2605e4e8217b0aec00ea478c7864e814e9201dfb
+    success: True
+  - lfn: "Aug_resized_Dog70_2.jpg"
+    pfn: "Aug_resized_Dog70_2.jpg"
+    sha256: 7040b38bb4c6b0a2c4e0724a1720f286c9e3d577cdf2648af8292f188f9d14a7
+    success: True
+  - lfn: "Aug_resized_Cat58_0.jpg"
+    pfn: "Aug_resized_Cat58_0.jpg"
+    sha256: 806c2faa879c56990e68f37bf6a4fb26c86231c30a8456fcc757f96be73b25f8
+    success: True
+  - lfn: "Aug_resized_Dog37_1.jpg"
+    pfn: "Aug_resized_Dog37_1.jpg"
+    sha256: ec1ec245c625f1ea5df72431d7a8273212abef2b788c321b0ea7bc4b880a5cf9
+    success: True
+  - lfn: "Aug_resized_Dog60_0.jpg"
+    pfn: "Aug_resized_Dog60_0.jpg"
+    sha256: 177c0c4f063dc72cf9aa5b8a12981ffd01036a11d2f4a79b5bde5714335ba1e0
+    success: True
+  - lfn: "Aug_resized_Dog64_1.jpg"
+    pfn: "Aug_resized_Dog64_1.jpg"
+    sha256: 0a5422b96854631e860a33716ebd53d2e501e003eb2ab787078b6f25110cfbef
+    success: True
+  - lfn: "Aug_resized_Cat68_0.jpg"
+    pfn: "Aug_resized_Cat68_0.jpg"
+    sha256: 34736c0900b8a1b6019b0c6ae752c21a48d9779a8b641c2f9cf61584726e7295
+    success: True
+  - lfn: "Aug_resized_Dog48_0.jpg"
+    pfn: "Aug_resized_Dog48_0.jpg"
+    sha256: effdcef20f81d6282c467547ddd182d59d0c4533a9827e3c3956f51fdb2a2bd8
+    success: True
+  - lfn: "Aug_resized_Dog94_1.jpg"
+    pfn: "Aug_resized_Dog94_1.jpg"
+    sha256: 5d337e275235a2ae5eecbeaa859e2c220ddfbb8141e30733ea337648b98dd939
+    success: True
+  - lfn: "Aug_resized_Dog11_1.jpg"
+    pfn: "Aug_resized_Dog11_1.jpg"
+    sha256: 8fb2a9b08224637f350f092a6b63ed487cbcbdb117ed92f5052f2232f056ee2f
+    success: True
+  - lfn: "Aug_resized_Cat45_0.jpg"
+    pfn: "Aug_resized_Cat45_0.jpg"
+    sha256: eb127b263b36d76167ef0810e975ba7a823cd285cc17bf3808281562a7feb88f
+    success: True
+  - lfn: "Aug_resized_Cat15_0.jpg"
+    pfn: "Aug_resized_Cat15_0.jpg"
+    sha256: 06fbdc294c179caf8db4e933507ba1e9da075fb34126cce2494887c0e3abddf6
+    success: True
+  - lfn: "Aug_resized_Dog1_0.jpg"
+    pfn: "Aug_resized_Dog1_0.jpg"
+    sha256: 8af76b5949de402c1b51b1f0ba19a9a65b6098d83c05875a31e354127136b7fc
+    success: True
+  - lfn: "Aug_resized_Dog25_0.jpg"
+    pfn: "Aug_resized_Dog25_0.jpg"
+    sha256: 2f7c7c0f4f3c993753f7146ba13b05fb6afd66b942c2cf9980015471d27edc99
+    success: True
+  - lfn: "Aug_resized_Cat2_0.jpg"
+    pfn: "Aug_resized_Cat2_0.jpg"
+    sha256: c0f974a48a7869242866980e83774d2f797ce6f4c9e948b4329b78a68a37852f
+    success: True
+  - lfn: "Aug_resized_Dog41_1.jpg"
+    pfn: "Aug_resized_Dog41_1.jpg"
+    sha256: 720b97b2720838f2ea2e6e818fe46103266c40b6ffb2aa2d6f9906a5518e5bc5
+    success: True
+  - lfn: "Aug_resized_Dog16_2.jpg"
+    pfn: "Aug_resized_Dog16_2.jpg"
+    sha256: 835f7c007d1171dc5f900c52e7c7e0471d580363d7015bc0ebe4b003cdc3c3c3
+    success: True
+  - lfn: "Aug_resized_Cat50_0.jpg"
+    pfn: "Aug_resized_Cat50_0.jpg"
+    sha256: d9796720f29089dd86ff37e13895348a48e2fccc36f46713fb1a99081c3c41d9
+    success: True
+  - lfn: "Aug_resized_Dog30_0.jpg"
+    pfn: "Aug_resized_Dog30_0.jpg"
+    sha256: 582bea1402483d46215c9c207ac81dc0fea6aa851f4db6c490f60a9952fadc30
+    success: True
+  - lfn: "labels.txt"
+    pfn: "labels.txt"
+    sha256: 25561e22c352cee7c6be47c5e0fb73b8af4ca78bdb6c501d8940bb5e949d82c3
+    success: True
+  - lfn: "Aug_resized_Cat23_2.jpg"
+    pfn: "Aug_resized_Cat23_2.jpg"
+    sha256: cd16f61d822beafb4ffd6f4c77e51b0b862d370bb99b7899cf849aaa413c6148
+    success: True
+  - lfn: "Aug_resized_Cat93_0.jpg"
+    pfn: "Aug_resized_Cat93_0.jpg"
+    sha256: 3e2c31f292f1397554a88f5928105f2089e488d6d34adfeb3455629e0063a36c
+    success: True
+  - lfn: "Aug_resized_Cat78_2.jpg"
+    pfn: "Aug_resized_Cat78_2.jpg"
+    sha256: 9436e5af0cc25554fff6a1d087afa8d4750157e512382bce4eda9feeacce77db
+    success: True
+  - lfn: "Aug_resized_Cat21_1.jpg"
+    pfn: "Aug_resized_Cat21_1.jpg"
+    sha256: a873721c5d5b13b604f2cfba6155b82e1b1679912e18de3a4c732e6929793ca4
+    success: True
+  - lfn: "Aug_resized_Cat47_1.jpg"
+    pfn: "Aug_resized_Cat47_1.jpg"
+    sha256: ff2957ad60cd1d54c4983149df0d8b75167621a9bb7ccac9170796494aaae775
+    success: True
+  - lfn: "Aug_resized_Cat7_2.jpg"
+    pfn: "Aug_resized_Cat7_2.jpg"
+    sha256: f9fb5350f441237deccd6650dc1af1c633ac618bb2cab4716efb9f525ca2f0a9
+    success: True
+  - lfn: "Aug_resized_Dog96_2.jpg"
+    pfn: "Aug_resized_Dog96_2.jpg"
+    sha256: cbfd972276488957f0eb26b206646f59e1e0800e68afeb08aa2a312c36d24a19
+    success: True
+  - lfn: "Aug_resized_Cat55_2.jpg"
+    pfn: "Aug_resized_Cat55_2.jpg"
+    sha256: df983a0c4affc58c080bb69bdf19f64d68474eecbdd1d28fbfe00aec308fd6f2
+    success: True
+  - lfn: "Aug_resized_Dog8_1.jpg"
+    pfn: "Aug_resized_Dog8_1.jpg"
+    sha256: 5d6cf1f28f54399f878c44c0141a919e6694b7cfb1bf13f652e377365402e63f
+    success: True
+  - lfn: "Aug_resized_Dog88_2.jpg"
+    pfn: "Aug_resized_Dog88_2.jpg"
+    sha256: 2f038e2536b64560b0dc4df244ff49a8ebd2bfb4ff513b73e6371e7dc88fe291
+    success: True
+  - lfn: "Aug_resized_Dog62_0.jpg"
+    pfn: "Aug_resized_Dog62_0.jpg"
+    sha256: 6b65ac77a3dec4824f8b58a381789354f4b221e5984d70937089b14952def93b
+    success: True
+  - lfn: "Aug_resized_Dog13_2.jpg"
+    pfn: "Aug_resized_Dog13_2.jpg"
+    sha256: 345f2471f6b4799f241421fadcaf21414c7120bf26126e025213375ef4d5fede
+    success: True
+  - lfn: "Aug_resized_Dog29_1.jpg"
+    pfn: "Aug_resized_Dog29_1.jpg"
+    sha256: a6f0b9d33c82dc6e8cab78dd0ea6112e9607619135cf48c8ea19380e83bd5869
+    success: True
+  - lfn: "Aug_resized_Dog6_1.jpg"
+    pfn: "Aug_resized_Dog6_1.jpg"
+    sha256: d6031b017c006d36a9de88aaa43b0ff035dc611d01648fdb1a94f1d7bc28ac95
+    success: True
+  - lfn: "Aug_resized_Cat36_0.jpg"
+    pfn: "Aug_resized_Cat36_0.jpg"
+    sha256: b0de1a1c68e429689e02bfcabfcb4b4109e305a5c9ec896c68314e717bd5fc21
+    success: True
+  - lfn: "Aug_resized_Cat19_2.jpg"
+    pfn: "Aug_resized_Cat19_2.jpg"
+    sha256: da3759e857f7da039bab3fd9f58e548b0e46c578f2fa3fe44322b19dbeab31a8
+    success: True
+  - lfn: "Aug_resized_Cat52_1.jpg"
+    pfn: "Aug_resized_Cat52_1.jpg"
+    sha256: 985044ab8f0ec03aa58be4c2b6ee265d4f5ab1fac61c562ef5282eebccec8db5
+    success: True
+  - lfn: "Aug_resized_Cat39_1.jpg"
+    pfn: "Aug_resized_Cat39_1.jpg"
+    sha256: 6aab4022003d9d6011ac6a6ce31a044611ec82f2b830609efa88d0815493997e
+    success: True
+  - lfn: "Aug_resized_Cat13_0.jpg"
+    pfn: "Aug_resized_Cat13_0.jpg"
+    sha256: 3a225a9364276df4489737b5889bfa823cdb7ca043176dc85c81a6f550066990
+    success: True
+  - lfn: "Aug_resized_Dog62_1.jpg"
+    pfn: "Aug_resized_Dog62_1.jpg"
+    sha256: a914f4a4de403567c804ca01a66deed116681d6173a2e35fde25f0fe690e0ba1
+    success: True
+  - lfn: "Aug_resized_Cat4_1.jpg"
+    pfn: "Aug_resized_Cat4_1.jpg"
+    sha256: a0523477987b91a5b3af7bde16234b05d8795349d3fabc52341c1e4452df0d6b
+    success: True
+  - lfn: "Aug_resized_Dog39_2.jpg"
+    pfn: "Aug_resized_Dog39_2.jpg"
+    sha256: b0b37c0c7e63d4a969d2b006f57d5fc4949a42ea015aca9bab55263b242a66c1
+    success: True
+  - lfn: "Aug_resized_Dog56_0.jpg"
+    pfn: "Aug_resized_Dog56_0.jpg"
+    sha256: 69f2de91730ebb56cacb88bbfd277221d41e7485d24ac5addc2314bc7818a387
+    success: True
+  - lfn: "Aug_resized_Cat42_0.jpg"
+    pfn: "Aug_resized_Cat42_0.jpg"
+    sha256: be361b5ab7d68f5d79236574eef4d94c3ccd13b6e596d06969d58d44bfb57700
+    success: True
+  - lfn: "Aug_resized_Dog72_2.jpg"
+    pfn: "Aug_resized_Dog72_2.jpg"
+    sha256: 2f9d850532c6389e2d4dd10789f148c297c203473d42b122d1677f8583ca48c5
+    success: True
+  - lfn: "Aug_resized_Cat49_2.jpg"
+    pfn: "Aug_resized_Cat49_2.jpg"
+    sha256: dfeba3aa2360d2ac96cf99ade1290f58ef5fcb0754e5a599862da825ba16371c
+    success: True
+  - lfn: "Aug_resized_Cat72_0.jpg"
+    pfn: "Aug_resized_Cat72_0.jpg"
+    sha256: 9f1deb3a02f47c4d4cc50f31291bb4983030834e1d181e5800539dde9c8710f7
+    success: True
+  - lfn: "Aug_resized_Cat99_2.jpg"
+    pfn: "Aug_resized_Cat99_2.jpg"
+    sha256: 69e077301120c7e4034c0debb8f0836b23a973038d64db190b44e29378ad4be6
+    success: True
+  - lfn: "Aug_resized_Dog91_1.jpg"
+    pfn: "Aug_resized_Dog91_1.jpg"
+    sha256: 289865853d8a51c072060f0f71d6dc0b76c046f79727a7d7314a4bc00b5bfbaa
+    success: True
+  - lfn: "Aug_resized_Dog33_0.jpg"
+    pfn: "Aug_resized_Dog33_0.jpg"
+    sha256: 775f25bd3de65201a3b5cded05ef1e15141130f363635ac8562934c5d6dca59a
+    success: True
+  - lfn: "Aug_resized_Cat81_2.jpg"
+    pfn: "Aug_resized_Cat81_2.jpg"
+    sha256: 131ccde47d50f4291d5978aa2292a85365050b8910317f2cb489995c291742af
+    success: True
+  - lfn: "Aug_resized_Dog59_1.jpg"
+    pfn: "Aug_resized_Dog59_1.jpg"
+    sha256: 7e5bba01d4d6cedcc84b777874768d19840fd52113652e87772ea7edf0192806
+    success: True
+  - lfn: "Aug_resized_Cat95_0.jpg"
+    pfn: "Aug_resized_Cat95_0.jpg"
+    sha256: fc1255ee37b2fc8943685850f992029e2461c3336382ac25b2e446383ac2d07e
+    success: True
+  - lfn: "Aug_resized_Cat23_1.jpg"
+    pfn: "Aug_resized_Cat23_1.jpg"
+    sha256: 32a7db90bf521a475f195017d3170b44037b6ddba3d5aff4615f9315e1bde720
+    success: True
+  - lfn: "Aug_resized_Dog86_1.jpg"
+    pfn: "Aug_resized_Dog86_1.jpg"
+    sha256: e1cc2383c4a6489654cb80f9995d726f3e6f282f74e4e0148c0ac172866d8a8b
+    success: True
+  - lfn: "Aug_resized_Cat76_2.jpg"
+    pfn: "Aug_resized_Cat76_2.jpg"
+    sha256: 9801838a1f7acf3f066d66ba27bc87d836fcec298ecfa57bb35462224cb88d17
+    success: True
+  - lfn: "Aug_resized_Cat31_2.jpg"
+    pfn: "Aug_resized_Cat31_2.jpg"
+    sha256: 0b1e8ff483eae6f29db9fca3431889feb0d2c348abc6ec7beb3b2c0804651a92
+    success: True
+  - lfn: "Aug_resized_Dog83_0.jpg"
+    pfn: "Aug_resized_Dog83_0.jpg"
+    sha256: 781012de6f7968fb084e92593a088419b3199f6847779c6f66aad032aa249826
+    success: True
+  - lfn: "Aug_resized_Cat37_0.jpg"
+    pfn: "Aug_resized_Cat37_0.jpg"
+    sha256: 84db4c14205cdd1e32cd45dae302f9c71c009b406bbd2ec4b90e09cc73cba8a1
+    success: True
+  - lfn: "Aug_resized_Dog58_1.jpg"
+    pfn: "Aug_resized_Dog58_1.jpg"
+    sha256: c17feaf5bd2b641d6dc07df72fc583f86b792c834d86635659db3f80c9a39c37
+    success: True
+  - lfn: "Aug_resized_Dog78_0.jpg"
+    pfn: "Aug_resized_Dog78_0.jpg"
+    sha256: ccff4645b192fcf942b856e97458617d4bf208e86331a2c56a633c5987b5a411
+    success: True
+  - lfn: "Aug_resized_Dog66_2.jpg"
+    pfn: "Aug_resized_Dog66_2.jpg"
+    sha256: eaabca2bd3b7b8a8dd094bade8056e26a3dec5495ba69d35ea708e826cbb1640
+    success: True
+  - lfn: "Aug_resized_Dog4_0.jpg"
+    pfn: "Aug_resized_Dog4_0.jpg"
+    sha256: 67c58620a26626a1d5593d0970d2925a083d1ce07461317e6c179b0668731374
+    success: True
+  - lfn: "Aug_resized_Cat25_2.jpg"
+    pfn: "Aug_resized_Cat25_2.jpg"
+    sha256: 9e3d9701ba1e3a2c8f4fdc890a28c4d1808567a0570910aba9b682ae37260249
+    success: True
+  - lfn: "Aug_resized_Cat82_2.jpg"
+    pfn: "Aug_resized_Cat82_2.jpg"
+    sha256: a8652bdc4d4ced1243e54f7ff938b3f2b074421cd6d7e23c14498d1d1a4d015d
+    success: True
+  - lfn: "Aug_resized_Cat17_1.jpg"
+    pfn: "Aug_resized_Cat17_1.jpg"
+    sha256: 10fdeeaa343c23defce8540e8d8422c6e576466f3e104a84ac4335d0ad8af5bf
+    success: True
+  - lfn: "Aug_resized_Cat0_0.jpg"
+    pfn: "Aug_resized_Cat0_0.jpg"
+    sha256: 777ac488ce973c1446a5d81443391c1ac3b978af33b0ba491bb01b9e34433cb5
+    success: True
+  - lfn: "Aug_resized_Cat89_0.jpg"
+    pfn: "Aug_resized_Cat89_0.jpg"
+    sha256: 39b3533550eb72eb9f454a5eb84f30636ce3dc80c4f461f9b5b751f2451b9c26
+    success: True
+  - lfn: "Aug_resized_Cat74_1.jpg"
+    pfn: "Aug_resized_Cat74_1.jpg"
+    sha256: 98322b9a0ff006a7268563f2d490e0c5ed2ed939f252388fbe26869471460a4c
+    success: True
+  - lfn: "Aug_resized_Cat66_0.jpg"
+    pfn: "Aug_resized_Cat66_0.jpg"
+    sha256: ce9b448d110c09230faf090221e338d7a7f809369abcce1a78465249dfdb2260
+    success: True
+  - lfn: "Aug_resized_Dog43_2.jpg"
+    pfn: "Aug_resized_Dog43_2.jpg"
+    sha256: e9eae995f69e3ca84292a86f6bd4a0114c529ccedad829769846c533a341dfdd
+    success: True
+  - lfn: "Aug_resized_Cat71_0.jpg"
+    pfn: "Aug_resized_Cat71_0.jpg"
+    sha256: b7dcef7fa1a5990fa107021e50db8e7c40fed7250cb6608284f96b0fcb11ef8f
+    success: True
+  - lfn: "Aug_resized_Dog35_1.jpg"
+    pfn: "Aug_resized_Dog35_1.jpg"
+    sha256: ee69ed52cfe67b44e7b350fcba04ed3537e7edb1c734c86616bb464f47cd56a7
+    success: True
+  - lfn: "Aug_resized_Dog27_0.jpg"
+    pfn: "Aug_resized_Dog27_0.jpg"
+    sha256: 212b58b3b8cce4594dfa17cffe621a4c5ad4a89a53ca18625f24c1f521679abb
+    success: True
+  - lfn: "Aug_resized_Cat11_0.jpg"
+    pfn: "Aug_resized_Cat11_0.jpg"
+    sha256: 0a783773a9d822ee1025a9d5699b638c5a4d2bd234ec3fe555a9be1c6f7b5922
+    success: True
+  - lfn: "Aug_resized_Dog44_0.jpg"
+    pfn: "Aug_resized_Dog44_0.jpg"
+    sha256: d7182d6e2db13b2db60c96f5219a6873dc8325f4b27558ad16ffacee195c213b
+    success: True
+  - lfn: "Aug_resized_Cat3_0.jpg"
+    pfn: "Aug_resized_Cat3_0.jpg"
+    sha256: 7e45800b7f716c90826d28a7056da2613f134ad2a24daa6a3ca9a6c57c6a17a0
+    success: True
+  - lfn: "Aug_resized_Cat67_2.jpg"
+    pfn: "Aug_resized_Cat67_2.jpg"
+    sha256: 35d9f0965e32d6087539a592271e0af50c7acd845174ffc16f60b6d2c647116e
+    success: True
+  - lfn: "Aug_resized_Dog84_0.jpg"
+    pfn: "Aug_resized_Dog84_0.jpg"
+    sha256: 10342bc92af52cbe224d0b62d71ff034abd0779e569c0c4e3dcb63767195cc6f
+    success: True
+  - lfn: "Aug_resized_Cat64_0.jpg"
+    pfn: "Aug_resized_Cat64_0.jpg"
+    sha256: f5f92478a10e6faf0c0217c2c68e19f7b6b5da5bf3e881514b2f0e748788fa5d
+    success: True
+  - lfn: "Aug_resized_Cat14_2.jpg"
+    pfn: "Aug_resized_Cat14_2.jpg"
+    sha256: d462567582fb2403b4dc765ea07867eaacaeb1c1dd02579317d9d39564115ee7
+    success: True
+  - lfn: "Aug_resized_Cat44_0.jpg"
+    pfn: "Aug_resized_Cat44_0.jpg"
+    sha256: ef31ac6359332bc15f368ed88d20649b47bc6693be181a28710e41b458b83567
+    success: True
+  - lfn: "Aug_resized_Cat6_2.jpg"
+    pfn: "Aug_resized_Cat6_2.jpg"
+    sha256: af8f8c1a2f08001363378c358228c0d45c165d4e48f8fb2670e0ec94a2a4f956
+    success: True
+  - lfn: "Aug_resized_Dog51_0.jpg"
+    pfn: "Aug_resized_Dog51_0.jpg"
+    sha256: 89a3707265ecb353625955a93c07d120bab3658db1460e4ac878753a85a7b385
+    success: True
+  - lfn: "Aug_resized_Cat54_2.jpg"
+    pfn: "Aug_resized_Cat54_2.jpg"
+    sha256: 7b00b3eec78c0643dd13e7be6aa46dc6923451496a69fa1c39d8ea5e88aeb8d8
+    success: True
+  - lfn: "Aug_resized_Cat97_0.jpg"
+    pfn: "Aug_resized_Cat97_0.jpg"
+    sha256: d9b17f95fbc7dc9e4c9996e07e75758c724239bde1abfb51b7425fc500d70816
+    success: True
+  - lfn: "Aug_resized_Dog4_1.jpg"
+    pfn: "Aug_resized_Dog4_1.jpg"
+    sha256: c5d51804ccd64ebc2abbf874e3cb1dcd671dd4d543163c60c57520d70080d2e8
+    success: True
+  - lfn: "Aug_resized_Dog0_2.jpg"
+    pfn: "Aug_resized_Dog0_2.jpg"
+    sha256: 44b7038eb10ffe2401f65bd5f4a33eb36dfcb8749fee06829eb68cbb037933d0
+    success: True
+  - lfn: "Aug_resized_Cat20_1.jpg"
+    pfn: "Aug_resized_Cat20_1.jpg"
+    sha256: 46918248e0d6ae611557bc4a87ab935efed095e9cfb4b85c4232e3a03a496b03
+    success: True
+  - lfn: "Aug_resized_Cat60_1.jpg"
+    pfn: "Aug_resized_Cat60_1.jpg"
+    sha256: 3a7f8315a3b9116d471d348d991a18f0307b82dd9248c8e6f9c4170810bc6f17
+    success: True
+  - lfn: "Aug_resized_Dog14_2.jpg"
+    pfn: "Aug_resized_Dog14_2.jpg"
+    sha256: fdad59f6d4b14689826e15099e79a13e9aa2136323856330abc6c828e7482a80
+    success: True
+  - lfn: "Aug_resized_Dog47_2.jpg"
+    pfn: "Aug_resized_Dog47_2.jpg"
+    sha256: 24981e90b2f08d3f3905ffd5cfa81dfdd1f46d35835091006321be4880c4b788
+    success: True
+  - lfn: "Aug_resized_Cat21_2.jpg"
+    pfn: "Aug_resized_Cat21_2.jpg"
+    sha256: 7624c338756668e2039bad146b7a0a02f4d5eb5f8923a5ae97c76d6df8ecedef
+    success: True
+  - lfn: "Aug_resized_Cat73_1.jpg"
+    pfn: "Aug_resized_Cat73_1.jpg"
+    sha256: 93b2ec2cac79a5330df32c754cc9f8e7e3d5294c2f4c4a4c6200b02fdde5346b
+    success: True
+  - lfn: "Aug_resized_Cat58_1.jpg"
+    pfn: "Aug_resized_Cat58_1.jpg"
+    sha256: 867908dc6fcbbef0b191ce5285f38ac6723b01fb6782760dcc12cb3172126e50
+    success: True
+  - lfn: "Aug_resized_Cat53_1.jpg"
+    pfn: "Aug_resized_Cat53_1.jpg"
+    sha256: 4fff8c1bf17d201cd675c8e72084b018aade97b67b67e28e0be8d2da10b2560c
+    success: True
+  - lfn: "Aug_resized_Dog2_0.jpg"
+    pfn: "Aug_resized_Dog2_0.jpg"
+    sha256: e9f97dfa969ac6982ab63407c535f43a0bd4a10a18e7a51424d9478f908f7679
+    success: True
+  - lfn: "Aug_resized_Cat5_1.jpg"
+    pfn: "Aug_resized_Cat5_1.jpg"
+    sha256: ac628fb6a8735435945bd119d89528f983719b57b3ed8b71316ef0c7650d1b15
+    success: True
+  - lfn: "Aug_resized_Dog53_1.jpg"
+    pfn: "Aug_resized_Dog53_1.jpg"
+    sha256: dfab4a612feaea4b1b3950503373d42e7ed9fdd8e290231d712cd5281863abd4
+    success: True
+  - lfn: "Aug_resized_Dog91_0.jpg"
+    pfn: "Aug_resized_Dog91_0.jpg"
+    sha256: e58adf2857259557728a63126bf2d3e8c996e79197f79cf22539d20884c1a0d6
+    success: True
+  - lfn: "Aug_resized_Cat12_1.jpg"
+    pfn: "Aug_resized_Cat12_1.jpg"
+    sha256: 572ca1607bd3d1abd3b99cdd2684880ba634500e8abfd155a73891f429ce7c10
+    success: True
+  - lfn: "Aug_resized_Dog61_2.jpg"
+    pfn: "Aug_resized_Dog61_2.jpg"
+    sha256: eeb62f59773c79dde396b5e097ae144bf06dd4efd26ddbe33969995421dba302
+    success: True
+  - lfn: "Aug_resized_Dog93_1.jpg"
+    pfn: "Aug_resized_Dog93_1.jpg"
+    sha256: 9263050c123ba12498364664d538b42f74d6d2018533181646f3d89eb2c63814
+    success: True
+  - lfn: "Aug_resized_Dog45_1.jpg"
+    pfn: "Aug_resized_Dog45_1.jpg"
+    sha256: 3d8a368d53e3ca394853381ed700d4ac1a5d5be3cfc4f78f48a8999a273fd9cb
+    success: True
+  - lfn: "Aug_resized_Dog97_0.jpg"
+    pfn: "Aug_resized_Dog97_0.jpg"
+    sha256: b97546faf1d23f9c7cd472a30b9517637ee4cc56e2ced770d57092afa4c1f090
+    success: True
+  - lfn: "Aug_resized_Dog37_0.jpg"
+    pfn: "Aug_resized_Dog37_0.jpg"
+    sha256: ed2cd69c456929b6657fb406227f37a12c3059e31cfa7ab1192f83649cb3ab99
+    success: True
+  - lfn: "Aug_resized_Cat8_0.jpg"
+    pfn: "Aug_resized_Cat8_0.jpg"
+    sha256: d0012f00d44262a8f08cc30cbbf719a2b24cc1b70bc60698eff2d3ce955d6efc
+    success: True
+  - lfn: "Aug_resized_Dog92_0.jpg"
+    pfn: "Aug_resized_Dog92_0.jpg"
+    sha256: ffc1b4c10fbf8e06634d4ddd0ac3517385f0ea01c30c6c73395b3aa660cfdc75
+    success: True
+  - lfn: "Aug_resized_Cat72_1.jpg"
+    pfn: "Aug_resized_Cat72_1.jpg"
+    sha256: 5533adcb93d0764592a16f160918ca8a23ef1cb50da14a71e0443ab2a30baae7
+    success: True
+  - lfn: "Aug_resized_Cat56_0.jpg"
+    pfn: "Aug_resized_Cat56_0.jpg"
+    sha256: bc6917aa7aedea3b42489cbde1b48eb92c6e65a0c3ce910b70b4695ee98253e5
+    success: True
+  - lfn: "Aug_resized_Cat22_2.jpg"
+    pfn: "Aug_resized_Cat22_2.jpg"
+    sha256: 9bbff0100707be811ca42ac3845f03d7dd562e95f5d554a00b264f080d95c334
+    success: True
+  - lfn: "Aug_resized_Cat75_2.jpg"
+    pfn: "Aug_resized_Cat75_2.jpg"
+    sha256: 3987a40d26b6c52123a7d8fedb8f3f253f32f9f028cf33288f3656cb19f002f4
+    success: True
+  - lfn: "Aug_resized_Cat59_1.jpg"
+    pfn: "Aug_resized_Cat59_1.jpg"
+    sha256: 39be0530c348a188d2b8a45df2b0121f4ded31463b7c1a737a581b18a9dbc9ce
+    success: True
+  - lfn: "Aug_resized_Cat99_1.jpg"
+    pfn: "Aug_resized_Cat99_1.jpg"
+    sha256: 9d90aac022508e01b2514e6cb4f4b60971f4bb40c2ae4833f69c1c8a64b526fe
+    success: True
+  - lfn: "Aug_resized_Dog29_0.jpg"
+    pfn: "Aug_resized_Dog29_0.jpg"
+    sha256: fac2dbbc23e8e105da9c28b378ee50a4af894009e68f87c4dd64a652bc46c2fd
+    success: True
+  - lfn: "Aug_resized_Cat66_1.jpg"
+    pfn: "Aug_resized_Cat66_1.jpg"
+    sha256: 0dad68a57b3d34a96f4a4bc39bab580f0bdbe92f4d6b09125022def117970a06
+    success: True
+  - lfn: "Aug_resized_Cat65_1.jpg"
+    pfn: "Aug_resized_Cat65_1.jpg"
+    sha256: e34f9228c0c0f73f7cf98d630223b9e9d6d2c44ff5645843c567260d9b11dbcb
+    success: True
+  - lfn: "Aug_resized_Dog62_2.jpg"
+    pfn: "Aug_resized_Dog62_2.jpg"
+    sha256: 0c700fbe4d7d837c74888c57280f44e59f86afeba7b98473e6fddb339012cdb7
+    success: True
+  - lfn: "Aug_resized_Cat52_0.jpg"
+    pfn: "Aug_resized_Cat52_0.jpg"
+    sha256: 32d4593db4d1f0279dccc9d458896901b11f867abde07835909f422c7cc177b9
+    success: True
+  - lfn: "Aug_resized_Cat4_0.jpg"
+    pfn: "Aug_resized_Cat4_0.jpg"
+    sha256: 15d97cfbee375e40942fcbab380f5673d590de254ad56a43b912232d8c259913
+    success: True
+  - lfn: "Aug_resized_Dog36_0.jpg"
+    pfn: "Aug_resized_Dog36_0.jpg"
+    sha256: d634413d7379ec940f8092a9dd1faa46f26316e85b2b5901689b50dc712a1fae
+    success: True
+  - lfn: "Aug_resized_Dog5_2.jpg"
+    pfn: "Aug_resized_Dog5_2.jpg"
+    sha256: dfc3f1ddd365456cfec95cb2f32f0f570eefa825f07dd00e0ecc747417e63a40
+    success: True
+  - lfn: "Aug_resized_Cat13_1.jpg"
+    pfn: "Aug_resized_Cat13_1.jpg"
+    sha256: d8fe5c5928e19b8d9f7971bd6a2a7b0e7daa741fb631a4d3fcfae766dd0a3aae
+    success: True
+  - lfn: "Aug_resized_Dog39_1.jpg"
+    pfn: "Aug_resized_Dog39_1.jpg"
+    sha256: ce00951da39109df890c3e62d5447a129f0378920e6ec27989360bfa6e284e64
+    success: True
+  - lfn: "Aug_resized_Cat61_2.jpg"
+    pfn: "Aug_resized_Cat61_2.jpg"
+    sha256: b40e67506ca82de2d14ac71da16d75d4cd4747964ca4e1e2d94f700433e7208d
+    success: True
+  - lfn: "Aug_resized_Dog38_1.jpg"
+    pfn: "Aug_resized_Dog38_1.jpg"
+    sha256: b4da34b6e9fa4cb46343c75701e9067ea3dace6b2b7b7b1184697fb96781942f
+    success: True
+  - lfn: "Aug_resized_Dog46_2.jpg"
+    pfn: "Aug_resized_Dog46_2.jpg"
+    sha256: a96783e8a3237429bf62eecc652be718d37d264891f0fff77205abff4ba47202
+    success: True
+  - lfn: "Aug_resized_Cat9_0.jpg"
+    pfn: "Aug_resized_Cat9_0.jpg"
+    sha256: 6a50a97ad8bfeef23d5b55809762225218fba423f0d2a092d8cfc0e9371d1d5b
+    success: True
+  - lfn: "Aug_resized_Dog98_0.jpg"
+    pfn: "Aug_resized_Dog98_0.jpg"
+    sha256: ce9d4ac15f9fa7a71e3e409c97054eee3f61782ac166fbaa68b287fa0223f82e
+    success: True
+  - lfn: "Aug_resized_Cat57_0.jpg"
+    pfn: "Aug_resized_Cat57_0.jpg"
+    sha256: 617f7e72f02cf10f27105a0d539436c6c574723f7a7581b7a3244c295f09b4b7
+    success: True
+  - lfn: "Aug_resized_Cat98_0.jpg"
+    pfn: "Aug_resized_Cat98_0.jpg"
+    sha256: 362b899f96122d193f6b9c92e78124866b0b0032181c1caf1f21aba60fca1564
+    success: True
+  - lfn: "Aug_resized_Cat74_2.jpg"
+    pfn: "Aug_resized_Cat74_2.jpg"
+    sha256: 536aa682c3d9c83063e3bceeed2049f89c6d5e8e888ccfbbde4a1744bbb4f0ea
+    success: True
+  - lfn: "Aug_resized_Cat63_0.jpg"
+    pfn: "Aug_resized_Cat63_0.jpg"
+    sha256: 9259971dd2d5099d9caa2c7d9be65ae49fb8643333512497002999f5375f1294
+    success: True
+  - lfn: "Aug_resized_Cat68_2.jpg"
+    pfn: "Aug_resized_Cat68_2.jpg"
+    sha256: db05ad2774c9168b97c9be2bdfe0f71a2b68852dc76de8f3165edab527b21006
+    success: True
+  - lfn: "Aug_resized_Dog3_1.jpg"
+    pfn: "Aug_resized_Dog3_1.jpg"
+    sha256: 9bc3b5830dcac15a74fe88db6dd403ec291b4f409d44f31853ec893543d06dc5
+    success: True
+  - lfn: "Aug_resized_Cat51_0.jpg"
+    pfn: "Aug_resized_Cat51_0.jpg"
+    sha256: 7c914f746553e862d36d2f6b3f0d28de336fdfc5bf9e4821f9851159c4373201
+    success: True
+  - lfn: "Aug_resized_Cat62_2.jpg"
+    pfn: "Aug_resized_Cat62_2.jpg"
+    sha256: 881c8eac3472741726b0a9f493f098a59a4978610ad9f118296b01d105dc91ba
+    success: True
+  - lfn: "Aug_resized_Dog52_0.jpg"
+    pfn: "Aug_resized_Dog52_0.jpg"
+    sha256: d8f06e6d15163215c773ce39bc5bb62f801abcbe6d1eb8266037350c935b23e0
+    success: True
+  - lfn: "Aug_resized_Cat54_1.jpg"
+    pfn: "Aug_resized_Cat54_1.jpg"
+    sha256: 7314d9a4701e621d2277392386459f3f664830b1c64ff30fe82d22cf1b9dedbf
+    success: True
+  - lfn: "Aug_resized_Dog60_1.jpg"
+    pfn: "Aug_resized_Dog60_1.jpg"
+    sha256: d6031b017c006d36a9de88aaa43b0ff035dc611d01648fdb1a94f1d7bc28ac95
+    success: True
+  - lfn: "Aug_resized_Dog6_2.jpg"
+    pfn: "Aug_resized_Dog6_2.jpg"
+    sha256: f526c2bc7defe02eb8f81d137144845adba49d0068b291fda34ab7143a74a29e
+    success: True
+  - lfn: "Aug_resized_Dog4_2.jpg"
+    pfn: "Aug_resized_Dog4_2.jpg"
+    sha256: b7c293e865ddcee7cc0efa3b2605e4e8217b0aec00ea478c7864e814e9201dfb
+    success: True
+  - lfn: "Aug_resized_Cat6_1.jpg"
+    pfn: "Aug_resized_Cat6_1.jpg"
+    sha256: 3a7f8315a3b9116d471d348d991a18f0307b82dd9248c8e6f9c4170810bc6f17
+    success: True
+  - lfn: "Aug_resized_Dog10_2.jpg"
+    pfn: "Aug_resized_Dog10_2.jpg"
+    sha256: 874bd7d006045cff6eecccfae09c6684a5dd1e453da70f86c6b010175fbf0532
+    success: True
+  - lfn: "Aug_resized_Cat70_2.jpg"
+    pfn: "Aug_resized_Cat70_2.jpg"
+    sha256: f9fb5350f441237deccd6650dc1af1c633ac618bb2cab4716efb9f525ca2f0a9
+    success: True
+  - lfn: "Aug_resized_Cat20_2.jpg"
+    pfn: "Aug_resized_Cat20_2.jpg"
+    sha256: f5b2dbc444b87578ee91ef719a6824f8bbbfc4a1c40ce6dfdcda86245cf2b044
+    success: True
+  - lfn: "Aug_resized_Dog60_2.jpg"
+    pfn: "Aug_resized_Dog60_2.jpg"
+    sha256: f526c2bc7defe02eb8f81d137144845adba49d0068b291fda34ab7143a74a29e
+    success: True
+  - lfn: "Aug_resized_Dog47_1.jpg"
+    pfn: "Aug_resized_Dog47_1.jpg"
+    sha256: b6fb1d1ffc2e748745e8a24f4f674a0d840f82a4d0b9e223f96caa2a4a61ac33
+    success: True
+  - lfn: "Aug_resized_Cat11_1.jpg"
+    pfn: "Aug_resized_Cat11_1.jpg"
+    sha256: 605d48f4239de945060606702dcd3d9be9c34ba131aceb8e0441de11ae65707f
+    success: True
+  - lfn: "Aug_resized_Cat48_0.jpg"
+    pfn: "Aug_resized_Cat48_0.jpg"
+    sha256: 63881f887cf408b9759ea104df7ee95270cb4a664bf6f4ef58389c28c9023950
+    success: True
+  - lfn: "Aug_resized_Dog97_1.jpg"
+    pfn: "Aug_resized_Dog97_1.jpg"
+    sha256: 776da154940d578db83a7bce489909e90c2d87f1de8f9bb87ed596e42a14fb2f
+    success: True
+  - lfn: "Aug_resized_Dog54_1.jpg"
+    pfn: "Aug_resized_Dog54_1.jpg"
+    sha256: 678b7b0c58595532521a498e010ed45591f0c934f8e3281c98544243585f2b16
+    success: True
+  - lfn: "Aug_resized_Cat63_2.jpg"
+    pfn: "Aug_resized_Cat63_2.jpg"
+    sha256: 78af415db5ba0bdbba72ee77957c769fe68644c1812c01fdc230b768a365568c
+    success: True
+  - lfn: "Aug_resized_Cat73_2.jpg"
+    pfn: "Aug_resized_Cat73_2.jpg"
+    sha256: 08d0734c16177fe9a50103d3c712181703e3947eb2b7deaed2ca9d2dedf5f219
+    success: True
+  - lfn: "Aug_resized_Dog44_1.jpg"
+    pfn: "Aug_resized_Dog44_1.jpg"
+    sha256: b27f0a39f26f8f23c838593557e16d1716a5ee7d3a84b35097263a3dc4fe09f1
+    success: True
+  - lfn: "Aug_resized_Dog38_0.jpg"
+    pfn: "Aug_resized_Dog38_0.jpg"
+    sha256: a3e85c35430e56fe5a2e8e2055e05723a1fac34c7f97fe1d607df5e50d16f4a4
+    success: True
+  - lfn: "Aug_resized_Cat7_0.jpg"
+    pfn: "Aug_resized_Cat7_0.jpg"
+    sha256: aeac4f490d249d660b0294b8038f7c4a721813445ed5264e51212bf049823c06
+    success: True
+  - lfn: "Aug_resized_Dog93_0.jpg"
+    pfn: "Aug_resized_Dog93_0.jpg"
+    sha256: 6203212b3ec40d604dcdf193fa7a71338d32fc1ce39703275bdbb6c9e8c5f0fd
+    success: True
+  - lfn: "Aug_resized_Cat66_2.jpg"
+    pfn: "Aug_resized_Cat66_2.jpg"
+    sha256: 14cdee4df849466a8b01de9613cf41f6ad182df13b92e306800270675f131271
+    success: True
+  - lfn: "Aug_resized_Dog99_2.jpg"
+    pfn: "Aug_resized_Dog99_2.jpg"
+    sha256: 7d0c43ef34cb48b0aac539a6b6d7e276fbe90d1cd03ff08674b5f69ce3296526
+    success: True
+  - lfn: "Aug_resized_Dog56_2.jpg"
+    pfn: "Aug_resized_Dog56_2.jpg"
+    sha256: 2d83c3d617192a754fa3defd9e79641810d46ba615ebf7600e5b0d90d5267c28
+    success: True
+  - lfn: "Aug_resized_Dog88_0.jpg"
+    pfn: "Aug_resized_Dog88_0.jpg"
+    sha256: 55ffc12fc753f0326858afc68b0e94a9679eec2cbe433588f00996695608f099
+    success: True
+  - lfn: "Aug_resized_Cat10_0.jpg"
+    pfn: "Aug_resized_Cat10_0.jpg"
+    sha256: 8e944bcf6270ff0db8e32fc444d8fc2a1e05bfafde87874eb31575bca5020adc
+    success: True
+  - lfn: "Aug_resized_Cat61_1.jpg"
+    pfn: "Aug_resized_Cat61_1.jpg"
+    sha256: be56ea2a19ea65f9c215110c2e4ebc047339153dcd02ecb06c035320b4ad51cd
+    success: True
+  - lfn: "Aug_resized_Dog2_1.jpg"
+    pfn: "Aug_resized_Dog2_1.jpg"
+    sha256: 4e9d7312c1fa6b96abd0676032ba2012dba85f45b82f82b6442e7cda11d9497d
+    success: True
+  - lfn: "Aug_resized_Dog45_0.jpg"
+    pfn: "Aug_resized_Dog45_0.jpg"
+    sha256: 8197683cd22543948253f3660ca2aaef733491bbe3b1e640cf07048b301b374f
+    success: True
+  - lfn: "Aug_resized_Cat53_0.jpg"
+    pfn: "Aug_resized_Cat53_0.jpg"
+    sha256: d070ed7a2737feca2d6407bcf51d0797d81ef414c9517ffaffc7c91c422b98c5
+    success: True
+  - lfn: "Aug_resized_Dog50_0.jpg"
+    pfn: "Aug_resized_Dog50_0.jpg"
+    sha256: 8ece059f663b406bea3bdd7d930dc54e3184a9893cb85dc35aa85267cd0c9021
+    success: True
+  - lfn: "Aug_resized_Cat58_2.jpg"
+    pfn: "Aug_resized_Cat58_2.jpg"
+    sha256: 29f281a695b6ea7193362c210103b04e4ef93e680f41b985a1b184e12e71bb8f
+    success: True
+  - lfn: "Aug_resized_Cat15_2.jpg"
+    pfn: "Aug_resized_Cat15_2.jpg"
+    sha256: 28ac6319b79e12b333ff7b566742d383a60b89681dbef7c7f20538e554ce7ee2
+    success: True
+  - lfn: "Aug_resized_Dog1_2.jpg"
+    pfn: "Aug_resized_Dog1_2.jpg"
+    sha256: 874bd7d006045cff6eecccfae09c6684a5dd1e453da70f86c6b010175fbf0532
+    success: True
+  - lfn: "Aug_resized_Dog48_2.jpg"
+    pfn: "Aug_resized_Dog48_2.jpg"
+    sha256: 5beb09ac7584e1cb09332d16d9036cb3233e67d5adeb4f428c849bbd6814fc53
+    success: True
+  - lfn: "Aug_resized_Cat5_0.jpg"
+    pfn: "Aug_resized_Cat5_0.jpg"
+    sha256: d9796720f29089dd86ff37e13895348a48e2fccc36f46713fb1a99081c3c41d9
+    success: True
+  - lfn: "Aug_resized_Cat64_1.jpg"
+    pfn: "Aug_resized_Cat64_1.jpg"
+    sha256: 36977e0c60ee9b7873f7b11c8214cde8c80f1529b844a63590404db593750cb3
+    success: True
+  - lfn: "Aug_resized_Dog42_0.jpg"
+    pfn: "Aug_resized_Dog42_0.jpg"
+    sha256: b873a96cb1f352410305690e92b941e8765bcaf449c6f35b2ddbc1edb07ee1c2
+    success: True
+  - lfn: "Aug_resized_Dog53_2.jpg"
+    pfn: "Aug_resized_Dog53_2.jpg"
+    sha256: 9f3fe58f883c16f26f189f95da853f65cb39d07fbd38c2bbebfb3b776c631eb3
+    success: True
+  - lfn: "Aug_resized_Cat12_2.jpg"
+    pfn: "Aug_resized_Cat12_2.jpg"
+    sha256: 38fbaa4b0434bc3b97fc5bdf2c0b61f1c7a8b4d6d77bb69fd1d50ed35fdcec3c
+    success: True
+  - lfn: "Aug_resized_Dog52_1.jpg"
+    pfn: "Aug_resized_Dog52_1.jpg"
+    sha256: a54d0208e59c18a148da0050406499cbb04e9c4cac5d8c28bd12ee994e844c41
+    success: True
+  - lfn: "Aug_resized_Cat62_1.jpg"
+    pfn: "Aug_resized_Cat62_1.jpg"
+    sha256: f76d6c7a74423563fd83b0bbf2a8ead817db4d60eecb7c5e1b8416d113ffd09e
+    success: True
+  - lfn: "Aug_resized_Dog39_0.jpg"
+    pfn: "Aug_resized_Dog39_0.jpg"
+    sha256: 91c1bdc9dc95adbccd4c3a08730efe1b62dae43ff06a16c5356f945762f9fcf1
+    success: True
+  - lfn: "Aug_resized_Dog89_0.jpg"
+    pfn: "Aug_resized_Dog89_0.jpg"
+    sha256: d1b155bf5edcabea4700324f3dd52af79e849fc7a867482bbf19c3021e9fa581
+    success: True
+  - lfn: "Aug_resized_Cat8_1.jpg"
+    pfn: "Aug_resized_Cat8_1.jpg"
+    sha256: 4e7a3220ffcfc98f9fd9b7eaeb022d4cd9510e6a31b14fc50f07cac12569826e
+    success: True
+  - lfn: "Aug_resized_Dog55_2.jpg"
+    pfn: "Aug_resized_Dog55_2.jpg"
+    sha256: a17268b8dfe8ebf0072eba747e59e307386306475082dcd2a689dbecbd451f2c
+    success: True
+  - lfn: "Aug_resized_Cat56_1.jpg"
+    pfn: "Aug_resized_Cat56_1.jpg"
+    sha256: 49b7dab0180169b6a7a8368f5a4a3622e9719d402d75185b74bede0e9ea62ce6
+    success: True
+  - lfn: "Aug_resized_Dog99_1.jpg"
+    pfn: "Aug_resized_Dog99_1.jpg"
+    sha256: 7bf5c090b1e8bb8dd02fb3b092a263593806eef90cc8b4970b319dc95d0864bc
+    success: True
+  - lfn: "Aug_resized_Dog96_0.jpg"
+    pfn: "Aug_resized_Dog96_0.jpg"
+    sha256: 752dc9e6d9cb40f9c2d0c09826372fc718e1539dafe49fa0c75bca3d4ff395e7
+    success: True
+  - lfn: "Aug_resized_Cat59_2.jpg"
+    pfn: "Aug_resized_Cat59_2.jpg"
+    sha256: 26f6a7eb0ff8b870c119e3c28435d4e1581e28a8998de0a36b2e55524d7e3f77
+    success: True
+  - lfn: "Aug_resized_Dog46_1.jpg"
+    pfn: "Aug_resized_Dog46_1.jpg"
+    sha256: 30b3a2ecc492923faf35621e829aad5d883145c8af0c8ab593b05ddc3828260b
+    success: True
+  - lfn: "Aug_resized_Cat71_2.jpg"
+    pfn: "Aug_resized_Cat71_2.jpg"
+    sha256: fd0b92f91ee6310716f8732a2f402d9b70253512ada88620627ee81b8caa15f1
+    success: True
+  - lfn: "Aug_resized_Dog43_0.jpg"
+    pfn: "Aug_resized_Dog43_0.jpg"
+    sha256: be2d91900f69ae5d9aa9b0385fc510c326585fcfdfbfdc9ad8483d7af5acd4e4
+    success: True
+  - lfn: "Aug_resized_Dog2_2.jpg"
+    pfn: "Aug_resized_Dog2_2.jpg"
+    sha256: 563a9a625b90dffc66605d3318f25d31bf535151e651efb2a37c548ec047f470
+    success: True
+  - lfn: "Aug_resized_Cat63_1.jpg"
+    pfn: "Aug_resized_Cat63_1.jpg"
+    sha256: bc29da9c7487ac8f26c01f3af2c108d17bae19398131cf9264f3c3ed94704bd7
+    success: True
+  - lfn: "Aug_resized_Dog51_1.jpg"
+    pfn: "Aug_resized_Dog51_1.jpg"
+    sha256: 29ed77b68a72370fdb02871312de5f115b3d321fa936fec308761a764ad00361
+    success: True
+  - lfn: "Aug_resized_Cat55_0.jpg"
+    pfn: "Aug_resized_Cat55_0.jpg"
+    sha256: 71682a1e705ae14e18e71a9f0a4789b803c7552def9fadeeafa63ed67be62ea9
+    success: True
+  - lfn: "Aug_resized_Cat13_2.jpg"
+    pfn: "Aug_resized_Cat13_2.jpg"
+    sha256: 4ad00ad4bf2c0a7d923ae51b94938d8764e5a9eeeb3a390c4b7baa30ced663e3
+    success: True
+  - lfn: "Aug_resized_Dog54_2.jpg"
+    pfn: "Aug_resized_Dog54_2.jpg"
+    sha256: 8df25bc4b0433780ffdab59dad673bb62fc8047e45df37c745616e59c2920489
+    success: True
+  - lfn: "Aug_resized_Dog0_1.jpg"
+    pfn: "Aug_resized_Dog0_1.jpg"
+    sha256: 7483155a65e36df1b3986928fa4072d0b7ce7968b16dedfaf18eac41a50c579e
+    success: True
+  - lfn: "Aug_resized_Cat60_0.jpg"
+    pfn: "Aug_resized_Cat60_0.jpg"
+    sha256: f6c50a45d8a2d9936dc5e2826f80efd0c0b8d925c6f349ef3b2adcea4ee9869b
+    success: True
+  - lfn: "Aug_resized_Dog3_2.jpg"
+    pfn: "Aug_resized_Dog3_2.jpg"
+    sha256: 9de62338fb50ca38a8a401aab53def1a0b1c1bfaf4a6dd193f172912f6c344ab
+    success: True
+  - lfn: "Aug_resized_Dog49_2.jpg"
+    pfn: "Aug_resized_Dog49_2.jpg"
+    sha256: 346f1695cafb96abab1d915581115b1829ab602e197f75d13537f01f54d660c5
+    success: True
+  - lfn: "Aug_resized_Cat49_0.jpg"
+    pfn: "Aug_resized_Cat49_0.jpg"
+    sha256: b6dd2bd365b0213a9583c504002d300b54220b7de9722388971201bb8e72d266
+    success: True
+  - lfn: "Aug_resized_Dog95_0.jpg"
+    pfn: "Aug_resized_Dog95_0.jpg"
+    sha256: ad9b0fbc609c9d46ff025eaeda1b375ed71597e0703e5226b62feaeb13324388
+    success: True
+  - lfn: "Aug_resized_Cat9_1.jpg"
+    pfn: "Aug_resized_Cat9_1.jpg"
+    sha256: 0ae278d954e781210ccbc423c55b491d5e1c17450c31f06817a318a4bc8c91a7
+    success: True
+  - lfn: "Aug_resized_Dog98_1.jpg"
+    pfn: "Aug_resized_Dog98_1.jpg"
+    sha256: b9d6cf6413f7c95a440cc5ad96a98e0ffe4026c63c6f8da169f9e883e187c9b1
+    success: True
+  - lfn: "Aug_resized_Cat57_1.jpg"
+    pfn: "Aug_resized_Cat57_1.jpg"
+    sha256: 03b28f330c73b88910e5612da2430fbccef056854e33b953b615a04367f37baf
+    success: True
+  - lfn: "Aug_resized_Cat65_2.jpg"
+    pfn: "Aug_resized_Cat65_2.jpg"
+    sha256: fe139bc58ea265661a2b00cf07eb29c46115c276a322a56b32a41c7182e7dce5
+    success: True
+- integrity_summary:
+    succeeded: 602
+    failed: 0
+    duration: 39.470

@@ -43,7 +43,7 @@ set +e
 job_ec=0
 pegasus_lite_section_start task_execute
 printf "\n######################[Pegasus Lite] Executing the user task ######################\n"  1>&2
-pegasus-kickstart  -n VGG_model.py -N ID0000004 -R condorpool  -s model.h5=model.h5 -L Cats_and_Dogs -T 2020-09-17T21:23:35+00:00 ./VGG_model_py 
+pegasus-kickstart  -n VGG_model.py -N ID0000004 -R condorpool  -s checkpoint_file.hdf5=checkpoint_file.hdf5 -s model_history_log.csv=model_history_log.csv -s model.h5=model.h5 -L Cats_and_Dogs -T 2020-10-01T09:18:23+00:00 ./VGG_model_py 
 job_ec=$?
 pegasus_lite_section_end task_execute
 set -e

@@ -43,7 +43,7 @@ set +e
 job_ec=0
 pegasus_lite_section_start task_execute
 printf "\n######################[Pegasus Lite] Executing the user task ######################\n"  1>&2
-pegasus-kickstart  -n Data_Split.py -N ID0000003 -R condorpool  -s testing.pkl=testing.pkl -s validation.pkl=validation.pkl -s training.pkl=training.pkl -L Cats_and_Dogs -T 2020-09-17T21:17:53+00:00 ./Data_Split_py 
+pegasus-kickstart  -n Data_Split.py -N ID0000003 -R condorpool  -s testing.pkl=testing.pkl -s validation.pkl=validation.pkl -s training.pkl=training.pkl -L Cats_and_Dogs -T 2020-10-01T09:11:25+00:00 ./Data_Split_py 
 job_ec=$?
 pegasus_lite_section_end task_execute
 set -e
