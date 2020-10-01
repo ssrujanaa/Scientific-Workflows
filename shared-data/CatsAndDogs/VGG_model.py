@@ -21,6 +21,7 @@ from keras.applications.vgg16 import VGG16
 from keras.models import Model,load_model
 import pandas as pd
 
+#get training, testing and validation data from the saved pickle files.
 def get_data():
     with open('training.pkl', 'rb') as f:
          train = pickle.load(f)
@@ -73,6 +74,8 @@ def get_data():
     val_labels = asarray(val_labels)
     return train_photos,train_labels,test_photos,test_labels,val_photos,val_labels
 
+#Definition of the VGG16 model and changing the output layer according to our requirements.
+#i.e., 2 output classes
 def get_model():
     nb_classes = 2
     vgg16_model = VGG16(weights = 'imagenet', include_top = False)
@@ -87,12 +90,18 @@ def get_model():
     model.compile(optimizer = 'rmsprop',loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
     return model
 
+
 def main():
     train_photos,train_labels,test_photos,test_labels,val_photos,val_labels = get_data()
     model = get_model()
+    
     epochs=10
+    
+    #checkpoint file that saves the weights after each epoch - weights are overwritten to the same file
     checkpoint_file = 'checkpoint_file.hdf5'
     checkpoint = ModelCheckpoint(checkpoint_file, monitor='loss', verbose=1, mode='auto',save_weights_only = True, period=1)
+    
+    #using a csv log file to keep track of the number of epochs executed
     csv_logger = CSVLogger("model_history_log.csv", append=True)
 
     train_from_beginning = False
