@@ -1,0 +1,15 @@
+x-pegasus: {apiLang: python, createdBy: scitech, createdOn: '09-10-20T11:08:01Z'}
+pegasus: '5.0'
+name: checkpoint-wf
+jobs:
+- type: job
+  name: print_nums.py
+  id: ID0000001
+  stdout: output.txt
+  arguments: []
+  uses:
+  - {lfn: output.txt, type: output, stageOut: true, registerReplica: true}
+  - {lfn: saved_stated.txt, type: checkpoint, stageOut: true, registerReplica: true}
+  profiles:
+    pegasus: {checkpoint.time: 1, maxwalltime: 2}
+jobDependencies: []

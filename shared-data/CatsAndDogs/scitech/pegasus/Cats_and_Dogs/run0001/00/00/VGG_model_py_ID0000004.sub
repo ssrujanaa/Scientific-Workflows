@@ -5,7 +5,7 @@
 ######################################################################
 stream_error  = false
 stream_output = false
-environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=6bd9190f-af05-4d12-9a7d-a8ddcca21cc5 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=VGG_model_py_ID0000004 PEGASUS_SITE=condorpool"
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=f3cf816e-fbe7-4dba-8114-b1745340313a PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=VGG_model_py_ID0000004 PEGASUS_SITE=condorpool"
 +WantIOProxy = True
 error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001//00/00/VGG_model_py_ID0000004.err
 executable = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001/00/00/VGG_model_py_ID0000004.sh
@@ -24,11 +24,11 @@ transfer_output_files = checkpoint_file.hdf5,model_history_log.csv,model.h5
 universe = vanilla
 when_to_transfer_output = ON_EXIT
 +pegasus_generator = "Pegasus"
-+pegasus_root_wf_uuid = "6bd9190f-af05-4d12-9a7d-a8ddcca21cc5"
-+pegasus_wf_uuid = "6bd9190f-af05-4d12-9a7d-a8ddcca21cc5"
++pegasus_root_wf_uuid = "f3cf816e-fbe7-4dba-8114-b1745340313a"
++pegasus_wf_uuid = "f3cf816e-fbe7-4dba-8114-b1745340313a"
 +pegasus_version = "5.0.0dev"
 +pegasus_wf_name = "Cats_and_Dogs-0"
-+pegasus_wf_time = "20201001T093639+0000"
++pegasus_wf_time = "20201001T174430+0000"
 +pegasus_wf_xformation = "VGG_model.py"
 +pegasus_wf_dax_job_id = "ID0000004"
 +pegasus_wf_dag_job_id = "VGG_model_py_ID0000004"

@@ -1,30 +1,30 @@
 - invocation: True
   version: 3.0
-  start: 2020-10-01T02:37:42.237-07:00
-  duration: 14.196
+  start: 2020-10-01T10:45:30.233-07:00
+  duration: 14.152
   transformation: "pegasus::cleanup"
   derivation: "null"
   resource: "local"
   wf-label: "Cats_and_Dogs"
-  wf-stamp: "2020-10-01T09:36:39+00:00"
+  wf-stamp: "2020-10-01T17:44:29+00:00"
   interface: eth0
   hostaddr: 172.17.0.2
   hostname: 14dd9dda6556
-  pid: 67780
+  pid: 99410
   uid: 550
   user: scitech
   gid: 808
   group: scitech-group
   umask: 0o0022
   mainjob:
-    start: 2020-10-01T02:37:42.246-07:00
-    duration: 14.187
-    pid: 67784
+    start: 2020-10-01T10:45:30.240-07:00
+    duration: 14.145
+    pid: 99413
     usage:
-      utime: 0.154
-      stime: 0.095
-      maxrss: 17944
-      minflt: 28171
+      utime: 0.144
+      stime: 0.124
+      maxrss: 17864
+      minflt: 28236
       majflt: 0
       nswap: 0
       inblock: 16
@@ -32,8 +32,8 @@
       msgsnd: 0
       msgrcv: 0
       nsignals: 0
-      nvcsw: 624
-      nivcsw: 521
+      nvcsw: 632
+      nivcsw: 513
     status:
       raw: 0
       regular_exitcode: 0
@@ -55,13 +55,13 @@
     argument_vector:
     procs:
   jobids:
-    condor: 148.0
+    condor: 200.0
   cwd: /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0001
   usage:
-    utime: 0.004
+    utime: 0.003
     stime: 0.006
-    maxrss: 5384
-    minflt: 407
+    maxrss: 5436
+    minflt: 369
     majflt: 0
     nswap: 0
     inblock: 0
@@ -69,8 +69,8 @@
     msgsnd: 0
     msgrcv: 0
     nsignals: 0
-    nvcsw: 15
-    nivcsw: 21
+    nvcsw: 20
+    nivcsw: 36
   machine:
     page-size: 4096
     uname_system: linux
@@ -78,121 +78,121 @@
     uname_release: 4.19.76-linuxkit
     uname_machine: x86_64
     ram_total: 6092936
-    ram_free: 1555620
+    ram_free: 2363040
     ram_shared: 828
-    ram_buffer: 125856
+    ram_buffer: 143220
     swap_total: 1048572
     swap_free: 1048572
     cpu_count: 6
     cpu_speed: 2600
     cpu_vendor: GenuineIntel
     cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
-    load_min1: 0.70
-    load_min5: 0.71
-    load_min15: 0.64
+    load_min1: 1.06
+    load_min5: 0.87
+    load_min15: 0.85
     procs_total: 40
-    procs_running: 2
-    procs_sleeping: 32
-    procs_zombie: 5
-    procs_vmsize: 13239412
-    procs_rss: 2621076
-    task_total: 167
+    procs_running: 3
+    procs_sleeping: 25
+    procs_zombie: 11
+    procs_vmsize: 9107292
+    procs_rss: 1637668
+    task_total: 127
     task_running: 3
-    task_sleeping: 159
-    task_zombie: 5
+    task_sleeping: 113
+    task_zombie: 11
   files:
     stdin:
       descriptor_number: 0
       mode: 0o100644
       size: 4827
-      inode: 14544358
+      inode: 14572467
       nlink: 1
       blksize: 4096
       blocks: 16
-      mtime: 2020-10-01T02:36:40-07:00
-      atime: 2020-10-01T02:36:40-07:00
-      ctime: 2020-10-01T02:36:40-07:00
+      mtime: 2020-10-01T10:44:31-07:00
+      atime: 2020-10-01T10:44:31-07:00
+      ctime: 2020-10-01T10:44:31-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     stdout:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_67767/ks.out.wO15hE
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_99406/ks.out.2AZvuh
       descriptor: 3
       mode: 0o100600
       size: 3908
-      inode: 1603129
+      inode: 1603132
       nlink: 1
       blksize: 4096
       blocks: 8
-      mtime: 2020-10-01T02:37:56-07:00
-      atime: 2020-10-01T02:37:42-07:00
-      ctime: 2020-10-01T02:37:56-07:00
+      mtime: 2020-10-01T10:45:44-07:00
+      atime: 2020-10-01T10:45:30-07:00
+      ctime: 2020-10-01T10:45:44-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
       data_truncated: false
       data: |
-        2020-10-01 02:37:42,372    INFO:  Reading URL pairs from stdin
-        2020-10-01 02:37:42,374    INFO:  21 transfers loaded
-        2020-10-01 02:37:42,374    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
-        2020-10-01 02:37:42,374    INFO:  LD_LIBRARY_PATH=
-        2020-10-01 02:37:42,409    INFO:  --------------------------------------------------------------------------------
-        2020-10-01 02:37:42,409    INFO:  Starting transfers - attempt 1
-        2020-10-01 02:37:44,412    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat0.jpg' 
-        2020-10-01 02:37:44,422    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat1.jpg' 
-        2020-10-01 02:37:44,429    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat2.jpg' 
-        2020-10-01 02:37:44,438    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat4.jpg' 
-        2020-10-01 02:37:44,443    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat5.jpg' 
-        2020-10-01 02:37:44,452    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat6.jpg' 
-        2020-10-01 02:37:44,458    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat8.jpg' 
-        2020-10-01 02:37:44,467    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat9.jpg' 
-        2020-10-01 02:37:44,473    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog0.jpg' 
-        2020-10-01 02:37:44,482    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog2.jpg' 
-        2020-10-01 02:37:44,488    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog3.jpg' 
-        2020-10-01 02:37:44,498    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog4.jpg' 
-        2020-10-01 02:37:44,504    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog6.jpg' 
-        2020-10-01 02:37:44,513    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog7.jpg' 
-        2020-10-01 02:37:44,519    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog8.jpg' 
-        2020-10-01 02:37:44,528    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./preprocess1_py' 
-        2020-10-01 02:37:44,536    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat3.jpg' 
-        2020-10-01 02:37:44,544    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat7.jpg' 
-        2020-10-01 02:37:44,551    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog5.jpg' 
-        2020-10-01 02:37:44,562    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog9.jpg' 
-        2020-10-01 02:37:44,575    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog1.jpg' 
-        2020-10-01 02:37:56,415    INFO:  --------------------------------------------------------------------------------
-        2020-10-01 02:37:56,415    INFO:  Stats: no local files in the transfer set
-        2020-10-01 02:37:56,415    INFO:  All transfers completed successfully.
+        2020-10-01 10:45:30,356    INFO:  Reading URL pairs from stdin
+        2020-10-01 10:45:30,358    INFO:  21 transfers loaded
+        2020-10-01 10:45:30,358    INFO:  PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin
+        2020-10-01 10:45:30,358    INFO:  LD_LIBRARY_PATH=
+        2020-10-01 10:45:30,394    INFO:  --------------------------------------------------------------------------------
+        2020-10-01 10:45:30,394    INFO:  Starting transfers - attempt 1
+        2020-10-01 10:45:32,396    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat0.jpg' 
+        2020-10-01 10:45:32,407    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat1.jpg' 
+        2020-10-01 10:45:32,415    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat2.jpg' 
+        2020-10-01 10:45:32,424    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat4.jpg' 
+        2020-10-01 10:45:32,436    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat5.jpg' 
+        2020-10-01 10:45:32,448    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat6.jpg' 
+        2020-10-01 10:45:32,460    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat8.jpg' 
+        2020-10-01 10:45:32,473    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat9.jpg' 
+        2020-10-01 10:45:32,487    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog0.jpg' 
+        2020-10-01 10:45:32,511    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog2.jpg' 
+        2020-10-01 10:45:32,526    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog3.jpg' 
+        2020-10-01 10:45:32,541    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog4.jpg' 
+        2020-10-01 10:45:32,552    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog6.jpg' 
+        2020-10-01 10:45:32,559    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog7.jpg' 
+        2020-10-01 10:45:32,572    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog8.jpg' 
+        2020-10-01 10:45:32,582    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./preprocess1_py' 
+        2020-10-01 10:45:32,589    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat3.jpg' 
+        2020-10-01 10:45:32,600    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Cat7.jpg' 
+        2020-10-01 10:45:32,607    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog5.jpg' 
+        2020-10-01 10:45:32,618    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog9.jpg' 
+        2020-10-01 10:45:32,625    INFO:  /bin/rm -f '//home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0001/./Dog1.jpg' 
+        2020-10-01 10:45:44,375    INFO:  --------------------------------------------------------------------------------
+        2020-10-01 10:45:44,375    INFO:  Stats: no local files in the transfer set
+        2020-10-01 10:45:44,375    INFO:  All transfers completed successfully.
         
     stderr:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_67767/ks.err.WGfidQ
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_99406/ks.err.GZ2K85
       descriptor: 4
       mode: 0o100600
       size: 0
-      inode: 1603130
+      inode: 1603133
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-10-01T02:37:42-07:00
-      atime: 2020-10-01T02:37:42-07:00
-      ctime: 2020-10-01T02:37:42-07:00
+      mtime: 2020-10-01T10:45:30-07:00
+      atime: 2020-10-01T10:45:30-07:00
+      ctime: 2020-10-01T10:45:30-07:00
       uid: 550
       user: scitech
       gid: 808
       group: scitech-group
     metadata:
-      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_67767/ks.meta.0GKw81
+      temporary_name: /var/lib/condor/spool/local_univ_execute/dir_99406/ks.meta.eU22MU
       descriptor: 5
       mode: 0o100600
       size: 0
-      inode: 1603131
+      inode: 1603134
       nlink: 1
       blksize: 4096
       blocks: 0
-      mtime: 2020-10-01T02:37:42-07:00
-      atime: 2020-10-01T02:37:42-07:00
-      ctime: 2020-10-01T02:37:42-07:00
+      mtime: 2020-10-01T10:45:30-07:00
+      atime: 2020-10-01T10:45:30-07:00
+      ctime: 2020-10-01T10:45:30-07:00
       uid: 550
       user: scitech
       gid: 808

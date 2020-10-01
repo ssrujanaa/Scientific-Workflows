@@ -1,0 +1,22 @@
+# Rescue DAG file, created after running
+#   the Increment-0.dag DAG file
+# Created 7/12/2020 06:03:43 UTC
+# Rescue DAG version: 2.0.1 (partial)
+#
+# Total number of Nodes: 9
+# Nodes premarked DONE: 3
+# Nodes that failed: 1
+#   increment_py_ID0000001,<ENDLIST>
+
+DONE create_dir_Increment_0_local
+RETRY create_dir_Increment_0_local 2
+DONE stage_in_remote_local_0_0
+RETRY stage_in_remote_local_0_0 2
+DONE stage_in_local_local_0_0
+RETRY stage_in_local_local_0_0 2
+RETRY increment_py_ID0000001 2
+RETRY clean_up_local_level_3_0 2
+RETRY stage_out_local_local_0_0 2
+RETRY register_local_0_0 2
+RETRY clean_up_local_level_4_0 2
+RETRY cleanup_Increment_0_local 2

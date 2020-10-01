@@ -1,0 +1,518 @@
+- invocation: True
+  version: 3.0
+  start: 2020-09-23T21:39:50.133-07:00
+  duration: 32.541
+  transformation: "VGG_model.py"
+  derivation: "ID0000004"
+  resource: "condorpool"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-09-24T04:38:11+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: bb9d46431d29
+  pid: 57455
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-09-23T21:39:50.139-07:00
+    duration: 32.535
+    pid: 57456
+    usage:
+      utime: 31.178
+      stime: 1.185
+      maxrss: 642404
+      minflt: 387990
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 123368
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 1384
+      nivcsw: 18520
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_57034/VGG_model_py
+      mode: 0o100755
+      size: 2758
+      inode: 2784254
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-23T21:39:48-07:00
+      atime: 2020-09-23T21:39:49-07:00
+      ctime: 2020-09-23T21:39:49-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+    procs:
+  jobids:
+    condor: 154.0
+  cwd: /var/lib/condor/execute/dir_57034
+  usage:
+    utime: 0.002
+    stime: 0.004
+    maxrss: 2184
+    minflt: 351
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 0
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: bb9d46431d29
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 6092936
+    ram_free: 1747292
+    ram_shared: 828
+    ram_buffer: 225812
+    swap_total: 1048572
+    swap_free: 1048572
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 1.26
+    load_min5: 0.94
+    load_min15: 0.60
+    procs_total: 36
+    procs_running: 1
+    procs_sleeping: 29
+    procs_zombie: 6
+    procs_vmsize: 15891340
+    procs_rss: 2147900
+    task_total: 187
+    task_running: 1
+    task_sleeping: 180
+    task_zombie: 6
+  files:
+    model.h5:
+      lfn: "model.h5"
+      file_name: /var/lib/condor/execute/dir_57034/model.h5
+      mode: 0o100644
+      size: 63153536
+      inode: 2787224
+      nlink: 1
+      blksize: 4096
+      blocks: 123352
+      mtime: 2020-09-23T21:40:15-07:00
+      atime: 2020-09-23T21:40:15-07:00
+      ctime: 2020-09-23T21:40:15-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: a1c9f44db2c661ebadf2715cfe07264fe0249bad519d2a3f4faa71672461e4d3
+      checksum_timing: 0.31
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 18475
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-23T08:20:33-07:00
+      atime: 2020-09-23T08:20:33-07:00
+      ctime: 2020-09-23T08:20:33-07:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/execute/dir_57034/ks.out.P47fre
+      descriptor: 3
+      mode: 0o100600
+      size: 2402
+      inode: 2787218
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-23T21:40:22-07:00
+      atime: 2020-09-23T21:39:50-07:00
+      ctime: 2020-09-23T21:40:22-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 23s - loss: 16.1181 - acc: 0.0000e+00
+         4/42 [=>............................] - ETA: 20s - loss: 8.0673 - acc: 0.5000     
+         6/42 [===>..........................] - ETA: 18s - loss: 10.7509 - acc: 0.3333
+         8/42 [====>.........................] - ETA: 16s - loss: 10.0779 - acc: 0.3750
+        10/42 [======>.......................] - ETA: 15s - loss: 9.6742 - acc: 0.4000 
+        12/42 [=======>......................] - ETA: 14s - loss: 9.4050 - acc: 0.4167
+        14/42 [=========>....................] - ETA: 13s - loss: 8.0614 - acc: 0.5000
+        16/42 [==========>...................] - ETA: 12s - loss: 9.0685 - acc: 0.4375
+        18/42 [===========>..................] - ETA: 11s - loss: 9.8518 - acc: 0.3889
+        20/42 [=============>................] - ETA: 10s - loss: 9.6725 - acc: 0.4000
+        22/42 [==============>...............] - ETA: 9s - loss: 9.5258 - acc: 0.4091 
+        24/42 [================>.............] - ETA: 8s - loss: 8.7320 - acc: 0.4583
+        26/42 [=================>............] - ETA: 7s - loss: 8.6802 - acc: 0.4615
+        28/42 [===================>..........] - ETA: 6s - loss: 8.6359 - acc: 0.4643
+        30/42 [====================>.........] - ETA: 5s - loss: 8.0602 - acc: 0.5000
+        32/42 [=====================>........] - ETA: 4s - loss: 8.5638 - acc: 0.4688
+        34/42 [=======================>......] - ETA: 3s - loss: 8.0600 - acc: 0.5000
+        36/42 [========================>.....] - ETA: 2s - loss: 8.0600 - acc: 0.5000
+        38/42 [==========================>...] - ETA: 1s - loss: 8.0599 - acc: 0.5000
+        40/42 [===========================>..] - ETA: 0s - loss: 8.4628 - acc: 0.4750
+        42/42 [==============================] - 23s 556ms/step - loss: 8.0598 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+         1/12 [=>............................] - ETA: 5s
+         2/12 [====>.........................] - ETA: 5s
+         3/12 [======>.......................] - ETA: 4s
+         4/12 [=========>....................] - ETA: 3s
+         5/12 [===========>..................] - ETA: 3s
+         6/12 [==============>...............] - ETA: 2s
+         7/12 [================>.............] - ETA: 2s
+         8/12 [===================>..........] - ETA: 1s
+         9/12 [=====================>........] - ETA: 1s
+        10/12 [========================>.....] - ETA: 0s
+        11/12 [==========================>...] - ETA: 0s
+        12/12 [==============================] - 6s 485ms/step
+        Test Loss: 8.05904775857925
+        Test Accuracy: 0.5
+        
+    stderr:
+      temporary_name: /var/lib/condor/execute/dir_57034/ks.err.kfcn97
+      descriptor: 4
+      mode: 0o100600
+      size: 3112
+      inode: 2787221
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-09-23T21:39:52-07:00
+      atime: 2020-09-23T21:39:50-07:00
+      ctime: 2020-09-23T21:39:52-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        Using TensorFlow backend.
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          np_resource = np.dtype([("resource", np.ubyte, 1)])
+        WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+        Instructions for updating:
+        Colocations handled automatically by placer.
+        2020-09-23 21:39:51.792714: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+        2020-09-23 21:39:51.797891: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2592000000 Hz
+        2020-09-23 21:39:51.798693: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x477f940 executing computations on platform Host. Devices:
+        2020-09-23 21:39:51.798728: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+        ./VGG_model_py:81: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=Tensor("in..., outputs=Tensor("de...)`
+          model = Model(input = vgg16_model.input, output = predictions)
+        WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+        Instructions for updating:
+        Use tf.cast instead.
+        
+    metadata:
+      temporary_name: /var/lib/condor/execute/dir_57034/ks.meta.lOzuR1
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 2787222
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-09-23T21:39:50-07:00
+      atime: 2020-09-23T21:39:50-07:00
+      ctime: 2020-09-23T21:39:50-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "Aug_resized_Cat6_1.jpg"
+    pfn: "Aug_resized_Cat6_1.jpg"
+    sha256: 735d13f283f357f2712d15faaf5ee1144033c62045ff0e8b420fe17408f2bc4e
+    success: True
+  - lfn: "Aug_resized_Dog4_2.jpg"
+    pfn: "Aug_resized_Dog4_2.jpg"
+    sha256: 40e3fe21f3e33f9ec8b03dde269150b054c126377f7d8692115d15e507570f78
+    success: True
+  - lfn: "Aug_resized_Cat3_0.jpg"
+    pfn: "Aug_resized_Cat3_0.jpg"
+    sha256: 72b6dc2c8d32cb13aa478ee6abfff53ae2fb80ca15b7cfa988c6a79c504d82f7
+    success: True
+  - lfn: "Aug_resized_Cat9_2.jpg"
+    pfn: "Aug_resized_Cat9_2.jpg"
+    sha256: 62693c22acbd4bbae09447091eb6d6b5c8f76c644a847d315a4c895dff7343e1
+    success: True
+  - lfn: "Aug_resized_Cat2_2.jpg"
+    pfn: "Aug_resized_Cat2_2.jpg"
+    sha256: a2a6f5ac1982de875bc2f28e2bfdd0c39bf30c2e3c0932da96d7b81553f5c70f
+    success: True
+  - lfn: "Aug_resized_Dog1_1.jpg"
+    pfn: "Aug_resized_Dog1_1.jpg"
+    sha256: 28c69785f819c32a82ee0975c53212b4d5ac1b81f52c21fb35fe2bfb1137b659
+    success: True
+  - lfn: "Aug_resized_Dog8_0.jpg"
+    pfn: "Aug_resized_Dog8_0.jpg"
+    sha256: a6657b7b083408ab2e19313b39be77db218c5611d6751af7e174be7ea33b183d
+    success: True
+  - lfn: "Aug_resized_Cat6_0.jpg"
+    pfn: "Aug_resized_Cat6_0.jpg"
+    sha256: 66c3eb8910453278a5a956d9460586645a9c3a9dbb6cfb62233d35e9278c4946
+    success: True
+  - lfn: "Aug_resized_Cat6_2.jpg"
+    pfn: "Aug_resized_Cat6_2.jpg"
+    sha256: 283cefd0823d4083706b852c27a80bea35d7ebc2a50a143d7c6fd5dc2e8af6ca
+    success: True
+  - lfn: "Aug_resized_Dog7_2.jpg"
+    pfn: "Aug_resized_Dog7_2.jpg"
+    sha256: fb64d3c4809b113ddb32bae3f0c50c9eeed1c57c816f336000ab7558f32168e4
+    success: True
+  - lfn: "Aug_resized_Dog4_1.jpg"
+    pfn: "Aug_resized_Dog4_1.jpg"
+    sha256: 42f62a728cd61d50ffd85f2d2cdc0f39281e6853c1b22d1d5d7b946f604006dc
+    success: True
+  - lfn: "Aug_resized_Dog0_2.jpg"
+    pfn: "Aug_resized_Dog0_2.jpg"
+    sha256: b48711969f588814767f8c61f14691f7a573f433c41df35025c42369257b131f
+    success: True
+  - lfn: "Aug_resized_Cat7_0.jpg"
+    pfn: "Aug_resized_Cat7_0.jpg"
+    sha256: 6b907cc4bf30528eaed4c84ec48aa5bc3b4d812f34a518ec01d43dd840199bcd
+    success: True
+  - lfn: "Aug_resized_Cat2_1.jpg"
+    pfn: "Aug_resized_Cat2_1.jpg"
+    sha256: c92213f3dd11e23243754a8d6c75b4c877098c3d12bd02566e50d3d72d47e84b
+    success: True
+  - lfn: "validation.pkl"
+    pfn: "validation.pkl"
+    sha256: 67decf2c7c82dbafdc5f6881d7b2b2b014f07216b145596311bf156d8ad83a62
+    success: True
+  - lfn: "Aug_resized_Dog1_0.jpg"
+    pfn: "Aug_resized_Dog1_0.jpg"
+    sha256: fc9a1e45990e02b06d5a75ca9b4333031bed4bcbcb6ed3dd3948dbbdde958772
+    success: True
+  - lfn: "Aug_resized_Dog9_0.jpg"
+    pfn: "Aug_resized_Dog9_0.jpg"
+    sha256: b834ffe10c28b44fb3de7257c0c832382465f12ba977e30828ad7b948a26bd4c
+    success: True
+  - lfn: "Aug_resized_Cat2_0.jpg"
+    pfn: "Aug_resized_Cat2_0.jpg"
+    sha256: ab9daad9f4d751a93b1995ef2a9f01d1e7a4bb08babd17e0b150be3c1e3b1b53
+    success: True
+  - lfn: "Aug_resized_Dog2_0.jpg"
+    pfn: "Aug_resized_Dog2_0.jpg"
+    sha256: 3f5ba1edbab3c9fa508376e05fccacbdea8d27b2661d381150524ea2f534690d
+    success: True
+  - lfn: "Aug_resized_Cat5_1.jpg"
+    pfn: "Aug_resized_Cat5_1.jpg"
+    sha256: efd3b1dba6c6dbfe1da2f8a3f630c87a0537dee213f59334bddb72d3840d6536
+    success: True
+  - lfn: "Aug_resized_Cat7_1.jpg"
+    pfn: "Aug_resized_Cat7_1.jpg"
+    sha256: e54246f047cf9fcf47f5f0d6a000daab667fd38d6c4e10021f44eec599c4975c
+    success: True
+  - lfn: "Aug_resized_Dog2_1.jpg"
+    pfn: "Aug_resized_Dog2_1.jpg"
+    sha256: cf450d73090c5b98ca236d1ea5b89341f1c34bc835d1ecc07492bc71dc7b1d7c
+    success: True
+  - lfn: "Aug_resized_Dog5_1.jpg"
+    pfn: "Aug_resized_Dog5_1.jpg"
+    sha256: 09c59ff2ef66b7459af8178e40199f9866d00ddc41aa7500d1b3044df6402287
+    success: True
+  - lfn: "Aug_resized_Dog8_2.jpg"
+    pfn: "Aug_resized_Dog8_2.jpg"
+    sha256: 7a968c3445f8c9c30899c894879b26f5123ee0ae6cfef2f16e7e7a2440d3efc4
+    success: True
+  - lfn: "VGG_model_py"
+    pfn: "VGG_model_py"
+    sha256: 1c2b189d1f4103591cbcc825104a5df0810dfff714aeb2319c6440a0428218df
+    success: True
+  - lfn: "Aug_resized_Dog1_2.jpg"
+    pfn: "Aug_resized_Dog1_2.jpg"
+    sha256: b9b3df9593973adbd8bc44250a6bb1ae1eff61520cf5169a9adab2c6ae41bf8a
+    success: True
+  - lfn: "Aug_resized_Cat1_2.jpg"
+    pfn: "Aug_resized_Cat1_2.jpg"
+    sha256: 8f1250917c8a9eb06c068ab81842c92fa4a934776e7625c37489d2faffc859b7
+    success: True
+  - lfn: "testing.pkl"
+    pfn: "testing.pkl"
+    sha256: 1edc7005a0527004fa4ba057a977c11e905f4440176ed2cd07a4b7e0a2d5bc14
+    success: True
+  - lfn: "Aug_resized_Cat5_0.jpg"
+    pfn: "Aug_resized_Cat5_0.jpg"
+    sha256: 13ee402e2c6e0b3746c5534a98e8d72b3a38aa02bc311da4a1d7eb9fbb4319b8
+    success: True
+  - lfn: "Aug_resized_Cat7_2.jpg"
+    pfn: "Aug_resized_Cat7_2.jpg"
+    sha256: fd09789e36c92cac60ccffba7f9262c583c302d6a684e53ce107173f192ce009
+    success: True
+  - lfn: "Aug_resized_Dog8_1.jpg"
+    pfn: "Aug_resized_Dog8_1.jpg"
+    sha256: 595ab07402711e37da8a254cf4c5c1e6d05a4277641004b0802014b20730a4ca
+    success: True
+  - lfn: "Aug_resized_Cat1_1.jpg"
+    pfn: "Aug_resized_Cat1_1.jpg"
+    sha256: 6224ebf01f6ee0bf53469248c13945e3345f87dfd5d73e8333e322d5be8dbb96
+    success: True
+  - lfn: "Aug_resized_Dog5_0.jpg"
+    pfn: "Aug_resized_Dog5_0.jpg"
+    sha256: 8ca225c3e558df15c0bc83578e17bb16e4461aec6c80a2388dcbc166b496a4a7
+    success: True
+  - lfn: "Aug_resized_Cat4_2.jpg"
+    pfn: "Aug_resized_Cat4_2.jpg"
+    sha256: 9d916730a2ae1caadba8a2480d4d0e3a02b83f3448281aca2ce9129a05a20fd8
+    success: True
+  - lfn: "Aug_resized_Cat8_0.jpg"
+    pfn: "Aug_resized_Cat8_0.jpg"
+    sha256: 966d9794ec6b571a7d52e5beb9707d3d314fc7e961215a58e273146fa92ce790
+    success: True
+  - lfn: "Aug_resized_Dog3_0.jpg"
+    pfn: "Aug_resized_Dog3_0.jpg"
+    sha256: a23e2d84424685a1d8b6eb30b27769ed2aabd5453797a1eff266e764aefde7e2
+    success: True
+  - lfn: "Aug_resized_Dog6_1.jpg"
+    pfn: "Aug_resized_Dog6_1.jpg"
+    sha256: cd6ebe97573c4c4f56bef8e59521d0c6a744153dcfe6599045908a7b59d34c69
+    success: True
+  - lfn: "Aug_resized_Dog9_2.jpg"
+    pfn: "Aug_resized_Dog9_2.jpg"
+    sha256: 66a5cfc0eb5ef9c3ff7faf09cc968b485e2032901de6772bbded437cf6eff26f
+    success: True
+  - lfn: "Aug_resized_Cat1_0.jpg"
+    pfn: "Aug_resized_Cat1_0.jpg"
+    sha256: 6df0ea0caf2d13df267aace805edcc82e608f1a00b376eb75f463608eebd18f2
+    success: True
+  - lfn: "Aug_resized_Cat4_1.jpg"
+    pfn: "Aug_resized_Cat4_1.jpg"
+    sha256: f3bb1321eff3fabda6e97cee218020b50f55b8668d24ff2693f409beb2306d9f
+    success: True
+  - lfn: "Aug_resized_Cat8_1.jpg"
+    pfn: "Aug_resized_Cat8_1.jpg"
+    sha256: ff9a619e733ec1fd9dc47e2d1fbcb347651019941c9b95846696bf0014405591
+    success: True
+  - lfn: "Aug_resized_Cat0_2.jpg"
+    pfn: "Aug_resized_Cat0_2.jpg"
+    sha256: 0629c423bc9981ce877c39ef60ce4ab7e647e7103602b86a526c43ab52aa9400
+    success: True
+  - lfn: "Aug_resized_Dog6_0.jpg"
+    pfn: "Aug_resized_Dog6_0.jpg"
+    sha256: 67b16b72df3376ae3418da717ba65982bd007b02800dd1e0f93b587fcc67c2ba
+    success: True
+  - lfn: "Aug_resized_Dog9_1.jpg"
+    pfn: "Aug_resized_Dog9_1.jpg"
+    sha256: a7ac9278ea829e47cff285559ce159231f98d311a4fa88c50106ec2e656989a4
+    success: True
+  - lfn: "Aug_resized_Cat4_0.jpg"
+    pfn: "Aug_resized_Cat4_0.jpg"
+    sha256: 9bc96d2facdfa37c86231b9b00fdede0ce06cc27f7de79e6ba69f23001353453
+    success: True
+  - lfn: "Aug_resized_Cat8_2.jpg"
+    pfn: "Aug_resized_Cat8_2.jpg"
+    sha256: ed9b6a387e8198125d0e14a7d6df23eaac5e2eb59a09199ae42b9d77abd83b07
+    success: True
+  - lfn: "Aug_resized_Dog5_2.jpg"
+    pfn: "Aug_resized_Dog5_2.jpg"
+    sha256: 21423a2e4d12060b04086a0a93a67ac1ad4316c4b8cc0149c86005da1b03328a
+    success: True
+  - lfn: "Aug_resized_Dog2_2.jpg"
+    pfn: "Aug_resized_Dog2_2.jpg"
+    sha256: 66dba345be42276311adffa364c4bc85bd06f2b33f17142fde2568f933b22555
+    success: True
+  - lfn: "training.pkl"
+    pfn: "training.pkl"
+    sha256: a096ae3f32d791b4f718271caf5c0c3f45d4f731fa13356185895d5454460f58
+    success: True
+  - lfn: "Aug_resized_Cat0_1.jpg"
+    pfn: "Aug_resized_Cat0_1.jpg"
+    sha256: 15eeb78db272f2eae917e08eead35868e5562ecb2d7c07c827df669eeaa1efa8
+    success: True
+  - lfn: "Aug_resized_Dog7_1.jpg"
+    pfn: "Aug_resized_Dog7_1.jpg"
+    sha256: c6f86643f83e2615e89e80dfa3c7166eb395c5f7f280ce8c9497b3596905100b
+    success: True
+  - lfn: "Aug_resized_Cat3_2.jpg"
+    pfn: "Aug_resized_Cat3_2.jpg"
+    sha256: dc69dd08e25e3cd9fdd3242b765e7cd7ec3aa0c35cd7a7b802fa1c15ddc61f0d
+    success: True
+  - lfn: "Aug_resized_Dog0_1.jpg"
+    pfn: "Aug_resized_Dog0_1.jpg"
+    sha256: b9826b21e8eb4dfc9c77e7428eb0ee1b691b5bafa85368ae6f4b6dafbcac245d
+    success: True
+  - lfn: "Aug_resized_Cat9_0.jpg"
+    pfn: "Aug_resized_Cat9_0.jpg"
+    sha256: f3129d1e8a69f58f7593472d24918d5dc25be0c6d08da598cd7a3474af08c177
+    success: True
+  - lfn: "Aug_resized_Cat5_2.jpg"
+    pfn: "Aug_resized_Cat5_2.jpg"
+    sha256: 8509efbf6e758b36220337a07454b077044d3cd6066a68b701a0a194bea284a7
+    success: True
+  - lfn: "Aug_resized_Dog4_0.jpg"
+    pfn: "Aug_resized_Dog4_0.jpg"
+    sha256: 00e7deceedd3fa0c5eba80a98da55a39251efe16dd5c5da80f68e3fe9eab63ac
+    success: True
+  - lfn: "Aug_resized_Dog7_0.jpg"
+    pfn: "Aug_resized_Dog7_0.jpg"
+    sha256: 728d683f2dad849319c3a5d1cc802296de286301a605b5fcd16fe19ffaf126b3
+    success: True
+  - lfn: "Aug_resized_Dog3_2.jpg"
+    pfn: "Aug_resized_Dog3_2.jpg"
+    sha256: 2d102948c89e70bd753e8cb8c3e838debc12d5bd3362690792561ce9c1dd95fa
+    success: True
+  - lfn: "Aug_resized_Cat3_1.jpg"
+    pfn: "Aug_resized_Cat3_1.jpg"
+    sha256: 0e02827fbf4feec633f701dd5464f6ddd3920dd3ed7d17bed69d77f2f120f414
+    success: True
+  - lfn: "Aug_resized_Cat9_1.jpg"
+    pfn: "Aug_resized_Cat9_1.jpg"
+    sha256: 2dc273492124ea386d2e9fb6df9b1d2ff1e02bb7f54ab01a29ae7dd8b454c7e3
+    success: True
+  - lfn: "Aug_resized_Dog3_1.jpg"
+    pfn: "Aug_resized_Dog3_1.jpg"
+    sha256: f401719c689be57848b989dbfbaff4a793d6822b1ea97c20d2479cb12a550f0e
+    success: True
+  - lfn: "Aug_resized_Cat0_0.jpg"
+    pfn: "Aug_resized_Cat0_0.jpg"
+    sha256: 225fb2871f171db27ca5a247bc4cd4a7bba95d04c923faa0913b76f3b844e670
+    success: True
+  - lfn: "Aug_resized_Dog0_0.jpg"
+    pfn: "Aug_resized_Dog0_0.jpg"
+    sha256: 77d90b7a969ebdb9ad84c96e8d1538b23d6c78822ee02a279009092999adedf1
+    success: True
+  - lfn: "Aug_resized_Dog6_2.jpg"
+    pfn: "Aug_resized_Dog6_2.jpg"
+    sha256: 70ef11bc171f1ea158d364a4f373d34244eb6cc40049f922887416633fcdff19
+    success: True
+- integrity_summary:
+    succeeded: 64
+    failed: 0
+    duration: 0.304

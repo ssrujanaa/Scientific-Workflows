@@ -1,0 +1,43 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : Cats_and_Dogs, Index = 0, Count = null
+# SUBMIT FILE NAME : Augmentation_py_ID0000002.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=cd43a180-df43-46dc-8e3b-03818eab8aa2 PEGASUS_WF_LABEL=Cats_and_Dogs PEGASUS_DAG_JOB_ID=Augmentation_py_ID0000002 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0011//00/00/Augmentation_py_ID0000002.err
+executable = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0011/00/00/Augmentation_py_ID0000002.sh
+initialdir = /home/scitech/shared-data/CatsAndDogs/wf-scratch/LOCAL/scitech/pegasus/Cats_and_Dogs/run0011
+log = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0011/Cats_and_Dogs-0.log
+notification = NEVER
+output = /home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0011//00/00/Augmentation_py_ID0000002.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 30
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = resized_Dog9.jpg,resized_Cat8.jpg,resized_Dog2.jpg,resized_Cat6.jpg,resized_Dog0.jpg,labels.txt,resized_Cat0.jpg,resized_Cat2.jpg,resized_Dog4.jpg,resized_Dog8.jpg,resized_Cat4.jpg,resized_Dog6.jpg,resized_Dog3.jpg,resized_Cat9.jpg,resized_Cat1.jpg,resized_Dog1.jpg,resized_Cat7.jpg,resized_Cat5.jpg,resized_Dog5.jpg,Augmentation_py,resized_Dog7.jpg,resized_Cat3.jpg,/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0011/00/00/stage_in_remote_local_1_0.meta,/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0011/00/00/preprocess1_py_ID0000001.meta,/home/scitech/pegasus/dist/pegasus-5.0.0dev/share/pegasus/sh/pegasus-lite-common.sh,/home/scitech/shared-data/CatsAndDogs/scitech/pegasus/Cats_and_Dogs/run0011/pegasus-worker-5.0.0dev-x86_64_rhel_7.tar.gz
+transfer_output_files = Aug_resized_Dog4_2.jpg,Aug_resized_Cat6_1.jpg,Aug_resized_Cat3_0.jpg,Aug_resized_Cat9_2.jpg,Aug_resized_Cat2_2.jpg,Aug_resized_Dog1_1.jpg,Aug_resized_Dog8_0.jpg,Aug_resized_Cat6_0.jpg,Aug_resized_Cat6_2.jpg,Aug_resized_Dog7_2.jpg,Aug_resized_Dog4_1.jpg,Aug_resized_Dog0_2.jpg,Aug_resized_Cat7_0.jpg,Aug_resized_Cat2_1.jpg,Aug_resized_Dog1_0.jpg,Aug_resized_Dog9_0.jpg,Aug_resized_Cat2_0.jpg,Aug_resized_Dog2_0.jpg,Aug_resized_Cat5_1.jpg,Aug_resized_Cat7_1.jpg,Aug_resized_Dog2_1.jpg,Aug_resized_Dog5_1.jpg,augmentation.txt,Aug_resized_Dog8_2.jpg,Aug_resized_Dog1_2.jpg,Aug_resized_Cat1_2.jpg,Aug_resized_Cat5_0.jpg,Aug_resized_Cat7_2.jpg,Aug_resized_Dog8_1.jpg,Aug_resized_Cat1_1.jpg,Aug_resized_Dog5_0.jpg,Aug_resized_Cat4_2.jpg,Aug_resized_Cat8_0.jpg,Aug_resized_Dog3_0.jpg,Aug_resized_Dog6_1.jpg,Aug_resized_Dog9_2.jpg,Aug_resized_Cat1_0.jpg,Aug_resized_Cat4_1.jpg,Aug_resized_Cat8_1.jpg,Aug_resized_Cat0_2.jpg,Aug_resized_Dog6_0.jpg,Aug_resized_Dog9_1.jpg,Aug_resized_Cat4_0.jpg,Aug_resized_Cat8_2.jpg,Aug_resized_Dog5_2.jpg,Aug_resized_Dog2_2.jpg,Aug_resized_Cat0_1.jpg,aug_labels.txt,Aug_resized_Dog7_1.jpg,Aug_resized_Cat3_2.jpg,Aug_resized_Dog0_1.jpg,Aug_resized_Cat9_0.jpg,Aug_resized_Cat5_2.jpg,Aug_resized_Dog4_0.jpg,Aug_resized_Dog7_0.jpg,Aug_resized_Dog3_2.jpg,Aug_resized_Cat3_1.jpg,Aug_resized_Cat9_1.jpg,Aug_resized_Dog3_1.jpg,Aug_resized_Cat0_0.jpg,Aug_resized_Dog0_0.jpg,Aug_resized_Dog6_2.jpg
+universe = vanilla
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "cd43a180-df43-46dc-8e3b-03818eab8aa2"
++pegasus_wf_uuid = "cd43a180-df43-46dc-8e3b-03818eab8aa2"
++pegasus_version = "5.0.0dev"
++pegasus_wf_name = "Cats_and_Dogs-0"
++pegasus_wf_time = "20200924T051634+0000"
++pegasus_wf_xformation = "Augmentation.py"
++pegasus_wf_dax_job_id = "ID0000002"
++pegasus_wf_dag_job_id = "Augmentation_py_ID0000002"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################
