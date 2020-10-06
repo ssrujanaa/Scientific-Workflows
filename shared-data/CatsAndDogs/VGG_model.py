@@ -20,6 +20,7 @@ import traceback
 from keras.applications.vgg16 import VGG16
 from keras.models import Model,load_model
 import pandas as pd
+import h5py
 
 #get training, testing and validation data from the saved pickle files.
 def get_data():
@@ -98,26 +99,34 @@ def main():
     epochs=10
     
     #checkpoint file that saves the weights after each epoch - weights are overwritten to the same file
-    checkpoint_file = 'checkpoint_file.hdf5'
+    checkpoint_file = 'checkpoint_file2.hdf5'
     checkpoint = ModelCheckpoint(checkpoint_file, monitor='loss', verbose=1, mode='auto',save_weights_only = True, period=1)
     
-    #using a csv log file to keep track of the number of epochs executed
-    csv_logger = CSVLogger("model_history_log.csv", append=True)
-
     train_from_beginning = False
     try:
-        model.load_weights("checkpoint_file.hdf5")
-        df1 =  pd.read_csv("model_history_log.csv") 
+        model.load_weights("checkpoint_file2.hdf5",skip_mismatch=True)
+        with h5py.File('checkpoint_file2.hdf5', "r+") as file:
+            data = file.get('epochs')[...].tolist()
+        initial_epoch = data
         model.compile(optimizer = 'rmsprop',loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
-        model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=epochs, initial_epoch = len(df1['epoch']),
-                           verbose=1,validation_data=(val_photos,val_labels), callbacks = [checkpoint,csv_logger])
+        for i in range(initial_epoch,epochs):
+#             print(i)
+            model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=1, verbose=1,
+                      validation_data=(val_photos,val_labels), callbacks = [checkpoint])
+            checkpoint = ModelCheckpoint(checkpoint_file, monitor='loss', verbose=1, mode='auto',save_weights_only = True, period=1)
+            with h5py.File('checkpoint_file2.hdf5', "a") as file:
+                file['epochs'] = i
     except OSError:
         train_from_beginning = True
 
     if train_from_beginning:
         model.compile(optimizer = 'rmsprop',loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
-        model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=epochs, 
-                           verbose=1,validation_data=(val_photos,val_labels), callbacks = [checkpoint,csv_logger])
+        for i in range(epochs):
+            model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=1, 
+                           verbose=1,validation_data=(val_photos,val_labels), callbacks = [checkpoint])
+            checkpoint = ModelCheckpoint(checkpoint_file, monitor='loss', verbose=1, mode='auto',save_weights_only = True, period=1)
+            with h5py.File('checkpoint_file2.hdf5', "a") as file:
+                file['epochs']=i
 
     model.save('model.h5')
     return 0

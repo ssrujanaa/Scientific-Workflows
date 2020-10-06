@@ -1,0 +1,758 @@
+- invocation: True
+  version: 3.0
+  start: 2020-10-06T09:18:35.815-07:00
+  duration: 232.943
+  transformation: "VGG_model.py"
+  derivation: "ID0000004"
+  resource: "condorpool"
+  wf-label: "Cats_and_Dogs"
+  wf-stamp: "2020-10-06T16:16:48+00:00"
+  interface: eth0
+  hostaddr: 172.17.0.2
+  hostname: ce686b29b9b6
+  pid: 22888
+  uid: 550
+  user: scitech
+  gid: 808
+  group: scitech-group
+  umask: 0o0022
+  mainjob:
+    start: 2020-10-06T09:18:35.820-07:00
+    duration: 232.938
+    pid: 22891
+    usage:
+      utime: 225.323
+      stime: 6.119
+      maxrss: 476320
+      minflt: 2497243
+      majflt: 0
+      nswap: 0
+      inblock: 8
+      outblock: 1315776
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 8847
+      nivcsw: 106376
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_22436/VGG_model_py
+      mode: 0o100755
+      size: 5073
+      inode: 25648
+      nlink: 1
+      blksize: 4096
+      blocks: 16
+      mtime: 2020-10-06T09:18:34-07:00
+      atime: 2020-10-06T09:18:35-07:00
+      ctime: 2020-10-06T09:18:35-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+    argument_vector:
+    procs:
+  jobids:
+    condor: 65.0
+  cwd: /var/lib/condor/execute/dir_22436
+  usage:
+    utime: 0.002
+    stime: 0.003
+    maxrss: 2260
+    minflt: 301
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 1
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: ce686b29b9b6
+    uname_release: 4.19.76-linuxkit
+    uname_machine: x86_64
+    ram_total: 6092936
+    ram_free: 1561804
+    ram_shared: 828
+    ram_buffer: 159952
+    swap_total: 1048572
+    swap_free: 1048572
+    cpu_count: 6
+    cpu_speed: 2600
+    cpu_vendor: GenuineIntel
+    cpu_model: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+    load_min1: 1.02
+    load_min5: 0.88
+    load_min15: 0.68
+    procs_total: 36
+    procs_running: 1
+    procs_sleeping: 32
+    procs_zombie: 2
+    procs_vmsize: 11902524
+    procs_rss: 2353584
+    task_total: 137
+    task_running: 1
+    task_sleeping: 134
+    task_zombie: 2
+  files:
+    checkpoint_file2.hdf5:
+      lfn: "checkpoint_file2.hdf5"
+      file_name: /var/lib/condor/execute/dir_22436/checkpoint_file2.hdf5
+      mode: 0o100644
+      size: 61028480
+      inode: 25616
+      nlink: 1
+      blksize: 4096
+      blocks: 119200
+      mtime: 2020-10-06T09:22:28-07:00
+      atime: 2020-10-06T09:22:28-07:00
+      ctime: 2020-10-06T09:22:28-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: 55a9bcf3505c4f27d264d8eb12a357b3d56faee4854b361689d9b58c8ae77f28
+      checksum_timing: 0.30
+    model.h5:
+      lfn: "model.h5"
+      file_name: /var/lib/condor/execute/dir_22436/model.h5
+      mode: 0o100644
+      size: 63153536
+      inode: 26448
+      nlink: 1
+      blksize: 4096
+      blocks: 123352
+      mtime: 2020-10-06T09:22:28-07:00
+      atime: 2020-10-06T09:22:28-07:00
+      ctime: 2020-10-06T09:22:28-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      output: True
+      sha256: 40a99e5806faf5d21f08a2c1de2ea460f70c7552daf65a66472183c1ffd581cb
+      checksum_timing: 0.31
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 106076
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-10-06T07:19:28-07:00
+      atime: 2020-10-06T07:19:28-07:00
+      ctime: 2020-10-06T07:19:28-07:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/execute/dir_22436/ks.out.dvLv0c
+      descriptor: 3
+      mode: 0o100600
+      size: 18041
+      inode: 26454
+      nlink: 1
+      blksize: 4096
+      blocks: 48
+      mtime: 2020-10-06T09:22:28-07:00
+      atime: 2020-10-06T09:18:35-07:00
+      ctime: 2020-10-06T09:22:28-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 23s - loss: 0.5105 - acc: 0.5000
+         4/42 [=>............................] - ETA: 22s - loss: 0.2552 - acc: 0.7500
+         6/42 [===>..........................] - ETA: 19s - loss: 2.8565 - acc: 0.6667
+         8/42 [====>.........................] - ETA: 18s - loss: 6.1719 - acc: 0.5000
+        10/42 [======>.......................] - ETA: 16s - loss: 6.5493 - acc: 0.5000
+        12/42 [=======>......................] - ETA: 15s - loss: 6.8009 - acc: 0.5000
+        14/42 [=========>....................] - ETA: 14s - loss: 5.8294 - acc: 0.5714
+        16/42 [==========>...................] - ETA: 13s - loss: 5.1007 - acc: 0.6250
+        18/42 [===========>..................] - ETA: 12s - loss: 5.4294 - acc: 0.6111
+        20/42 [=============>................] - ETA: 11s - loss: 6.4983 - acc: 0.5500
+        22/42 [==============>...............] - ETA: 9s - loss: 7.3728 - acc: 0.5000 
+        24/42 [================>.............] - ETA: 8s - loss: 7.4300 - acc: 0.5000
+        26/42 [=================>............] - ETA: 7s - loss: 6.8585 - acc: 0.5385
+        28/42 [===================>..........] - ETA: 6s - loss: 7.5199 - acc: 0.5000
+        30/42 [====================>.........] - ETA: 5s - loss: 7.0185 - acc: 0.5333
+        32/42 [=====================>........] - ETA: 4s - loss: 7.5873 - acc: 0.5000
+        34/42 [=======================>......] - ETA: 3s - loss: 8.0891 - acc: 0.4706
+        36/42 [========================>.....] - ETA: 2s - loss: 8.0874 - acc: 0.4722
+        38/42 [==========================>...] - ETA: 1s - loss: 8.0859 - acc: 0.4737
+        40/42 [===========================>..] - ETA: 0s - loss: 7.6816 - acc: 0.5000
+        42/42 [==============================] - 23s 557ms/step - loss: 8.0834 - acc: 0.4762 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 19s - loss: 1.1921e-07 - acc: 1.0000
+         4/42 [=>............................] - ETA: 18s - loss: 1.1921e-07 - acc: 1.0000
+         6/42 [===>..........................] - ETA: 16s - loss: 2.6863 - acc: 0.8333    
+         8/42 [====>.........................] - ETA: 15s - loss: 4.0295 - acc: 0.7500
+        10/42 [======>.......................] - ETA: 15s - loss: 4.8354 - acc: 0.7000
+        12/42 [=======>......................] - ETA: 14s - loss: 6.7159 - acc: 0.5833
+        14/42 [=========>....................] - ETA: 13s - loss: 8.0590 - acc: 0.5000
+        16/42 [==========>...................] - ETA: 12s - loss: 9.0664 - acc: 0.4375
+        18/42 [===========>..................] - ETA: 11s - loss: 8.9545 - acc: 0.4444
+        20/42 [=============>................] - ETA: 10s - loss: 8.8650 - acc: 0.4500
+        22/42 [==============>...............] - ETA: 9s - loss: 9.5243 - acc: 0.4091 
+        24/42 [================>.............] - ETA: 8s - loss: 9.4022 - acc: 0.4167
+        26/42 [=================>............] - ETA: 7s - loss: 8.6790 - acc: 0.4615
+        28/42 [===================>..........] - ETA: 6s - loss: 9.2103 - acc: 0.4286
+        30/42 [====================>.........] - ETA: 5s - loss: 9.1336 - acc: 0.4333
+        32/42 [=====================>........] - ETA: 4s - loss: 9.0664 - acc: 0.4375
+        34/42 [=======================>......] - ETA: 3s - loss: 8.5331 - acc: 0.4706
+        36/42 [========================>.....] - ETA: 2s - loss: 8.0590 - acc: 0.5000
+        38/42 [==========================>...] - ETA: 1s - loss: 8.0590 - acc: 0.5000
+        40/42 [===========================>..] - ETA: 0s - loss: 7.6561 - acc: 0.5250
+        42/42 [==============================] - 23s 547ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 22s - loss: 8.0590 - acc: 0.5000
+         4/42 [=>............................] - ETA: 20s - loss: 4.0295 - acc: 0.7500
+         6/42 [===>..........................] - ETA: 18s - loss: 5.3727 - acc: 0.6667
+         8/42 [====>.........................] - ETA: 17s - loss: 4.0295 - acc: 0.7500
+        10/42 [======>.......................] - ETA: 16s - loss: 4.8354 - acc: 0.7000
+        12/42 [=======>......................] - ETA: 15s - loss: 4.0295 - acc: 0.7500
+        14/42 [=========>....................] - ETA: 14s - loss: 4.6052 - acc: 0.7143
+        16/42 [==========>...................] - ETA: 13s - loss: 6.0443 - acc: 0.6250
+        18/42 [===========>..................] - ETA: 12s - loss: 6.2681 - acc: 0.6111
+        20/42 [=============>................] - ETA: 11s - loss: 5.6413 - acc: 0.6500
+        22/42 [==============>...............] - ETA: 10s - loss: 5.8611 - acc: 0.6364
+        24/42 [================>.............] - ETA: 9s - loss: 6.0443 - acc: 0.6250 
+        26/42 [=================>............] - ETA: 8s - loss: 5.5793 - acc: 0.6538
+        28/42 [===================>..........] - ETA: 7s - loss: 6.3321 - acc: 0.6071
+        30/42 [====================>.........] - ETA: 6s - loss: 6.9845 - acc: 0.5667
+        32/42 [=====================>........] - ETA: 5s - loss: 7.0517 - acc: 0.5625
+        34/42 [=======================>......] - ETA: 4s - loss: 7.1109 - acc: 0.5588
+        36/42 [========================>.....] - ETA: 3s - loss: 7.6113 - acc: 0.5278
+        38/42 [==========================>...] - ETA: 2s - loss: 8.0590 - acc: 0.5000
+        40/42 [===========================>..] - ETA: 1s - loss: 7.6561 - acc: 0.5250
+        42/42 [==============================] - 26s 609ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 22s - loss: 8.0590 - acc: 0.5000
+         4/42 [=>............................] - ETA: 19s - loss: 8.0590 - acc: 0.5000
+         6/42 [===>..........................] - ETA: 18s - loss: 5.3727 - acc: 0.6667
+         8/42 [====>.........................] - ETA: 17s - loss: 6.0443 - acc: 0.6250
+        10/42 [======>.......................] - ETA: 16s - loss: 6.4472 - acc: 0.6000
+        12/42 [=======>......................] - ETA: 15s - loss: 6.7159 - acc: 0.5833
+        14/42 [=========>....................] - ETA: 14s - loss: 5.7565 - acc: 0.6429
+        16/42 [==========>...................] - ETA: 13s - loss: 7.0517 - acc: 0.5625
+        18/42 [===========>..................] - ETA: 12s - loss: 7.1636 - acc: 0.5556
+        20/42 [=============>................] - ETA: 10s - loss: 8.0590 - acc: 0.5000
+        22/42 [==============>...............] - ETA: 9s - loss: 7.3264 - acc: 0.5455 
+        24/42 [================>.............] - ETA: 8s - loss: 7.3875 - acc: 0.5417
+        26/42 [=================>............] - ETA: 7s - loss: 7.4391 - acc: 0.5385
+        28/42 [===================>..........] - ETA: 6s - loss: 6.9078 - acc: 0.5714
+        30/42 [====================>.........] - ETA: 5s - loss: 7.5218 - acc: 0.5333
+        32/42 [=====================>........] - ETA: 4s - loss: 7.0517 - acc: 0.5625
+        34/42 [=======================>......] - ETA: 3s - loss: 7.1109 - acc: 0.5588
+        36/42 [========================>.....] - ETA: 2s - loss: 7.6113 - acc: 0.5278
+        38/42 [==========================>...] - ETA: 1s - loss: 8.0590 - acc: 0.5000
+        40/42 [===========================>..] - ETA: 0s - loss: 8.4620 - acc: 0.4750
+        42/42 [==============================] - 23s 551ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 17s - loss: 8.0590 - acc: 0.5000
+         4/42 [=>............................] - ETA: 17s - loss: 4.0295 - acc: 0.7500
+         6/42 [===>..........................] - ETA: 16s - loss: 5.3727 - acc: 0.6667
+         8/42 [====>.........................] - ETA: 15s - loss: 4.0295 - acc: 0.7500
+        10/42 [======>.......................] - ETA: 14s - loss: 4.8354 - acc: 0.7000
+        12/42 [=======>......................] - ETA: 14s - loss: 5.3727 - acc: 0.6667
+        14/42 [=========>....................] - ETA: 13s - loss: 6.9078 - acc: 0.5714
+        16/42 [==========>...................] - ETA: 12s - loss: 7.0517 - acc: 0.5625
+        18/42 [===========>..................] - ETA: 11s - loss: 7.1636 - acc: 0.5556
+        20/42 [=============>................] - ETA: 10s - loss: 7.2531 - acc: 0.5500
+        22/42 [==============>...............] - ETA: 9s - loss: 8.0590 - acc: 0.5000 
+        24/42 [================>.............] - ETA: 8s - loss: 8.0590 - acc: 0.5000
+        26/42 [=================>............] - ETA: 7s - loss: 7.4391 - acc: 0.5385
+        28/42 [===================>..........] - ETA: 6s - loss: 8.0590 - acc: 0.5000
+        30/42 [====================>.........] - ETA: 5s - loss: 8.5963 - acc: 0.4667
+        32/42 [=====================>........] - ETA: 4s - loss: 8.0590 - acc: 0.5000
+        34/42 [=======================>......] - ETA: 3s - loss: 7.5850 - acc: 0.5294
+        36/42 [========================>.....] - ETA: 2s - loss: 7.6113 - acc: 0.5278
+        38/42 [==========================>...] - ETA: 1s - loss: 7.6349 - acc: 0.5263
+        40/42 [===========================>..] - ETA: 0s - loss: 8.0590 - acc: 0.5000
+        42/42 [==============================] - 22s 533ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 19s - loss: 16.1181 - acc: 0.0000e+00
+         4/42 [=>............................] - ETA: 17s - loss: 16.1181 - acc: 0.0000e+00
+         6/42 [===>..........................] - ETA: 16s - loss: 13.4317 - acc: 0.1667    
+         8/42 [====>.........................] - ETA: 15s - loss: 12.0886 - acc: 0.2500
+        10/42 [======>.......................] - ETA: 14s - loss: 9.6709 - acc: 0.4000 
+        12/42 [=======>......................] - ETA: 13s - loss: 8.0590 - acc: 0.5000
+        14/42 [=========>....................] - ETA: 13s - loss: 8.0590 - acc: 0.5000
+        16/42 [==========>...................] - ETA: 12s - loss: 8.0590 - acc: 0.5000
+        18/42 [===========>..................] - ETA: 11s - loss: 8.0590 - acc: 0.5000
+        20/42 [=============>................] - ETA: 10s - loss: 8.0590 - acc: 0.5000
+        22/42 [==============>...............] - ETA: 9s - loss: 8.0590 - acc: 0.5000 
+        24/42 [================>.............] - ETA: 8s - loss: 8.7306 - acc: 0.4583
+        26/42 [=================>............] - ETA: 7s - loss: 8.6790 - acc: 0.4615
+        28/42 [===================>..........] - ETA: 6s - loss: 9.2103 - acc: 0.4286
+        30/42 [====================>.........] - ETA: 5s - loss: 9.1336 - acc: 0.4333
+        32/42 [=====================>........] - ETA: 4s - loss: 9.5701 - acc: 0.4062
+        34/42 [=======================>......] - ETA: 3s - loss: 9.4812 - acc: 0.4118
+        36/42 [========================>.....] - ETA: 2s - loss: 8.9545 - acc: 0.4444
+        38/42 [==========================>...] - ETA: 1s - loss: 8.4832 - acc: 0.4737
+        40/42 [===========================>..] - ETA: 0s - loss: 8.0590 - acc: 0.5000
+        42/42 [==============================] - 22s 532ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 18s - loss: 8.0590 - acc: 0.5000
+         4/42 [=>............................] - ETA: 17s - loss: 12.0886 - acc: 0.2500
+         6/42 [===>..........................] - ETA: 16s - loss: 10.7454 - acc: 0.3333
+         8/42 [====>.........................] - ETA: 15s - loss: 8.0590 - acc: 0.5000 
+        10/42 [======>.......................] - ETA: 14s - loss: 8.0590 - acc: 0.5000
+        12/42 [=======>......................] - ETA: 13s - loss: 8.0590 - acc: 0.5000
+        14/42 [=========>....................] - ETA: 13s - loss: 8.0590 - acc: 0.5000
+        16/42 [==========>...................] - ETA: 12s - loss: 9.0664 - acc: 0.4375
+        18/42 [===========>..................] - ETA: 11s - loss: 8.9545 - acc: 0.4444
+        20/42 [=============>................] - ETA: 10s - loss: 9.6709 - acc: 0.4000
+        22/42 [==============>...............] - ETA: 9s - loss: 8.7917 - acc: 0.4545 
+        24/42 [================>.............] - ETA: 8s - loss: 9.4022 - acc: 0.4167
+        26/42 [=================>............] - ETA: 7s - loss: 8.6790 - acc: 0.4615
+        28/42 [===================>..........] - ETA: 6s - loss: 8.6347 - acc: 0.4643
+        30/42 [====================>.........] - ETA: 5s - loss: 8.5963 - acc: 0.4667
+        32/42 [=====================>........] - ETA: 4s - loss: 8.0590 - acc: 0.5000
+        34/42 [=======================>......] - ETA: 3s - loss: 7.5850 - acc: 0.5294
+        36/42 [========================>.....] - ETA: 2s - loss: 7.6113 - acc: 0.5278
+        38/42 [==========================>...] - ETA: 1s - loss: 8.0590 - acc: 0.5000
+        40/42 [===========================>..] - ETA: 0s - loss: 8.0590 - acc: 0.5000
+        42/42 [==============================] - 22s 530ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 18s - loss: 8.0590 - acc: 0.5000
+         4/42 [=>............................] - ETA: 17s - loss: 8.0590 - acc: 0.5000
+         6/42 [===>..........................] - ETA: 16s - loss: 8.0590 - acc: 0.5000
+         8/42 [====>.........................] - ETA: 15s - loss: 8.0590 - acc: 0.5000
+        10/42 [======>.......................] - ETA: 14s - loss: 9.6709 - acc: 0.4000
+        12/42 [=======>......................] - ETA: 13s - loss: 9.4022 - acc: 0.4167
+        14/42 [=========>....................] - ETA: 13s - loss: 10.3616 - acc: 0.3571
+        16/42 [==========>...................] - ETA: 12s - loss: 11.0812 - acc: 0.3125
+        18/42 [===========>..................] - ETA: 11s - loss: 10.7454 - acc: 0.3333
+        20/42 [=============>................] - ETA: 10s - loss: 9.6709 - acc: 0.4000 
+        22/42 [==============>...............] - ETA: 9s - loss: 8.7917 - acc: 0.4545 
+        24/42 [================>.............] - ETA: 8s - loss: 9.4022 - acc: 0.4167
+        26/42 [=================>............] - ETA: 7s - loss: 9.9188 - acc: 0.3846
+        28/42 [===================>..........] - ETA: 6s - loss: 9.7860 - acc: 0.3929
+        30/42 [====================>.........] - ETA: 5s - loss: 9.1336 - acc: 0.4333
+        32/42 [=====================>........] - ETA: 4s - loss: 9.0664 - acc: 0.4375
+        34/42 [=======================>......] - ETA: 3s - loss: 8.5331 - acc: 0.4706
+        36/42 [========================>.....] - ETA: 2s - loss: 8.5068 - acc: 0.4722
+        38/42 [==========================>...] - ETA: 1s - loss: 8.4832 - acc: 0.4737
+        40/42 [===========================>..] - ETA: 0s - loss: 8.0590 - acc: 0.5000
+        42/42 [==============================] - 22s 533ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 17s - loss: 8.0590 - acc: 0.5000
+         4/42 [=>............................] - ETA: 17s - loss: 4.0295 - acc: 0.7500
+         6/42 [===>..........................] - ETA: 16s - loss: 8.0590 - acc: 0.5000
+         8/42 [====>.........................] - ETA: 15s - loss: 10.0738 - acc: 0.3750
+        10/42 [======>.......................] - ETA: 14s - loss: 9.6709 - acc: 0.4000 
+        12/42 [=======>......................] - ETA: 13s - loss: 9.4022 - acc: 0.4167
+        14/42 [=========>....................] - ETA: 13s - loss: 10.3616 - acc: 0.3571
+        16/42 [==========>...................] - ETA: 12s - loss: 9.0664 - acc: 0.4375 
+        18/42 [===========>..................] - ETA: 11s - loss: 8.0590 - acc: 0.5000
+        20/42 [=============>................] - ETA: 10s - loss: 7.2531 - acc: 0.5500
+        22/42 [==============>...............] - ETA: 9s - loss: 7.3264 - acc: 0.5455 
+        24/42 [================>.............] - ETA: 8s - loss: 6.7159 - acc: 0.5833
+        26/42 [=================>............] - ETA: 7s - loss: 6.1993 - acc: 0.6154
+        28/42 [===================>..........] - ETA: 6s - loss: 6.3321 - acc: 0.6071
+        30/42 [====================>.........] - ETA: 5s - loss: 6.4472 - acc: 0.6000
+        32/42 [=====================>........] - ETA: 4s - loss: 7.0517 - acc: 0.5625
+        34/42 [=======================>......] - ETA: 3s - loss: 7.1109 - acc: 0.5588
+        36/42 [========================>.....] - ETA: 2s - loss: 7.6113 - acc: 0.5278
+        38/42 [==========================>...] - ETA: 1s - loss: 8.0590 - acc: 0.5000
+        40/42 [===========================>..] - ETA: 0s - loss: 8.0590 - acc: 0.5000
+        42/42 [==============================] - 22s 534ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        Train on 42 samples, validate on 6 samples
+        Epoch 1/1
+        
+         2/42 [>.............................] - ETA: 18s - loss: 16.1181 - acc: 0.0000e+00
+         4/42 [=>............................] - ETA: 17s - loss: 8.0590 - acc: 0.5000     
+         6/42 [===>..........................] - ETA: 16s - loss: 8.0590 - acc: 0.5000
+         8/42 [====>.........................] - ETA: 15s - loss: 6.0443 - acc: 0.6250
+        10/42 [======>.......................] - ETA: 14s - loss: 4.8354 - acc: 0.7000
+        12/42 [=======>......................] - ETA: 14s - loss: 5.3727 - acc: 0.6667
+        14/42 [=========>....................] - ETA: 13s - loss: 6.9078 - acc: 0.5714
+        16/42 [==========>...................] - ETA: 12s - loss: 7.0517 - acc: 0.5625
+        18/42 [===========>..................] - ETA: 11s - loss: 7.1636 - acc: 0.5556
+        20/42 [=============>................] - ETA: 10s - loss: 7.2531 - acc: 0.5500
+        22/42 [==============>...............] - ETA: 9s - loss: 7.3264 - acc: 0.5455 
+        24/42 [================>.............] - ETA: 8s - loss: 7.3875 - acc: 0.5417
+        26/42 [=================>............] - ETA: 7s - loss: 7.4391 - acc: 0.5385
+        28/42 [===================>..........] - ETA: 6s - loss: 7.4834 - acc: 0.5357
+        30/42 [====================>.........] - ETA: 5s - loss: 7.5218 - acc: 0.5333
+        32/42 [=====================>........] - ETA: 4s - loss: 8.0590 - acc: 0.5000
+        34/42 [=======================>......] - ETA: 3s - loss: 8.0590 - acc: 0.5000
+        36/42 [========================>.....] - ETA: 2s - loss: 7.6113 - acc: 0.5278
+        38/42 [==========================>...] - ETA: 1s - loss: 7.6349 - acc: 0.5263
+        40/42 [===========================>..] - ETA: 0s - loss: 7.6561 - acc: 0.5250
+        42/42 [==============================] - 22s 532ms/step - loss: 8.0590 - acc: 0.5000 - val_loss: 8.0590 - val_acc: 0.5000
+        
+        Epoch 00001: saving model to checkpoint_file2.hdf5
+        
+    stderr:
+      temporary_name: /var/lib/condor/execute/dir_22436/ks.err.HP2Kyh
+      descriptor: 4
+      mode: 0o100600
+      size: 3112
+      inode: 26458
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2020-10-06T09:18:38-07:00
+      atime: 2020-10-06T09:18:35-07:00
+      ctime: 2020-10-06T09:18:38-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+      data_truncated: false
+      data: |
+        Using TensorFlow backend.
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+        /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+          np_resource = np.dtype([("resource", np.ubyte, 1)])
+        WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+        Instructions for updating:
+        Colocations handled automatically by placer.
+        2020-10-06 09:18:37.560421: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+        2020-10-06 09:18:37.564999: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2592000000 Hz
+        2020-10-06 09:18:37.566300: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x397fa70 executing computations on platform Host. Devices:
+        2020-10-06 09:18:37.566345: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+        ./VGG_model_py:87: UserWarning: Update your `Model` call to the Keras 2 API: `Model(inputs=Tensor("in..., outputs=Tensor("de...)`
+          model = Model(input = vgg16_model.input, output = predictions)
+        WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+        Instructions for updating:
+        Use tf.cast instead.
+        
+    metadata:
+      temporary_name: /var/lib/condor/execute/dir_22436/ks.meta.39u06l
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 26459
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2020-10-06T09:18:35-07:00
+      atime: 2020-10-06T09:18:35-07:00
+      ctime: 2020-10-06T09:18:35-07:00
+      uid: 550
+      user: scitech
+      gid: 808
+      group: scitech-group
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "Aug_resized_Cat6_1.jpg"
+    pfn: "Aug_resized_Cat6_1.jpg"
+    sha256: 0511fa337441a59bcd954f2ff63e66402be55646be52bb031c1cb63e4eab4b7c
+    success: True
+  - lfn: "Aug_resized_Dog4_2.jpg"
+    pfn: "Aug_resized_Dog4_2.jpg"
+    sha256: 102d78e8c32c6c3c8cae1505ea1d04e5c741030100a0b5b1a6e7a1c320d1283b
+    success: True
+  - lfn: "Aug_resized_Cat3_0.jpg"
+    pfn: "Aug_resized_Cat3_0.jpg"
+    sha256: 0b20cff14ef533e15e56dc3360be70c73e563b435fd169b95756067d90a33617
+    success: True
+  - lfn: "Aug_resized_Cat9_2.jpg"
+    pfn: "Aug_resized_Cat9_2.jpg"
+    sha256: 95ce1051b57b4b89eb3059236f6a1f8c8b14365a1f1f5d21a6c7fd84d0f25917
+    success: True
+  - lfn: "Aug_resized_Cat2_2.jpg"
+    pfn: "Aug_resized_Cat2_2.jpg"
+    sha256: 25fe7e601701c1dd523287eb124a399efac6fc187d3a0646d718125c42b3a6ed
+    success: True
+  - lfn: "Aug_resized_Dog1_1.jpg"
+    pfn: "Aug_resized_Dog1_1.jpg"
+    sha256: 4707f4c061ff24f9878f2c2b9fa462eb6f55a2db8a3cb9f25ae479cff3750cf5
+    success: True
+  - lfn: "Aug_resized_Cat6_0.jpg"
+    pfn: "Aug_resized_Cat6_0.jpg"
+    sha256: fe71de7735b899bbeea3897c468b9fac47057bb5de98909248053d640bfa8550
+    success: True
+  - lfn: "Aug_resized_Dog8_0.jpg"
+    pfn: "Aug_resized_Dog8_0.jpg"
+    sha256: 37b35ad87feed7d48275f1c409b813ffe6cbea8ccd81ddadbea7b9174f291aff
+    success: True
+  - lfn: "Aug_resized_Cat6_2.jpg"
+    pfn: "Aug_resized_Cat6_2.jpg"
+    sha256: aec68f6fd76fc6a8e6a3c995a270cc7294820cdb8703b617ea515186535a1c7f
+    success: True
+  - lfn: "Aug_resized_Dog7_2.jpg"
+    pfn: "Aug_resized_Dog7_2.jpg"
+    sha256: f5b5c75603d84e16a8436b6696653a9cca13482953f101d4dca2f6ce1a281ffd
+    success: True
+  - lfn: "Aug_resized_Dog4_1.jpg"
+    pfn: "Aug_resized_Dog4_1.jpg"
+    sha256: db2b5e3aec4f44fbb21776461b53e2f2c97a986899c9e1fa924e643c721baafd
+    success: True
+  - lfn: "Aug_resized_Dog0_2.jpg"
+    pfn: "Aug_resized_Dog0_2.jpg"
+    sha256: 04b326b491a78b34ac68de8b502d533d914fe28ed639c727bceb6f79d5be8a21
+    success: True
+  - lfn: "Aug_resized_Cat7_0.jpg"
+    pfn: "Aug_resized_Cat7_0.jpg"
+    sha256: cca46f7a85f5117337c7358c73b3619cfa0901f16756b55e0903717a0bada70a
+    success: True
+  - lfn: "Aug_resized_Cat2_1.jpg"
+    pfn: "Aug_resized_Cat2_1.jpg"
+    sha256: 08ce7e64e5f7df45e264fb519e44289c1373361657d13afcafe64eb81bb5d0ff
+    success: True
+  - lfn: "validation.pkl"
+    pfn: "validation.pkl"
+    sha256: 67decf2c7c82dbafdc5f6881d7b2b2b014f07216b145596311bf156d8ad83a62
+    success: True
+  - lfn: "Aug_resized_Dog1_0.jpg"
+    pfn: "Aug_resized_Dog1_0.jpg"
+    sha256: a6d49d639e69891cb96c7d1a2b712160285aaf9ca092bfd137d6df2faffa263d
+    success: True
+  - lfn: "Aug_resized_Dog9_0.jpg"
+    pfn: "Aug_resized_Dog9_0.jpg"
+    sha256: 7cc957b13cfa5c4084d4c7dc2ebffe6225b2562f3e048abf5f2aad1581295c57
+    success: True
+  - lfn: "Aug_resized_Cat2_0.jpg"
+    pfn: "Aug_resized_Cat2_0.jpg"
+    sha256: dbdb46b221752554199a66030a3c72b1550e0d379862b307307726d3833e86a2
+    success: True
+  - lfn: "Aug_resized_Dog2_0.jpg"
+    pfn: "Aug_resized_Dog2_0.jpg"
+    sha256: eb33523dc2cbc39feead8e089324417af2f1d560cb1822aadce54a975953b0cb
+    success: True
+  - lfn: "Aug_resized_Cat5_1.jpg"
+    pfn: "Aug_resized_Cat5_1.jpg"
+    sha256: 01cd38a5a91d6d214ff99d1077f5893ba98444b93562be1c53d9138c49ffcdcf
+    success: True
+  - lfn: "Aug_resized_Cat7_1.jpg"
+    pfn: "Aug_resized_Cat7_1.jpg"
+    sha256: 079f291bae6cacadedcd6ee11e85e976dbf76335b0295738330cbf0812efed6e
+    success: True
+  - lfn: "Aug_resized_Dog2_1.jpg"
+    pfn: "Aug_resized_Dog2_1.jpg"
+    sha256: 8342c79177df78194362828a13820b5f2e6ae87168599ea123210e2699d01a55
+    success: True
+  - lfn: "Aug_resized_Dog5_1.jpg"
+    pfn: "Aug_resized_Dog5_1.jpg"
+    sha256: 75125bcfee8b0c025b5f3f710394274928312e2de9b9e88db20fa24793bf81f6
+    success: True
+  - lfn: "Aug_resized_Dog8_2.jpg"
+    pfn: "Aug_resized_Dog8_2.jpg"
+    sha256: 2795153dd22f9ed5ca0113738137341a873c1294c2c469c5d76594f136c6e425
+    success: True
+  - lfn: "VGG_model_py"
+    pfn: "VGG_model_py"
+    sha256: ee330f6dadfd456796e7c2a4d1a01ae450a82f50ec123eb64fbb298d4d07a2e9
+    success: True
+  - lfn: "Aug_resized_Dog1_2.jpg"
+    pfn: "Aug_resized_Dog1_2.jpg"
+    sha256: 90c1e0367df3af206e4750c8100bfce361177c40d34c2dbb8639e5a5c63ba0e5
+    success: True
+  - lfn: "Aug_resized_Cat1_2.jpg"
+    pfn: "Aug_resized_Cat1_2.jpg"
+    sha256: 073c06084511d8efc4ed41872f08c6672e89da30c8a15b515b5abc84dc1e648b
+    success: True
+  - lfn: "testing.pkl"
+    pfn: "testing.pkl"
+    sha256: 1edc7005a0527004fa4ba057a977c11e905f4440176ed2cd07a4b7e0a2d5bc14
+    success: True
+  - lfn: "Aug_resized_Cat5_0.jpg"
+    pfn: "Aug_resized_Cat5_0.jpg"
+    sha256: 5e153779e31eede982adda4f51e71c18c847544a32bd022d9f074f55a3f69384
+    success: True
+  - lfn: "Aug_resized_Cat7_2.jpg"
+    pfn: "Aug_resized_Cat7_2.jpg"
+    sha256: 06c472f2f35acaf31531891e4121cb5d2bb648ef341436a1b17287557ee593e0
+    success: True
+  - lfn: "Aug_resized_Dog8_1.jpg"
+    pfn: "Aug_resized_Dog8_1.jpg"
+    sha256: f431eaf73bfdeb2a66d127d33befc430f0a28d28c68deb4095efb3beb57d355c
+    success: True
+  - lfn: "Aug_resized_Cat1_1.jpg"
+    pfn: "Aug_resized_Cat1_1.jpg"
+    sha256: 580a70e38b432272e2992b05d9c4b9d86dbe5c505180c6b436745cc4d916c4c0
+    success: True
+  - lfn: "Aug_resized_Dog5_0.jpg"
+    pfn: "Aug_resized_Dog5_0.jpg"
+    sha256: 4204101cffc92fec8d7ed89526dad797594b2b08446768e511fd3922aeab446d
+    success: True
+  - lfn: "Aug_resized_Cat4_2.jpg"
+    pfn: "Aug_resized_Cat4_2.jpg"
+    sha256: b7ca922cab381cd6c75a9415f6f82f4e2ca7d75e250947ec74944f3bb2add5e6
+    success: True
+  - lfn: "Aug_resized_Cat8_0.jpg"
+    pfn: "Aug_resized_Cat8_0.jpg"
+    sha256: d9b9184dfb2447eb5fddb4534cb0a660c91ba1631f18dd2ac0689cb00f2db89f
+    success: True
+  - lfn: "Aug_resized_Dog3_0.jpg"
+    pfn: "Aug_resized_Dog3_0.jpg"
+    sha256: 58931a3170d3001cf128480d3d35439330e212aa8c18230bf01f9b36a65c98ba
+    success: True
+  - lfn: "Aug_resized_Dog6_1.jpg"
+    pfn: "Aug_resized_Dog6_1.jpg"
+    sha256: 76475b452f7e2b26a85be943a8676943a782659fdf5ca2d8438518175ccc92ee
+    success: True
+  - lfn: "Aug_resized_Dog9_2.jpg"
+    pfn: "Aug_resized_Dog9_2.jpg"
+    sha256: 40815cd70946d01fde5cb499bec3ca67f609fbc3baabf36286738334cf33616d
+    success: True
+  - lfn: "Aug_resized_Cat1_0.jpg"
+    pfn: "Aug_resized_Cat1_0.jpg"
+    sha256: 2ca97a91aa829b8cec644ed964971f1be271705a22a308138a64509cca10a220
+    success: True
+  - lfn: "Aug_resized_Cat4_1.jpg"
+    pfn: "Aug_resized_Cat4_1.jpg"
+    sha256: 908bf892db468b0f0afc37ae17ff24e66cb22c65d223e90d49315b8e06e88860
+    success: True
+  - lfn: "Aug_resized_Cat8_1.jpg"
+    pfn: "Aug_resized_Cat8_1.jpg"
+    sha256: c558b3fdee21b0d25c7c832211c8bb2824189ebb30bec27c895bdeef38cee019
+    success: True
+  - lfn: "Aug_resized_Dog6_0.jpg"
+    pfn: "Aug_resized_Dog6_0.jpg"
+    sha256: db47e6766ef12e1fb2d17d3e2e66e3ffc64472c043d9f10613847fb96ea3d362
+    success: True
+  - lfn: "Aug_resized_Cat0_2.jpg"
+    pfn: "Aug_resized_Cat0_2.jpg"
+    sha256: 3921790a0fc2315568273704669acd127e5db20571f2e78e1454e9b242a42a2d
+    success: True
+  - lfn: "Aug_resized_Dog9_1.jpg"
+    pfn: "Aug_resized_Dog9_1.jpg"
+    sha256: b9709e9f9faf031e6148fc11800aa1ebe03f93408331789dd1a8aa3353afee74
+    success: True
+  - lfn: "Aug_resized_Cat4_0.jpg"
+    pfn: "Aug_resized_Cat4_0.jpg"
+    sha256: 8fb2c3a905720585feb70dfc3b4b67f46291dcc4a9b6e20939392a40e82c3e66
+    success: True
+  - lfn: "Aug_resized_Cat8_2.jpg"
+    pfn: "Aug_resized_Cat8_2.jpg"
+    sha256: 67655f0e2f18dbb70bf9ca8b7eccb1c048a7af84c6afa2f43fa52eefd341de4c
+    success: True
+  - lfn: "Aug_resized_Dog2_2.jpg"
+    pfn: "Aug_resized_Dog2_2.jpg"
+    sha256: f21d8204c0eea0fbc62b4a7304cdde6d669a1003961b34652683f1931969ae7d
+    success: True
+  - lfn: "Aug_resized_Dog5_2.jpg"
+    pfn: "Aug_resized_Dog5_2.jpg"
+    sha256: 2843367d1f3ecd043cb43d4035bee7c72bf7252f5c0ead930af61bb48d9794aa
+    success: True
+  - lfn: "training.pkl"
+    pfn: "training.pkl"
+    sha256: a096ae3f32d791b4f718271caf5c0c3f45d4f731fa13356185895d5454460f58
+    success: True
+  - lfn: "Aug_resized_Cat0_1.jpg"
+    pfn: "Aug_resized_Cat0_1.jpg"
+    sha256: 9376c165381d731f6248fbfa4b25b67444e9b256a0420e6e4ff554207d598654
+    success: True
+  - lfn: "Aug_resized_Cat3_2.jpg"
+    pfn: "Aug_resized_Cat3_2.jpg"
+    sha256: ed1e042e3e9936a24b58c6a37484f21b9483b353e24d5c3f322b2af6e225dcf1
+    success: True
+  - lfn: "Aug_resized_Dog7_1.jpg"
+    pfn: "Aug_resized_Dog7_1.jpg"
+    sha256: 28ed3c89b5445a87055797321d3d9ab524ebfaa2678ecae8ade6ac31981ec489
+    success: True
+  - lfn: "Aug_resized_Cat9_0.jpg"
+    pfn: "Aug_resized_Cat9_0.jpg"
+    sha256: 7cb6cdbbd32a8f1ab799da5322f483d2ee1b82a29fdd4d90917f27633383508d
+    success: True
+  - lfn: "Aug_resized_Dog0_1.jpg"
+    pfn: "Aug_resized_Dog0_1.jpg"
+    sha256: 49e645cae0313f242ff2670ef8e9936eb68609f1153f3dbdc71ca286ee79d668
+    success: True
+  - lfn: "Aug_resized_Cat5_2.jpg"
+    pfn: "Aug_resized_Cat5_2.jpg"
+    sha256: ffcdd074d87f27b0bb469a10fdcded55b9bfcb1364cd2873236cb566c0c16907
+    success: True
+  - lfn: "Aug_resized_Dog7_0.jpg"
+    pfn: "Aug_resized_Dog7_0.jpg"
+    sha256: 3fca9bb6e43c2268d6b218d8265ecde7fa6f3809a9cfb26a077cee7af05de0f6
+    success: True
+  - lfn: "Aug_resized_Dog4_0.jpg"
+    pfn: "Aug_resized_Dog4_0.jpg"
+    sha256: 01558619cbe36abe604b5e59064ac7b179680bdb834e5f07a561723bc6f49274
+    success: True
+  - lfn: "Aug_resized_Dog3_2.jpg"
+    pfn: "Aug_resized_Dog3_2.jpg"
+    sha256: 0050cd7747f3b5777679c79edf1af0a0f625962335f19c665fc606c1b9f00615
+    success: True
+  - lfn: "Aug_resized_Cat3_1.jpg"
+    pfn: "Aug_resized_Cat3_1.jpg"
+    sha256: e041cd802e33e393f96e2cdb6a9e8af489285e0105a0936d63c60d088e4c6879
+    success: True
+  - lfn: "Aug_resized_Cat9_1.jpg"
+    pfn: "Aug_resized_Cat9_1.jpg"
+    sha256: 765938f213c11182a583cfb66392b6cde527772cc2a10278cbc954413985cb97
+    success: True
+  - lfn: "Aug_resized_Dog3_1.jpg"
+    pfn: "Aug_resized_Dog3_1.jpg"
+    sha256: 7bf6618a68e57c6182dfa64381b33bdbe6647dd7895890be9ecea8187198ab16
+    success: True
+  - lfn: "Aug_resized_Cat0_0.jpg"
+    pfn: "Aug_resized_Cat0_0.jpg"
+    sha256: 418e5d189e8847f4ffb20847a4946210f7724d14d5937ccb96a2db4b39d8de3a
+    success: True
+  - lfn: "Aug_resized_Dog0_0.jpg"
+    pfn: "Aug_resized_Dog0_0.jpg"
+    sha256: 8353c2023834aea476f0c583bd04b42e08a4e4b931209e53de52e50a852f0fd4
+    success: True
+  - lfn: "Aug_resized_Dog6_2.jpg"
+    pfn: "Aug_resized_Dog6_2.jpg"
+    sha256: 4845d585f39e049fec017600b65ef413c9860b9d73a64a30143d5f4ad2827bbc
+    success: True
+- integrity_summary:
+    succeeded: 64
+    failed: 0
+    duration: 0.317
