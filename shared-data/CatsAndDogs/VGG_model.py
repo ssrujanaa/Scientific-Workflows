@@ -104,16 +104,21 @@ def main():
     
     train_from_beginning = False
     try:
+        #Since our hdf5 file contains additional data = epochs, skip_mismatch is used to avoid that column
         model.load_weights("checkpoint_file2.hdf5",skip_mismatch=True)
         with h5py.File('checkpoint_file2.hdf5', "r+") as file:
             data = file.get('epochs')[...].tolist()
+            
+        #loading the number of epochs already performed to resume training from that epoch
         initial_epoch = data
         model.compile(optimizer = 'rmsprop',loss = 'sparse_categorical_crossentropy', metrics = ['accuracy'])
         for i in range(initial_epoch,epochs):
-#             print(i)
             model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=1, verbose=1,
                       validation_data=(val_photos,val_labels), callbacks = [checkpoint])
-            checkpoint = ModelCheckpoint(checkpoint_file, monitor='loss', verbose=1, mode='auto',save_weights_only = True, period=1)
+            checkpoint = ModelCheckpoint(checkpoint_file, monitor='loss', verbose=1, mode='auto',
+                                         save_weights_only = True, period=1)
+            
+            #saving the number of finished epochs to the same hdf5 file
             with h5py.File('checkpoint_file2.hdf5', "a") as file:
                 file['epochs'] = i
     except OSError:
@@ -125,6 +130,7 @@ def main():
             model.fit(x=train_photos, y=train_labels,batch_size=2 , epochs=1, 
                            verbose=1,validation_data=(val_photos,val_labels), callbacks = [checkpoint])
             checkpoint = ModelCheckpoint(checkpoint_file, monitor='loss', verbose=1, mode='auto',save_weights_only = True, period=1)
+            #saving the number of finished epochs to the same hdf5 file
             with h5py.File('checkpoint_file2.hdf5', "a") as file:
                 file['epochs']=i
 
